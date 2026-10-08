@@ -12,7 +12,7 @@
     "prebuild": "node scripts/build-data.mjs --if-missing",
     "build": "vite build",
     "preview": "vite preview",
-    "shots": "node scripts/screenshot.mjs"
+    "shots": "node scripts/screenshot.mjs --build"
   },
   "engines": {
     "node": ">=22"

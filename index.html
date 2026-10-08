@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Realms Atlas</title>
+  <meta name="description" content="An explorable cabinet of Forgotten Realms dioramas, with a Dalereckoning time scrubber." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23efe5cc'/%3E%3Cpath d='M16 4 L19 13 L28 16 L19 19 L16 28 L13 19 L4 16 L13 13Z' fill='%232b2420'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div id="stage"></div>
+  <div id="labels" aria-hidden="true"></div>
+
+  <header id="cartouche" class="ui">
+    <h1>Realms Atlas</h1>
+    <p class="sub">a cabinet of Faerûn, through the reckoning of the Dales</p>
+    <p class="now"><span id="now-year">1496 DR</span> · <span id="now-era">Present</span></p>
+  </header>
+
+  <nav id="layouts" class="ui" aria-label="Layouts">
+    <button data-layout="atlas" title="Atlas — by region (1)"><i>I</i> Atlas</button>
+    <button data-layout="map" title="Map — on the chart of Faerûn (2)"><i>II</i> Map</button>
+    <button data-layout="chronicle" title="Chronicle — by founding, in eras (3)"><i>III</i> Chronicle</button>
+  </nav>
+
+  <nav id="tools" class="ui" aria-label="Tools">
+    <button id="btn-tour" title="Tour (T)">Tour</button>
+    <button id="btn-contents" title="Contents (C)">Contents</button>
+    <button id="btn-search" title="Search (/)">Search</button>
+    <button id="btn-night" title="Night (N)">Night</button>
+    <button id="btn-bloom" title="Bloom (B)">Bloom</button>
+    <button id="btn-help" title="Keys (?)">?</button>
+  </nav>
+
+  <aside id="panel" class="ui" aria-live="polite" hidden></aside>
+
+  <footer id="scrubber" class="ui"></footer>
+
+  <div id="tooltip" hidden></div>
+  <div id="toast" hidden></div>
+
+  <section id="contents" class="overlay" hidden></section>
+  <section id="search" class="overlay" hidden>
+    <div class="search-box">
+      <input id="search-input" type="search" placeholder="Seek a place, alias, or tag…" autocomplete="off" spellcheck="false" />
+      <ol id="search-results"></ol>
+    </div>
+  </section>
+  <section id="help" class="overlay" hidden></section>
+
+  <div id="loading"><div class="ld-inner"><h2>Realms Atlas</h2><p id="loading-msg">Unrolling the vellum…</p><div class="ld-bar"><span id="loading-bar"></span></div></div></div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
