@@ -1,0 +1,1288 @@
+[
+  {
+    "id": "tt-bryn-shander",
+    "name": "Bryn Shander",
+    "aliases": [
+      "Tenth Town"
+    ],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1270,
+    "foundedNote": "Approximate. The tenth and last of the towns, grown from a lone stopover cabin where traders began to gather in the late 1200s DR (Targos page). The Faerûn-level record uses 1080.",
+    "status": [
+      {
+        "from": 1270,
+        "to": 1351,
+        "state": "thriving"
+      },
+      {
+        "from": 1351,
+        "to": 1352,
+        "state": "troubled"
+      },
+      {
+        "from": 1352,
+        "to": 1356,
+        "state": "thriving"
+      },
+      {
+        "from": 1356,
+        "to": 1357,
+        "state": "troubled"
+      },
+      {
+        "from": 1357,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": 1490,
+        "state": "troubled"
+      },
+      {
+        "from": 1490,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1356,
+        "title": "Battle of Icewind Dale",
+        "summary": "Akar Kessell's goblin and giant host, driven by the Crystal Shard, besieges the town until Bruenor's dwarves and Wulfgar's united tribes break it.",
+        "importance": 3
+      },
+      {
+        "year": 1351,
+        "title": "Crystal Shard / barbarian assault",
+        "summary": "The year Kessell stumbles on Crenshinibon, the Reghed tribes storm Ten-Towns and are routed at Bryn Shander's gates with Drizzt and Bruenor's help.",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "Everlasting Rime",
+        "summary": "Auril's Everlasting Rime (begun 1486–1487) keeps the sun below the horizon; fires are doused and lotteries choose sacrifices until it lifts in 1489. Refugees from razed Good Mead and Dougan's Hole crowd inside the walls.",
+        "importance": 3
+      },
+      {
+        "year": 1466,
+        "title": "Errtu slain",
+        "summary": "Tiago Baenre kills the returned demon Errtu on the plain outside town; a statue on a black circle marks the spot.",
+        "importance": 1
+      }
+    ],
+    "description": "The hilltop hub of the dale sits apart from the three lakes, a ring of walls with three gates looking out over level snowfields toward Kelvin's Cairn. Every town's scrimshaw passes through its market square, and every caravan from beyond the Spine ends here. In hard times the eastern towns empty into it for shelter.",
+    "population": 1200,
+    "ruler": "Speaker Duvessa Shane (1485)",
+    "tags": [
+      "capital",
+      "market",
+      "walled",
+      "council"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e3e1d6",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "gate",
+        "snow",
+        "palisade"
+      ],
+      "terrain": "tundra",
+      "notes": "A round walled town crowning a single low hill in open snow, three gates and a crowded market square; no shoreline."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Bryn_Shander",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Towns",
+      "https://forgottenrealms.fandom.com/wiki/Akar_Kessell",
+      "https://forgottenrealms.fandom.com/wiki/Everlasting_Rime"
+    ]
+  },
+  {
+    "id": "tt-targos",
+    "name": "Targos",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "No founding date. Attested by 1281 DR (Speaker \"K.T.\"); it predates Bryn Shander as the original end of the Ten Trail.",
+    "status": [
+      {
+        "from": 1281,
+        "to": 1312,
+        "state": "thriving"
+      },
+      {
+        "from": 1312,
+        "to": 1313,
+        "state": "troubled"
+      },
+      {
+        "from": 1313,
+        "to": 1356,
+        "state": "thriving"
+      },
+      {
+        "from": 1356,
+        "to": 1357,
+        "state": "troubled"
+      },
+      {
+        "from": 1357,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": 1490,
+        "state": "troubled"
+      },
+      {
+        "from": 1490,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1356,
+        "title": "Burned by Cryshal-Tirith",
+        "summary": "Kessell's tower fires a lance of focused sunlight across the lake, torching the walls and their watchers; his army then occupies the town while many flee by boat.",
+        "importance": 3
+      },
+      {
+        "year": 1312,
+        "title": "Siege of the Legion of the Chimera",
+        "summary": "Goblinoid hordes besiege the palisade and slip in through old smugglers' tunnels; ships on the Shaengarne burn.",
+        "importance": 2
+      },
+      {
+        "year": 1351,
+        "title": "Elk tribe assault",
+        "summary": "Speaker Kemp holds the town against the Tribe of the Elk in the barbarian rising of the Crystal Shard year.",
+        "importance": 1
+      },
+      {
+        "year": 1489,
+        "title": "Everlasting Rime",
+        "summary": "Auril's Everlasting Rime (begun 1486–1487) keeps the sun below the horizon; fires are doused and lotteries choose sacrifices until it lifts in 1489. Speaker Naerth Maxildanarr, a Zhentarim agent, runs a lottery; the chardalyn dragon's attack is beaten back by militia and adventurers.",
+        "importance": 2
+      },
+      {
+        "year": 1485,
+        "title": "Black ice",
+        "summary": "Chardalyn trinkets corrupt their owners while the Arcane Brotherhood angles for power in the council.",
+        "importance": 1
+      }
+    ],
+    "description": "The second town of the dale crouches in a cliff-sheltered cove on Maer Dualdon, its timber palisade wading out into the lake to wall in the harbor. Its hundred-boat fleet out-fishes every rival, and shacks now spill beyond the walls as trade swells. The Ash Quarter, burned by Kessell's tower, has long since been built over.",
+    "population": 1000,
+    "ruler": "Speaker Naerth Maxildanarr (1489)",
+    "tags": [
+      "fishing",
+      "walled",
+      "harbor",
+      "zhentarim"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dfe0d8",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "palisade",
+        "harbor",
+        "docks",
+        "lighthouse",
+        "ships",
+        "lake",
+        "snow"
+      ],
+      "terrain": "coast",
+      "notes": "Wooden palisade enclosing a cliff-backed cove and extending into the water as a harbor wall; a lighthouse and many fishing boats."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Targos",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Towns",
+      "https://forgottenrealms.fandom.com/wiki/Akar_Kessell"
+    ]
+  },
+  {
+    "id": "tt-termalaine",
+    "name": "Termalaine",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "No founding date; first dated event is a goblin raid in 1342 DR. The name comes from its tourmaline mine.",
+    "status": [
+      {
+        "from": 1342,
+        "to": 1356,
+        "state": "thriving"
+      },
+      {
+        "from": 1356,
+        "to": 1357,
+        "state": "troubled"
+      },
+      {
+        "from": 1357,
+        "to": 1373,
+        "state": "thriving"
+      },
+      {
+        "from": 1373,
+        "to": 1374,
+        "state": "abandoned"
+      },
+      {
+        "from": 1374,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": 1490,
+        "state": "troubled"
+      },
+      {
+        "from": 1490,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1356,
+        "title": "Battle of Icewind Dale",
+        "summary": "Kessell's orcs overrun the town; more than half the folk flee to Bryn Shander and Speaker Agorwal falls in the battle there.",
+        "importance": 2
+      },
+      {
+        "year": 1351,
+        "title": "Heafstaag's third attempt",
+        "summary": "The barbarian king, who had taken Termalaine twice before, fails in the great rising of 1351.",
+        "importance": 1
+      },
+      {
+        "year": 1342,
+        "title": "Goblin raid",
+        "summary": "Clan Battlehammer's dwarves save the town from goblin raiders.",
+        "importance": 1
+      },
+      {
+        "year": 1373,
+        "title": "Unnatural blizzard",
+        "summary": "A magical storm empties the town and verbeeg move in until the Hero of Neverwinter drives them out.",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "Everlasting Rime",
+        "summary": "Auril's Everlasting Rime (begun 1486–1487) keeps the sun below the horizon; fires are doused and lotteries choose sacrifices until it lifts in 1489.",
+        "importance": 2
+      }
+    ],
+    "description": "Called the prettiest of the Ten Towns, Termalaine scatters its houses among planted trees on the eastern shore of Maer Dualdon, each behind a low rubble windbreak. Shipwrights and gem cutters work beside a tourmaline mine that opens and shuts with the moods of the Underdark. Its feud with Targos over fishing water has drawn blood more than once.",
+    "population": 600,
+    "ruler": "Speaker Oarus Masthew (1489)",
+    "tags": [
+      "fishing",
+      "mining",
+      "shipwrights"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e1e2d9",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "trees",
+        "mines",
+        "docks",
+        "lake",
+        "snow"
+      ],
+      "terrain": "coast",
+      "notes": "Widely spaced houses among small trees on a lakeshore, each behind a low stone wall; a mine mouth in a nearby rise."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Termalaine",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Towns"
+    ]
+  },
+  {
+    "id": "tt-lonelywood",
+    "name": "Lonelywood",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1232,
+    "foundedNote": "Circa 1232 DR: only logging camps then; the town grew around the Whistling Gallows inn and was recognized by the council shortly before 1281.",
+    "status": [
+      {
+        "from": 1232,
+        "to": 1281,
+        "state": "thriving"
+      },
+      {
+        "from": 1281,
+        "to": 1282,
+        "state": "troubled"
+      },
+      {
+        "from": 1282,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": 1490,
+        "state": "troubled"
+      },
+      {
+        "from": 1490,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1281,
+        "title": "Wylfdene's war",
+        "summary": "The barbarian king camps outside Lonelywood with three united tribes, aiming to drive the southerners from the dale; the campaign makes the hamlet a town.",
+        "importance": 2
+      },
+      {
+        "year": 1351,
+        "title": "Regis steps down",
+        "summary": "After the barbarian rising the halfling Regis gives up the speaker's seat to Muldoon; the town's population swells.",
+        "importance": 1
+      },
+      {
+        "year": 1483,
+        "title": "Companions return",
+        "summary": "Regis buys a house again; Catti-brie raises a small shrine to Mielikki in the woods.",
+        "importance": 1
+      },
+      {
+        "year": 1489,
+        "title": "Everlasting Rime",
+        "summary": "Auril's Everlasting Rime (begun 1486–1487) keeps the sun below the horizon; fires are doused and lotteries choose sacrifices until it lifts in 1489.",
+        "importance": 2
+      }
+    ],
+    "description": "The northernmost town hides among the fir stands of the Lonelywood on Maer Dualdon, a few dozen low log cabins where people come to vanish. It cuts the timber every other town builds with. Hunters share their kills with the whole community, and the old tree outside the Whistling Gallows is carved with visitors' names.",
+    "population": 100,
+    "ruler": "Speaker Avandro Perth (1485)",
+    "tags": [
+      "timber",
+      "refuge",
+      "whistling-gallows"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dcdfd4",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 1,
+      "motifs": [
+        "trees",
+        "giant-trees",
+        "docks",
+        "lake",
+        "snow"
+      ],
+      "terrain": "forest",
+      "notes": "A cluster of log cabins inside a dark fir wood at the lake's north end; one great carved tree by an inn."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Lonelywood",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Towns"
+    ]
+  },
+  {
+    "id": "tt-bremen",
+    "name": "Bremen",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Founded by dwarven prospectors under Rölph Bremen; undated. Earliest dated event is its near-destruction by the Legion of the Chimera just before 1312 DR.",
+    "status": [
+      {
+        "from": 1311,
+        "to": 1312,
+        "state": "troubled"
+      },
+      {
+        "from": 1312,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": 1490,
+        "state": "troubled"
+      },
+      {
+        "from": 1490,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1312,
+        "title": "Legion of the Chimera",
+        "summary": "The goblinoid Legion nearly wipes out the westernmost town just before its siege of Targos.",
+        "importance": 2
+      },
+      {
+        "year": 1356,
+        "title": "Given to the Reghedmen",
+        "summary": "After the war with Kessell, Bremen is handed to the barbarian tribes; Revjak of the Elk speaks for them until Berkthgar's challenge in 1364.",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "Everlasting Rime",
+        "summary": "Bremen offers up warmth to Auril, going a day a month without fire; an awakened plesiosaur stalks Maer Dualdon's boats.",
+        "importance": 2
+      }
+    ],
+    "description": "Westernmost of the lake towns, Bremen sits where the Shaengarne pours into Maer Dualdon, on ground the spring floods know well. Prospectors still pan the river flats for gold, and a statue of the dwarf who founded the place stands in its heart. It is small, poor, and could muster barely two dozen defenders during the Rime.",
+    "population": 150,
+    "ruler": "Speaker Dorbulgruf Shalescar (1485)",
+    "tags": [
+      "prospectors",
+      "river-mouth",
+      "reghedmen"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dddcd2",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 1,
+      "motifs": [
+        "river",
+        "statue",
+        "docks",
+        "lake",
+        "snow"
+      ],
+      "terrain": "coast",
+      "notes": "A small huddle of houses at a river mouth on a lakeshore with a central dwarf statue; flat flood-prone banks."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Bremen",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Towns"
+    ]
+  },
+  {
+    "id": "tt-easthaven",
+    "name": "Easthaven",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Founded by thieves fleeing Cape Velen in Tethyr; undated. Earliest dated event 1281 DR.",
+    "status": [
+      {
+        "from": 1281,
+        "to": 1282,
+        "state": "troubled"
+      },
+      {
+        "from": 1282,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": 1490,
+        "state": "troubled"
+      },
+      {
+        "from": 1490,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1351,
+        "title": "Crystal Shard",
+        "summary": "Akar Kessell murders his master Morkai the Red at Easthaven, then is left in the snow and finds Crenshinibon.",
+        "importance": 3
+      },
+      {
+        "year": 1281,
+        "title": "Belhifet's tower",
+        "summary": "The devil Belhifet raises a crystal tower over the town with Crenshinibon, trying to open a gate to the Hells beneath the Tempuran chapel; adventurers defeat him.",
+        "importance": 2
+      },
+      {
+        "year": 1356,
+        "title": "Glensather falls",
+        "summary": "Easthaven's speaker dies fighting orcs in the Battle of Icewind Dale.",
+        "importance": 1
+      },
+      {
+        "year": 1489,
+        "title": "Chardalyn dragon",
+        "summary": "Auril's Everlasting Rime (begun 1486–1487) keeps the sun below the horizon; fires are doused and lotteries choose sacrifices until it lifts in 1489. Xardorok Sunblight's dragon smashes a trench through the town before adventurers bring it down.",
+        "importance": 3
+      },
+      {
+        "year": 1485,
+        "title": "Pirate raid",
+        "summary": "Raiders of the Howling Fiend strike the armory as part of the risen Kessell's scheming.",
+        "importance": 1
+      }
+    ],
+    "description": "Easthaven grew from a shanty into the busiest port on Lac Dinneshere once the Eastway was paved to Bryn Shander. A breakwater shelters its piers and ferries, its inns are the most comfortable in the dale, and its people joke that anything goes here. A furrow carved by a falling chardalyn dragon still scars the middle of town.",
+    "population": 750,
+    "ruler": "Speaker Danneth Waylen (1489)",
+    "tags": [
+      "fishing",
+      "ferry",
+      "eastway"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e0e0d6",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "docks",
+        "harbor",
+        "towers",
+        "lake",
+        "snow"
+      ],
+      "terrain": "coast",
+      "notes": "A spreading lakeside town with a long breakwater and piers; a white tower motif from its crest; a scar trench through the middle."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Easthaven",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Towns",
+      "https://forgottenrealms.fandom.com/wiki/Akar_Kessell",
+      "https://forgottenrealms.fandom.com/wiki/Icewind_Dale",
+      "https://forgottenrealms.fandom.com/wiki/Everlasting_Rime"
+    ]
+  },
+  {
+    "id": "tt-caer-dineval",
+    "name": "Caer-Dineval",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1050,
+    "foundedNote": "The Dinev family of Cormyr built the castle in 1050 DR; Ten Towns began from their community on Lac Dinneshere.",
+    "status": [
+      {
+        "from": 1050,
+        "to": 1058,
+        "state": "thriving"
+      },
+      {
+        "from": 1058,
+        "to": 1068,
+        "state": "abandoned"
+      },
+      {
+        "from": 1068,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": 1490,
+        "state": "troubled"
+      },
+      {
+        "from": 1490,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1050,
+        "title": "The Dinev castle",
+        "summary": "Exiles from Cormyr raise a stone keep on the Cliffs of Dinev, meaning to claim the whole dale.",
+        "importance": 2
+      },
+      {
+        "year": 1058,
+        "title": "Orc siege",
+        "summary": "Orcs wipe out the settlement; the starving Dinevs fall when the castle is breached.",
+        "importance": 2
+      },
+      {
+        "year": 1068,
+        "title": "Retaken",
+        "summary": "About a decade later the ancestors of the present townsfolk drive the orcs out of the castle (c.).",
+        "importance": 1
+      },
+      {
+        "year": 1489,
+        "title": "Everlasting Rime",
+        "summary": "Auril's Everlasting Rime (begun 1486–1487) keeps the sun below the horizon; fires are doused and lotteries choose sacrifices until it lifts in 1489.",
+        "importance": 2
+      }
+    ],
+    "description": "Caer-Dineval curls in a half-moon around Knucklehead Harbor on Lac Dinneshere, its old stone castle looking down from the cliffs to the east. The speaker lives in the Caer. A fishing pact with Caer-Konig holds only because both fear Easthaven's fleet more than each other.",
+    "population": 100,
+    "ruler": "Speaker Crannoc Siever (1485)",
+    "tags": [
+      "fishing",
+      "castle",
+      "dinev"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dedfd6",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "castle",
+        "harbor",
+        "docks",
+        "lake",
+        "snow"
+      ],
+      "terrain": "coast",
+      "notes": "A crescent of houses around a round harbor with a small stone castle on a cliff above it."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Caer-Dineval",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Towns"
+    ]
+  },
+  {
+    "id": "tt-caer-konig",
+    "name": "Caer-Konig",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Began as a camp of mountain climbers from the Moonsea; undated. Earliest dated record is the council of 1351 DR.",
+    "status": [
+      {
+        "from": 1351,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": 1490,
+        "state": "troubled"
+      },
+      {
+        "from": 1490,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1356,
+        "title": "Given to the Reghedmen",
+        "summary": "After Kessell's defeat the town is handed to the barbarians; Revjak serves as their speaker until 1364.",
+        "importance": 2
+      },
+      {
+        "year": 1351,
+        "title": "Killed over a fish",
+        "summary": "Speaker Dorim Lugar is slain in a fishing quarrel (by 1356); the heavy-handed Schermont replaces him.",
+        "importance": 1
+      },
+      {
+        "year": 1489,
+        "title": "Everlasting Rime",
+        "summary": "The town offers food to Auril; duergar under Nildar Sunblight commit a string of thefts.",
+        "importance": 2
+      }
+    ],
+    "description": "The northernmost town on Lac Dinneshere lies in the shadow of Kelvin's Cairn, a semicircle of houses climbing a slope above a round harbor. Its only links are a trail to Caer-Dineval and a ferry to Easthaven. A castle once stood here, but orcs threw it down long ago.",
+    "population": 150,
+    "ruler": "Speaker Trovus (1489)",
+    "tags": [
+      "fishing",
+      "isolated",
+      "reghedmen"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dcded6",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 1,
+      "motifs": [
+        "harbor",
+        "docks",
+        "ruins",
+        "lake",
+        "snow",
+        "mountain"
+      ],
+      "terrain": "coast",
+      "notes": "Houses in a ring on a slope above a round harbor, a broken castle stump nearby, a lone mountain looming behind."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Caer-Konig",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Towns"
+    ]
+  },
+  {
+    "id": "tt-good-mead",
+    "name": "Good Mead",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Undated; first appears on the council roll of 1351 DR.",
+    "status": [
+      {
+        "from": 1351,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": 1489,
+        "state": "troubled"
+      },
+      {
+        "from": 1489,
+        "to": 1490,
+        "state": "destroyed"
+      },
+      {
+        "from": 1490,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": 1489,
+        "title": "Razed by the chardalyn dragon",
+        "summary": "In under an hour Xardorok Sunblight's dragon flattens every building except the Mead Hall; survivors flee to Bryn Shander.",
+        "importance": 3
+      },
+      {
+        "year": 1351,
+        "title": "Fish turns to mead",
+        "summary": "By the mid-1300s Redwaters yields little profit and the town turns to brewing the mead it is named for (c.).",
+        "importance": 1
+      },
+      {
+        "year": 1487,
+        "title": "Everlasting Rime",
+        "summary": "Auril's endless winter falls over the dale (c. 1486–1487).",
+        "importance": 2
+      }
+    ],
+    "description": "Good Mead sat on the northwest shore of Redwaters, a small town that gave up on thin fishing to brew the honey wine sold in Bryn Shander's market. During the Rime a chardalyn dragon reduced it to rubble around its lone surviving mead hall. Its rivalry with Dougan's Hole is old and only half-forgiven.",
+    "population": 100,
+    "ruler": "Speaker Kendrick Rielsbarrow (1485)",
+    "tags": [
+      "mead",
+      "brewing",
+      "redwaters"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e0ddd1",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 1,
+      "motifs": [
+        "docks",
+        "lake",
+        "snow",
+        "rubble"
+      ],
+      "terrain": "coast",
+      "notes": "A tiny lakeside hamlet around a single large timber mead hall; after 1489 the rest is rubble."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Good_Mead",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Towns",
+      "https://forgottenrealms.fandom.com/wiki/Icewind_Dale"
+    ]
+  },
+  {
+    "id": "tt-dougans-hole",
+    "name": "Dougan's Hole",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Founded by the fisher Dougan Dubrace; undated. First appears on the council roll of 1351 DR.",
+    "status": [
+      {
+        "from": 1351,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": 1489,
+        "state": "troubled"
+      },
+      {
+        "from": 1489,
+        "to": 1490,
+        "state": "destroyed"
+      },
+      {
+        "from": 1490,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": 1489,
+        "title": "Razed by the chardalyn dragon",
+        "summary": "In half an hour the dragon destroys every structure and kills 25 people, sparing only the Twenty Stones of Thruun; Speaker Durmoot leads survivors to Bryn Shander.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Everlasting Rime",
+        "summary": "The town sacrifices its fires to Auril; ice locks the shore hundreds of yards out and ruins both piers.",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "Winter wolves",
+        "summary": "The winter wolves Koran and Kanan extort and abduct townsfolk.",
+        "importance": 1
+      }
+    ],
+    "description": "The smallest and most closed-off of the Ten Towns is a handful of buildings by two piers on the west shore of Redwaters, its streets laid with gravel against the mud. Its people cut holes in the ice to fish and openly honor Auril. Strangers are tolerated for a day or two, and never welcomed.",
+    "population": 50,
+    "ruler": "Speaker Edgra Durmoot (1480s)",
+    "tags": [
+      "fishing",
+      "insular",
+      "auril"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dddbd0",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 1,
+      "motifs": [
+        "docks",
+        "lake",
+        "snow",
+        "standing-stone",
+        "rubble"
+      ],
+      "terrain": "coast",
+      "notes": "A few huts by one long and one short pier on a frozen lake; a ring of old standing stones nearby."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Dougan's_Hole",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Towns",
+      "https://forgottenrealms.fandom.com/wiki/Icewind_Dale"
+    ]
+  },
+  {
+    "id": "tt-kelvins-cairn",
+    "name": "Kelvin's Cairn",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "landmark",
+    "archetype": "landmark-mountain",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Geography. Reghed legend says Tempus heaped the rocks over the slain frost giant Kelvin.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1356,
+        "title": "Kessell's last stand",
+        "summary": "Atop the Cairn Kessell calls up fire with Crenshinibon, melting the snows; he dies by his own spell and the avalanche buries his tower.",
+        "importance": 3
+      },
+      {
+        "year": 1484,
+        "title": "Kessell's corpse found",
+        "summary": "A Luskan expedition finds the wizard risen as a wight near the summit; he spreads corrupting black ice through the mines below.",
+        "importance": 2
+      },
+      {
+        "year": 1351,
+        "title": "Drizzt's cave",
+        "summary": "Sent there by Cassius, Drizzt Do'Urden makes a sparse home in a cave on the barren north face (c.).",
+        "importance": 1
+      }
+    ],
+    "description": "The only peak for a thousand square miles rises alone between the lakes, a thousand-foot heap of loose boulders under year-round snow. Reghedmen say a god piled it over a dead frost giant. Verbeeg, yetis, and remorhazes den in its crags, and its north face once sheltered a lone drow ranger.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "mountain",
+      "crystal-shard",
+      "drizzt"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e4e3dc",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "mountain",
+        "snow",
+        "rubble"
+      ],
+      "terrain": "mountain",
+      "notes": "A single steep snow-capped boulder pile rising from flat tundra, a deep valley cut along its south flank."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Kelvin's_Cairn",
+      "https://forgottenrealms.fandom.com/wiki/Akar_Kessell"
+    ]
+  },
+  {
+    "id": "tt-reghed-glacier",
+    "name": "Reghed Glacier",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "landmark",
+    "archetype": "landmark-mountain",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Geography. The Reghedmen claim Dawn Age giants raised it to mark their border.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1356,
+        "title": "Icingdeath slain",
+        "summary": "Drizzt and Wulfgar kill the white dragon in his lair under the Evermelt springs when Aegis-fang brings down a great icicle on him.",
+        "importance": 2
+      },
+      {
+        "year": -2100,
+        "title": "The tribes take its name",
+        "summary": "Illuskan refugees settle the dale; their descendants, the Reghedmen, are named for the glacier.",
+        "importance": 1
+      },
+      {
+        "year": 1489,
+        "title": "Everlasting Rime",
+        "summary": "The dale's eastern edge is among the harshest stretches of Auril's endless winter (c. 1486–1489).",
+        "importance": 1
+      }
+    ],
+    "description": "A wall of ancient ice fences Icewind Dale on the east, so bleak that few dare even its edges. Beyond it lies frozen waste and then the Endless Ice Sea. The barbarian tribes of the dale take their name from it, and hot springs at Evermelt once hid a white dragon's hoard.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "glacier",
+      "reghedmen",
+      "dragon"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e6e9ea",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "mountain",
+        "snow",
+        "cavern"
+      ],
+      "terrain": "tundra",
+      "notes": "A long low cliff of blue-white ice along one edge of the board, with a steaming spring at its foot."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Reghed_Glacier",
+      "https://forgottenrealms.fandom.com/wiki/Ingeloakastimizilian",
+      "https://forgottenrealms.fandom.com/wiki/Icewind_Dale"
+    ]
+  },
+  {
+    "id": "tt-sea-of-moving-ice",
+    "name": "Sea of Moving Ice",
+    "aliases": [
+      "Floating Land"
+    ],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "landmark",
+    "archetype": "landmark-sea",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Geography.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -343,
+        "title": "The Ostorian spindle",
+        "summary": "Arcanists of the Netherese enclave Ythryn find an ancient stone spindle in the ice.",
+        "importance": 1
+      },
+      {
+        "year": 1489,
+        "title": "Auril's island",
+        "summary": "The Frostmaiden, at odds with Umberlee, hides on the isle of Solstice and casts the Everlasting Rime from there each night (c. 1486–1489).",
+        "importance": 3
+      },
+      {
+        "year": 1488,
+        "title": "Ambergris hunter",
+        "summary": "Waterdhavian whaler Jendren Uruth makes regular runs among the bergs in the late 1480s (c.).",
+        "importance": 1
+      }
+    ],
+    "description": "North and west of the dale, drifting bergs and frosted isles crowd a cold sea that refuses to stay charted. Ships older than memory sit locked in the ice. Seals, walruses, and polar bears share it with ice trolls in old wrecks and white dragons in hollow bergs; Reghedmen call it the Floating Land and mostly shun it.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "sea",
+      "icebergs",
+      "auril"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e2e8ec",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "snow",
+        "ships",
+        "ruins"
+      ],
+      "terrain": "coast",
+      "notes": "Dark water crowded with white icebergs of many sizes, one frozen-in shipwreck."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Sea_of_Moving_Ice",
+      "https://forgottenrealms.fandom.com/wiki/Everlasting_Rime"
+    ]
+  },
+  {
+    "id": "tt-dwarven-valley",
+    "name": "Dwarven Valley",
+    "aliases": [],
+    "world": "ten-towns",
+    "region": "icewind-dale",
+    "type": "landmark",
+    "archetype": "dwarven-hold",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1190,
+    "foundedNote": "Approximate. Clan Battlehammer survivors settled here after fleeing Mithral Hall in the late 1100s DR (Mithral Hall record uses c. 1190).",
+    "status": [
+      {
+        "from": 1190,
+        "to": 1356,
+        "state": "thriving"
+      },
+      {
+        "from": 1356,
+        "to": 1357,
+        "state": "troubled"
+      },
+      {
+        "from": 1357,
+        "to": 1485,
+        "state": "thriving"
+      },
+      {
+        "from": 1485,
+        "to": 1490,
+        "state": "troubled"
+      },
+      {
+        "from": 1490,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1356,
+        "title": "Tunnels collapsed",
+        "summary": "The dwarves lure Kessell's army into their southern passages and bring the rock down on it.",
+        "importance": 3
+      },
+      {
+        "year": 1357,
+        "title": "Return to Mithral Hall",
+        "summary": "Many Battlehammers leave to resettle their ancestral hall after Bruenor reclaims it (c.).",
+        "importance": 2
+      },
+      {
+        "year": 1485,
+        "title": "Black ice schism",
+        "summary": "Remnants of Cryshal-Tirith fused into the ice corrupt miners; the community splits between Stokely Silverstream and Baerick Hammerstone while the wight Kessell raises dwarf zombies below.",
+        "importance": 2
+      },
+      {
+        "year": 1190,
+        "title": "Exiles arrive",
+        "summary": "Battlehammer survivors of Shimmergloom's attack settle under Kelvin's Cairn and trade arms to Ten-Towns (c.).",
+        "importance": 2
+      }
+    ],
+    "description": "A deep rift along the southern foot of Kelvin's Cairn holds two dwarven halls cut into facing walls, each with its forge at the heart. Mines branch out beyond, some worked out and some seeded with black ice from Kessell's shattered tower. Their iron weapons fill Bryn Shander's shops.",
+    "population": null,
+    "ruler": "Stokely Silverstream (1485)",
+    "tags": [
+      "dwarves",
+      "battlehammer",
+      "mines",
+      "black-ice"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9d6cc",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "cavern",
+        "gate",
+        "mines",
+        "mountain",
+        "snow"
+      ],
+      "terrain": "mountain",
+      "notes": "A narrow gorge with two carved dwarf gates in opposite cliff walls, forge glow inside, mine mouths beyond."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Dwarven_Valley",
+      "https://forgottenrealms.fandom.com/wiki/Clan_Battlehammer",
+      "https://forgottenrealms.fandom.com/wiki/Kelvin's_Cairn"
+    ]
+  }
+]

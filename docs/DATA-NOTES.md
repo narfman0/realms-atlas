@@ -105,3 +105,27 @@
 - Umara's coup against its old caliph (which ended his planned war on Muluk) is put at 1366, "shortly before 1367". Umara is `troubled` 1366–1368 and Muluk 1366–1367. Hiyal is `troubled` 1362–1363 for the succession.
 - No Spellplague or Sundering effects on Zakhara are recorded, so everything stays `thriving` after 1367.
 - zk-afyal is the island kingdom: type `island`, archetype `jungle-city`. Its one city, Medina al-Afyal, is listed as an alias. Hawa uses `island-haven` (stilt town). Regional accent is #1c7c8c (turquoise tile).
+
+## ten-towns
+
+- Terrain: `lake` is not in the schema's terrain enum, so the lakeside towns use `coast` plus the `lake` motif. Bryn Shander is `tundra`, Lonelywood `forest`, and Kelvin's Cairn and the Dwarven Valley `mountain`.
+- Everlasting Rime: the wiki disagrees with itself. It began in 1486 or early 1487 and ended in 1489 (Everlasting Rime page), while the Targos page says 1488 and the Easthaven page says 1490. SPEC-2's "c. 1489–1492" isn't supported by the wiki. Towns are `troubled` 1487→1490, and the Rime events are dated 1489, the year of the chardalyn dragon's attack.
+- Crystal Shard: in 1351 Kessell kills Morkai at Easthaven and finds Crenshinibon, and the barbarian rising happens the same year. The Battle of Icewind Dale is 1356. Both years appear as events.
+- Good Mead and Dougan's Hole are `destroyed` 1489→1490 (razed by the chardalyn dragon), then `troubled` from 1490. Rebuilding is assumed; it isn't sourced.
+- Founding dates: Caer-Dineval is 1050 (the Dinev castle; abandoned 1058 to c. 1068) and Lonelywood c. 1232. Bryn Shander is c. 1270, based on "late 1200s, last of the ten". The Faerûn-level `bryn-shander` record says 1080, so the two disagree. The Dwarven Valley is c. 1190 (after Mithral Hall fell). The other towns have `founded: null`, and their status starts at the earliest dated mention: Targos and Easthaven 1281, Bremen 1311, Termalaine 1342, and Caer-Konig, Good Mead and Dougan's Hole 1351.
+- Termalaine is `abandoned` for 1373 (the unnatural blizzard and verbeeg occupation). All records use the Bryn Shander accent #2a4d69.
+
+## maztica
+
+- Every place is `hidden` 1385→1487. After 1487 each place goes back to its pre-1385 state because the wiki says almost nothing about post-return Maztica. Nexal stays `ruined`.
+- Nexal `founded: 1062` comes from the 15 Revered Counselors who ruled for about 299 years before 1361. Nexalan reign dates in Huacli, Kultaka and Pezelac (c. 1150, 1170, 1195, 1330) are estimates from reign order and the "108 years after the empire" note on the Pezelac page. They are marked "c.".
+- Ulatos, Huacli, Kultaka, Pezelac and the two landmarks have `founded: null` and status from -35000. The Payit golden age is only described as "millennia before Nexal".
+- Huacli is modelled as one city record for the six city-states, with Otomi as its focus. Kultaka is Kultaka City on its butte. Helmsport and Ulatos are twin cities five miles apart, so the cartographer should place them close together.
+- Accent #2f7d5b (jade).
+
+## laerakond
+
+- All places have `founded: null`, and `foundedNote` explains the Abeiran origin. Status is hidden -35000→1385, thriving 1385→1487, hidden 1487→null. The Laerakond page says the continent was "gone by 1486"; the spec's 1487 was kept.
+- Few dated events exist. Each record shares the arrival (1385), the Wailing Years dragonborn revolts (c. 1390, within 1385–1395), the 1479 trade with Faerûn, and the 1487 return. The only place-specific dates are Tarmalune (1479 envoys to Neverwinter), Melabrauth (Djerad Kusold's revolt) and Fimbrul (1469 oni).
+- Fimbrul's population of 6,600 counts Darrawn only. Blackhold (800) and Forgefires (400) are left out. Harglast has no population figure.
+- Visual: Tarmalune has a pillar of fire at its centre (the sleeping titan Achazar), and Sambral has terraces with the Nacre Tower. Accent #a06a2c (dragon-amber).

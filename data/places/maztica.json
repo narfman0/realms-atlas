@@ -1,0 +1,754 @@
+[
+  {
+    "id": "mz-nexal",
+    "name": "Nexal",
+    "aliases": [],
+    "world": "maztica",
+    "region": "maztica",
+    "type": "city",
+    "archetype": "jungle-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1062,
+    "foundedNote": "Approximate. Fifteen Revered Counselors ruled the empire for about 299 years before 1361 DR; the island village is older.",
+    "status": [
+      {
+        "from": 1062,
+        "to": 1361,
+        "state": "thriving"
+      },
+      {
+        "from": 1361,
+        "to": 1385,
+        "state": "ruined"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "ruined"
+      }
+    ],
+    "events": [
+      {
+        "year": 1361,
+        "title": "Night of Wailing",
+        "summary": "The drow Ancient Ones murder the captive Naltecona; Nexal rises against the Golden Legion, the volcano erupts, and Zaltec's fanatics turn into monsters that slaughter the city.",
+        "importance": 3
+      },
+      {
+        "year": 1361,
+        "title": "The Golden Legion enters",
+        "summary": "Believing the strangers to be gods, Naltecona opens the city to Cordell, who takes him hostage and strips the city of gold.",
+        "importance": 2
+      },
+      {
+        "year": 1062,
+        "title": "Empire of Nexal",
+        "summary": "Descendants of a Dog People tribe betray their overlord Tezat and bring the whole valley under their rule (c.).",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Swapped to Abeir",
+        "summary": "The Spellplague tears Maztica from Toril and sets it on Abeir; Faerûn wrongly assumes Laerakond took its place.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Returned to Toril",
+        "summary": "The Second Sundering brings the continent back (c. 1486–1487); what changed in its century away is little known.",
+        "importance": 2
+      }
+    ],
+    "description": "Nexal was the greatest city of the True World, a pyramid-crowned island in the lakes of its valley, built by a desert tribe that conquered everyone around it. Its tallest temple honored Zaltec with daily sacrifice. Since the Night of Wailing it has been a ruin under a smoking mountain, roamed by the monstrous Viperhands.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "empire",
+      "zaltec",
+      "lake",
+      "ruin",
+      "golden-legion"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cfaa",
+        "accent": "#2f7d5b",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "pyramid",
+        "temple",
+        "lake",
+        "bridge",
+        "canal",
+        "mountain",
+        "ruins"
+      ],
+      "terrain": "river",
+      "notes": "A city on an island in a lake, causeways to shore, a huge stepped pyramid in the centre; a volcano behind. After 1361 shown as ruins."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Nexal",
+      "https://forgottenrealms.fandom.com/wiki/Golden_Legion",
+      "https://forgottenrealms.fandom.com/wiki/Maztica"
+    ]
+  },
+  {
+    "id": "mz-ulatos",
+    "name": "Ulatos",
+    "aliases": [],
+    "world": "maztica",
+    "region": "maztica",
+    "type": "city",
+    "archetype": "jungle-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Undated; capital of Payit since its golden age, millennia before Nexal's rise.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1361,
+        "state": "thriving"
+      },
+      {
+        "from": 1361,
+        "to": 1362,
+        "state": "troubled"
+      },
+      {
+        "from": 1362,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1361,
+        "title": "Battle of Ulatos",
+        "summary": "A clash with Payit warriors over a Zaltec priest's ambush starts a war; Cordell's few hundred armored legionaries take the city and burn their own ships in its lagoon.",
+        "importance": 3
+      },
+      {
+        "year": 1362,
+        "title": "Second Battle of Ulatos",
+        "summary": "The Viperhand monsters from Nexal reach the coast; avatars of Qotal and Zaltec fight at the nearby Twin Visages before both are cast out.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Swapped to Abeir",
+        "summary": "The Spellplague tears Maztica from Toril and sets it on Abeir; Faerûn wrongly assumes Laerakond took its place.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Returned to Toril",
+        "summary": "The Second Sundering brings the continent back (c. 1486–1487); what changed in its century away is little known.",
+        "importance": 2
+      }
+    ],
+    "description": "The chief city of Payit stands a few miles up the Payit River around a great plaza ringed by pyramid-temples, the tallest dedicated to Qotal and topped by a magical spring. Gardens and fountains fill its streets, and its sages study the stars and the body rather than war. Since the conquest it has grown into a twin city with the Amnian fort at Helmsport.",
+    "population": 20000,
+    "ruler": null,
+    "tags": [
+      "payit",
+      "qotal",
+      "new-amn"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dcd3ae",
+        "accent": "#2f7d5b",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "pyramid",
+        "temple",
+        "river",
+        "trees",
+        "waterfall"
+      ],
+      "terrain": "forest",
+      "notes": "A broad plaza ringed by stepped pyramids, the biggest with a spring and fountain on top; gardens and river nearby."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Ulatos",
+      "https://forgottenrealms.fandom.com/wiki/Golden_Legion",
+      "https://forgottenrealms.fandom.com/wiki/Helmsport"
+    ]
+  },
+  {
+    "id": "mz-helmsport",
+    "name": "Helmsport",
+    "aliases": [],
+    "world": "maztica",
+    "region": "maztica",
+    "type": "town",
+    "archetype": "fortress",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1361,
+    "foundedNote": "Founded by Captain-General Cordell's Golden Legion after the conquest of Ulatos.",
+    "status": [
+      {
+        "from": 1361,
+        "to": 1362,
+        "state": "troubled"
+      },
+      {
+        "from": 1362,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1361,
+        "title": "Fort Cordell",
+        "summary": "The dwarf Daggrande builds a fort on Ulatos Lagoon as the Legion's base, with ramparts and a hidden gold vault.",
+        "importance": 2
+      },
+      {
+        "year": 1362,
+        "title": "Capital of New Amn",
+        "summary": "Cordell's war ends; he wins back the fort from Don Vaez's second expedition and holds its ramparts against Nexal's monsters.",
+        "importance": 2
+      },
+      {
+        "year": 1368,
+        "title": "Open ports",
+        "summary": "Treaties open Helmsport and New Waterdeep to all merchant shipping, starting a shipbuilding rivalry.",
+        "importance": 1
+      },
+      {
+        "year": 1370,
+        "title": "Lost reinforcements",
+        "summary": "Five of sixteen troop ships from Amn never arrive, weakening Amn's hold on its colony.",
+        "importance": 1
+      },
+      {
+        "year": 1385,
+        "title": "Swapped to Abeir",
+        "summary": "The Spellplague tears Maztica from Toril and sets it on Abeir; Faerûn wrongly assumes Laerakond took its place.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Returned to Toril",
+        "summary": "The Second Sundering brings the continent back (c. 1486–1487); what changed in its century away is little known.",
+        "importance": 2
+      }
+    ],
+    "description": "An Amnian fort grew into a harbor town on a sheltered lagoon of the Gulf of Cordell, five miles of savannah from Ulatos. Helmites, settlers, and Payit laborers share its streets, and only licensed buyers may trade, which feeds a black market next door. The Temple of Helm displays a stuffed red wolf that offends the locals.",
+    "population": null,
+    "ruler": "Captain \"Count\" Alanza DaNosta (1370)",
+    "tags": [
+      "amn",
+      "colony",
+      "helm",
+      "new-amn"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6ccaa",
+        "accent": "#2f7d5b",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "walls",
+        "keep",
+        "harbor",
+        "docks",
+        "ships",
+        "temple",
+        "tents"
+      ],
+      "terrain": "coast",
+      "notes": "A star-shaped earthwork fort with a stone keep on a lagoon shore, tents and wooden houses outside, ships at anchor."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Helmsport",
+      "https://forgottenrealms.fandom.com/wiki/Golden_Legion"
+    ]
+  },
+  {
+    "id": "mz-huacli",
+    "name": "Huacli",
+    "aliases": [],
+    "world": "maztica",
+    "region": "maztica",
+    "type": "city",
+    "archetype": "frontier-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Undated; the region was held by the vanished Zateca before the Huacli clans.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1150,
+        "title": "Nexal conquers five cities",
+        "summary": "Under Ipana III, Nexal takes five of the six Huacli city-states; only mountain Otomi holds out through a three-year siege (c.).",
+        "importance": 2
+      },
+      {
+        "year": 1330,
+        "title": "Otomi occupied",
+        "summary": "Chalco's army takes Otomi itself, but the people wait it out in the mountains and rebuild once the Nexalans leave (c.).",
+        "importance": 1
+      },
+      {
+        "year": 1385,
+        "title": "Swapped to Abeir",
+        "summary": "The Spellplague tears Maztica from Toril and sets it on Abeir; Faerûn wrongly assumes Laerakond took its place.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Returned to Toril",
+        "summary": "The Second Sundering brings the continent back (c. 1486–1487); what changed in its century away is little known.",
+        "importance": 2
+      }
+    ],
+    "description": "Huacli is a hard, rocky land west of Nexal whose six city-states sit in narrow fertile valleys between mountains. Otomi, the northernmost, mines and smelts copper, the only practical metalworking in Maztica, and that kept it free when its neighbors fell to Nexal. On a mesa nearby, the abandoned city of Mictlatepec is said to harbor strange things.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "city-states",
+      "copper",
+      "otomi"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d2c3a0",
+        "accent": "#2f7d5b",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "mountain",
+        "mines",
+        "pyramid",
+        "farms"
+      ],
+      "terrain": "mountain",
+      "notes": "A small stepped temple and terraced fields in a narrow valley between bare peaks; a mine adit and smelter smoke."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Huacli"
+    ]
+  },
+  {
+    "id": "mz-kultaka",
+    "name": "Kultaka",
+    "aliases": [],
+    "world": "maztica",
+    "region": "maztica",
+    "type": "city",
+    "archetype": "fortress",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Undated; Kultaka was already independent when Nexal's fourth ruler first attacked it.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1361,
+        "state": "thriving"
+      },
+      {
+        "from": 1361,
+        "to": 1363,
+        "state": "troubled"
+      },
+      {
+        "from": 1363,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1361,
+        "title": "Battle with the Golden Legion",
+        "summary": "Legion mage Darien kills War Chief Takamal; Cordell spares the Kultakans and recruits them against their old enemy Nexal.",
+        "importance": 2
+      },
+      {
+        "year": 1362,
+        "title": "Viperhands pillage",
+        "summary": "With its army lost in Nexal, the city is emptied ahead of the monsters, which loot it and move on to Ulatos.",
+        "importance": 2
+      },
+      {
+        "year": 1330,
+        "title": "Takamal's stand",
+        "summary": "Young Takamal rallies Kultaka and turns back Chalco's army at the city itself (c.).",
+        "importance": 1
+      },
+      {
+        "year": 1385,
+        "title": "Swapped to Abeir",
+        "summary": "The Spellplague tears Maztica from Toril and sets it on Abeir; Faerûn wrongly assumes Laerakond took its place.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Returned to Toril",
+        "summary": "The Second Sundering brings the continent back (c. 1486–1487); what changed in its century away is little known.",
+        "importance": 2
+      }
+    ],
+    "description": "Kultaka City sits on a rocky butte in the foothills north of Nexal, unwalled but the most defensible place in Maztica. Thick-doored stone houses face narrow streets, and nearly every adult is trained to fight. Long Nexal's nemesis, the nation now guards against the monsters that hold Nexal's ruins.",
+    "population": null,
+    "ruler": "Tokol, War Chief (1362)",
+    "tags": [
+      "militant",
+      "jaguar-knights",
+      "eagle-knights"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d4c7a2",
+        "accent": "#2f7d5b",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "mountain",
+        "pyramid",
+        "temple",
+        "keep"
+      ],
+      "terrain": "mountain",
+      "notes": "Stone houses packed on top of a steep-sided butte, a temple at the summit; salt marsh glimpsed beyond."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Kultaka",
+      "https://forgottenrealms.fandom.com/wiki/Golden_Legion"
+    ]
+  },
+  {
+    "id": "mz-pezelac",
+    "name": "Pezelac",
+    "aliases": [],
+    "world": "maztica",
+    "region": "maztica",
+    "type": "city",
+    "archetype": "market-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Undated.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1170,
+        "title": "Tolco's war",
+        "summary": "A decade of Nexalan invasion begins about 108 years after the empire's founding and ends in tribute rather than conquest (c.).",
+        "importance": 2
+      },
+      {
+        "year": 1195,
+        "title": "Rebellion crushed",
+        "summary": "Nexal's prince Chimal levels one of Pezelac's larger villages to put down a revolt; tribute resumes (c.).",
+        "importance": 1
+      },
+      {
+        "year": 1385,
+        "title": "Swapped to Abeir",
+        "summary": "The Spellplague tears Maztica from Toril and sets it on Abeir; Faerûn wrongly assumes Laerakond took its place.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Returned to Toril",
+        "summary": "The Second Sundering brings the continent back (c. 1486–1487); what changed in its century away is little known.",
+        "importance": 2
+      }
+    ],
+    "description": "Pezelac's single city rises over dry scrubland between Nexal and Payit, ringed by tidy villages and fields of maize, cotton, and cocoa. Every god has a temple-pyramid here, and astrologers counsel the Revered Counselor. Lake Pezel, broad and storm-prone, is said to swallow canoes that venture too far.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "farmers",
+      "tribute",
+      "lake-pezel"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dccfa6",
+        "accent": "#2f7d5b",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "pyramid",
+        "temple",
+        "farms",
+        "lake"
+      ],
+      "terrain": "plain",
+      "notes": "A plain grid of practical stone buildings around a cluster of small temple-pyramids, fields all around, a lake edge."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Pezelac"
+    ]
+  },
+  {
+    "id": "mz-house-of-tezca",
+    "name": "House of Tezca",
+    "aliases": [],
+    "world": "maztica",
+    "region": "maztica",
+    "type": "landmark",
+    "archetype": "landmark-desert",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Geography; named for the Maztican sun god.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1362,
+        "title": "Qotal's oases",
+        "summary": "A line of oases appears down the desert to lead Nexal's refugees to a green valley, where they found Tukan and defeat the pursuing monsters.",
+        "importance": 2
+      },
+      {
+        "year": 1330,
+        "title": "March on Kolan",
+        "summary": "Chalco's army crosses the desert's northern reaches to conquer Kolan (c.).",
+        "importance": 1
+      },
+      {
+        "year": 1385,
+        "title": "Swapped to Abeir",
+        "summary": "The Spellplague tears Maztica from Toril and sets it on Abeir; Faerûn wrongly assumes Laerakond took its place.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Returned to Toril",
+        "summary": "The Second Sundering brings the continent back (c. 1486–1487); what changed in its century away is little known.",
+        "importance": 2
+      }
+    ],
+    "description": "A sun-scorched waste of sand and stone stretches south of Nexal, home only to desert dwarves who carve villages into canyon walls. Somewhere within stands Tewahca, City of the Gods, whose pyramid hosted the legendary duel of Zaltec and Qotal. Since 1362 a chain of oases runs down its middle to the lake town of Tukan.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "desert",
+      "tewahca",
+      "desert-dwarves"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e3d2a4",
+        "accent": "#2f7d5b",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "pyramid",
+        "ruins",
+        "lake",
+        "trees"
+      ],
+      "terrain": "desert",
+      "notes": "Ochre dunes and mesas with a lone ruined pyramid; a dotted line of small palm oases leading to a lake."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/House_of_Tezca",
+      "https://forgottenrealms.fandom.com/wiki/Golden_Legion"
+    ]
+  },
+  {
+    "id": "mz-far-payit",
+    "name": "Far Payit",
+    "aliases": [],
+    "world": "maztica",
+    "region": "maztica",
+    "type": "landmark",
+    "archetype": "landmark-forest",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Geography; its cities date to the Payit golden age, centuries or millennia before Nexal.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1362,
+        "title": "Legion on the coast",
+        "summary": "Cordell's survivors march to the Far Payit shore to wait for ships to Helmsport.",
+        "importance": 1
+      },
+      {
+        "year": 1363,
+        "title": "Bacar of Ixtzul",
+        "summary": "Ant-men from the jungle ruin of Ixtzul threaten the coast; the Church of Helm sends adventurers (c.).",
+        "importance": 1
+      },
+      {
+        "year": 1385,
+        "title": "Swapped to Abeir",
+        "summary": "The Spellplague tears Maztica from Toril and sets it on Abeir; Faerûn wrongly assumes Laerakond took its place.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Returned to Toril",
+        "summary": "The Second Sundering brings the continent back (c. 1486–1487); what changed in its century away is little known.",
+        "importance": 2
+      }
+    ],
+    "description": "Steaming rainforest covers the eastern peninsula south of Payit, broken by small fields and the overgrown ruins of temples. The Itzas live in scattered villages and two great cities, Tulom-Itzi with its observatory and Maxal by the sea. They have never been conquered, and wild halflings live deep in the green.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "jungle",
+      "itza",
+      "tulom-itzi"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cdd2a2",
+        "accent": "#2f7d5b",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "trees",
+        "giant-trees",
+        "pyramid",
+        "ruins"
+      ],
+      "terrain": "forest",
+      "notes": "Dense jungle canopy with the top of an overgrown stepped pyramid and an observatory dome breaking through."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Far_Payit",
+      "https://forgottenrealms.fandom.com/wiki/Ulatos"
+    ]
+  }
+]

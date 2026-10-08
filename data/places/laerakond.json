@@ -1,0 +1,613 @@
+[
+  {
+    "id": "la-tarmalune",
+    "name": "Tarmalune",
+    "aliases": [
+      "Tarmalune Great Port",
+      "Tarmhaven"
+    ],
+    "world": "laerakond",
+    "region": "laerakond",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "An Abeiran place with no Torilian founding date; it existed on Abeir long before arriving with Laerakond in 1385 DR. Originally Tarmhaven, a domain of the Dawn Titan Achazar.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "hidden"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "hidden"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Arrives on Toril",
+        "summary": "The Spellplague's blue fire shatters the fortress Glaur and rips Laerakond across to Toril, where Faerûn calls it Returned Abeir.",
+        "importance": 3
+      },
+      {
+        "year": 1479,
+        "title": "Envoys to Neverwinter",
+        "summary": "Tarmalune merchants arrive in Neverwinter to open permanent trade with Faerûn.",
+        "importance": 2
+      },
+      {
+        "year": 1390,
+        "title": "Titan's peace",
+        "summary": "Dragons keep clear of the city, fearing the sleeping titan Achazar burning as a pillar of fire in its midst (Wailing Years, c.).",
+        "importance": 1
+      },
+      {
+        "year": 1487,
+        "title": "Returns to Abeir",
+        "summary": "The Second Sundering takes the continent back (gone by 1486 by some accounts), leaving Faerûn short of silkroot and other goods.",
+        "importance": 3
+      }
+    ],
+    "description": "The great port of the Windrise coast rivals Waterdeep in wealth and noise, a jaw-shaped city of tall, narrow stone houses closing around its harbor. At its heart a sleeping titan burns as a pillar of flame, and dragons give the place a wide berth. Its council of traders lets almost anything happen, and its markets claim to sell everything.",
+    "population": 70000,
+    "ruler": "Lord Speaker Hamminas Dorn (1479)",
+    "tags": [
+      "windrise-ports",
+      "trade",
+      "dawn-titan"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9d2c2",
+        "accent": "#a06a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "harbor",
+        "docks",
+        "ships",
+        "towers",
+        "glow"
+      ],
+      "terrain": "coast",
+      "notes": "A crescent of tall narrow stone houses wrapping a deep harbor like closing jaws, a column of fire rising from the centre."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Tarmalune",
+      "https://forgottenrealms.fandom.com/wiki/Laerakond"
+    ]
+  },
+  {
+    "id": "la-harglast",
+    "name": "Harglast",
+    "aliases": [],
+    "world": "laerakond",
+    "region": "laerakond",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "An Abeiran place with no Torilian founding date; it existed on Abeir long before arriving with Laerakond in 1385 DR.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "hidden"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "hidden"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Arrives on Toril",
+        "summary": "The Spellplague's blue fire shatters the fortress Glaur and rips Laerakond across to Toril, where Faerûn calls it Returned Abeir.",
+        "importance": 3
+      },
+      {
+        "year": 1390,
+        "title": "Wailing Years",
+        "summary": "Dragonbane amber turns up across the continent and dragonborn slaves rise against their dragon masters (c. 1385–1395).",
+        "importance": 2
+      },
+      {
+        "year": 1479,
+        "title": "Trade with Faerûn",
+        "summary": "Windrise merchants seek permanent routes to the Sword Coast; Tarmalune's traders reach Neverwinter and Lylorn's reach Luskan.",
+        "importance": 1
+      },
+      {
+        "year": 1487,
+        "title": "Returns to Abeir",
+        "summary": "The Second Sundering takes the continent back (gone by 1486 by some accounts), leaving Faerûn short of silkroot and other goods.",
+        "importance": 3
+      }
+    ],
+    "description": "Harglast is the plainest of the Windrise Ports, a city of squat, sturdy dwarf-built stone ruled by a dragonborn Lord Merchant. Beneath it run catacombs, sewers, and secret ways deep enough to touch the Upperdark. It ships stonework and dried figs, and its taverns ring with games of liar's dice.",
+    "population": null,
+    "ruler": "Lord Merchant Belror Tethel (1479)",
+    "tags": [
+      "windrise-ports",
+      "dragonborn",
+      "dwarves",
+      "catacombs"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d2cbbb",
+        "accent": "#a06a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "keep",
+        "docks",
+        "cavern"
+      ],
+      "terrain": "coast",
+      "notes": "Blocky, low grey stone buildings behind a thick wall on a harbor, with a dark catacomb entrance."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Harglast",
+      "https://forgottenrealms.fandom.com/wiki/Laerakond"
+    ]
+  },
+  {
+    "id": "la-imdolphyn",
+    "name": "Imdolphyn",
+    "aliases": [],
+    "world": "laerakond",
+    "region": "laerakond",
+    "type": "city",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "An Abeiran place with no Torilian founding date; it existed on Abeir long before arriving with Laerakond in 1385 DR.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "hidden"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "hidden"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Arrives on Toril",
+        "summary": "The Spellplague's blue fire shatters the fortress Glaur and rips Laerakond across to Toril, where Faerûn calls it Returned Abeir.",
+        "importance": 3
+      },
+      {
+        "year": 1479,
+        "title": "Rival of Tarmalune",
+        "summary": "Larger than Tarmalune but less open, Imdolphyn's merchant-lords compete for Faerûnian trade and license privateers against pirates.",
+        "importance": 1
+      },
+      {
+        "year": 1390,
+        "title": "Wailing Years",
+        "summary": "Dragonbane amber turns up across the continent and dragonborn slaves rise against their dragon masters (c. 1385–1395).",
+        "importance": 2
+      },
+      {
+        "year": 1487,
+        "title": "Returns to Abeir",
+        "summary": "The Second Sundering takes the continent back (gone by 1486 by some accounts), leaving Faerûn short of silkroot and other goods.",
+        "importance": 3
+      }
+    ],
+    "description": "Second of the Windrise Ports and slightly larger than its rival Tarmalune, Imdolphyn climbs steep, winding cobbled lanes above the River Tantulph. Its shipyards are the finest on Abeir, and even its poor wear jewelry to keep up appearances. Every excuse earns a masquerade.",
+    "population": 75000,
+    "ruler": "Lord Othmeera Talask (1479)",
+    "tags": [
+      "windrise-ports",
+      "shipbuilding",
+      "perfume"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dbd1c0",
+        "accent": "#a06a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "river",
+        "docks",
+        "ships",
+        "spires",
+        "towers"
+      ],
+      "terrain": "river",
+      "notes": "Ornate spired buildings stacked on a hillside above a river lined with shipyards and half-built hulls."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Imdolphyn",
+      "https://forgottenrealms.fandom.com/wiki/Laerakond"
+    ]
+  },
+  {
+    "id": "la-ramekho",
+    "name": "Ramekho",
+    "aliases": [],
+    "world": "laerakond",
+    "region": "laerakond",
+    "type": "town",
+    "archetype": "market-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "An Abeiran place with no Torilian founding date; it existed on Abeir long before arriving with Laerakond in 1385 DR.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "hidden"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "hidden"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Arrives on Toril",
+        "summary": "The Spellplague's blue fire shatters the fortress Glaur and rips Laerakond across to Toril, where Faerûn calls it Returned Abeir.",
+        "importance": 3
+      },
+      {
+        "year": 1390,
+        "title": "Wailing Years",
+        "summary": "Dragonbane amber turns up across the continent and dragonborn slaves rise against their dragon masters (c. 1385–1395).",
+        "importance": 2
+      },
+      {
+        "year": 1479,
+        "title": "Trade with Faerûn",
+        "summary": "Windrise merchants seek permanent routes to the Sword Coast; Tarmalune's traders reach Neverwinter and Lylorn's reach Luskan.",
+        "importance": 1
+      },
+      {
+        "year": 1487,
+        "title": "Returns to Abeir",
+        "summary": "The Second Sundering takes the continent back (gone by 1486 by some accounts), leaving Faerûn short of silkroot and other goods.",
+        "importance": 3
+      }
+    ],
+    "description": "The smallest Windrise Port is a ramshackle town at the mouth of the River Sundarra, the place the other ports' merchants go to retire or rest. It has no government, yet hired adventurers keep it the most peaceful of the five. Its only shrine is to Umberlee, and its kitchens prize the yellow-finned oponi.",
+    "population": 12000,
+    "ruler": "Merchant's Guild (1479)",
+    "tags": [
+      "windrise-ports",
+      "holiday",
+      "lawless"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d8d0bf",
+        "accent": "#a06a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "docks",
+        "river",
+        "ships"
+      ],
+      "terrain": "coast",
+      "notes": "A jumble of mismatched wooden and stone buildings at a river mouth with fishing piers."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Ramekho",
+      "https://forgottenrealms.fandom.com/wiki/Laerakond"
+    ]
+  },
+  {
+    "id": "la-sambral",
+    "name": "Sambral",
+    "aliases": [],
+    "world": "laerakond",
+    "region": "laerakond",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "An Abeiran place with no Torilian founding date; it existed on Abeir long before arriving with Laerakond in 1385 DR.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "hidden"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "hidden"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Arrives on Toril",
+        "summary": "The Spellplague's blue fire shatters the fortress Glaur and rips Laerakond across to Toril, where Faerûn calls it Returned Abeir.",
+        "importance": 3
+      },
+      {
+        "year": 1390,
+        "title": "Wailing Years",
+        "summary": "Dragonbane amber turns up across the continent and dragonborn slaves rise against their dragon masters (c. 1385–1395).",
+        "importance": 2
+      },
+      {
+        "year": 1479,
+        "title": "Trade with Faerûn",
+        "summary": "Windrise merchants seek permanent routes to the Sword Coast; Tarmalune's traders reach Neverwinter and Lylorn's reach Luskan.",
+        "importance": 1
+      },
+      {
+        "year": 1487,
+        "title": "Returns to Abeir",
+        "summary": "The Second Sundering takes the continent back (gone by 1486 by some accounts), leaving Faerûn short of silkroot and other goods.",
+        "importance": 3
+      }
+    ],
+    "description": "Sambral climbs from the Bay of Pearls in terraces joined by stairs, its streets paved with crushed oyster shell and too steep for carts. Its swaggering bravo troupes double as police and feud for fame. Above all of it rises the Nacre Tower of the Pearl Citadel, and every house smells of perfume.",
+    "population": 24750,
+    "ruler": "The Twelve Lords (1479)",
+    "tags": [
+      "windrise-ports",
+      "pearls",
+      "bravos"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#ddd4c4",
+        "accent": "#a06a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "harbor",
+        "castle",
+        "towers",
+        "walls",
+        "docks"
+      ],
+      "terrain": "coast",
+      "notes": "Stepped terraces climbing from a bay, linked by stairs; a slender pearly tower atop a citadel at the summit."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Sambral",
+      "https://forgottenrealms.fandom.com/wiki/Laerakond"
+    ]
+  },
+  {
+    "id": "la-melabrauth",
+    "name": "Melabrauth",
+    "aliases": [
+      "Jungle Empire"
+    ],
+    "world": "laerakond",
+    "region": "laerakond",
+    "type": "landmark",
+    "archetype": "landmark-forest",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "An Abeiran place with no Torilian founding date; it existed on Abeir long before arriving with Laerakond in 1385 DR. The oldest dragon realm of Laerakond.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "hidden"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "hidden"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Arrives on Toril",
+        "summary": "The Spellplague's blue fire shatters the fortress Glaur and rips Laerakond across to Toril, where Faerûn calls it Returned Abeir.",
+        "importance": 3
+      },
+      {
+        "year": 1390,
+        "title": "Djerad Kusold's revolt",
+        "summary": "Dragonborn armed with dragonbane amber kill nearly a quarter of the realm's dragons before the dracolich Melauthaur destroys their fortress (c.).",
+        "importance": 2
+      },
+      {
+        "year": 1479,
+        "title": "Tarmalune traders",
+        "summary": "Windrise merchants begin to brave the jungle empire for relics and rare herbs.",
+        "importance": 1
+      },
+      {
+        "year": 1487,
+        "title": "Returns to Abeir",
+        "summary": "The Second Sundering takes the continent back (gone by 1486 by some accounts), leaving Faerûn short of silkroot and other goods.",
+        "importance": 3
+      }
+    ],
+    "description": "The Jungle Empire has no roads and no towns, only monster-thick rainforest and rivers ruled by dragons under the dracolich Melauthaur and his twenty overdragons. Broken piers and vine-choked ruins on its coasts recall the humanoids who once lived there. Dragonborn are barred since their failed rising.",
+    "population": null,
+    "ruler": "Melauthaur the Undying One (1479)",
+    "tags": [
+      "dragon-empire",
+      "jungle",
+      "dracolich"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9cdb0",
+        "accent": "#a06a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "trees",
+        "giant-trees",
+        "ruins",
+        "river"
+      ],
+      "terrain": "forest",
+      "notes": "Dense jungle with a ruined stone pier on the shore and a dragon silhouette coiled atop a crumbling ziggurat."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Melabrauth",
+      "https://forgottenrealms.fandom.com/wiki/Laerakond"
+    ]
+  },
+  {
+    "id": "la-fimbrul",
+    "name": "Fimbrul",
+    "aliases": [
+      "Land of Giants"
+    ],
+    "world": "laerakond",
+    "region": "laerakond",
+    "type": "landmark",
+    "archetype": "landmark-mountain",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "An Abeiran place with no Torilian founding date; it existed on Abeir long before arriving with Laerakond in 1385 DR. The Howling Mountains where the last Dawn Titans fell asleep after the War of Fang and Talon.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "hidden"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "hidden"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Arrives on Toril",
+        "summary": "The Spellplague's blue fire shatters the fortress Glaur and rips Laerakond across to Toril, where Faerûn calls it Returned Abeir.",
+        "importance": 3
+      },
+      {
+        "year": 1469,
+        "title": "Oni war bands",
+        "summary": "Oni gather Fimbrul's scattered orc tribes into war bands and lead them against the giants.",
+        "importance": 2
+      },
+      {
+        "year": 1479,
+        "title": "Relmaur's border war",
+        "summary": "The underground dragonborn kingdom of Relmaur fights orcs spilling south from Fimbrul and holds the upper hand.",
+        "importance": 1
+      },
+      {
+        "year": 1487,
+        "title": "Returns to Abeir",
+        "summary": "The Second Sundering takes the continent back (gone by 1486 by some accounts), leaving Faerûn short of silkroot and other goods.",
+        "importance": 3
+      }
+    ],
+    "description": "The Land of Giants is a range of the Howling Mountains locked in endless winter, where the last primordials sleep inside the peaks. Earth giants, half-wild orcs, and a few dwarves share it, united only in driving out dragons. Darrawn is its one true city.",
+    "population": 6600,
+    "ruler": null,
+    "tags": [
+      "giants",
+      "dawn-titans",
+      "winter"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e3e2dc",
+        "accent": "#a06a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "mountain",
+        "snow",
+        "keep"
+      ],
+      "terrain": "mountain",
+      "notes": "Jagged snowbound peaks with a giant-scale stone hall in a pass; one peak faintly glowing as a sleeping titan."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Fimbrul",
+      "https://forgottenrealms.fandom.com/wiki/Laerakond"
+    ]
+  }
+]
