@@ -428,11 +428,11 @@
       "x": null,
       "y": null
     },
-    "founded": 1080,
-    "foundedNote": "Approximate. The Ten Towns were founded during the 11th century DR and Bryn Shander was the last of them, growing from a single traveler's cabin.",
+    "founded": 1270,
+    "foundedNote": "Approximate. The tenth and last of the Ten-Towns, grown from a lone traders' cabin in the late 1200s DR; aligned with the Ten-Towns sub-atlas record.",
     "status": [
       {
-        "from": 1080,
+        "from": 1270,
         "to": 1487,
         "state": "thriving"
       },
