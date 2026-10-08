@@ -99,6 +99,15 @@ a place is ruined; a pre-built `ruin` layer of stumps and rubble rises), and by 
 A new look is a new file in `src/archetypes/` registered in `src/archetypes/index.js`; most looks only need
 motifs, which `decorate()` in `src/archetypes/common.js` already understands.
 
+## Deploying
+
+`.github/workflows/pages.yml` builds and publishes the site on every push to `master`.
+
+1. Push this repo to GitHub (e.g. `realms-atlas`).
+2. In the repo's **Settings → Pages**, set **Source** to **GitHub Actions**.
+3. The site is served at `https://<user>.github.io/realms-atlas/` (the build uses relative paths, so any
+   repo name works).
+
 ## Attribution
 
 - Facts are drawn from the **Forgotten Realms Wiki** (https://forgottenrealms.fandom.com), licensed
