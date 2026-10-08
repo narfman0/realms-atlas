@@ -61,7 +61,7 @@ sun.shadow.radius = 3;
 scene.add(hemi, sun, sun.target);
 const MOODS = {
   day: { bg: '#d9ccae', fog: '#d9ccae', hemiSky: '#fff4dc', hemiGround: '#7a6440', hemiI: 1.15, sun: '#ffe8c4', sunI: 2.5, floor: '#d6c8a8', exposure: 1.05, sunDir: [-0.55, 1, 0.42] },
-  night: { bg: '#0d1626', fog: '#0d1626', hemiSky: '#6f88c4', hemiGround: '#141a2a', hemiI: 0.42, sun: '#9fb6ff', sunI: 0.75, floor: '#1a2538', exposure: 1.0, sunDir: [0.6, 0.85, -0.25] },
+  night: { bg: '#0d1626', fog: '#0d1626', hemiSky: '#8aa2dc', hemiGround: '#2a2a3a', hemiI: 0.95, sun: '#b4c6ff', sunI: 1.25, floor: '#1a2538', exposure: 1.0, sunDir: [0.6, 0.85, -0.25] },
 };
 const floor = makeFloor();
 scene.add(floor);
@@ -80,6 +80,7 @@ function applyMood(k) {
   mix(A.sun, B.sun, sun.color);
   sun.intensity = A.sunI + (B.sunI - A.sunI) * k;
   mix(A.floor, B.floor, floor.material.color);
+  if (mapBoard) mix('#ffffff', '#7d89a6', mapBoard.children[1].material.color);
   renderer.toneMappingExposure = A.exposure + (B.exposure - A.exposure) * k;
   sunDir.set(...A.sunDir).lerp(_v1.set(...B.sunDir), k).normalize();
   shared.night.value = k;
@@ -262,7 +263,7 @@ function focusPose(i) {
   let az = Math.atan2(off.x, off.z);
   az = Math.max(-0.7, Math.min(0.7, az * 0.6));
   const polar = 0.98;
-  const dist = 17 * s;
+  const dist = 25 * s;
   const pos = new THREE.Vector3(c.x + Math.sin(az) * Math.sin(polar) * dist, c.y + Math.cos(polar) * dist, c.z + Math.cos(az) * Math.sin(polar) * dist);
   const target = c.clone();
   // shift so the diorama sits left of the panel
@@ -610,7 +611,9 @@ function frame_() {
     sphere.center.copy(d.root.position);
     sphere.radius = 7 * d.root.scale.x + 4;
     const inView = frustum.intersectsSphere(sphere);
-    const near = !SHOT && inView && camera.position.distanceTo(d.root.position) < Math.max(140, camDist * 1.2);
+    const dCam = camera.position.distanceTo(d.root.position);
+    const near = !SHOT && inView && dCam < Math.max(140, camDist * 1.2);
+    d.setDetail(inView && dCam < 95 * d.root.scale.x);
     d.update(t, dt, near);
     if (tweening) shadowDirty = true;
   }
@@ -632,12 +635,16 @@ function frame_() {
   requestAnimationFrame(frame_);
 }
 
-function governor(dt) {
-  perf.acc += dt; perf.n++;
+let perfLast = performance.now();
+function governor() {
+  const now = performance.now();
+  perf.acc += (now - perfLast) / 1000; perf.n++;
+  perfLast = now;
   if (perf.acc < 2) return;
   perf.fps = perf.n / perf.acc;
   perf.acc = 0; perf.n = 0;
   window.__atlasFps = perf.fps;
+  window.__atlasStats = { calls: renderer.info.render.calls, triangles: renderer.info.render.triangles, geometries: renderer.info.memory.geometries, programs: renderer.info.programs?.length, pixelRatio };
   if (SHOT) return;
   if (perf.fps < 45 && pixelRatio > 1) {
     pixelRatio = Math.max(1, pixelRatio - 0.25);
@@ -658,7 +665,7 @@ async function boot() {
   if (state.night) setNight(true);
   updateBloom();
   try { await Promise.race([document.fonts.load('600 40px "Cormorant Garamond"'), new Promise((r) => setTimeout(r, 1500))]); } catch { /* ignore */ }
-  if (!SOLO) { mapBoard = makeMapBoard(mapData, PLACES); scene.add(mapBoard); }
+  if (!SOLO) { mapBoard = makeMapBoard(mapData, PLACES); scene.add(mapBoard); applyMood(state.nightK); }
   if (params.has('parchment')) {
     // debug: show the parchment canvas flat on the page
     const img = mapBoard.children[1].material.map.image;
@@ -677,9 +684,12 @@ async function boot() {
     const view = params.get('view') || 'front';
     const polar = view === 'top' ? 0.35 : view === 'side' ? 1.18 : 0.95;
     const az = view === 'side' ? 0.9 : 0.42;
-    const dist = 21;
-    controls.target.set(0, 1.0, 0);
-    camera.position.set(Math.sin(az) * Math.sin(polar) * dist, 1.0 + Math.cos(polar) * dist, Math.cos(az) * Math.sin(polar) * dist);
+    d.root.updateMatrixWorld(true);
+    const box = new THREE.Box3().setFromObject(d.pivot);
+    const cy = Math.max(0.6, (box.min.y + box.max.y) / 2 * 0.8);
+    const dist = Math.max(21, (box.max.y - box.min.y) * 3.2);
+    controls.target.set(0, cy, 0);
+    camera.position.set(Math.sin(az) * Math.sin(polar) * dist, cy + Math.cos(polar) * dist, Math.cos(az) * Math.sin(polar) * dist);
     controls.update();
     state.mode = 'solo';
   } else {

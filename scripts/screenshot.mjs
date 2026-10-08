@@ -74,8 +74,9 @@ for (const [name, q] of SHOTS) {
   if (pageError) { console.error(`✗ ${name}: ${pageError.stack}`); continue; }
   await page.waitForTimeout(hash ? 3200 : 1200);
   const fps = await page.evaluate(() => window.__atlasFps ?? null);
+  const stats = await page.evaluate(() => window.__atlasStats ?? null);
   await page.screenshot({ path: path.join(OUT, `${name}.png`) });
-  console.log(`✓ ${name}.png  (${((Date.now() - t0) / 1000).toFixed(1)}s${fps ? `, ~${fps.toFixed(0)} fps in software GL` : ''})`);
+  console.log(`✓ ${name}.png  (${((Date.now() - t0) / 1000).toFixed(1)}s${fps ? `, ~${fps.toFixed(0)} fps in software GL` : ''}${stats ? `, ${stats.calls} draw calls, ${(stats.triangles / 1000).toFixed(0)}k tris` : ''})`);
 }
 await browser.close();
 server?.kill();

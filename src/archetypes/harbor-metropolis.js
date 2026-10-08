@@ -8,7 +8,7 @@ export default function compose(S, K, C) {
     done.add('mountain');
   }
   const R = C.cityRadius(S) * 1.05;
-  C.cityCore(S, { cx: 0.3, cz: -0.4, radius: R, keep: S.any('castle', 'keep'), keepAt: S.has('mountain') ? [-1.4, -0.9] : [0, -1], towers: (S.has('towers') ? 2 : 1) + S.scale, spires: S.has('spires') ? 2 + S.scale : 0, walls: S.has('walls') });
+  C.cityCore(S, { cx: 0.3, cz: -0.4, radius: R, keep: S.any('castle', 'keep'), keepAt: S.has('mountain') ? [-1.4, -0.9] : [0, -1], towers: (S.has('towers') ? 1 : 0) + Math.ceil(S.scale / 2), spires: S.has('spires') ? 1 + Math.floor(S.scale / 2) : 0, walls: S.has('walls') });
   // a mole with a lighthouse if the city is large
   if (!S.has('lighthouse') && S.scale >= 4) done.add('lighthouse-auto');
   C.decorate(S, done, { treeCount: 6 });

@@ -18,7 +18,7 @@ export const LOOK = {
   destroyed: { tall: 0.04, low: 0.22, ruin: 1, desat: 0.35, scorch: 0.6, glow: 0, float: 0 },
   abandoned: { desat: 0.65, fade: 0.38, glow: 0, tall: 0.9 },
   hidden: { ghost: 1, desat: 0.25, fade: 0.15, glow: 0.7 },
-  relocated: { ghost: 0.75, lift: 1, glow: 0.5 },
+  relocated: { ghost: 0.7, lift: 1, glow: 0.5 },
 };
 const DUR = 0.6;
 const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
@@ -66,6 +66,10 @@ export class Diorama {
     this.hit.userData.diorama = this;
     this.root.add(this.hit);
 
+    // level of detail: ink outlines, banners and windmill sails only draw when the camera is close
+    this.lod = [];
+    group.traverse((o) => { if (o.isLineSegments || o.name === 'banner' || o.name === 'windmill') this.lod.push(o); });
+    this.detail = true;
     this.cur = { ...BASE };
     this.from = { ...BASE };
     this.tgt = { ...BASE };
@@ -105,7 +109,7 @@ export class Diorama {
     this.pivot.visible = rise > 0.01;
     this.marker.visible = rise < 0.99;
     this.pivot.scale.set(1, Math.max(0.01, rise), 1);
-    this.pivot.position.y = -(1 - rise) * 1.0 + c.lift * 5.5 - c.sink * 0.35;
+    this.pivot.position.y = -(1 - rise) * 1.0 + c.lift * 3.2 - c.sink * 0.35;
     this.pivot.rotation.z = c.lift * 0.08;
     if (L.tall) for (const g of L.tall) g.scale.y = Math.max(0.001, c.tall);
     if (L.low) for (const g of L.low) g.scale.y = Math.max(0.001, c.low);
@@ -117,6 +121,8 @@ export class Diorama {
     this.u.uFade.value = c.fade;
     this.u.uGlow.value = c.glow;
     setGhost(this.mats, c.ghost);
+    const casts = c.ghost < 0.5;
+    if (casts !== this.casts) { this.casts = casts; this.content.traverse((o) => { if (o.isMesh && o.userData.cast === undefined) o.userData.cast = o.castShadow; if (o.isMesh) o.castShadow = casts && o.userData.cast; }); }
     if (this.floatGroup) {
       // a floating enclave falls when its state drops it (float -> 0)
       const fg = this.floatGroup;
@@ -128,6 +134,12 @@ export class Diorama {
   }
 
   /** per-frame: tween, flicker, pulse, animators. t = seconds */
+  setDetail(on) {
+    if (on === this.detail) return;
+    this.detail = on;
+    for (let i = 0; i < this.lod.length; i++) this.lod[i].visible = on;
+  }
+
   update(t, dt, animateDetails) {
     if (this.t0 >= 0) {
       const k = Math.min(1, (t - this.t0) / DUR);
