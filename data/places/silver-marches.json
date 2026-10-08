@@ -646,11 +646,11 @@
     "status": [
       {
         "from": null,
-        "to": 1104,
+        "to": 1190,
         "state": "thriving"
       },
       {
-        "from": 1104,
+        "from": 1190,
         "to": 1356,
         "state": "ruined"
       },
@@ -682,9 +682,9 @@
     ],
     "events": [
       {
-        "year": 1104,
+        "year": 1190,
         "title": "Shimmergloom's Darkening",
-        "summary": "Miners breach a shadow-linked cavern; the shadow dragon Shimmergloom and duergar hordes slaughter the Battlehammers, and a few hundred survivors flee (c.; the wiki gives only 'the 1100s').",
+        "summary": "Miners breach a shadow-linked cavern; the shadow dragon Shimmergloom and duergar hordes slaughter the Battlehammers, and a few hundred survivors flee (c.; the wiki says only 'towards the end of the 1100s', and the Hall still held 10,000 dwarves in 1183).",
         "importance": 3
       },
       {
@@ -816,7 +816,7 @@
       {
         "year": 1462,
         "title": "The Summons",
-        "summary": "Dwarven ghosts call the Delzoun to defend the city; Bruenor reseals Maegera but dies of his wounds.",
+        "summary": "Dwarven ghosts call the Delzoun to defend the city; Sylora Salm and the Ashmadai are turned back, but Bruenor and Pwent are fatally wounded.",
         "importance": 2
       },
       {
@@ -1167,7 +1167,8 @@
       "notes": "A vast primeval forest with the Star Mounts rising from its center and waterfall-laced rivers threading out; overgrown elven ruins peek through the canopy."
     },
     "sources": [
-      "https://forgottenrealms.fandom.com/wiki/High_Forest"
+      "https://forgottenrealms.fandom.com/wiki/High_Forest",
+      "https://forgottenrealms.fandom.com/wiki/Morgwais"
     ]
   },
   {

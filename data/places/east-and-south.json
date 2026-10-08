@@ -619,11 +619,11 @@
       "x": null,
       "y": null
     },
-    "founded": -526,
-    "foundedNote": "Founded as an Untheric port 'five centuries before Cormyr' (Cormyr dates from -26 DR), so c. -526 DR",
+    "founded": -474,
+    "foundedNote": "Founded as an Untheric port 'five centuries before Cormyr' (Cormyr dates from 26 DR), so c. -474 DR",
     "status": [
       {
-        "from": -526,
+        "from": -474,
         "to": 1385,
         "state": "thriving"
       },

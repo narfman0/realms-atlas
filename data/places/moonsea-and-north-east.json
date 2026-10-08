@@ -257,7 +257,7 @@
     ],
     "description": "A walled port on the Moonsea's southern shore, enforced by the scarlet-plumed mercenaries who keep its human-only laws. Its great arena hosts gladiatorial bouts and races, and Castle Maalthiir looms over the streets. Trade with Sembia and the Dales keeps it rich even as its rulers grow ever more harsh.",
     "population": 35000,
-    "ruler": "First Lord Torin Nomerthal (late 15th c.)",
+    "ruler": "First Lord Vuhm Yestral (1490)",
     "tags": [
       "moonsea",
       "red-plumes",
@@ -364,7 +364,7 @@
       {
         "year": 1489,
         "title": "Tears of Virulence",
-        "summary": "The Cult of the Dragon and the green dragon Vorgansharax seize Phlan; a Moonsea alliance retakes Valjevo Castle.",
+        "summary": "The Cult of the Dragon and the green dragon Vorgansharax seize Phlan; a Moonsea alliance retakes Valjevo Castle by 1492.",
         "importance": 2
       },
       {
@@ -394,7 +394,7 @@
     ],
     "description": "A stubborn port on the Moonsea's north shore, grown around Valjevo Castle on its delta isle and rebuilt after every catastrophe. Beneath the castle the sinister pool of radiance keeps resurfacing, drawing tyrants, cultists and adventurers alike. In the 1490s it is recovering from martial law and a dragon's occupation, its walled Old City ringed by docks and ruins.",
     "population": 20000,
-    "ruler": "Lord Regent Ector Brahms of the Black Fist (c. 1489)",
+    "ruler": "None recorded after 1492; the green dragon Vorgansharax held the city 1489–1492 after Lord Regent Ector Brahms died (1489)",
     "tags": [
       "moonsea",
       "pool-of-radiance",
@@ -486,7 +486,7 @@
     ],
     "description": "An iron-hard industrial port on the Moonsea's north shore, its forges and foundries glowing through a permanent pall of coal smoke and sea fog. No green thing grows within its walls; the city lives by its smiths, its swords, and its slavers. Noble merchant families jostle for seats on its ruling council.",
     "population": 34408,
-    "ruler": "Lord Ghunduilith Leiyraghon",
+    "ruler": "Lord Ghunduilith Leiyraghon (last attested 1373)",
     "tags": [
       "moonsea",
       "forges",
@@ -1057,7 +1057,7 @@
     ],
     "description": "A bustling port where the Fire River spills into the Dragon Reach, split by the river and ringed by hills, a waterfall and a tall rock spire. Known as the City of Adventurers, it survived a brutal siege and grew into the richest city of Vesperin, swelled by Sembian merchants fleeing Netheril.",
     "population": 40000,
-    "ruler": "Lord Mayor Charles Oliver O'Kane (last attested)",
+    "ruler": "Lord Mayor Charles Oliver O'Kane (last attested 1372); by 1479 under Vesperin's Golden Lords in Calaunt",
     "tags": [
       "the-vast",
       "vesperin",
