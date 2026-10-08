@@ -1,0 +1,29 @@
+{
+  "name": "realms-atlas",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "An explorable three.js diorama board of the Forgotten Realms with a Dalereckoning time scrubber.",
+  "scripts": {
+    "data": "node scripts/build-data.mjs",
+    "data:stub": "node scripts/build-data.mjs --stub",
+    "predev": "node scripts/build-data.mjs --if-missing",
+    "dev": "vite",
+    "prebuild": "node scripts/build-data.mjs --if-missing",
+    "build": "vite build",
+    "preview": "vite preview",
+    "shots": "node scripts/screenshot.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@fontsource/cormorant-garamond": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.0",
+    "vite": "^8.3.4"
+  }
+}
