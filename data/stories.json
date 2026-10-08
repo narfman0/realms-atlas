@@ -1,0 +1,251 @@
+[
+  {
+    "id": "karsus-folly",
+    "title": "The Folly of Karsus",
+    "year": -339,
+    "worldId": "toril",
+    "placeIds": [
+      "thultanthar",
+      "anauroch"
+    ],
+    "eventTitle": "Karsus's Folly and the fall of Netheril",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "Copy this down as I read it, for the Chronicles do not soften it. Three hundred and thirty-nine years before the Dales began their count, the archwizard Karsus of Netheril reached for the one thing no mortal had ever held: the divinity of Mystryl, mother of all magic. He meant to save his empire from the phaerimm, who were draining its lands to dust. For a single heartbeat he wore a goddess's power, and in that heartbeat it unmade him. Mystryl spent her own life to save the Weave, and magic everywhere went dark. The enclaves of Netheril, mountains sliced flat and set aloft on mythallars, simply stopped flying. Cities fell like dropped plates. Only Thultanthar was spared, because days earlier its high mage had slipped the whole city sideways into the Plane of Shadow. Below, the desert we now call Anauroch crept over the broken towers. We Avowed keep a shelf of Netherese scrolls that no one has dared unroll for a thousand years. Some of us call that wisdom.",
+    "audio": "narration/karsus-folly.mp3",
+    "durationSec": 61.0
+  },
+  {
+    "id": "myth-drannor-mythal",
+    "title": "The Mythal of Myth Drannor",
+    "year": 261,
+    "worldId": "toril",
+    "placeIds": [
+      "myth-drannor",
+      "cormanthor"
+    ],
+    "eventTitle": "The Opening of Myth Drannor",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "Twelve years they sang. The Chronicles record that the high mages of Cormanthyr labored for a dozen years, weaving a mythal over their capital: a lasting web of magic meant to shelter every street and every sleeper beneath it. When the last strand settled in 261, so the elves tell it, the air rang like a struck bell, and the leaves of the great trees shone silver until dawn. Coronal Eltargrim then did something that cost him friends among his own kin. He renamed the city Myth Drannor and threw open its gates, not only to elves, but to humans, dwarves, gnomes and halflings who came to learn beneath its shelter. Old noble houses muttered that the forest was being sold to short-lived strangers. Eltargrim answered that a city which keeps its doors shut is only a beautiful tomb. For four and a half centuries after, the City of Song was the brightest place in all Faerûn, and scholars of every race walked its bridges side by side.",
+    "audio": "narration/myth-drannor-mythal.mp3",
+    "durationSec": 59.6
+  },
+  {
+    "id": "weeping-war",
+    "title": "The Weeping War",
+    "year": 714,
+    "worldId": "toril",
+    "placeIds": [
+      "myth-drannor",
+      "cormanthor",
+      "evermeet"
+    ],
+    "eventTitle": "Weeping War: fall of Myth Drannor",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "The Weeping War lasted three years, and the elves have never found a truer name for it. In 711 a knot of fiends slipped the leash of whoever had summoned them and gathered goblins, orcs, gnolls and worse into the host the songs call the Army of Darkness. They came against Myth Drannor from every side of the forest. The mythal kept its streets for a long while, and the city's defenders, elf and human alike, bought every season with blood. But in high summer of 714 the siege lines broke. For nearly a month the City of Song burned. Its libraries went up in smoke, its bridges fell into the gardens, and the dead lay on stairways no one had time to clear. A remnant escaped through the woods and away over the sea toward Evermeet. The ruin they left kept its mythal and its ghosts for more than six centuries, and treasure-seekers who walked in seldom walked out. In Candlekeep we hold one songbook said to come from that city. Its last page is unfinished.",
+    "audio": "narration/weeping-war.mp3",
+    "durationSec": 63.9
+  },
+  {
+    "id": "ahghairon-lords",
+    "title": "Ahghairon and the Masked Lords",
+    "year": 1032,
+    "worldId": "toril",
+    "placeIds": [
+      "waterdeep"
+    ],
+    "eventTitle": "Waterdeep's first Open Lord",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "Before Waterdeep had Lords it had warlords, and the last of them was Raurlor, who looked at a rich harbor and saw the seed of an empire. He meant to march the city's fighters up and down the Sword Coast. The wizard Ahghairon, already famous from the Trollwars, told him plainly that this was folly. Raurlor drew steel on him before his own court. The Chronicles say Ahghairon spoke one word, and the warlord's blade twisted into a serpent that turned and bit its master. When Raurlor lay dead, Ahghairon did not crown himself. He named himself the Open Lord and set beside him a council of Lords who would sit masked, so that no bribe or threat could find them. That was the year 1032, and Waterdeep counts its own calendar, Northreckoning, from it. Ahghairon ruled on, sustained by potions of long life, for more than two centuries. His tower still stands in the city, sealed, and every child there knows better than to touch it.",
+    "audio": "narration/ahghairon-lords.mp3",
+    "durationSec": 56.9
+  },
+  {
+    "id": "mithral-hall-darkening",
+    "title": "The Darkening of Mithral Hall",
+    "year": 1190,
+    "worldId": "toril",
+    "placeIds": [
+      "mithral-hall"
+    ],
+    "eventTitle": null,
+    "narrator": "an Avowed of Candlekeep",
+    "text": "Dwarves dig for what they love, and the Battlehammers loved mithral above all. Near the close of the eleven-hundreds by our count, perhaps in 1190, though no dwarf who lived through it will name the year, their miners opened a seam beneath Mithral Hall and broke into a cavern that should have stayed sealed. Out of it poured a darkness that drank torchlight, and inside the darkness was Shimmergloom, a shadow dragon of terrible age, with gray duergar legions marching in his wake. King Garumn's folk fought hall by hall, and the gorge that now bears his name filled with their dead. Only a few hundred escaped through the high gates, among them a young Bruenor Battlehammer. They trudged north and west until they reached a bitter valley under Kelvin's Cairn, and there they mined iron for a hundred and sixty-odd years, dreaming of silver. Shimmergloom sat upon their throne the whole time. He did not keep it forever.",
+    "audio": "narration/mithral-hall-darkening.mp3",
+    "durationSec": 55.3
+  },
+  {
+    "id": "crystal-shard",
+    "title": "The Crystal Shard",
+    "year": 1351,
+    "worldId": "toril",
+    "placeIds": [
+      "tt-bryn-shander",
+      "bryn-shander"
+    ],
+    "eventTitle": null,
+    "narrator": "an Avowed of Candlekeep",
+    "text": "Icewind Dale is a place where people die of small mistakes, so it is fitting that its darkest years began with one. In 1351 an apprentice named Akar Kessell murdered his master at the urging of a wizard from Luskan, who then abandoned him in the snow to die. Instead, freezing on the tundra, Kessell found a shard of crystal that wanted to be found. It was Crenshinibon, an ancient artifact with a mind of its own, and it raised a tower of glass around him and began whispering of conquest. That same year the barbarian tribes fell upon the Ten-Towns and were broken before the gates of Bryn Shander, thanks in no small part to a dark elf ranger and a red-bearded dwarf. Few in the Dale noticed the goblins and trolls gathering in the north. Over the next five winters Kessell's army swelled until it marched on Bryn Shander itself. In the end, high on Kelvin's Cairn, his own reckless spell killed him, and the shard, having judged him a failure, simply let him fall.",
+    "audio": "narration/crystal-shard.mp3",
+    "durationSec": 65.5
+  },
+  {
+    "id": "time-of-troubles-waterdeep",
+    "title": "The Gods Walk in Waterdeep",
+    "year": 1358,
+    "worldId": "toril",
+    "placeIds": [
+      "waterdeep"
+    ],
+    "eventTitle": "Time of Troubles",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "In 1358 the overgod Ao grew tired of being lied to. The Tablets of Fate had been stolen from him, and he cast every god in the heavens down into mortal flesh until the thieves were found. For a season the world went mad. Spells misfired or bloomed into wild color, rivers forgot which way to run, and deities walked the roads with blisters on their feet. The last of it played out at Waterdeep. Shar stalked the city wearing the stolen face of Selûne. Myrkul, Lord of the Dead, sent his night riders through the streets, and above Blackstaff Tower a young wizard named Midnight, who had carried a spark of fallen Mystra's power since the first days of the Troubles, met him and destroyed him. Then Ao raised her up, and she took the name Mystra and the Weave along with it. Avowed who were in Waterdeep that night wrote that the gulls stopped crying for an hour afterward. I cannot confirm the gulls.",
+    "audio": "narration/time-of-troubles-waterdeep.mp3",
+    "durationSec": 55.9
+  },
+  {
+    "id": "tuigan-horde",
+    "title": "The Coming of the Horde",
+    "year": 1359,
+    "worldId": "toril",
+    "placeIds": [
+      "immilmar",
+      "eltabbar",
+      "suzail"
+    ],
+    "eventTitle": "The Tuigan Horde invades",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "Out of the Endless Waste in 1359 rode Yamun Khahan with more horsemen than most western kings could count, and four horses for every rider. The Tuigan had already shaken the empire of Shou Lung; now they turned west. They tested Rashemen, where the Witches and berserkers made them bleed for every hill, and they pressed on toward Thay, whose zulkirs learned that arrogance is not a defense. Merchants staggered into the Inner Sea ports babbling that the world beyond the Sunrise Mountains was burning. King Azoun the Fourth, from his throne in Suzail, did what few believed possible: he talked the quarrelling kingdoms of the west into a single crusade and marched it east. In 1360 the two armies met, and when the battle hung in doubt, Azoun faced the Khahan himself and slew him. The Horde came apart like a rope with its knot cut. Our copy of the crusade's muster rolls fills three volumes, and the names of the fallen fill most of the third.",
+    "audio": "narration/tuigan-horde.mp3",
+    "durationSec": 63.4
+  },
+  {
+    "id": "ched-nasad-falls",
+    "title": "The Fall of the City of Shimmering Webs",
+    "year": 1372,
+    "worldId": "toril",
+    "placeIds": [
+      "ched-nasad",
+      "menzoberranzan"
+    ],
+    "eventTitle": "War of the Spider Queen: Ched Nasad falls",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "Ched Nasad was the most beautiful thing the drow ever built, and I say so knowing what the drow are. Its streets were webs of stone strung across a deep, narrow chasm, strands that the dark elves claim were spun by Lolth's own avatar, with houses hanging from them like dewdrops. In 1372 the Spider Queen fell silent. Her priestesses lost their spells, and every rival house in every city smelled weakness. In Ched Nasad one such feud turned to open war, and a house hired duergar mercenaries who carried stonefire bombs. That fire burned stone. In the month of Uktar the webs caught, glowed, and let go, and tier after tier of the city plunged into its own gorge, while a monstrous guardian spider rampaged through the wreckage. Of nearly thirty thousand drow, few climbed out. Envoys from Menzoberranzan, there on their own errand, were among those who did. The ruin smolders still in the reports that reach us, and its lowest depths, they say, now bleed into shadow.",
+    "audio": "narration/ched-nasad-falls.mp3",
+    "durationSec": 64.8
+  },
+  {
+    "id": "shades-tilverton",
+    "title": "The Shades Return",
+    "year": 1372,
+    "worldId": "toril",
+    "placeIds": [
+      "thultanthar",
+      "anauroch",
+      "evereska",
+      "tilverton"
+    ],
+    "eventTitle": "Return of the Shades",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "On the first morning of 1372, the sky over Anauroch was holding a city that had not been there the night before. Thultanthar, the last enclave of Netheril, had come home from the Plane of Shadow after some seventeen centuries. Telamont Tanthul, its Most High, and his princely sons stepped out with skin gone gray from shadow, and they wasted no time. They broke the phaerimm siege of Evereska, which the elves accepted with deep suspicion, and set about rebuilding an empire. Cormyr soon learned what that meant. Shadovar armies came down on Tilverton, a fortified town on the Cormyrean frontier, already emptied of its people. Old Vangerdahast, the royal magician, met Rivalen Tanthul's shadow magic with his own, and the clash tore a doorway into the Plane of Shadow. The shadowstuff poured through and swallowed the whole town. What remained was a black crater a mile across. Caravans still give it a wide berth, and their drivers do not sing as they pass.",
+    "audio": "narration/shades-tilverton.mp3",
+    "durationSec": 60.0
+  },
+  {
+    "id": "spellplague",
+    "title": "The Spellplague",
+    "year": 1385,
+    "worldId": "toril",
+    "placeIds": [
+      "sea-of-fallen-stars",
+      "halarahh",
+      "lantan",
+      "unthalass",
+      "skuld",
+      "evermeet"
+    ],
+    "eventTitle": "The Spellplague",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "In 1385 the god Cyric, with Shar's help, murdered Mystra in her own house, and the Weave she had held together for twenty-seven years caught fire. We call it the Spellplague, though no plague ever moved so fast. Blue flame ran through the world like water through a cracked dam. Wizards burned in the middle of a cantrip. Whole lands simply left. Halruaa, Lantan and Unther were wrenched away to Abeir, the sister world, and in their place came stretches of country that no map of ours could name. Skuld, the capital of Mulhorand, was buried. The Sea of Fallen Stars sank away from its shores until ships lay rotting on new beaches miles from the water. Evermeet slipped out of the world entirely, into the Feywild, and the elves who remained behind had no road home. In Candlekeep the wards held, barely. I have read the logbook of the Avowed on watch that night. His handwriting stops in the middle of a word, and begins again on the next page in someone else's.",
+    "audio": "narration/spellplague.mp3",
+    "durationSec": 58.7
+  },
+  {
+    "id": "hotenow-neverwinter",
+    "title": "The Wrath of Mount Hotenow",
+    "year": 1451,
+    "worldId": "toril",
+    "placeIds": [
+      "neverwinter",
+      "gauntlgrym"
+    ],
+    "eventTitle": "Mount Hotenow erupts",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "Neverwinter took its name from a river warmed by fire beneath the earth, and for nearly fifteen centuries that fire was a gift. In 1451 it became a sentence. Far below, in the lost dwarven city of Gauntlgrym, someone meddled with the bindings that held Maegera, a primordial of flame chained there to feed the ancient forges. The Dawn Titan stirred, and Mount Hotenow, the mountain east of the city, tore itself open. Ash fell like black snow. Burning stone rained into the streets, the river steamed, and a great chasm split the ground inside the walls. Every member of the Alagondar royal line perished, so that when the smoke cleared there was no one left to wear the crown. For seventeen years Neverwinter was a ruin of squatters and scavengers. Then Dagult Neverember, Open Lord of Waterdeep, arrived with gold and Mintarn mercenaries and proclaimed himself its Lord Protector. Not everyone in Neverwinter has agreed with him since, and few of them say so quietly.",
+    "audio": "narration/hotenow-neverwinter.mp3",
+    "durationSec": 64.2
+  },
+  {
+    "id": "silver-marches-sundabar",
+    "title": "The War of the Silver Marches",
+    "year": 1484,
+    "worldId": "toril",
+    "placeIds": [
+      "sundabar",
+      "silverymoon",
+      "citadel-adbar",
+      "citadel-felbarr",
+      "mithral-hall",
+      "menzoberranzan"
+    ],
+    "eventTitle": "War of the Silver Marches",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "For more than a century the orc kingdom of Many-Arrows and its neighbors in Luruar kept a treaty that no one quite believed in. In 1484 it broke, and not by accident. Lolth wanted chaos in the North, and her priestesses in Menzoberranzan sent drow agents to whisper to the orc tribes, to arm them, and to promise them the Silver Marches. The hordes came down from the mountains, frost giants marched among them, and white dragons wheeled above. Sundabar, the old city of dwarves and men raised around a living fire, fell, and the orcs renamed it Hartusk Keep, as though a name could make it theirs. The alliance of Luruar came apart under the strain. It was Bruenor Battlehammer, old and loud and impossible to discourage, who bound the dwarven citadels together again. Mithral Hall, Adbar and Felbarr fought shoulder to shoulder, and by 1486 the orcs were broken. Sundabar is rebuilding. Its people, I am told, are now very particular about whom they trade with.",
+    "audio": "narration/silver-marches-sundabar.mp3",
+    "durationSec": 63.9
+  },
+  {
+    "id": "thultanthar-falls",
+    "title": "The City of Shade Falls",
+    "year": 1487,
+    "worldId": "toril",
+    "placeIds": [
+      "thultanthar",
+      "myth-drannor",
+      "cormanthor"
+    ],
+    "eventTitle": "Thultanthar crashes into Myth Drannor",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "Once already these Chronicles have watched Myth Drannor die. In 1487 it happened again, and the hand that did it belonged to a friend. The shadovar princes of Thultanthar coveted the city's mythal, the old song-woven ward first raised in 261, and they brought their floating enclave to hover over the rebuilt elven capital while their mages pried at it. Elminster of Shadowdale, who had loved Myth Drannor longer than most of its citizens had been alive, judged that the mythal must not fall into their hands. So he brought Thultanthar down. The City of Shade, nearly three thousand years aloft, dropped out of the sky onto the City of Song, and when the dust settled neither one remained. Coronal Ilsevele and the survivors fled to Semberholme. In that same year the long upheaval the sages call the Sundering came to its close, Mystra returned, and the Weave was made whole again. I have never known whether to call that a victory.",
+    "audio": "narration/thultanthar-falls.mp3",
+    "durationSec": 64.5
+  },
+  {
+    "id": "elturel-avernus",
+    "title": "Elturel Descends",
+    "year": 1492,
+    "worldId": "toril",
+    "placeIds": [
+      "elturel",
+      "baldurs-gate"
+    ],
+    "eventTitle": "Descent into Avernus: Elturel taken",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "For nearly fifty years a second sun hung over Elturel. It had blazed into being in 1444 to burn a vampire lord and his undead out of the streets, and the city built a faith and a kingdom in its light. What its people did not know was the price. Their High Observer, Thavius Kreeg, had bought that light with an infernal pact sealed with the archdevil Zariel, and in 1492 the debt came due. In a single night the Companion turned black. It became a wound in the sky, and it dragged the entire city, walls, temples, sleepers and all, down into Avernus, the uppermost of the Nine Hells. Great chains held what was left of Elturel above a burning plain. Those who had been outside the walls fled downriver toward Baldur's Gate, carrying a story no one wished to believe. Heroes, and the Gate's own Grand Duke Ulder Ravengard, went down after the city, and against every reasonable expectation, they brought it back.",
+    "audio": "narration/elturel-avernus.mp3",
+    "durationSec": 58.5
+  },
+  {
+    "id": "absolute-baldurs-gate",
+    "title": "The Absolute",
+    "year": 1492,
+    "worldId": "toril",
+    "placeIds": [
+      "baldurs-gate"
+    ],
+    "eventTitle": "The Absolute at Baldur's Gate",
+    "narrator": "an Avowed of Candlekeep",
+    "text": "The same year Elturel fell into the Hells, Baldur's Gate nearly fell inward. In 1492 a mind flayer ship tore across the sky above the Sword Coast, and those taken aboard woke with a squirming tadpole behind their eyes. Most such victims become illithids within days. These did not, and the reason was the Absolute: a power its cultists worshipped as a goddess, which was in truth an elder brain stolen and bound by the Chosen of Bane, Bhaal and Myrkul, the Dead Three. Through it the Chosen meant to take the city, and after the city, everything else. The cult marched on the Gate while the brain, swollen by the Crown of Karsus, yes, that Karsus, burst up from the caverns beneath and smashed whole districts. Some who carried the tadpoles turned against it instead, and before the year was out it was brought down. Mark how often the Chronicles circle back to that one arrogant wizard. I no longer believe in coincidence.",
+    "audio": "narration/absolute-baldurs-gate.mp3",
+    "durationSec": 58.8
+  }
+]

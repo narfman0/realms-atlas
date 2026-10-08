@@ -1,0 +1,98 @@
+{
+  "absolute-baldurs-gate": {
+    "hash": "f8b22a9aa8546a2e",
+    "durationSec": 58.8,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "ahghairon-lords": {
+    "hash": "0c4086a095b71b9f",
+    "durationSec": 56.9,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "ched-nasad-falls": {
+    "hash": "15109755ede37d22",
+    "durationSec": 64.8,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "crystal-shard": {
+    "hash": "caaa2b50a5faea6a",
+    "durationSec": 65.5,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "elturel-avernus": {
+    "hash": "58a9a36c2bbb9b17",
+    "durationSec": 58.5,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "hotenow-neverwinter": {
+    "hash": "113f4c537b229fd8",
+    "durationSec": 64.2,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "karsus-folly": {
+    "hash": "3be8d8d70523180b",
+    "durationSec": 61.0,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "mithral-hall-darkening": {
+    "hash": "34c916f31748deb9",
+    "durationSec": 55.3,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "myth-drannor-mythal": {
+    "hash": "af748a06640da348",
+    "durationSec": 59.6,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "shades-tilverton": {
+    "hash": "d96d5a5ecb3db3af",
+    "durationSec": 60.0,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "silver-marches-sundabar": {
+    "hash": "8b172638cdf43141",
+    "durationSec": 63.9,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "spellplague": {
+    "hash": "31e70f4d37d109b7",
+    "durationSec": 58.7,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "thultanthar-falls": {
+    "hash": "82847b80d0606355",
+    "durationSec": 64.5,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "time-of-troubles-waterdeep": {
+    "hash": "a620767802f378db",
+    "durationSec": 55.9,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "tuigan-horde": {
+    "hash": "9495efa4e8c8c5f5",
+    "durationSec": 63.4,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
+  "weeping-war": {
+    "hash": "94eec13f02f3048b",
+    "durationSec": 63.9,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  }
+}
