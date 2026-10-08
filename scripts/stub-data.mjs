@@ -163,3 +163,118 @@ export function stubTimeline() {
 if (import.meta.url === `file://${process.argv[1]}`) {
   process.stdout.write(JSON.stringify({ places: stubPlaces(), timeline: stubTimeline() }, null, 2));
 }
+
+/* ------------------------------------------------------------- phase 2 -- */
+// Placeholder records for the other worlds (node scripts/build-data.mjs --world planes), so layouts can be
+// built and tested before the real files land. Shapes follow docs/SPEC-2.md (ring / orbit / satelliteOf).
+import { WORLD_ROSTER } from './roster.mjs';
+
+const GATE_TOWNS = ['excelsior', 'tradegate', 'ecstasy', 'faunel', 'sylvania', 'glorium', 'xaos', 'bedlam', 'plague-mort', 'ribcage', 'rigus', 'curst', 'hopeless', 'torch', 'automata', 'fortitude'];
+const PLANES = ['mount-celestia', 'bytopia', 'elysium', 'beastlands', 'arborea', 'ysgard', 'limbo', 'pandemonium', 'the-abyss', 'carceri', 'gray-waste', 'gehenna', 'baator', 'acheron', 'mechanus', 'arcadia'];
+const PLANE_LOOK = {
+  'mount-celestia': ['landmark-mountain', ['mountain', 'glow', 'temple'], 'mountain', '#d8b04a'],
+  bytopia: ['market-town', ['farms', 'mountain', 'windmill'], 'plain', '#7a9a5a'],
+  elysium: ['landmark-forest', ['river', 'trees', 'glow'], 'river', '#8fb07a'],
+  beastlands: ['landmark-forest', ['giant-trees', 'trees'], 'forest', '#4f7a3a'],
+  arborea: ['elven-city', ['giant-trees', 'spires', 'glow'], 'forest', '#6aa04a'],
+  ysgard: ['fortress', ['floating', 'mountain', 'castle'], 'mountain', '#8a6a3a'],
+  limbo: ['landmark-monolith', ['glow', 'rubble', 'floating'], 'void', '#7a7aa0'],
+  pandemonium: ['landmark-mountain', ['cavern', 'chasm'], 'cavern', '#5a5a6a'],
+  'the-abyss': ['landmark-desert', ['chasm', 'lava', 'ruins'], 'desert', '#7a2a2a'],
+  carceri: ['fortress', ['walls', 'chasm', 'graveyard'], 'swamp', '#5a4a3a'],
+  'gray-waste': ['ruin', ['ruins', 'graveyard'], 'plain', '#7a7a7a'],
+  gehenna: ['landmark-mountain', ['lava', 'mountain', 'chasm'], 'mountain', '#8a3a2a'],
+  baator: ['fortress', ['walls', 'towers', 'lava', 'chasm'], 'desert', '#8a2a1a'],
+  acheron: ['fortress', ['walls', 'keep', 'gears'], 'plain', '#4a4a5a'],
+  mechanus: ['landmark-monolith', ['gears', 'glow'], 'void', '#b08a3a'],
+  arcadia: ['walled-city', ['walls', 'farms', 'temple'], 'plain', '#5a8aa0'],
+};
+const BODIES = {
+  'sj-the-sun': [0, 0, ['sphere', 'glow']], 'sj-anadia': [1, 0.16, ['sphere']], 'sj-coliar': [2, 0.3, ['gas-giant', 'floating']],
+  'sj-toril': [3, 0.44, ['sphere']], 'sj-selune': [3, 0.44, ['sphere', 'glow']], 'sj-tears-of-selune': [3, 0.44, ['asteroid']],
+  'sj-rock-of-bral': [3, 0.44, ['asteroid', 'towers', 'docks']], 'sj-karpri': [4, 0.56, ['sphere', 'ice']],
+  'sj-chandos': [5, 0.66, ['sphere', 'lake']], 'sj-glyth': [6, 0.76, ['sphere', 'rings']], 'sj-garden': [7, 0.85, ['asteroid', 'giant-trees']],
+  'sj-hcatha': [8, 0.93, ['sphere', 'ice']], 'sj-crystal-shell': [9, 1, ['sphere', 'glow']],
+};
+
+export function stubWorld(world) {
+  const ids = WORLD_ROSTER[world] || [];
+  const n = ids.length;
+  return ids.map((id, i) => {
+    const r = rng(id);
+    const name = title(id.replace(/^[a-z]{2}-/, ''));
+    let archetype = 'market-town', motifs = ['farms'], terrain = 'plain', accent = '#6a5a8a', type = 'town';
+    const rec = {};
+    if (world === 'ten-towns') {
+      const lm = /cairn|glacier|sea-of|valley/.test(id);
+      archetype = /sea-of/.test(id) ? 'landmark-sea' : /glacier/.test(id) ? 'landmark-mountain' : /cairn/.test(id) ? 'landmark-mountain' : /valley/.test(id) ? 'dwarven-hold' : 'frozen-town';
+      motifs = /sea-of|glacier/.test(id) ? ['ice', 'snow'] : ['snow', 'palisade', 'lake', 'ice'];
+      terrain = 'tundra'; accent = '#5a7f8f'; type = lm && !/valley/.test(id) ? 'landmark' : 'town';
+    } else if (world === 'planes') {
+      const short = id.slice(3);
+      const g = GATE_TOWNS.indexOf(short), pl = PLANES.indexOf(short);
+      if (id === 'ps-sigil') { archetype = 'ring-city'; motifs = ['ring-city', 'spires', 'glow']; type = 'metropolis'; accent = '#7a4a3a'; rec.region = 'sigil'; }
+      else if (id === 'ps-the-spire') { archetype = 'landmark-monolith'; motifs = ['obelisk']; type = 'landmark'; terrain = 'mountain'; rec.region = 'outlands'; }
+      else if (id === 'ps-city-of-brass') { archetype = 'desert-city'; motifs = ['domes', 'minarets', 'lava', 'glow']; terrain = 'desert'; accent = '#c0702a'; type = 'metropolis'; rec.region = 'inner-planes'; }
+      else if (g >= 0) { archetype = r() < 0.5 ? 'walled-city' : 'market-town'; motifs = ['walls', 'gate', 'towers']; rec.ring = { order: g, plane: `ps-${PLANES[g]}` }; rec.region = 'outlands'; accent = PLANE_LOOK[PLANES[g]][3]; type = 'town'; }
+      else if (pl >= 0) { const L = PLANE_LOOK[short]; [archetype, motifs, terrain, accent] = L; rec.ring = { order: pl }; rec.region = 'outer-planes'; type = 'plane'; }
+    } else if (world === 'realmspace') {
+      const [index, radius, m] = BODIES[id] || [i, i / n, ['sphere']];
+      archetype = /rock-of-bral|garden|tears/.test(id) ? 'asteroid-port' : 'celestial-body';
+      motifs = m; terrain = 'void'; type = /bral/.test(id) ? 'city' : /selune/.test(id) && !/tears/.test(id) ? 'moon' : 'planet';
+      rec.orbit = { index, radius }; rec.region = 'realmspace'; accent = '#3a4a8a';
+      if (/selune|tears|bral/.test(id)) rec.satelliteOf = 'sj-toril';
+      if (id === 'sj-toril') rec.drill = 'toril';
+    } else {
+      const lm = /plain|sea|gulf|lands|house|payit|melabrauth|fimbrul/.test(id);
+      const pick = (a) => a[Math.floor(r() * a.length)];
+      archetype = lm ? pick(['landmark-forest', 'landmark-mountain', 'landmark-sea', 'landmark-desert']) : world === 'zakhara' ? 'desert-city' : world === 'maztica' ? 'jungle-city' : pick(['walled-city', 'harbor-metropolis', 'market-town']);
+      motifs = MOTIFS_OF[archetype] || ['walls'];
+      terrain = world === 'zakhara' ? 'desert' : world === 'maztica' ? 'forest' : pick(['coast', 'plain', 'river']);
+      type = lm ? 'landmark' : 'city';
+      accent = { 'kara-tur': '#a03a2a', zakhara: '#c08a2a', maztica: '#2a8a6a', laerakond: '#6a4a8a' }[world] || accent;
+    }
+    const founded = type === 'landmark' || type === 'plane' || world === 'planes' || world === 'realmspace' ? null : 900 + Math.floor(r() * 400);
+    const status = world === 'laerakond'
+      ? [{ from: -35000, to: 1385, state: 'hidden' }, { from: 1385, to: 1487, state: 'thriving' }, { from: 1487, to: null, state: 'hidden' }]
+      : [{ from: founded ?? -35000, to: null, state: 'thriving' }];
+    const a = (i / n) * Math.PI * 2;
+    return {
+      id, name, aliases: [], world, region: rec.region || world, type, archetype,
+      map: { x: 0.5 + Math.cos(a) * 0.32 * (0.6 + r() * 0.4), y: 0.5 + Math.sin(a) * 0.3 * (0.6 + r() * 0.4) },
+      founded, foundedNote: 'STUB — placeholder record', status,
+      events: [{ year: 1358 + Math.floor(r() * 130), title: 'Placeholder event', summary: 'Stub data: replace with the real record.', importance: 1 }],
+      description: `Placeholder description for ${name}. The real record will be written by a data agent.`,
+      population: null, ruler: null, tags: ['stub'],
+      visual: { palette: { base: TERRAIN_BASE[terrain] || '#2a3048', accent, ink: '#2b2420' }, scale: 2 + Math.floor(r() * 3), motifs, terrain, notes: 'stub' },
+      sources: [`https://forgottenrealms.fandom.com/wiki/${name.replace(/ /g, '_')}`],
+      ...rec,
+    };
+  });
+}
+
+/** a blobby continent outline for a world's stub map */
+export function stubWorldMap(world) {
+  if (world === 'planes' || world === 'realmspace') return { polylines: [], labels: [], places: {}, aspect: 1 };
+  const pts = Array.from({ length: 22 }, (_, i) => {
+    const a = (i / 22) * Math.PI * 2;
+    const w = 1 + 0.12 * Math.sin(a * 3 + world.length) + 0.08 * Math.cos(a * 5);
+    return [0.5 + Math.cos(a) * 0.42 * w, 0.5 + Math.sin(a) * 0.4 * w];
+  });
+  return { polylines: [{ kind: 'coast', closed: true, sub: 'island', points: pts }], labels: [], places: {}, aspect: 1.3 };
+}
+
+export function stubStories() {
+  const S = (id, title, year, worldId, placeIds, eventTitle) => ({
+    id, title, year, worldId, placeIds, eventTitle, narrator: 'an Avowed of Candlekeep', audio: null, durationSec: 60,
+    text: `Placeholder tale for ${title}. `.repeat(1) + 'Hear now, reader, a story told by lamplight in the reading rooms of Candlekeep, of the year when the world turned and the old maps had to be redrawn. The ink is still wet upon this page; a scribe will set down the true account before long, in words of their own, and the tale will be read aloud to any who ask. Until then, let this placeholder stand as a promise of the telling to come, and of the voices that will carry it.',
+  });
+  return [
+    S('karsus-folly', 'The Folly of Karsus', -339, 'toril', ['thultanthar', 'anauroch'], "Karsus's Folly"),
+    S('weeping-war', 'The Fall of Myth Drannor', 714, 'toril', ['myth-drannor', 'cormanthor'], 'Weeping War ends'),
+    S('crystal-shard', 'The Crystal Shard', 1351, 'ten-towns', ['tt-bryn-shander', 'tt-kelvins-cairn'], null),
+    S('time-of-troubles', 'When the Gods Walked', 1358, 'toril', ['waterdeep', 'baldurs-gate'], 'Time of Troubles'),
+    S('spellplague', 'The Blue Fire', 1385, 'toril', ['halarahh', 'myth-drannor'], 'Spellplague'),
+    S('elturel-falls', 'The City that Fell into Hell', 1492, 'toril', ['elturel', 'ps-baator'], 'Descent into Avernus'),
+  ];
+}

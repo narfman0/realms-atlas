@@ -8,10 +8,16 @@ import { fileURLToPath } from 'node:url';
 import { stateAt } from '../src/status.js';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const YEARS = [-4000, -339, 1, 714, 1358, 1372, 1385, 1400, 1451, 1487, 1492, 1496];
+const YEARS = [-4000, -339, 1, 714, 800, 1351, 1358, 1372, 1384, 1385, 1400, 1451, 1486, 1487, 1489, 1492, 1496];
 const quiet = process.argv.includes('--quiet');
 const dir = path.join(ROOT, 'data', 'places');
-const places = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).flatMap((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
+// every world: the Faerûn region files and data/places/<world>.json for the others
+const WORLD_FILES = new Set(['ten-towns', 'planes', 'realmspace', 'kara-tur', 'zakhara', 'maztica', 'laerakond']);
+try { for (const w of JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'worlds.json'), 'utf8'))) if (w.id !== 'toril') WORLD_FILES.add(w.id); } catch { /* defaults */ }
+const places = fs.readdirSync(dir).filter((f) => f.endsWith('.json')).flatMap((f) => {
+  const w = f.replace(/\.json$/, '');
+  return JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')).map((p) => ({ ...p, world: p.world ?? (WORLD_FILES.has(w) ? w : 'toril') }));
+});
 
 /** The rule, written as plainly as possible:
  *  - absent before `founded` if it is set; if founded is null, absent before the first status `from`
@@ -33,15 +39,19 @@ function expected(p, y) {
 
 const short = { unfounded: '·', thriving: 'T', troubled: 't', ruined: 'R', destroyed: 'D', abandoned: 'a', hidden: 'h', relocated: 'L' };
 let bad = 0;
-if (!quiet) console.log(`${'place'.padEnd(22)} ${YEARS.map((y) => String(y).padStart(6)).join('')}`);
+let lastWorld = null;
+if (!quiet) console.log(`${'place'.padEnd(24)} ${YEARS.map((y) => String(y).padStart(6)).join('')}`);
 for (const p of places) {
+  if (!quiet && p.world !== lastWorld) { console.log(`— ${p.world}`); lastWorld = p.world; }
   const row = YEARS.map((y) => {
     const got = stateAt(p, y), want = expected(p, y);
     if (got !== want) { bad++; console.error(`✗ ${p.id} @ ${y}: app says ${got}, timeline says ${want}`); }
     return short[got] || '?';
   });
-  if (!quiet) console.log(`${p.id.padEnd(22)} ${row.map((c) => c.padStart(6)).join('')}`);
+  if (!quiet) console.log(`${p.id.padEnd(24)} ${row.map((c) => c.padStart(6)).join('')}`);
 }
 if (!quiet) console.log('legend: · not yet founded, T thriving, t troubled, R ruined, D destroyed, a abandoned, h hidden, L relocated');
-console.log(bad ? `✗ ${bad} mismatches` : `✓ ${places.length} places × ${YEARS.length} years agree with their status timelines`);
+const perWorld = {};
+for (const p of places) perWorld[p.world] = (perWorld[p.world] || 0) + 1;
+console.log(bad ? `✗ ${bad} mismatches` : `✓ ${places.length} places × ${YEARS.length} years agree with their status timelines (${Object.entries(perWorld).map(([w, n]) => `${w} ${n}`).join(', ')})`);
 process.exit(bad ? 1 : 0);

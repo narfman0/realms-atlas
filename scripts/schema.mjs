@@ -1,13 +1,17 @@
 // Validation for place records, timeline events and the map file.
 // Each validator returns an array of human-readable error strings ([] = valid).
 
-export const WORLDS = ['toril', 'sigil', 'outlands', 'outer-planes'];
-export const TYPES = ['metropolis', 'city', 'town', 'fortress', 'ruin', 'underdark-city', 'landmark', 'island', 'dungeon'];
+// world ids come from data/worlds.json (build-data passes them as opts.worlds); these are the fallback
+export const WORLDS = ['toril', 'ten-towns', 'planes', 'realmspace', 'kara-tur', 'zakhara', 'maztica', 'laerakond'];
+export const TYPES = ['metropolis', 'city', 'town', 'fortress', 'ruin', 'underdark-city', 'landmark', 'island', 'dungeon',
+  'plane', 'planet', 'moon', 'asteroid', 'station'];
 export const ARCHETYPES = [
   'harbor-metropolis', 'walled-city', 'market-town', 'frontier-town', 'fortress', 'tower-keep', 'elven-city',
   'dwarven-hold', 'drow-city', 'underdark-city', 'ruin', 'floating-enclave', 'desert-city', 'wizard-city',
   'island-haven', 'jungle-city', 'library-fortress', 'landmark-mountain', 'landmark-forest', 'landmark-desert',
   'landmark-sea', 'landmark-monolith', 'frozen-town',
+  // phase 2
+  'ring-city', 'celestial-body', 'asteroid-port',
 ];
 export const STATES = ['thriving', 'troubled', 'ruined', 'abandoned', 'destroyed', 'hidden', 'relocated'];
 export const MOTIFS = [
@@ -16,8 +20,10 @@ export const MOTIFS = [
   'temple', 'arena', 'pyramid', 'ziggurat', 'tents', 'palisade', 'snow', 'lava', 'waterfall', 'floating', 'glow',
   'faerie-fire', 'mythal', 'statue', 'gate', 'mines', 'ships', 'windmill', 'farms', 'graveyard', 'obelisk',
   'standing-stone',
+  // phase 2
+  'ring-city', 'gears', 'chasm', 'sphere', 'rings', 'asteroid', 'gas-giant', 'ice', 'station',
 ];
-export const TERRAINS = ['coast', 'plain', 'forest', 'mountain', 'desert', 'cavern', 'island', 'swamp', 'tundra', 'river'];
+export const TERRAINS = ['coast', 'plain', 'forest', 'mountain', 'desert', 'cavern', 'island', 'swamp', 'tundra', 'river', 'void'];
 
 const isInt = (v) => Number.isInteger(v);
 const isStr = (v) => typeof v === 'string' && v.trim().length > 0;
@@ -40,11 +46,33 @@ export function validatePlace(p, opts = {}) {
   if (!isStr(p.id) || !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(p.id)) E(`id must be kebab-case (got ${JSON.stringify(p.id)})`);
   if (!isStr(p.name)) E('name is required');
   if (p.aliases != null && !(Array.isArray(p.aliases) && p.aliases.every((a) => typeof a === 'string'))) E('aliases must be an array of strings');
-  if (p.world != null && !WORLDS.includes(p.world)) E(`world "${p.world}" not in ${WORLDS.join('|')}`);
+  const worlds = opts.worlds || WORLDS;
+  const world = p.world ?? opts.world ?? 'toril';
+  if (p.world != null && !worlds.includes(p.world)) E(`world "${p.world}" not in ${worlds.join('|')}`);
+  // other worlds are newer and looser: an unexpected type/archetype/terrain there is a warning (with a
+  // fallback in the app), never a rejection
+  const soft = world !== 'toril' ? W : E;
   if (!isStr(p.region)) E('region is required');
   else if (opts.knownRegions && !opts.knownRegions.includes(p.region)) W(`region "${p.region}" is not in the roster`);
-  if (!TYPES.includes(p.type)) E(`type "${p.type}" not in ${TYPES.join('|')}`);
-  if (!ARCHETYPES.includes(p.archetype)) E(`archetype "${p.archetype}" is not a known archetype`);
+  if (!TYPES.includes(p.type)) soft(`type "${p.type}" not in ${TYPES.join('|')}`);
+  if (!ARCHETYPES.includes(p.archetype)) soft(`archetype "${p.archetype}" is not a known archetype`);
+  if (p.drill != null && !isStr(p.drill)) E('drill must be a world id');
+  else if (p.drill != null && !worlds.includes(p.drill)) W(`drill "${p.drill}" is not a known world`);
+  if (p.ring != null) {
+    if (typeof p.ring !== 'object' || Array.isArray(p.ring)) E('ring must be an object {order, plane?}');
+    else {
+      if (p.ring.order != null && !(isInt(p.ring.order) && p.ring.order >= 0 && p.ring.order <= 15)) E(`ring.order must be an integer 0..15 or null (got ${JSON.stringify(p.ring.order)})`);
+      if (p.ring.plane != null && !isStr(p.ring.plane)) E('ring.plane must be a place id');
+    }
+  }
+  if (p.orbit != null) {
+    if (typeof p.orbit !== 'object' || Array.isArray(p.orbit)) E('orbit must be an object {index, radius}');
+    else {
+      if (p.orbit.index != null && !(isInt(p.orbit.index) && p.orbit.index >= 0)) E(`orbit.index must be a non-negative integer (got ${JSON.stringify(p.orbit.index)})`);
+      if (!(typeof p.orbit.radius === 'number' && p.orbit.radius >= 0 && p.orbit.radius <= 1)) E(`orbit.radius must be a number in 0..1 (got ${JSON.stringify(p.orbit.radius)})`);
+    }
+  }
+  if (p.satelliteOf != null && !isStr(p.satelliteOf)) E('satelliteOf must be a place id');
 
   // map is optional in place files (filled from map.json); validated after merge
   if (p.map != null) {
@@ -110,7 +138,7 @@ export function validatePlace(p, opts = {}) {
       const bad = v.motifs.filter((m) => !MOTIFS.includes(m));
       if (bad.length) W(`unknown motifs ignored: ${bad.join(', ')}`);
     }
-    if (!TERRAINS.includes(v.terrain)) E(`visual.terrain "${v.terrain}" not in ${TERRAINS.join('|')}`);
+    if (!TERRAINS.includes(v.terrain)) soft(`visual.terrain "${v.terrain}" not in ${TERRAINS.join('|')}`);
   }
   if (!Array.isArray(p.sources) || p.sources.length === 0) E('sources must be a non-empty array of URLs');
   else p.sources.forEach((s, i) => { if (!/^https?:\/\//.test(s)) E(`sources[${i}] is not a URL`); });
@@ -134,6 +162,7 @@ export function validateTimeline(t, knownIds) {
       if (e.yearEnd != null && !isYear(e.yearEnd)) errs.push(`${at}.yearEnd must be an integer year`);
       if (!isStr(e.title)) errs.push(`${at}.title is required`);
       if (e.importance != null && ![1, 2, 3].includes(e.importance)) errs.push(`${at}.importance must be 1..3`);
+      if (e.worldIds != null && !Array.isArray(e.worldIds)) errs.push(`${at}.worldIds must be an array of world ids`);
       if (e.placeIds != null && !Array.isArray(e.placeIds)) errs.push(`${at}.placeIds must be an array`);
       else if (knownIds && e.placeIds) {
         const unk = e.placeIds.filter((id) => !knownIds.has(id));
@@ -144,4 +173,42 @@ export function validateTimeline(t, knownIds) {
     else events.push(e);
   });
   return { errors, warnings, events };
+}
+
+/** Validate stories.json (array of tales). knownIds: Set of place ids; worlds: world ids; titles: timeline titles. */
+export function validateStories(t, { knownIds, worlds = WORLDS, titles } = {}) {
+  const errors = [];
+  const warnings = [];
+  const list = Array.isArray(t) ? t : t && Array.isArray(t.stories) ? t.stories : null;
+  if (!list) return { errors: ['stories must be an array'], warnings, stories: [] };
+  const stories = [];
+  const seen = new Set();
+  list.forEach((s, i) => {
+    const at = `stories[${i}]${s && s.id ? ` (${s.id})` : ''}`;
+    const errs = [];
+    if (!s || typeof s !== 'object') errs.push(`${at} is not an object`);
+    else {
+      if (!isStr(s.id) || !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(s.id)) errs.push(`${at}.id must be kebab-case`);
+      else if (seen.has(s.id)) errs.push(`${at}: duplicate id`);
+      if (!isStr(s.title)) errs.push(`${at}.title is required`);
+      if (!isYear(s.year)) errs.push(`${at}.year must be an integer DR year`);
+      if (!isStr(s.text)) errs.push(`${at}.text is required`);
+      if (s.worldId != null && !worlds.includes(s.worldId)) warnings.push(`${at}.worldId "${s.worldId}" is not a known world`);
+      if (s.placeIds != null && !Array.isArray(s.placeIds)) errs.push(`${at}.placeIds must be an array`);
+      else if (knownIds && s.placeIds) {
+        const unk = s.placeIds.filter((id) => !knownIds.has(id));
+        if (unk.length) warnings.push(`${at} references unknown place ids: ${unk.join(', ')}`);
+      }
+      if (s.audio != null && typeof s.audio !== 'string') errs.push(`${at}.audio must be a path or null`);
+      if (s.durationSec != null && !(typeof s.durationSec === 'number' && s.durationSec > 0)) warnings.push(`${at}.durationSec should be a positive number`);
+      if (titles && s.eventTitle && !titles.has(s.eventTitle)) warnings.push(`${at}.eventTitle "${s.eventTitle}" matches no timeline event`);
+      if (isStr(s.text)) {
+        const words = s.text.trim().split(/\s+/).length;
+        if (words < 60 || words > 260) warnings.push(`${at}.text is ${words} words (aim for 120–180)`);
+      }
+    }
+    if (errs.length) errors.push(...errs);
+    else { seen.add(s.id); stories.push(s); }
+  });
+  return { errors, warnings, stories };
 }
