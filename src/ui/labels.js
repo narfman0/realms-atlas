@@ -2,13 +2,21 @@
 // (region columns / era rows). Updated every frame without allocations.
 import * as THREE from 'three';
 import { h, stateColor } from './dom.js';
+import { book } from './tale.js';
 
 const v = new THREE.Vector3();
 
-export function createLabels(root, dioramas, { onClick, onHover }) {
+export function createLabels(root, dioramas, { onClick, onHover, storiesOf = () => [], onStory, drillName }) {
   const names = dioramas.map((d, i) => {
     const dot = h('i', { class: 'st' });
-    const el = h('div', { class: 'lbl name' }, dot, d.place.name);
+    const tales = storiesOf(d.place.id);
+    const glyph = tales.length ? book('book') : null;
+    if (glyph) {
+      glyph.title = tales.map((t) => t.title).join(' · ');
+      glyph.addEventListener('click', (e) => { e.stopPropagation(); onStory?.(tales[0]); });
+    }
+    const drill = d.place.drill && drillName ? h('i', { class: 'drill', title: `Enter ${drillName(d.place.drill)}` }, '⤓') : null;
+    const el = h('div', { class: 'lbl name' }, dot, d.place.name, glyph, drill);
     el.addEventListener('click', () => onClick(i));
     el.addEventListener('pointerenter', () => onHover(i));
     el.addEventListener('pointerleave', () => onHover(-1));

@@ -92,7 +92,8 @@ export class Diorama {
     this.marker.visible = false;
     this.root.add(this.marker);
     // a hit box for picking (cheap raycasts)
-    this.hit = new THREE.Mesh(new THREE.BoxGeometry(HALF * 2, 3, HALF * 2).translate(0, 0.6, 0), new THREE.MeshBasicMaterial({ visible: false }));
+    const hh = Math.max(3, (ctx.hitHeight || 0) + 0.9);
+    this.hit = new THREE.Mesh(new THREE.BoxGeometry(HALF * 2, hh, HALF * 2).translate(0, hh / 2 - 0.9, 0), new THREE.MeshBasicMaterial({ visible: false }));
     this.hit.userData.diorama = this;
     this.root.add(this.hit);
 

@@ -38,6 +38,18 @@ const SHOTS = [
   ['solo-neverwinter-1460', '?solo=neverwinter&year=1460'],
   ['solo-elturel-1492', '?solo=elturel&year=1492'],
   ['solo-high-forest', '?solo=high-forest'],
+  // phase 2: worlds and narration
+  ['board-planes', '?world=planes'],
+  ['board-realmspace', '?world=realmspace'],
+  ['board-ten-towns', '?world=ten-towns'],
+  ['board-kara-tur', '?world=kara-tur'],
+  ['board-zakhara', '?world=zakhara'],
+  ['board-maztica', '?world=maztica'],
+  ['board-laerakond', '?world=laerakond&year=1400'],
+  ['tale-card', '?tale=elturel-avernus'],
+  ['solo-ps-sigil', '?solo=ps-sigil'],
+  ['solo-sj-rock-of-bral', '?solo=sj-rock-of-bral'],
+  ['solo-tt-bryn-shander', '?solo=tt-bryn-shander'],
 ];
 
 let server;
@@ -73,7 +85,7 @@ for (const [name, q] of SHOTS) {
     await page.waitForTimeout(500);
   }
   if (pageError) { console.error(`✗ ${name}: ${pageError.stack}`); continue; }
-  await page.waitForTimeout(hash ? 3200 : 1200);
+  await page.waitForTimeout(hash || q.includes('tale=') ? 3200 : 1200);
   const fps = await page.evaluate(() => window.__atlasFps ?? null);
   const stats = await page.evaluate(() => window.__atlasStats ?? null);
   await page.screenshot({ path: path.join(OUT, `${name}.png`) });

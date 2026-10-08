@@ -33,6 +33,7 @@ export class Site {
     this.flatten = []; // [x, z, r] areas forced flat at y=0
     this.towers = []; // [x, z, r, h] for ruin stubs
     this.blocks = []; // [x, z, r] built-up areas for rubble
+    this.pits = []; // chasms: {x, z, len, w, ang, seed} (see kit/cosmos.js chasm())
     this.landFloor = 0; // land level
     this.noiseAmp = 0.06;
     this.seed = this.r.int(0, 1000);
@@ -108,6 +109,7 @@ export class Site {
       const d = Math.hypot(x - hx, z - hz) / r;
       if (d < 1) h += hh * (0.5 + 0.5 * Math.cos(d * Math.PI));
     }
+    if (this.pits.length) h = this.pitDepth(x, z, h);
     for (const [fx, fz, r] of this.flatten) {
       const d = Math.hypot(x - fx, z - fz);
       if (d < r) h = Math.min(h, this.landFloor + 0.02);
@@ -117,6 +119,20 @@ export class Site {
       // shore slopes down into the water
       const k = Math.min(1, (w + 0.25) / 0.6);
       h = h * (1 - k) + SEABED_Y * k;
+    }
+    return h;
+  }
+  /** chasms: the ground falls away inside each rift's jagged outline */
+  pitDepth(x, z, h) {
+    for (const p of this.pits) {
+      const ca = Math.cos(p.ang), sa = Math.sin(p.ang);
+      const u = (x - p.x) * ca + (z - p.z) * sa, v = -(x - p.x) * sa + (z - p.z) * ca;
+      const half = p.len / 2;
+      if (Math.abs(u) >= half) continue;
+      const taper = Math.sqrt(1 - (u / half) ** 2);
+      const wob = 1 + (noise2(u * 2.3 + p.seed, 0.5) - 0.5) * 0.7;
+      const vv = Math.abs(v - Math.sin(u * 1.7 + p.seed) * 0.25) / (p.w * 0.5 * taper * wob + 1e-3);
+      if (vv < 1) h = h * vv + -0.78 * (1 - vv) ** 0.4;
     }
     return h;
   }

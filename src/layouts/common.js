@@ -13,9 +13,15 @@ export const REGION_NAMES = {
   'heartlands-east': 'Cormyr & the Dales',
   'moonsea-and-north-east': 'Moonsea & North-East',
   'east-and-south': 'East & South',
+  // other worlds
+  'icewind-dale': 'Icewind Dale', 'ten-towns': 'Ten-Towns',
+  sigil: 'Sigil', outlands: 'The Outlands', 'upper-planes': 'Upper Planes', 'neutral-planes': 'Neutral Planes',
+  'lower-planes': 'Lower Planes', 'outer-planes': 'Outer Planes', 'inner-planes': 'Inner Planes', 'gate-towns': 'Gate-Towns',
+  realmspace: 'Realmspace', wildspace: 'Wildspace',
+  'kara-tur': 'Kara-Tur', zakhara: 'Zakhara', maztica: 'Maztica', laerakond: 'Laerakond',
 };
 export const REGION_ORDER = Object.keys(REGION_NAMES);
-export const regionName = (r) => REGION_NAMES[r] || r.replace(/-/g, ' ');
+export const regionName = (r) => REGION_NAMES[r] || String(r).split('-').map((w) => w[0]?.toUpperCase() + w.slice(1)).join(' ');
 
 export function boundsOf(items, pad = TILE) {
   let x0 = Infinity, x1 = -Infinity, z0 = Infinity, z1 = -Infinity;

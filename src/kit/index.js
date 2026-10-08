@@ -1,6 +1,8 @@
 // The shared kit: everything an archetype needs.
 export * from './pieces.js';
+export * from './cosmos.js';
 export { Site, HALF, WATER_Y, SEABED_Y, BOTTOM_Y } from './site.js';
+export { Builder as SubBuilder } from './builder.js';
 export { Builder } from './builder.js';
 export { rng, noise2 } from './rng.js';
 export { mixHex, shade, makePalette } from './palette.js';

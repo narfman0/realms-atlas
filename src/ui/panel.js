@@ -2,21 +2,30 @@
 import { h, esc, STATE_LABEL, stateColor } from './dom.js';
 import { yearToTrack, fmtYear, stateAt, appearYear, YEAR_MIN, ALWAYS } from '../time.js';
 import { regionName } from '../layouts/index.js';
+import { book } from './tale.js';
 
 const fmtPop = (n) => (n >= 1e6 ? `${(n / 1e6).toFixed(n >= 1e7 ? 0 : 1).replace(/\.0$/, '')} million` : n >= 1e4 ? `${Math.round(n / 1000)},000` : n.toLocaleString('en-US'));
 const TYPE = { 'underdark-city': 'Underdark city' };
 
-export function createPanel(el, { onYear, onPrev, onNext, onClose }) {
+export function createPanel(el, { onYear, onPrev, onNext, onClose, onDrill, worldName = (w) => w, storiesOf = () => [], onStory }) {
   let current = null;
   function render(place, year) {
     current = place;
     const st = stateAt(place, year);
     el.innerHTML = '';
     el.append(h('button', { class: 'close', title: 'Back to the board (Esc)', onclick: onClose }, '×'));
-    el.append(h('div', { class: 'kicker' }, `${regionName(place.region)} · ${TYPE[place.type] || place.type}`));
+    const w = place.world || 'toril';
+    el.append(h('div', { class: 'kicker' }, `${w !== 'toril' ? `${worldName(w)} · ` : ''}${regionName(place.region)} · ${TYPE[place.type] || place.type}`));
     el.append(h('h2', {}, place.name));
     if (place.aliases?.length) el.append(h('div', { class: 'aliases' }, place.aliases.join(' · ')));
     el.append(h('span', { class: 'state', style: { color: stateColor(st) } }, `${fmtYear(year)} — ${STATE_LABEL[st]}`));
+    if (place.drill) el.append(h('button', { class: 'drill', title: `Open the ${worldName(place.drill)} board`, onclick: () => onDrill?.(place.drill, place) }, h('span', {}, '⤓'), ` Enter ${worldName(place.drill)}`));
+    const tales = storiesOf(place.id);
+    if (tales.length) {
+      const t = h('div', { class: 'ptales' });
+      for (const s of tales) t.append(h('button', { onclick: () => onStory?.(s), title: 'Hear the tale' }, book('book'), h('span', {}, s.title), h('small', {}, fmtYear(s.year))));
+      el.append(t);
+    }
     el.append(h('p', { class: 'desc' }, place.description));
     const dl = h('dl');
     const row = (k, v) => { if (v != null && v !== '') dl.append(h('dt', {}, k), h('dd', {}, v)); };

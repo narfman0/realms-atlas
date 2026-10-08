@@ -23,6 +23,7 @@ export function groundTile(S, { res = 30 } = {}) {
   const push = (x, y, z) => pos.push(x, y, z);
   const faceColor = (y, slope, x, z) => {
     const n = noise2(x * 1.7 + S.seed, z * 1.7);
+    if (S.pits.length && y < -0.18 && S.isLand(x, z, -0.05)) return y < -0.55 ? '#1e1614' : mixHex(P.rockDark, '#2a1d17', 0.4);
     if (y < WATER_Y - 0.02) return mixHex(P.sand, P.waterDeep, Math.min(1, (WATER_Y - y) * 3));
     if (y < 0.03 && S.water.length && !S.isLand(x, z, 0.45)) return P.sand;
     if (S.pal.snowy && y > 0.0) return mixHex(P.snow, P.ground, 0.15 + n * 0.15);
@@ -68,9 +69,22 @@ export function groundTile(S, { res = 30 } = {}) {
   // ensure the skirt winding renders from outside: flat normals are computed per face, material is FrontSide
   addColored(b, g, col, 'base', 'solid');
   // water plane
-  if (S.water.length) {
+  if (S.water.length && !S.pits.length) {
     const wg = new THREE.PlaneGeometry(HALF * 2, HALF * 2, 12, 12).rotateX(-Math.PI / 2).translate(0, WATER_Y, 0);
     b.geo(wg, { kind: 'water', layer: 'water', color: P.water });
+  } else if (S.water.length) {
+    // with a chasm on the tile, water only where it is wet (so the rift stays dry and dark)
+    const n = 24, st = (HALF * 2) / n, wp = [];
+    for (let i = 0; i < n; i++) for (let j = 0; j < n; j++) {
+      const x0 = -HALF + i * st, z0 = -HALF + j * st;
+      if (S.wetness(x0 + st / 2, z0 + st / 2) < -0.35) continue;
+      wp.push(x0, WATER_Y, z0, x0, WATER_Y, z0 + st, x0 + st, WATER_Y, z0, x0 + st, WATER_Y, z0, x0, WATER_Y, z0 + st, x0 + st, WATER_Y, z0 + st);
+    }
+    if (wp.length) {
+      const wg = new THREE.BufferGeometry();
+      wg.setAttribute('position', new THREE.Float32BufferAttribute(wp, 3));
+      b.geo(wg, { kind: 'water', layer: 'water', color: P.water });
+    }
   }
 }
 

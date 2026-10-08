@@ -6,9 +6,9 @@ import { TILE, boundsOf } from './common.js';
 export const MAP_W = 300;
 export const MAP_S = 0.66;
 
-export function mapLayout(places, aspect = 1.45) {
-  const W = MAP_W, H = MAP_W / aspect;
-  const s = MAP_S;
+/** opts.W / opts.s: board width and diorama scale (smaller worlds use a smaller, more crowded chart) */
+export function mapLayout(places, aspect = 1.45, { W = MAP_W, s = MAP_S } = {}) {
+  const H = W / aspect;
   const minD = TILE * s * 1.16;
   const home = places.map((p) => [((p.map?.x ?? 0.5) - 0.5) * W, ((p.map?.y ?? 0.5) - 0.5) * H]);
   const pos = home.map(([x, z]) => [x, z]);

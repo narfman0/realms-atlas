@@ -219,3 +219,94 @@ body.night .overlay { background: rgba(0, 0, 0, 0.5); }
   #scrubber .era { font-size: 0; }
   #scrubber .play .yr { font-size: 15px; }
 }
+
+/* ============================================================ phase 2 == */
+/* ------------------------------------------------------------- worlds -- */
+#worlds { position: fixed; top: 62px; left: 50%; transform: translateX(-50%); display: flex; flex-wrap: nowrap;
+  background: var(--vellum); border: 1px solid var(--ink-faint); box-shadow: var(--shadow); max-width: calc(100vw - 36px); overflow-x: auto; scrollbar-width: none; }
+#worlds[hidden] { display: none; }
+#worlds button { background: none; border: 0; padding: 3px 11px 4px; cursor: pointer; font-size: 14.5px; font-variant: small-caps; letter-spacing: 0.06em; color: var(--ink-soft); white-space: nowrap; }
+#worlds button + button { border-left: 1px solid var(--ink-faint); }
+#worlds button:hover { color: var(--ink); }
+#worlds button.on { color: var(--rubric); background: var(--vellum-2); font-weight: 600; }
+#toast { top: 104px; }
+#veil { position: fixed; inset: 0; z-index: 35; background: var(--bg); opacity: 0; transition: opacity 0.35s; pointer-events: none; display: flex; align-items: center; justify-content: center; }
+#veil.on { opacity: 1; }
+#veil p { font-style: italic; color: var(--ink-soft); font-size: 18px; }
+.world-labels[hidden] { display: none; }
+
+/* ------------------------------------------------- book glyphs, drill -- */
+i.book { display: inline-block; width: 15px; height: 12px; vertical-align: -1px; color: var(--rubric); font-style: normal; }
+i.book svg { width: 100%; height: 100%; display: block; }
+.lbl.name i.book { margin-left: 5px; width: 14px; height: 11px; cursor: pointer; }
+.lbl.name i.book:hover { color: var(--gold); }
+.lbl.name i.drill { font-style: normal; margin-left: 4px; color: var(--rubric); font-size: 13px; }
+#tooltip em { display: block; font-size: 14px; color: var(--rubric); margin-top: 2px; }
+#tooltip em.t { color: var(--ink-soft); }
+#panel button.drill { display: flex; align-items: center; gap: 8px; margin: 12px 0 2px; padding: 6px 14px 7px; width: 100%; cursor: pointer;
+  background: var(--vellum-2); border: 1px solid var(--rubric); color: var(--rubric); font-size: 19px; font-variant: small-caps; letter-spacing: 0.05em; }
+#panel button.drill span { font-size: 20px; }
+#panel button.drill:hover { background: var(--rubric); color: var(--vellum); }
+#panel .ptales { display: flex; flex-direction: column; gap: 3px; margin: 12px 0 0; }
+#panel .ptales button { display: flex; align-items: center; gap: 8px; background: none; border: 0; border-top: 1px dotted var(--ink-faint); padding: 5px 0; cursor: pointer; text-align: left; font-size: 17px; font-style: italic; }
+#panel .ptales button span { flex: 1; }
+#panel .ptales button small { font-family: var(--mono); font-size: 11px; font-style: normal; color: var(--ink-soft); }
+#panel .ptales button:hover span { color: var(--rubric); }
+
+/* ---------------------------------------------------- scrubber tales -- */
+#scrubber .tales { position: absolute; left: 0; right: 0; top: 86px; height: 22px; }
+#scrubber .tale { position: absolute; width: 15px; height: 12px; margin-left: -7.5px; color: var(--rubric); cursor: pointer; }
+#scrubber .tale svg { width: 100%; height: 100%; display: block; }
+#scrubber .tale:hover, #scrubber .tale.hot { color: var(--gold); transform: scale(1.35); }
+
+/* ---------------------------------------------------------- tale card -- */
+#tale {
+  position: fixed; right: 18px; top: 70px; bottom: 138px; width: min(430px, calc(100vw - 36px)); z-index: 22;
+  background: var(--vellum); border: 1px solid var(--ink-faint); box-shadow: var(--shadow); outline: 3px double var(--ink-faint); outline-offset: -8px;
+  overflow-y: auto; padding: 24px 28px 20px; scrollbar-width: thin;
+}
+#tale[hidden] { display: block; transform: translateX(calc(100% + 40px)); opacity: 0; pointer-events: none; }
+#tale .close { position: absolute; right: 12px; top: 10px; border: 0; background: none; font-size: 22px; cursor: pointer; color: var(--ink-soft); }
+#tale .kicker { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--rubric); display: flex; align-items: center; gap: 6px; }
+#tale h2 { margin: 6px 0 2px; font-size: 34px; line-height: 1.02; font-weight: 600; }
+#tale .narrator { font-style: italic; color: var(--ink-soft); font-size: 16px; }
+#tale .tctl { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 12px; margin: 14px 0 10px; padding: 8px 0; border-top: 1px solid var(--ink-faint); border-bottom: 1px solid var(--ink-faint); }
+#tale .tplay { border: 1px solid var(--rubric); background: none; color: var(--rubric); padding: 4px 12px 5px; cursor: pointer; font-size: 16px; font-variant: small-caps; letter-spacing: 0.05em; white-space: nowrap; }
+#tale .tplay b { font-size: 12px; margin-right: 3px; }
+#tale .tplay.on, #tale .tplay:hover { background: var(--rubric); color: var(--vellum); }
+#tale .tbar { height: 3px; background: var(--ink-faint); position: relative; }
+#tale .tbar span { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--rubric); }
+#tale .tt { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); }
+#tale .ttext p { font-size: 19px; line-height: 1.45; margin: 0 0 10px; }
+#tale .ttext p:first-child::first-letter { font-size: 3.2em; float: left; line-height: 0.82; padding: 5px 7px 0 0; color: var(--rubric); font-weight: 600; }
+#tale .tplaces { margin: 12px 0 4px; font-size: 15px; color: var(--ink-soft); font-style: italic; }
+#tale .tplace { background: none; border: 0; border-bottom: 1px dotted var(--ink-faint); padding: 0 2px; margin: 0 4px 0 0; cursor: pointer; font-size: 15px; color: var(--ink); }
+#tale .tplace:hover { color: var(--rubric); }
+#tale .tevent, #tale .tnote { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.04em; color: var(--ink-soft); margin-top: 6px; }
+#tale.playing { box-shadow: var(--shadow), 0 0 0 1px var(--rubric); }
+
+/* ------------------------------------------------------ stories index -- */
+.stories-sheet { max-width: 760px; }
+ol.stories { list-style: none; margin: 0; padding: 0; }
+ol.stories li { display: grid; grid-template-columns: 108px 22px 1fr auto; align-items: baseline; gap: 8px; padding: 7px 0; border-bottom: 1px dotted var(--ink-faint); cursor: pointer; }
+ol.stories li:hover b { color: var(--rubric); }
+ol.stories .y { font-family: var(--mono); font-size: 12px; color: var(--rubric); }
+ol.stories b { display: block; font-size: 20px; font-weight: 600; }
+ol.stories small { display: block; font-size: 14px; font-style: italic; color: var(--ink-soft); }
+ol.stories .d { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); }
+.overlay h3.world { font-size: 24px; font-weight: 600; font-variant: small-caps; letter-spacing: 0.06em; margin: 22px 0 8px; border-bottom: 2px solid var(--ink-faint); display: flex; gap: 12px; align-items: baseline; }
+.overlay h3.world small { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); font-variant: normal; letter-spacing: 0.04em; }
+.overlay h3.world.here { color: var(--rubric); }
+
+@media (max-width: 760px) {
+  #worlds { top: auto; bottom: 178px; }
+  #tale { top: auto; bottom: 136px; height: 50vh; right: 8px; left: 8px; width: auto; }
+  #tools #btn-narration { font-size: 0; }
+  #tools #btn-narration::before { content: '♪'; font-size: 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #panel, #tale, #veil, .ui { transition: none; }
+}
+/* labels on the dark orrery plate */
+body[data-world="realmspace"][data-layout="own"] .lbl.name { color: #f0dfb8; text-shadow: 0 0 3px #0c1428, 0 0 6px #0c1428, 0 0 1px #0c1428; }
+body[data-world="realmspace"][data-layout="own"] .lbl.name i.book, body[data-world="realmspace"][data-layout="own"] .lbl.name i.drill { color: #f2c27a; }

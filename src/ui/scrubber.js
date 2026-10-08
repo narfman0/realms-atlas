@@ -1,10 +1,11 @@
 // The Dalereckoning scrubber: piecewise-linear axis, era bands, year ticks, world-event markers, play button.
 import { h, esc } from './dom.js';
 import { ERAS, EVENTS, YEAR_MIN, YEAR_MAX, yearToTrack, trackToYear, fmtYear, fmtYearShort, eraOf } from '../time.js';
+import { BOOK_SVG } from './tale.js';
 
 const TICKS = [-3500, -2500, -1500, -500, 0, 250, 500, 750, 1000, 1100, 1200, 1300, 1358, 1385, 1450, 1496];
 
-export function createScrubber(root, { onYear, onEvent, onPlay }) {
+export function createScrubber(root, { onYear, onEvent, onPlay, stories = [], onStory }) {
   const yr = h('span', { class: 'yr' }, '1496');
   const yrl = h('span', { class: 'yrl' }, 'DR');
   const ic = h('span', { class: 'ic' }, '▶');
@@ -15,7 +16,8 @@ export function createScrubber(root, { onYear, onEvent, onPlay }) {
   const events = h('div', { class: 'events' });
   const handle = h('div', { class: 'handle' });
   const tip = h('div', { class: 'evtip', hidden: true });
-  track.append(eras, h('div', { class: 'axis' }), ticks, events, handle, tip);
+  const tales = h('div', { class: 'tales' });
+  track.append(eras, h('div', { class: 'axis' }), ticks, events, tales, handle, tip);
   root.append(play, track);
 
   const pct = (y) => `${(yearToTrack(y) * 100).toFixed(3)}%`;
@@ -47,6 +49,22 @@ export function createScrubber(root, { onYear, onEvent, onPlay }) {
     evEls.push(el);
     events.append(el);
   });
+  // story markers: an open book under the ticks at each tale's year
+  let lastT = -1, lift = 0;
+  const taleEls = stories.map((st) => {
+    const x = yearToTrack(st.year);
+    lift = x - lastT < 0.012 ? (lift + 1) % 2 : 0;
+    lastT = x;
+    const el = h('div', {
+      class: 'tale', style: { left: pct(st.year), top: `${lift * 9}px` }, title: `${fmtYear(st.year)} — ${st.title}`,
+      onclick: (e) => { e.stopPropagation(); onStory?.(st); },
+      onmouseenter: () => showTip({ year: st.year, title: st.title, summary: `A tale, as told by ${st.narrator || 'a sage'}` }, x), onmouseleave: () => { tip.hidden = true; },
+    });
+    el.innerHTML = BOOK_SVG;
+    el.dataset.id = st.id;
+    tales.append(el);
+    return el;
+  });
   function showTip(ev, x) {
     tip.innerHTML = `<i>${esc(fmtYear(ev.year))}${ev.yearEnd ? ` – ${esc(fmtYear(ev.yearEnd))}` : ''}</i><b>${esc(ev.title)}</b>${esc(ev.summary || '')}`;
     tip.style.left = `${Math.min(88, Math.max(12, x * 100))}%`;
@@ -59,7 +77,7 @@ export function createScrubber(root, { onYear, onEvent, onPlay }) {
     return trackToYear((e.clientX - r.left) / r.width);
   };
   track.addEventListener('pointerdown', (e) => {
-    if (e.target.classList.contains('ev')) return;
+    if (e.target.closest('.ev, .tale')) return;
     dragging = true;
     track.setPointerCapture(e.pointerId);
     onYear(yearAt(e), 'scrub');
@@ -76,5 +94,6 @@ export function createScrubber(root, { onYear, onEvent, onPlay }) {
     },
     setPlaying(p) { ic.textContent = p ? '❚❚' : '▶'; play.classList.toggle('on', p); },
     hot(i) { evEls.forEach((el, k) => el.classList.toggle('hot', k === i)); },
+    hotTale(id) { taleEls.forEach((el) => el.classList.toggle('hot', el.dataset.id === id)); },
   };
 }

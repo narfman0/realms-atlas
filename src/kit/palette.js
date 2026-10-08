@@ -13,6 +13,7 @@ const T = {
   tundra: { ground: '#dfe3e4', leaf: '#4e6a58', rock: '#8d9298' },
   river: { ground: '#b6bb7e', leaf: '#628a4a', rock: '#9a9482' },
   jungle: { ground: '#7f9a5a', leaf: '#3f7a3a', rock: '#7d7a63' },
+  void: { ground: '#6a6a7a', leaf: '#6f7a8a', rock: '#55525e' },
 };
 
 const c = (h) => new THREE.Color(h);

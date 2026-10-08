@@ -78,7 +78,7 @@ function seaPolygon(mainland, placesXY) {
 /**
  * Draw the parchment map onto a canvas. map = {polylines, labels, aspect}; places = records (for site dots).
  */
-export function drawParchment(map, places, { width = 3000 } = {}) {
+export function drawParchment(map, places, { width = 3000, title = 'Faerûn' } = {}) {
   const aspect = map.aspect || 1.45;
   const W = width, H = Math.round(width / aspect);
   const cv = document.createElement('canvas');
@@ -141,26 +141,7 @@ export function drawParchment(map, places, { width = 3000 } = {}) {
   // 5. islands
   for (const isl of islands) { path(isl.points); g.fillStyle = LAND; g.fill(); }
   // 6. paper texture: blotches and fibres
-  for (let i = 0; i < 260; i++) {
-    const x = R() * W, y = R() * H, r = 20 + R() * 160;
-    const grd = g.createRadialGradient(x, y, 0, x, y, r);
-    grd.addColorStop(0, `rgba(120,90,50,${0.015 + R() * 0.035})`);
-    grd.addColorStop(1, 'rgba(120,90,50,0)');
-    g.fillStyle = grd;
-    g.fillRect(x - r, y - r, r * 2, r * 2);
-  }
-  g.strokeStyle = 'rgba(90,70,40,0.05)';
-  g.lineWidth = 1;
-  for (let i = 0; i < 1400; i++) {
-    const x = R() * W, y = R() * H, l = 6 + R() * 26, a = R() * Math.PI;
-    g.beginPath(); g.moveTo(x, y); g.lineTo(x + Math.cos(a) * l, y + Math.sin(a) * l); g.stroke();
-  }
-  // vignette
-  const vg = g.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.35, W / 2, H / 2, Math.max(W, H) * 0.72);
-  vg.addColorStop(0, 'rgba(90,60,30,0)');
-  vg.addColorStop(1, 'rgba(90,60,30,0.28)');
-  g.fillStyle = vg;
-  g.fillRect(0, 0, W, H);
+  paper(g, W, H, R);
   // graticule
   g.strokeStyle = 'rgba(58,44,32,0.12)';
   g.lineWidth = 2;
@@ -262,7 +243,7 @@ export function drawParchment(map, places, { width = 3000 } = {}) {
   g.textAlign = 'right';
   g.fillStyle = INK;
   g.font = '600 92px "Cormorant Garamond", Georgia, serif';
-  g.fillText(spaced('FAERÛN'), 0, 0);
+  g.fillText(spaced(title.toUpperCase()), 0, 0);
   g.font = 'italic 500 40px "Cormorant Garamond", Georgia, serif';
   g.fillText('a schematic chart, not to scale', -6, 54);
   g.restore();
@@ -274,6 +255,55 @@ export function drawParchment(map, places, { width = 3000 } = {}) {
 }
 
 const spaced = (s) => s.split('').join(' ');
+
+/** paper texture: blotches, fibres, a vignette (tint = rgb of the stain) */
+function paper(g, W, H, R, { tint = '120,90,50', fibre = '90,70,40', n = 260, vignette = 0.28 } = {}) {
+  for (let i = 0; i < n; i++) {
+    const x = R() * W, y = R() * H, r = 20 + R() * 160;
+    const grd = g.createRadialGradient(x, y, 0, x, y, r);
+    grd.addColorStop(0, `rgba(${tint},${0.015 + R() * 0.035})`);
+    grd.addColorStop(1, `rgba(${tint},0)`);
+    g.fillStyle = grd;
+    g.fillRect(x - r, y - r, r * 2, r * 2);
+  }
+  g.strokeStyle = `rgba(${fibre},0.05)`;
+  g.lineWidth = 1;
+  for (let i = 0; i < 1400; i++) {
+    const x = R() * W, y = R() * H, l = 6 + R() * 26, a = R() * Math.PI;
+    g.beginPath(); g.moveTo(x, y); g.lineTo(x + Math.cos(a) * l, y + Math.sin(a) * l); g.stroke();
+  }
+  if (vignette) {
+    const vg = g.createRadialGradient(W / 2, H / 2, Math.min(W, H) * 0.35, W / 2, H / 2, Math.max(W, H) * 0.72);
+    vg.addColorStop(0, 'rgba(90,60,30,0)');
+    vg.addColorStop(1, `rgba(90,60,30,${vignette})`);
+    g.fillStyle = vg;
+    g.fillRect(0, 0, W, H);
+  }
+}
+
+/** text set along a circular arc centred on canvas angle a; flip = reads along the bottom of the circle */
+function arcText(g, text, cx, cy, r, a, { size = 40, font = '600', color = '#3a2c20', spacing = 1.0, flip = false } = {}) {
+  g.save();
+  g.font = `${font} ${size}px "Cormorant Garamond", Georgia, serif`;
+  g.fillStyle = color;
+  g.textAlign = 'center';
+  g.textBaseline = 'middle';
+  const dir = flip ? -1 : 1;
+  const chars = [...text];
+  const widths = chars.map((ch) => g.measureText(ch).width * spacing);
+  const total = widths.reduce((x, y) => x + y, 0);
+  let t = a - (dir * total) / r / 2;
+  for (let i = 0; i < chars.length; i++) {
+    const ang = t + (dir * widths[i]) / r / 2;
+    g.save();
+    g.translate(cx + Math.cos(ang) * r, cy + Math.sin(ang) * r);
+    g.rotate(ang + (dir * Math.PI) / 2);
+    g.fillText(chars[i], 0, 0);
+    g.restore();
+    t += (dir * widths[i]) / r;
+  }
+  g.restore();
+}
 
 function peak(g, x, y, s, ink) {
   g.beginPath();
@@ -322,10 +352,10 @@ function compass(g, x, y, r, ink) {
   g.restore();
 }
 
-export function makeMapBoard(map, places) {
+export function makeMapBoard(map, places, { W = MAP_W, title = 'Faerûn' } = {}) {
   const aspect = map.aspect || 1.45;
-  const W = MAP_W, H = MAP_W / aspect;
-  const tex = drawParchment(map, places);
+  const H = W / aspect;
+  const tex = drawParchment(map, places, { title, width: W >= 300 ? 3000 : 2400 });
   const mat = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.95, transparent: true, opacity: 0, depthWrite: false });
   const mesh = new THREE.Mesh(new THREE.PlaneGeometry(W, H, 24, 16), mat);
   mesh.rotation.x = -Math.PI / 2;
@@ -372,4 +402,185 @@ export function makeLeaders(n) {
     geo.attributes.position.needsUpdate = true;
   };
   return lines;
+}
+
+/* ------------------------------------------------------- shared board -- */
+/** a textured board plane (half-size `half`), optional rim, and extra meshes; userData.set(k) fades it */
+function texturedBoard(tex, half, { rim = true, rimColor = '#5a4330', extras = [], transparentTex = false } = {}) {
+  const mat = new THREE.MeshStandardMaterial({ map: tex, roughness: 0.95, transparent: true, opacity: 0, depthWrite: false, alphaTest: transparentTex ? 0.02 : 0 });
+  const mesh = new THREE.Mesh(new THREE.PlaneGeometry(half * 2, half * 2, 16, 16), mat);
+  mesh.rotation.x = -Math.PI / 2;
+  mesh.position.y = FLOOR_Y + 0.04;
+  mesh.receiveShadow = true;
+  mesh.renderOrder = -1;
+  const group = new THREE.Group();
+  const rimMat = new THREE.MeshStandardMaterial({ color: rimColor, roughness: 0.8, transparent: true, opacity: 0 });
+  const slab = new THREE.Group();
+  if (rim) {
+    const r = 2.2, rh = 0.7, S = half * 2;
+    for (const [w, d, x, z] of [[S + r * 2, r, 0, -(S + r) / 2], [S + r * 2, r, 0, (S + r) / 2], [r, S, -(S + r) / 2, 0], [r, S, (S + r) / 2, 0]]) {
+      const m = new THREE.Mesh(new THREE.BoxGeometry(w, rh, d), rimMat);
+      m.position.set(x, FLOOR_Y - rh / 2 + 0.12, z);
+      m.receiveShadow = true;
+      slab.add(m);
+    }
+  }
+  group.add(slab, mesh, ...extras.map((e) => e.mesh));
+  group.userData.set = (k) => {
+    mat.opacity = k; rimMat.opacity = k;
+    for (const e of extras) e.mat.opacity = k * (e.opacity ?? 1);
+    group.visible = k > 0.01;
+    mat.depthWrite = k > 0.99 && !transparentTex; rimMat.transparent = k < 0.99;
+    for (const e of extras) { e.mat.transparent = k < 0.99 || e.opacity != null; e.mat.depthWrite = k > 0.99 && e.opacity == null; }
+  };
+  group.userData.material = mat;
+  group.userData.set(0);
+  return group;
+}
+
+/* ------------------------------------------------------------- wheel -- */
+/** The Outlands: a parchment disc of concentric ink rings and spokes, the Spire as a needle up to Sigil. */
+export function makeWheelBoard(L) {
+  const half = L.bounds.x1;
+  const P = 2400, k = P / (half * 2);
+  const cv = document.createElement('canvas');
+  cv.width = P; cv.height = P;
+  const g = cv.getContext('2d');
+  const R = rng('wheel');
+  const INK = '#3a2c20', LAND = '#ecdfc0';
+  const c = P / 2;
+  g.fillStyle = '#e3d4b0'; g.fillRect(0, 0, P, P);
+  // the Outlands disc, a little lighter, with water-line style ripples outside the outer ring
+  const R1 = L.R1 * k, R2 = L.R2 * k, Rout = (L.R2 + 9) * k;
+  for (let i = 6; i >= 1; i--) {
+    g.beginPath(); g.arc(c, c, Rout + i * 16, 0, Math.PI * 2);
+    g.strokeStyle = `rgba(58,44,32,${0.04 + 0.08 * (1 - i / 6)})`; g.lineWidth = 2; g.stroke();
+  }
+  g.beginPath(); g.arc(c, c, Rout, 0, Math.PI * 2); g.fillStyle = LAND; g.fill();
+  paper(g, P, P, R, { n: 200, vignette: 0.22 });
+  // concentric rings: the Spire's foot, the inner Outlands, the gate-town ring, the planes ring, the rim
+  const ring = (r, w, a = 0.9, dash) => { g.beginPath(); g.arc(c, c, r, 0, Math.PI * 2); g.strokeStyle = `rgba(58,44,32,${a})`; g.lineWidth = w; g.setLineDash(dash || []); g.stroke(); g.setLineDash([]); };
+  ring(Rout, 6); ring(Rout - 14, 2);
+  ring(R2, 2.5, 0.75); ring(R2 - 8, 1, 0.5);
+  ring(R1, 2.5, 0.75); ring(R1 + 8, 1, 0.5);
+  ring(12 * k, 2, 0.8); ring(8 * k, 1, 0.5, [8, 8]);
+  for (let i = 1; i < 5; i++) ring(12 * k + ((R1 - 12 * k) * i) / 5, 1, 0.12, [4, 10]);
+  // spokes: the borders between the sixteen planes (half a step off the gate-town angles)
+  for (let i = 0; i < 16; i++) {
+    const a = ((i + 0.5) / 16) * Math.PI * 2 - Math.PI / 2;
+    g.beginPath();
+    g.moveTo(c + Math.cos(a) * 12 * k, c + Math.sin(a) * 12 * k);
+    g.lineTo(c + Math.cos(a) * Rout, c + Math.sin(a) * Rout);
+    g.strokeStyle = 'rgba(58,44,32,0.45)'; g.lineWidth = 2; g.setLineDash([18, 10]); g.stroke(); g.setLineDash([]);
+    // a small tick where each road leaves the gate ring
+    const b = (i / 16) * Math.PI * 2 - Math.PI / 2;
+    g.beginPath(); g.moveTo(c + Math.cos(b) * (R1 + 8), c + Math.sin(b) * (R1 + 8)); g.lineTo(c + Math.cos(b) * (R2 - 8), c + Math.sin(b) * (R2 - 8));
+    g.strokeStyle = 'rgba(58,44,32,0.18)'; g.lineWidth = 1.5; g.stroke();
+  }
+  // hatching rays from the Spire (its "shadow" of anti-magic)
+  for (let i = 0; i < 96; i++) {
+    const a = (i / 96) * Math.PI * 2;
+    g.beginPath(); g.moveTo(c + Math.cos(a) * 12.5 * k, c + Math.sin(a) * 12.5 * k); g.lineTo(c + Math.cos(a) * (14.5 + (i % 2) * 1.5) * k, c + Math.sin(a) * (14.5 + (i % 2) * 1.5) * k);
+    g.strokeStyle = 'rgba(58,44,32,0.5)'; g.lineWidth = 1.5; g.stroke();
+  }
+  // lettering on the arcs (bottom arcs read from below, flipped)
+  // the outer lettering sits beyond the planes' tiles and their labels, between two spokes
+  arcText(g, spaced('THE GREAT WHEEL'), c, c, (L.R2 + 15) * k, Math.PI / 2 - Math.PI / 16, { size: 48, flip: true, spacing: 1.05 });
+  arcText(g, spaced('THE OUTLANDS'), c, c, (R1 + R2) / 2, Math.PI / 2, { size: 34, flip: true, color: 'rgba(58,44,32,0.8)' });
+  arcText(g, 'the ring of the gate-towns', c, c, R1 - 30, Math.PI / 2, { size: 26, font: 'italic 500', flip: true, color: 'rgba(58,44,32,0.7)' });
+  // cartouche and compass
+  g.strokeStyle = INK; g.lineWidth = 10; g.strokeRect(14, 14, P - 28, P - 28);
+  g.lineWidth = 2.5; g.strokeRect(34, 34, P - 68, P - 68);
+  g.save(); g.translate(P - 90, P - 120); g.textAlign = 'right'; g.fillStyle = INK;
+  g.font = '600 64px "Cormorant Garamond", Georgia, serif'; g.fillText(spaced('THE PLANES'), 0, -10);
+  g.font = 'italic 500 32px "Cormorant Garamond", Georgia, serif'; g.fillText('the Outlands and the Great Ring,', -4, 44); g.fillText('a schematic, not to scale', -4, 80);
+  g.restore();
+  // a dashed inset round the corner places (City of Brass: off the Wheel entirely)
+  g.save(); g.setLineDash([12, 10]); g.strokeStyle = 'rgba(58,44,32,0.6)'; g.lineWidth = 2.5;
+  const ci = (L.R2 * 0.98) * k, box = 13 * k;
+  g.strokeRect(c + ci - box, c - ci - box, box * 2, box * 2);
+  g.setLineDash([]); g.font = 'italic 600 38px "Cormorant Garamond", Georgia, serif'; g.fillStyle = 'rgba(58,44,32,0.85)'; g.textAlign = 'center';
+  g.fillText('beyond the Wheel: the Inner Planes', c + ci, c - ci - box - 18);
+  g.restore();
+  compass(g, 230, 230, 120, INK);
+  const tex = new THREE.CanvasTexture(cv);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 4;
+  // the Spire: a needle from the board up to Sigil
+  const spireMat = new THREE.MeshStandardMaterial({ color: '#8d806c', roughness: 0.9, flatShading: true, transparent: true, opacity: 0 });
+  const H = (L.sigil >= 0 ? 15 : 12);
+  const spire = new THREE.Mesh(new THREE.ConeGeometry(1.25, H + 3, 7, 3).translate(0, (H + 3) / 2, 0), spireMat);
+  spire.position.y = FLOOR_Y;
+  spire.castShadow = true; spire.receiveShadow = true;
+  return texturedBoard(tex, half, { extras: [{ mesh: spire, mat: spireMat }] });
+}
+
+/* ------------------------------------------------------------- orbit -- */
+/** Realmspace: a disc of deep-blue vellum pricked with stars, the orbits as faint ink circles, the crystal
+ *  shell as a glassy rim. */
+export function makeOrbitBoard(L) {
+  const half = L.bounds.x1;
+  const P = 2400, k = P / (half * 2);
+  const cv = document.createElement('canvas');
+  cv.width = P; cv.height = P;
+  const g = cv.getContext('2d');
+  const R = rng('orbit');
+  const c = P / 2;
+  const Rshell = (L.RMAX + 6.5) * k, Rdisc = (L.RMAX + 21) * k;
+  // the vellum disc (corners stay transparent: the plate lies on the parchment table)
+  const grd = g.createRadialGradient(c, c, 0, c, c, Rdisc);
+  grd.addColorStop(0, '#24345a'); grd.addColorStop(0.55, '#16223e'); grd.addColorStop(1, '#0c1428');
+  g.beginPath(); g.arc(c, c, Rdisc, 0, Math.PI * 2); g.fillStyle = grd; g.fill();
+  g.save(); g.beginPath(); g.arc(c, c, Rdisc, 0, Math.PI * 2); g.clip();
+  paper(g, P, P, R, { tint: '180,200,255', fibre: '200,210,255', n: 120, vignette: 0 });
+  // star pricks: many faint dots, a few brighter with a four-point glint
+  for (let i = 0; i < 1600; i++) {
+    const x = R() * P, y = R() * P, s = R();
+    g.fillStyle = `rgba(240,232,210,${0.25 + s * 0.6})`;
+    g.beginPath(); g.arc(x, y, 0.8 + s * s * 2.4, 0, Math.PI * 2); g.fill();
+    if (s > 0.985) {
+      g.strokeStyle = 'rgba(255,240,210,0.6)'; g.lineWidth = 1.2;
+      g.beginPath(); g.moveTo(x - 10, y); g.lineTo(x + 10, y); g.moveTo(x, y - 10); g.lineTo(x, y + 10); g.stroke();
+    }
+  }
+  // the sun's glow
+  const sg = g.createRadialGradient(c, c, 0, c, c, 26 * k);
+  sg.addColorStop(0, 'rgba(255,200,110,0.55)'); sg.addColorStop(1, 'rgba(255,200,110,0)');
+  g.fillStyle = sg; g.fillRect(c - 26 * k, c - 26 * k, 52 * k, 52 * k);
+  // orbits
+  const ink = 'rgba(240,223,184,';
+  for (const r of L.rings) {
+    g.beginPath(); g.arc(c, c, r * k, 0, Math.PI * 2);
+    g.strokeStyle = `${ink}0.38)`; g.lineWidth = 2.2; g.stroke();
+    // tick marks along each orbit, like an orrery's engraved ring
+    for (let i = 0; i < 72; i++) {
+      const a = (i / 72) * Math.PI * 2, r0 = r * k - (i % 6 ? 4 : 9), r1 = r * k + (i % 6 ? 4 : 9);
+      g.beginPath(); g.moveTo(c + Math.cos(a) * r0, c + Math.sin(a) * r0); g.lineTo(c + Math.cos(a) * r1, c + Math.sin(a) * r1);
+      g.strokeStyle = `${ink}0.18)`; g.lineWidth = 1.2; g.stroke();
+    }
+  }
+  // the crystal shell: a double rim with facets
+  for (const [r, w, a] of [[Rshell, 5, 0.75], [Rshell + 14, 1.5, 0.5], [Rshell - 12, 1.2, 0.3]]) {
+    g.beginPath(); g.arc(c, c, r, 0, Math.PI * 2); g.strokeStyle = `rgba(200,225,255,${a})`; g.lineWidth = w; g.stroke();
+  }
+  for (let i = 0; i < 48; i++) {
+    const a = (i / 48) * Math.PI * 2, b = ((i + 1) / 48) * Math.PI * 2;
+    g.beginPath(); g.moveTo(c + Math.cos(a) * (Rshell + 14), c + Math.sin(a) * (Rshell + 14)); g.lineTo(c + Math.cos((a + b) / 2) * Rshell, c + Math.sin((a + b) / 2) * Rshell); g.lineTo(c + Math.cos(b) * (Rshell + 14), c + Math.sin(b) * (Rshell + 14));
+    g.strokeStyle = 'rgba(200,225,255,0.3)'; g.lineWidth = 1.2; g.stroke();
+  }
+  arcText(g, spaced('THE CRYSTAL SPHERE OF REALMSPACE'), c, c, Rshell + 44, Math.PI / 2, { size: 40, flip: true, color: 'rgba(240,223,184,0.85)' });
+  arcText(g, 'wildspace', c, c, Rshell - 40, -Math.PI / 2 - 0.5, { size: 34, font: 'italic 500', color: 'rgba(240,223,184,0.6)' });
+  g.restore();
+  // outer engraved brass rim
+  g.beginPath(); g.arc(c, c, Rdisc - 3, 0, Math.PI * 2); g.strokeStyle = '#a8792c'; g.lineWidth = 8; g.stroke();
+  g.beginPath(); g.arc(c, c, Rdisc - 16, 0, Math.PI * 2); g.strokeStyle = 'rgba(168,121,44,0.6)'; g.lineWidth = 2; g.stroke();
+  const tex = new THREE.CanvasTexture(cv);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.anisotropy = 4;
+  // the crystal shell, standing up from the plate as a low glassy wall
+  const shellMat = new THREE.MeshStandardMaterial({ color: '#bcd6ff', roughness: 0.15, metalness: 0.1, transparent: true, opacity: 0, side: THREE.DoubleSide, depthWrite: false, emissive: '#2a3a66', emissiveIntensity: 0.6 });
+  const shell = new THREE.Mesh(new THREE.CylinderGeometry(L.RMAX + 6.5, L.RMAX + 6.5, 1.6, 96, 1, true).translate(0, 0.8, 0), shellMat);
+  shell.position.y = FLOOR_Y;
+  shell.renderOrder = 2;
+  return texturedBoard(tex, half, { rim: false, transparentTex: true, extras: [{ mesh: shell, mat: shellMat, opacity: 0.35 }] });
 }

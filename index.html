@@ -19,20 +19,23 @@
 
   <nav id="layouts" class="ui" aria-label="Layouts">
     <button data-layout="atlas" title="Atlas — by region (1)"><i>I</i> Atlas</button>
-    <button data-layout="map" title="Map — on the chart of Faerûn (2)"><i>II</i> Map</button>
+    <button data-layout="map" data-slot="2" title="Map — on the chart of Faerûn (2)"><i>II</i> Map</button>
     <button data-layout="chronicle" title="Chronicle — by founding, in eras (3)"><i>III</i> Chronicle</button>
   </nav>
+  <nav id="worlds" class="ui" aria-label="Worlds"></nav>
 
   <nav id="tools" class="ui" aria-label="Tools">
     <button id="btn-tour" title="Tour (T)">Tour</button>
     <button id="btn-contents" title="Contents (C)">Contents</button>
     <button id="btn-search" title="Search (/)">Search</button>
+    <button id="btn-narration" title="Narration (R)">Narration</button>
     <button id="btn-night" title="Night (N)">Night</button>
     <button id="btn-bloom" title="Bloom (B)">Bloom</button>
     <button id="btn-help" title="Keys (?)">?</button>
   </nav>
 
   <aside id="panel" class="ui" aria-live="polite" hidden></aside>
+  <aside id="tale" class="ui" aria-live="polite" hidden></aside>
 
   <footer id="scrubber" class="ui"></footer>
 
@@ -47,6 +50,8 @@
     </div>
   </section>
   <section id="help" class="overlay" hidden></section>
+  <section id="stories" class="overlay" hidden></section>
+  <div id="veil" hidden><p id="veil-msg"></p></div>
 
   <div id="loading"><div class="ld-inner"><h2>Realms Atlas</h2><p id="loading-msg">Unrolling the vellum…</p><div class="ld-bar"><span id="loading-bar"></span></div></div></div>
 

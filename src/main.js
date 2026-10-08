@@ -2,25 +2,33 @@
 import './style.css';
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import data from './generated/places.json';
-import mapData from './generated/map.json';
 import { Diorama } from './diorama.js';
 import { shared } from './kit/materials.js';
-import { LAYOUTS, LAYOUT_KEYS, TILE } from './layouts/index.js';
-import { makeFloor, makeFrame, makeMapBoard, makeLeaders, FLOOR_Y } from './board.js';
+import { LAYOUTS, LAYOUT_KEYS, LAYOUT_TITLES } from './layouts/index.js';
+import { orbitAt } from './layouts/orbit.js';
+import { makeFloor, makeFrame, makeMapBoard, makeWheelBoard, makeOrbitBoard, makeLeaders, FLOOR_Y } from './board.js';
 import { EVENTS, YEAR_MIN, YEAR_MAX, PRESENT, yearToTrack, trackToYear, stateAt, fmtYear, eraOf } from './time.js';
+import { ALL_PLACES, WORLDS, WORLD_BY_ID, PLACE_BY_ID, MAPS, STORIES, worldOf, worldName, placesOf, primaryLayout, mapOpts, storiesOf, storyWorld } from './worlds.js';
 import { createScrubber } from './ui/scrubber.js';
 import { createPanel } from './ui/panel.js';
 import { createContents, createSearch, createHelp } from './ui/overlays.js';
 import { createLabels } from './ui/labels.js';
+import { createTale, createStories } from './ui/tale.js';
 import { $, $$, esc, STATE_LABEL } from './ui/dom.js';
 import { createPost } from './post.js';
 
 const params = new URLSearchParams(location.search);
 const SOLO = params.get('solo');
-const PLACES = SOLO ? data.places.filter((p) => p.id === SOLO) : data.places;
-if (SOLO && !PLACES.length) PLACES.push(data.places[0]);
 const SHOT = params.has('shot'); // deterministic screenshot mode: no idle motion, no loading fade
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+// the world to open: the solo place's, the deep-linked place's, ?world=, else Faerûn
+const hashId = decodeURIComponent(location.hash.slice(1));
+const startWorld = SOLO ? worldOf(SOLO) : PLACE_BY_ID.has(hashId) ? worldOf(hashId) : WORLD_BY_ID[params.get('world')] ? params.get('world') : 'toril';
+// per-world state (built on first visit, then kept; only the active world is in the scene)
+const WORLD_STATE = new Map();
+let world = startWorld;
+let PLACES = SOLO ? ALL_PLACES.filter((p) => p.id === SOLO) : placesOf(world);
+if (SOLO && !PLACES.length) PLACES = [ALL_PLACES[0]];
 
 /* ================================================================ RENDERER == */
 const stage = $('#stage');
@@ -94,8 +102,14 @@ function applyMood(k) {
 }
 
 /* ================================================================== STATE == */
+/** the layouts a world offers: Atlas, its own (Map | Wheel | Orbit), Chronicle */
+const layoutsOf = (w) => ['atlas', primaryLayout(w), 'chronicle'];
+function layoutFor(w, want) {
+  if (want === 'map' || want === 'wheel' || want === 'orbit') return primaryLayout(w);
+  return layoutsOf(w).includes(want) ? want : w === 'toril' ? 'atlas' : primaryLayout(w);
+}
 const state = {
-  layout: LAYOUT_KEYS.includes(params.get('layout')) ? params.get('layout') : 'atlas',
+  layout: layoutFor(startWorld, LAYOUT_KEYS.includes(params.get('layout')) ? params.get('layout') : startWorld === 'toril' ? 'atlas' : primaryLayout(startWorld)),
   year: clampYear(parseInt(params.get('year') ?? PRESENT, 10)),
   focus: -1,
   hover: -1,
@@ -106,66 +120,139 @@ const state = {
   playing: false,
   track: 0,
   mode: 'board', // board | focus | solo
+  narration: readNarration(),
+  switching: false,
 };
+function readNarration() { try { const v = localStorage.getItem('realms-atlas.narration'); return v == null ? true : v === '1'; } catch { return true; } }
+// audio may only start after the reader has done something on the page (browsers block it otherwise)
+let gestured = false;
+for (const ev of ['pointerdown', 'keydown']) addEventListener(ev, () => { gestured = true; }, { capture: true, once: false });
+const canSpeak = () => gestured || navigator.userActivation?.hasBeenActive === true;
 function clampYear(y) { return Number.isFinite(y) ? Math.max(YEAR_MIN, Math.min(YEAR_MAX, y)) : PRESENT; }
 let shadowDirty = true;
 const _v1 = new THREE.Vector3(), _v2 = new THREE.Vector3(), _v3 = new THREE.Vector3();
 
 /* ================================================================ BOARD ==== */
-const boardGroup = new THREE.Group();
-scene.add(boardGroup);
 const frame = makeFrame();
-let mapBoard = null; // created after the fonts load (the parchment has lettering)
-const leaders = makeLeaders(PLACES.length);
-if (!SOLO) scene.add(frame, leaders);
-let mapK = 0; // 0..1 parchment visibility
+if (!SOLO) scene.add(frame);
+let boardGroup = new THREE.Group(); // the active world's dioramas
+scene.add(boardGroup);
+let mapBoard = null; // the active world's own board (parchment chart / Outlands wheel / orrery plate)
+let leaders = null;
+let mapData = MAPS[world] || MAPS.toril;
+let mapK = 0; // 0..1 board visibility
 
 /* ============================================================= DIORAMAS ==== */
-const dioramas = [];
-const hitBoxes = [];
-async function buildAll() {
-  const bar = $('#loading-bar'), msg = $('#loading-msg');
+let dioramas = [];
+let hitBoxes = [];
+/** build (once) everything a world needs; progress(i, n, name) reports while building */
+async function buildWorld(w, places, progress) {
+  if (WORLD_STATE.has(w)) return WORLD_STATE.get(w);
+  const W = { id: w, places, dioramas: [], hitBoxes: [], group: new THREE.Group(), labels: null, labelRoot: null, board: null, leaders: null, layout: null };
   let last = performance.now();
-  for (let i = 0; i < PLACES.length; i++) {
-    const d = new Diorama(PLACES[i], i);
+  for (let i = 0; i < places.length; i++) {
+    const d = new Diorama(places[i], i);
     d.setYear(state.year, false);
-    dioramas.push(d);
-    hitBoxes.push(d.hit);
-    boardGroup.add(d.root);
+    W.dioramas.push(d);
+    W.hitBoxes.push(d.hit);
+    W.group.add(d.root);
     if (performance.now() - last > 40) {
-      bar.style.width = `${((i + 1) / PLACES.length) * 100}%`;
-      msg.textContent = `Raising ${PLACES[i].name}…`;
+      progress?.(i + 1, places.length, places[i].name);
       await new Promise((r) => requestAnimationFrame(r));
       last = performance.now();
     }
   }
-  bar.style.width = '100%';
+  progress?.(places.length, places.length, '');
+  if (!SOLO) {
+    const prim = primaryLayout(w);
+    const map = MAPS[w] || MAPS.toril;
+    if (prim === 'wheel') W.board = makeWheelBoard(LAYOUTS.wheel(places));
+    else if (prim === 'orbit') W.board = makeOrbitBoard(LAYOUTS.orbit(places));
+    else W.board = makeMapBoard(map, places, { ...mapOpts(w), title: worldName(w) });
+    W.leaders = makeLeaders(places.length);
+    W.labelRoot = document.createElement('div');
+    W.labelRoot.className = 'world-labels';
+    $('#labels').append(W.labelRoot);
+  } else W.labelRoot = $('#labels');
+  W.labels = createLabels(W.labelRoot, W.dioramas, {
+    onClick: (i) => focusPlace(i), onHover: (i) => setHover(i),
+    storiesOf, onStory: (s) => tale.open(s), drillName: worldName,
+  });
+  W.dioramas.forEach((d, i) => W.labels.setState(i, d.state));
+  WORLD_STATE.set(w, W);
+  return W;
+}
+/** make a built world the active one (scene, references, labels) */
+function activate(W) {
+  const prev = WORLD_STATE.get(world);
+  if (prev && prev !== W) {
+    scene.remove(prev.group);
+    if (prev.board) { scene.remove(prev.board); prev.board.userData.set(0); }
+    if (prev.leaders) scene.remove(prev.leaders);
+    if (prev.labelRoot && !SOLO) prev.labelRoot.hidden = true;
+    if (state.hover >= 0 && prev.dioramas[state.hover]) prev.dioramas[state.hover].hover = 0;
+  }
+  scene.remove(boardGroup);
+  world = W.id;
+  PLACES = W.places;
+  dioramas = W.dioramas;
+  hitBoxes = W.hitBoxes;
+  boardGroup = W.group;
+  labels = W.labels;
+  mapBoard = W.board;
+  leaders = W.leaders;
+  mapData = MAPS[world] || MAPS.toril;
+  scene.add(boardGroup);
+  if (mapBoard) scene.add(mapBoard);
+  if (leaders) scene.add(leaders);
+  if (W.labelRoot) W.labelRoot.hidden = false;
+  state.hover = -1;
+  mapK = 0;
+  mapBoard?.userData.set(0);
+  if (leaders) { leaders.material.opacity = 0; leaders.visible = false; }
+  frame.material.opacity = 0.55;
+  applyMood(state.nightK);
+  requestAnimationFrame(() => labels.measure());
+  updateWorldUI();
 }
 
 /* ============================================================== LAYOUTS ==== */
 let L = null; // current layout result
 const tween = { t0: -10, dur: 1.6 };
-const lay = []; // per diorama: {fx,fz,fs,tx,tz,ts,delay}
+let lay = []; // per diorama: {fx,fz,fy,fs,tx,tz,ty,ts,delay}
 function computeLayout(name) {
-  return name === 'map' ? LAYOUTS.map(PLACES, mapData.aspect) : LAYOUTS[name](PLACES);
+  return name === 'map' ? LAYOUTS.map(PLACES, mapData.aspect, mapOpts(world)) : LAYOUTS[name](PLACES);
 }
+const isOwnLayout = () => state.layout === primaryLayout(world);
 function setLayout(name, { animate = true, fly = true } = {}) {
   if (SOLO) return;
+  name = layoutFor(world, name);
+  if (REDUCED) animate = false;
   state.layout = name;
   L = computeLayout(name);
   const now = clock.elapsedTime;
   const rank = new Array(PLACES.length);
   L.order.forEach((i, k) => { rank[i] = k; });
+  if (name === 'orbit') orbitAt(L, orbitT);
+  lay = [];
   dioramas.forEach((d, i) => {
     const it = L.items[i];
     const r = d.root;
-    lay[i] = { fx: r.position.x, fz: r.position.z, fs: r.scale.x, tx: it.x, tz: it.z, ts: it.s, delay: animate ? (rank[i] / PLACES.length) * 0.7 : 0 };
-    if (!animate) placeAt(d, it.x, it.z, it.s, 0);
+    lay[i] = { fx: r.position.x, fz: r.position.z, fy: d.layoutY || 0, fs: r.scale.x, tx: it.x, tz: it.z, ty: it.y || 0, ts: it.s, delay: animate ? (rank[i] / PLACES.length) * 0.7 : 0 };
+    if (!animate) placeAt(d, it.x, it.z, it.s, 0, it.y || 0);
   });
   tween.t0 = animate ? now : -10;
   labels.setCaptions(L.labels.map((c) => ({ ...c, active: true })));
   frame.setBounds(L.bounds, 3);
-  if (name === 'map') leaders.userData.update(L.home, L.items);
+  if (name === 'map' && leaders) leaders.userData.update(L.home, L.items);
+  document.body.dataset.layout = name === primaryLayout(world) ? 'own' : name;
+  if (!animate) {
+    // snap the board in (no fade) when the layout is set without animation
+    mapK = isOwnLayout() && mapBoard ? 1 : 0;
+    mapBoard?.userData.set(mapK);
+    if (leaders) { leaders.material.opacity = name === 'map' ? mapK * 0.6 : 0; leaders.visible = name === 'map' && mapK > 0.01; }
+    frame.material.opacity = (1 - mapK) * 0.55;
+  }
   $$('#layouts button').forEach((b) => b.classList.toggle('on', b.dataset.layout === name));
   updateURL();
   if (fly) {
@@ -174,9 +261,10 @@ function setLayout(name, { animate = true, fly = true } = {}) {
   }
   shadowDirty = true;
 }
-function placeAt(d, x, z, s, lift) {
-  d.root.position.set(x, FLOOR_Y - (-0.9) * s + lift, z);
+function placeAt(d, x, z, s, lift, y = 0) {
+  d.root.position.set(x, FLOOR_Y - (-0.9) * s + lift + y, z);
   d.root.scale.setScalar(s);
+  d.layoutY = y;
 }
 const easeIO = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 function stepLayout(t) {
@@ -187,18 +275,30 @@ function stepLayout(t) {
     const k = Math.min(1, Math.max(0, (el - p.delay) / tween.dur));
     const e = easeIO(k);
     const lift = Math.sin(Math.PI * k) * 3.5 * Math.max(p.fs, p.ts);
-    placeAt(dioramas[i], p.fx + (p.tx - p.fx) * e, p.fz + (p.tz - p.fz) * e, p.fs + (p.ts - p.fs) * e, lift);
+    placeAt(dioramas[i], p.fx + (p.tx - p.fx) * e, p.fz + (p.tz - p.fz) * e, p.fs + (p.ts - p.fs) * e, lift, p.fy + (p.ty - p.fy) * e);
   }
+  return true;
+}
+// Orbit: the bodies drift slowly round the sun (not while a place is in focus, in screenshots, or with
+// reduced motion). orbitT is the orrery's own clock.
+let orbitT = 0;
+function stepOrbit(dt, t) {
+  if (state.layout !== 'orbit' || !L || L.name !== 'orbit' || SHOT || REDUCED) return false;
+  if (state.mode !== 'board' || t - tween.t0 < tween.dur + 0.8 || flight.active) return false;
+  orbitT += dt;
+  orbitAt(L, orbitT);
+  for (let i = 0; i < dioramas.length; i++) { const it = L.items[i]; if (it.orbit?.w) placeAt(dioramas[i], it.x, it.z, it.s, 0, it.y || 0); }
   return true;
 }
 const scaleOf = (i) => dioramas[i].root.scale.x;
 const MINOR = new Set(['town', 'fortress', 'landmark']);
-const isMinor = (i) => MINOR.has(PLACES[i].type);
+const isMinor = (i) => world === 'toril' && MINOR.has(PLACES[i].type);
 let mapLabelDist = 200; // in the Map layout, minor labels hide beyond this camera distance
 
 /* =============================================================== CAMERA ==== */
 const flight = { active: false, t0: 0, dur: 1, p0: new THREE.Vector3(), p1: new THREE.Vector3(), q0: new THREE.Vector3(), q1: new THREE.Vector3() };
 function flyTo(pos, target, dur = 1.8) {
+  if (REDUCED) dur = 0;
   if (dur <= 0) {
     camera.position.copy(pos); controls.target.copy(target); controls.update(); flight.active = false; return;
   }
@@ -225,7 +325,7 @@ function overviewPose(bounds, polar) {
   const top = 1 - (2 * 74) / innerHeight, bottom = -1 + (2 * 140) / innerHeight;
   const xs = [bounds.x0, bounds.x1], zs = [bounds.z0, bounds.z1];
   let k = 0;
-  for (const x of xs) for (const z of zs) for (const y of [FLOOR_Y, FLOOR_Y + 3]) corners[k++].set(x, y, z);
+  for (const x of xs) for (const z of zs) for (const y of [FLOOR_Y, FLOOR_Y + (bounds.top ?? 3)]) corners[k++].set(x, y, z);
   fitCam.copy(camera);
   const target = new THREE.Vector3(cx, FLOOR_Y, cz);
   const pos = new THREE.Vector3();
@@ -259,15 +359,15 @@ function overviewPose(bounds, polar) {
 }
 function overview({ dur = 2.0 } = {}) {
   if (!L) return;
-  const polar = state.layout === 'map' ? 0.62 : state.layout === 'chronicle' ? 0.82 : 0.86;
+  const polar = { map: 0.62, wheel: 0.72, orbit: 0.6, chronicle: 0.82 }[state.layout] ?? 0.86;
   const { pos, target } = overviewPose(L.bounds, polar);
-  if (state.layout === 'map') mapLabelDist = pos.distanceTo(target) * 0.62;
+  mapLabelDist = pos.distanceTo(target) * 0.62;
   flyTo(pos, target, dur);
 }
 function focusPose(i) {
   const d = dioramas[i];
   const s = L ? L.items[i].s : d.root.scale.x;
-  const c = _v1.set(L ? L.items[i].x : d.root.position.x, FLOOR_Y + 1.2 * s + 0.9 * s, L ? L.items[i].z : d.root.position.z);
+  const c = _v1.set(L ? L.items[i].x : d.root.position.x, FLOOR_Y + 1.2 * s + 0.9 * s + (L?.items[i].y || 0), L ? L.items[i].z : d.root.position.z);
   // keep the current azimuth roughly, but swing towards the south (front of the tiles)
   const off = _v2.copy(camera.position).sub(controls.target);
   let az = Math.atan2(off.x, off.z);
@@ -287,6 +387,7 @@ function focusPose(i) {
 function focusPlace(i, { keepPanel = false, dur = 1.8, fromTour = false } = {}) {
   if (i < 0 || i >= dioramas.length) return;
   if (!fromTour) stopTour();
+  if (L?.name === 'orbit') { const it = L.items[i]; placeAt(dioramas[i], it.x, it.z, it.s, 0, it.y || 0); }
   state.focus = i;
   state.mode = 'focus';
   const { pos, target } = focusPose(i);
@@ -294,6 +395,14 @@ function focusPlace(i, { keepPanel = false, dur = 1.8, fromTour = false } = {}) 
   panel.render(PLACES[i], state.year);
   void keepPanel;
   updateURL();
+}
+/** visit a place by id in whatever world it lives (switching boards if need be) */
+async function goPlace(id, opts = {}) {
+  const w = worldOf(id);
+  if (!PLACE_BY_ID.has(id)) return;
+  if (w !== world) await switchWorld(w);
+  const i = PLACES.findIndex((p) => p.id === id);
+  if (i >= 0) focusPlace(i, opts);
 }
 function closeFocus() {
   stopTour();
@@ -341,6 +450,7 @@ function refreshPanelSoon() {
 function pulsePlaces(ids) {
   for (const d of dioramas) if (ids.includes(d.place.id)) d.pulse = 1;
 }
+const placeName = (id) => PLACE_BY_ID.get(id)?.name || id;
 let toastTimer = 0;
 function toast(html, ms = 5200) {
   const t = $('#toast');
@@ -354,7 +464,7 @@ function jumpToEvent(ev, i) {
   setYear(ev.year);
   scrubber.hot(i);
   pulsePlaces(ev.placeIds || []);
-  const names = (ev.placeIds || []).map((id) => PLACES.find((p) => p.id === id)?.name).filter(Boolean);
+  const names = (ev.placeIds || []).filter((id) => PLACE_BY_ID.has(id)).map((id) => `${placeName(id)}${worldOf(id) !== world ? ` (${worldName(worldOf(id))})` : ''}`);
   toast(`<i>${esc(fmtYear(ev.year))}${ev.yearEnd ? ` – ${esc(fmtYear(ev.yearEnd))}` : ''}</i><b>${esc(ev.title)}</b>${ev.summary ? `<br><span style="font-size:15px">${esc(ev.summary)}</span>` : ''}${names.length ? `<br><span style="font-size:14px;font-style:italic">${esc(names.join(' · '))}</span>` : ''}`, 7000);
 }
 function stepEvent(dir) {
@@ -387,10 +497,11 @@ function stepPlay(dt) {
 }
 
 /* ================================================================= TOUR ==== */
-const tour = { active: false, i: 0, timer: 0 };
+const tour = { active: false, i: 0, timer: 0, told: new Set() };
 function startTour() {
   if (!L) return;
   tour.active = true;
+  tour.told.clear();
   $('#btn-tour').classList.add('on');
   const k = state.focus >= 0 ? L.order.indexOf(state.focus) : -1;
   tour.i = k >= 0 ? k : 0;
@@ -399,17 +510,122 @@ function startTour() {
 function tourGo() {
   if (!tour.active) return;
   const i = L.order[tour.i % L.order.length];
-  focusPlace(i, { fromTour: true, dur: 2.4 });
   const p = PLACES[i];
-  const dwell = Math.max(7000, (p.description || '').length * 42);
   clearTimeout(tour.timer);
-  tour.timer = setTimeout(() => { tour.i++; tourGo(); }, dwell);
+  const next = () => { if (!tour.active) return; tour.i++; tourGo(); };
+  // a tale whose first place this is: the tour pauses at its year and tells it (if narration is on)
+  const st = storiesOf(p.id).find((s) => s.placeIds[0] === p.id && !tour.told.has(s.id));
+  if (st) {
+    tour.told.add(st.id);
+    stopPlay();
+    setYear(st.year);
+    pulsePlaces(st.placeIds);
+    scrubber.hotTale(st.id);
+    focusPlace(i, { fromTour: true, dur: 2.4 });
+    if (state.narration) {
+      tale.play(st, { fly: false, end: () => { tour.timer = setTimeout(next, 1500); } });
+      return;
+    }
+    tale.open(st);
+    tour.timer = setTimeout(next, Math.max(9000, st.text.length * 30));
+    return;
+  }
+  focusPlace(i, { fromTour: true, dur: 2.4 });
+  const dwell = Math.max(7000, (p.description || '').length * 42);
+  tour.timer = setTimeout(next, dwell);
 }
 function stopTour() {
   if (!tour.active) return;
   tour.active = false;
   clearTimeout(tour.timer);
   $('#btn-tour').classList.remove('on');
+  if (tale.playing) tale.stop();
+}
+
+/* ================================================================ WORLDS ==== */
+const veil = $('#veil');
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+/** swap the board for another world: fade out, build (first visit) and activate, re-frame, fade in */
+async function switchWorld(w, { layout } = {}) {
+  if (SOLO || !WORLD_BY_ID[w] || state.switching) return;
+  if (w === world && !layout) return;
+  state.switching = true;
+  stopTour();
+  stopPlay();
+  const fade = !SHOT && !REDUCED;
+  if (fade) { veil.hidden = false; requestAnimationFrame(() => veil.classList.add('on')); await wait(360); }
+  if (state.mode === 'focus') { state.focus = -1; state.mode = 'board'; panel.hide(); }
+  const prevLayout = state.layout;
+  const msg = $('#veil-msg');
+  const W = await buildWorld(w, placesOf(w), (i, n, name) => { msg.textContent = name ? `Raising ${name}…` : ''; });
+  msg.textContent = '';
+  activate(W);
+  for (let i = 0; i < dioramas.length; i++) { dioramas[i].setYear(state.year, false); labels.setState(i, dioramas[i].state); }
+  const want = layout || (prevLayout === 'atlas' || prevLayout === 'chronicle' ? prevLayout : primaryLayout(w));
+  setLayout(want, { animate: false, fly: false });
+  // snap the board in under the veil
+  const mk = isOwnLayout() ? 1 : 0;
+  mapK = mk; mapBoard?.userData.set(mk);
+  if (leaders) { leaders.material.opacity = mk * 0.6; leaders.visible = mk > 0.01 && state.layout === 'map'; }
+  frame.material.opacity = (1 - mk) * 0.55;
+  const { pos, target } = overviewPose(L.bounds, { map: 0.62, wheel: 0.72, orbit: 0.6, chronicle: 0.82 }[state.layout] ?? 0.86);
+  camera.position.copy(pos).sub(target).multiplyScalar(fade ? 1.18 : 1).add(target);
+  controls.target.copy(target); controls.update();
+  overview({ dur: fade ? 1.6 : 0 });
+  shadowDirty = true;
+  updateURL();
+  if (fade) { veil.classList.remove('on'); setTimeout(() => { veil.hidden = true; }, 420); }
+  state.switching = false;
+}
+function stepWorld(dir) {
+  const k = WORLDS.findIndex((x) => x.id === world);
+  switchWorld(WORLDS[(k + dir + WORLDS.length) % WORLDS.length].id);
+}
+async function drill(w, from) {
+  await switchWorld(w);
+  // land on the same place's counterpart when there is one (Bryn Shander → tt-bryn-shander)
+  const twin = from && PLACES.findIndex((p) => p.id.replace(/^[a-z]{2}-/, '') === from.id.replace(/^[a-z]{2}-/, '') && p.id !== from.id);
+  if (twin >= 0) setTimeout(() => focusPlace(twin), REDUCED ? 0 : 900);
+}
+function updateWorldUI() {
+  $$('#worlds button').forEach((b) => b.classList.toggle('on', b.dataset.world === world));
+  const own = primaryLayout(world);
+  const b2 = $('#layouts button[data-slot="2"]');
+  if (b2) {
+    b2.dataset.layout = own;
+    b2.innerHTML = `<i>II</i> ${LAYOUT_TITLES[own]}`;
+    b2.title = `${LAYOUT_TITLES[own]} — ${own === 'map' ? `on the chart of ${worldName(world)}` : own === 'wheel' ? 'the Outlands and the Great Wheel' : 'the orrery of Realmspace'} (2)`;
+  }
+  const W = WORLD_BY_ID[world];
+  $('#cartouche .sub').textContent = world === 'toril' ? 'a cabinet of Faerûn, through the reckoning of the Dales'
+    : W?.kind === 'planar' ? 'the Planes, from the City of Doors to the Great Wheel'
+      : W?.kind === 'space' ? 'Realmspace: the crystal sphere around Toril'
+        : W?.parent ? `${W.name}, within ${worldName(W.parent)}` : `a cabinet of ${W?.name || world}, by the reckoning of the Dales`;
+  document.body.dataset.world = world;
+}
+
+/* ============================================================= NARRATION ==== */
+function setNarration(on) {
+  state.narration = on;
+  try { localStorage.setItem('realms-atlas.narration', on ? '1' : '0'); } catch { /* private mode */ }
+  const b = $('#btn-narration');
+  b.classList.toggle('on', on);
+  b.textContent = on ? 'Narration' : 'Narration off';
+  b.title = `Narration ${on ? 'on' : 'off'}: tales are read aloud on the tour (R)`;
+  if (!on && tale.playing && tour.active) tale.stop();
+}
+/** a tale begins: the year jumps to it, the camera flies to its first place, the others pulse */
+async function tellTale(s) {
+  stopPlay();
+  setYear(s.year);
+  scrubber.hotTale(s.id);
+  const first = s.placeIds?.[0];
+  if (first && PLACE_BY_ID.has(first)) {
+    if (worldOf(first) !== world) await switchWorld(worldOf(first));
+    const i = PLACES.findIndex((p) => p.id === first);
+    if (i >= 0) focusPlace(i, { fromTour: tour.active, dur: 2.2 });
+    setTimeout(() => pulsePlaces(s.placeIds), 400);
+  } else if (storyWorld(s) !== world) await switchWorld(storyWorld(s));
 }
 
 /* ================================================================= NIGHT ==== */
@@ -429,7 +645,10 @@ function updateURLSoon() { clearTimeout(urlTimer); urlTimer = setTimeout(updateU
 function updateURL() {
   if (SOLO || SHOT) return;
   const q = new URLSearchParams();
-  if (state.layout !== 'atlas') q.set('layout', state.layout);
+  const hasFocus = state.focus >= 0;
+  if (world !== 'toril' && !hasFocus) q.set('world', world);
+  const defLayout = world === 'toril' ? 'atlas' : primaryLayout(world);
+  if (state.layout !== defLayout) q.set('layout', state.layout);
   if (state.year !== PRESENT) q.set('year', String(state.year));
   if (state.night) q.set('night', '1');
   const hash = state.focus >= 0 ? `#${PLACES[state.focus].id}` : '';
@@ -439,27 +658,52 @@ function updateURL() {
 function focusFromHash() {
   const id = decodeURIComponent(location.hash.slice(1));
   if (!id) return false;
+  if (!PLACE_BY_ID.has(id)) return false;
+  if (worldOf(id) !== world) { goPlace(id); return true; }
   const i = PLACES.findIndex((p) => p.id === id);
   if (i >= 0) { focusPlace(i); return true; }
   return false;
 }
 
 /* ===================================================================== UI ==== */
+const tale = createTale($('#tale'), {
+  worldName, placeName, canSpeak,
+  onPlay: (s) => tellTale(s),
+  onPlace: (id) => goPlace(id),
+  onClose: () => scrubber.hotTale(null),
+});
+const stories = createStories($('#stories'), { stories: STORIES, worldName, placeName, onPick: (s) => tale.play(s) });
 const scrubber = createScrubber($('#scrubber'), {
   onYear: (y) => { stopPlay(); setYear(y); },
   onEvent: (ev, i) => jumpToEvent(ev, i),
   onPlay: () => togglePlay(),
+  stories: STORIES,
+  onStory: (s) => { tale.open(s); scrubber.hotTale(s.id); },
 });
 const panel = createPanel($('#panel'), {
   onYear: (y) => { stopPlay(); setYear(y); if (state.focus >= 0) dioramas[state.focus].pulse = 0.8; },
   onPrev: () => step(-1), onNext: () => step(1), onClose: () => closeFocus(),
+  onDrill: (w, from) => drill(w, from), worldName, storiesOf, onStory: (s) => tale.open(s),
 });
-const contents = createContents($('#contents'), { places: PLACES, onPick: (i) => { $('#contents').hidden = true; focusPlace(i); } });
-const search = createSearch($('#search'), $('#search-input'), $('#search-results'), { places: PLACES, onPick: (i) => focusPlace(i) });
+const contents = createContents($('#contents'), { places: ALL_PLACES, worlds: WORLDS, current: () => world, onPick: (id) => { $('#contents').hidden = true; goPlace(id); } });
+const search = createSearch($('#search'), $('#search-input'), $('#search-results'), { places: ALL_PLACES, worldName, current: () => world, onPick: (id) => goPlace(id) });
 const help = createHelp($('#help'));
 let labels = { setCaptions() {}, setState() {}, update() {}, measure() {} };
 
+// the world switcher
+const worldsNav = $('#worlds');
+for (const w of WORLDS) {
+  const b = document.createElement('button');
+  b.dataset.world = w.id;
+  b.textContent = w.id === 'planes' ? 'Planes' : w.name;
+  b.title = `${w.name}${w.parent ? ` (within ${worldName(w.parent)})` : ''} — ${WORLD_STATE.size ? '' : ''}${placesOf(w.id).length} places`;
+  b.addEventListener('click', () => switchWorld(w.id));
+  worldsNav.append(b);
+}
+worldsNav.hidden = WORLDS.length < 2;
+
 $$('#layouts button').forEach((b) => b.addEventListener('click', () => setLayout(b.dataset.layout)));
+$('#btn-narration').addEventListener('click', () => setNarration(!state.narration));
 $('#btn-tour').addEventListener('click', () => (tour.active ? stopTour() : startTour()));
 $('#btn-contents').addEventListener('click', () => contents.toggle(state.year));
 $('#btn-search').addEventListener('click', () => search.open());
@@ -471,9 +715,10 @@ addEventListener('keydown', (e) => {
   if (e.target instanceof HTMLInputElement) return;
   if (e.metaKey || e.ctrlKey || e.altKey) return;
   const k = e.key;
-  const overlayOpen = !$('#contents').hidden || !$('#help').hidden;
+  const overlayOpen = !$('#contents').hidden || !$('#help').hidden || !$('#stories').hidden;
   if (k === 'Escape') {
-    if (overlayOpen) { $('#contents').hidden = true; $('#help').hidden = true; return; }
+    if (overlayOpen) { $('#contents').hidden = true; $('#help').hidden = true; $('#stories').hidden = true; return; }
+    if (tale.story) { tale.close(); return; }
     if (tour.active) { stopTour(); return; }
     if (state.mode === 'focus') closeFocus(); else overview();
     return;
@@ -483,8 +728,14 @@ addEventListener('keydown', (e) => {
     case 'ArrowRight': step(1); break;
     case 'ArrowLeft': step(-1); break;
     case '1': setLayout('atlas'); break;
-    case '2': setLayout('map'); break;
+    case '2': setLayout(primaryLayout(world)); break;
     case '3': setLayout('chronicle'); break;
+    case 'w': stepWorld(1); break;
+    case 'W': stepWorld(-1); break;
+    case 'Enter': { const p = state.focus >= 0 ? PLACES[state.focus] : null; if (p?.drill) drill(p.drill, p); else return; break; }
+    case 's': case 'S': stories.toggle(); break;
+    case 'p': case 'P': if (tale.story) tale.toggle(); else return; break;
+    case 'r': case 'R': setNarration(!state.narration); break;
     case 't': case 'T': tour.active ? stopTour() : startTour(); break;
     case 'n': case 'N': setNight(!state.night); break;
     case 'b': case 'B': state.bloom = !bloomOn(); updateBloom(); break;
@@ -498,7 +749,7 @@ addEventListener('keydown', (e) => {
     default: return;
   }
 });
-addEventListener('hashchange', () => { if (!focusFromHash() && !location.hash) closeFocus(); });
+addEventListener('hashchange', () => { if (!focusFromHash() && !location.hash && state.mode === 'focus') closeFocus(); });
 
 /* ================================================================ PICKING ==== */
 const ray = new THREE.Raycaster();
@@ -527,7 +778,8 @@ function setHover(i, x, y) {
   if (i >= 0 && x != null) {
     const p = PLACES[i];
     const st = stateAt(p, state.year);
-    tooltip.innerHTML = `<b>${esc(p.name)}</b><span>${esc(STATE_LABEL[st])} · ${esc(fmtYear(state.year))}</span>`;
+    const tales = storiesOf(p.id);
+    tooltip.innerHTML = `<b>${esc(p.name)}</b><span>${esc(STATE_LABEL[st])} · ${esc(fmtYear(state.year))}</span>${p.drill ? `<em>⤓ Enter ${esc(worldName(p.drill))} — double-click</em>` : ''}${tales.length ? `<em class="t">${tales.length > 1 ? `${tales.length} tales` : 'a tale'}: ${esc(tales[0].title)}</em>` : ''}`;
     tooltip.style.transform = `translate(${Math.min(innerWidth - 220, x + 14)}px, ${y + 14}px)`;
     tooltip.hidden = false;
   } else tooltip.hidden = true;
@@ -544,6 +796,10 @@ renderer.domElement.addEventListener('pointerup', (e) => {
     else if (state.mode === 'focus') closeFocus();
   }
   downAt = null;
+});
+renderer.domElement.addEventListener('dblclick', (e) => {
+  const i = pick(e.clientX, e.clientY);
+  if (i >= 0 && PLACES[i].drill) drill(PLACES[i].drill, PLACES[i]);
 });
 controls.addEventListener('start', () => { flight.active = false; stopTour(); });
 controls.addEventListener('change', () => { shadowDirty = true; });
@@ -594,19 +850,22 @@ function frame_() {
   const nk = state.night ? 1 : 0;
   if (Math.abs(state.nightK - nk) > 0.001) { state.nightK += (nk - state.nightK) * Math.min(1, dt * 3); applyMood(state.nightK); }
   // map parchment tween
-  const mk = state.layout === 'map' && !SOLO ? 1 : 0;
+  const mk = isOwnLayout() && !SOLO && mapBoard ? 1 : 0;
   if (Math.abs(mapK - mk) > 0.001) {
     mapK += (mk - mapK) * Math.min(1, dt * 2.5);
     if (Math.abs(mapK - mk) < 0.002) mapK = mk;
     mapBoard?.userData.set(mapK);
-    leaders.material.opacity = mapK * 0.6;
-    leaders.visible = mapK > 0.01;
+    if (leaders) {
+      const lk = state.layout === 'map' ? mapK : 0;
+      leaders.material.opacity = lk * 0.6;
+      leaders.visible = lk > 0.01;
+    }
     frame.material.opacity = (1 - mapK) * 0.55;
     shadowDirty = true;
   }
   stepPlay(dt);
   const moving = stepLayout(t);
-  if (moving) shadowDirty = true;
+  if (moving || stepOrbit(dt, t)) shadowDirty = true;
   stepFlight(t);
   controls.update();
   updateSun();
@@ -632,7 +891,7 @@ function frame_() {
     const i = pick(pointer.x, pointer.y);
     setHover(i, pointer.x, pointer.y);
   }
-  labels.update(camera, innerWidth, innerHeight, { focus: state.focus, hover: state.hover, hideAll: state.hideUI || SOLO, scaleOf, isMinor, hideMinor: state.layout === 'map' && camDist > mapLabelDist });
+  labels.update(camera, innerWidth, innerHeight, { focus: state.focus, hover: state.hover, hideAll: state.hideUI || SOLO, scaleOf, isMinor, hideMinor: isOwnLayout() && camDist > mapLabelDist });
 
   // shadows: only when something moved, plus a slow refresh for the small animations
   if (shadowDirty || frameN % 8 === 0) { renderer.shadowMap.needsUpdate = true; shadowDirty = false; }
@@ -676,17 +935,16 @@ async function boot() {
   if (state.night) setNight(true);
   updateBloom();
   try { await Promise.race([document.fonts.load('600 40px "Cormorant Garamond"'), new Promise((r) => setTimeout(r, 1500))]); } catch { /* ignore */ }
-  if (!SOLO) { mapBoard = makeMapBoard(mapData, PLACES); scene.add(mapBoard); applyMood(state.nightK); }
-  if (params.has('parchment')) {
-    // debug: show the parchment canvas flat on the page
+  setNarration(state.narration);
+  const bar = $('#loading-bar'), msg = $('#loading-msg');
+  const W = await buildWorld(world, PLACES, (i, n, name) => { bar.style.width = `${(i / n) * 100}%`; if (name) msg.textContent = `Raising ${name}…`; });
+  activate(W);
+  if (params.has('parchment') && mapBoard) {
+    // debug: show the board canvas flat on the page
     const img = mapBoard.children[1].material.map.image;
     Object.assign(img.style, { position: 'fixed', inset: '0', width: '100vw', height: 'auto', zIndex: 100 });
     document.body.append(img);
   }
-  await buildAll();
-  labels = createLabels($('#labels'), dioramas, { onClick: (i) => focusPlace(i), onHover: (i) => setHover(i) });
-  dioramas.forEach((d, i) => labels.setState(i, d.state));
-  requestAnimationFrame(() => labels.measure());
   setYear(state.year, { animate: false });
 
   if (SOLO) {
@@ -706,7 +964,11 @@ async function boot() {
   } else {
     setLayout(state.layout, { animate: false, fly: false });
     overview({ dur: 0 });
-    if (!focusFromHash()) {
+    if (params.has('tale')) {
+      // deep link to a tale: open its card (audio waits for the reader's first click)
+      const st = STORIES.find((x) => x.id === params.get('tale'));
+      if (st) { await tellTale(st); tale.open(st); }
+    } else if (!focusFromHash()) {
       // a gentle intro: start a bit higher and settle
       if (!SHOT) { const { pos, target } = overviewPose(L.bounds, 0.86); camera.position.copy(pos).multiplyScalar(1.25); flyTo(pos, target, 2.4); }
     }
@@ -716,7 +978,7 @@ async function boot() {
   ld.classList.add('done');
   setTimeout(() => ld.remove(), 900);
   // let screenshots know when the board has settled
-  window.__atlas = { dioramas, state };
+  window.__atlas = { get dioramas() { return dioramas; }, state, switchWorld, tale, get world() { return world; } };
   setTimeout(() => { window.__atlasReady = true; }, SHOT ? 600 : 2600);
 }
 boot();

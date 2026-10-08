@@ -131,6 +131,13 @@ export function decorate(S, done = new Set(), o = {}) {
     K.mountain(S, { x: p[0], z: p[1] - 0.3, r: 1.1, h: 1.8, salt: 3 });
     K.waterfall(S, { x: p[0], z: p[1] + 0.55, h: 1.2 });
   }
+  if (want('gears')) K.gearworks(S, { n: 3 + Math.min(3, Math.floor(S.scale / 2)), cz: S.r.range(-1.2, 0.4) });
+  if (want('chasm') && !S.pits.length) K.chasm(S, { x: S.r.range(-0.6, 0.6), z: S.r.range(0.8, 2.2), glow: S.any('lava', 'glow') || /abyss|baator|gehenna|carceri/.test(S.place.id) ? '#ff4a1a' : null });
+  if (want('ice')) {
+    S.pal.water = '#9fc4d4';
+    if (S.water.length) K.iceFloes(S, { n: 8 + S.scale * 2 });
+    else K.glacier(S);
+  }
   if (want('glow') || want('faerie-fire')) K.glowPoints(S, { n: 8 + S.scale * 2, color: want('faerie-fire') ? '#c47aff' : P.glow, spread: 3 });
   if (want('mythal')) K.mythal(S, { r: 4.2, h: 4.2 });
   if (want('giant-trees')) K.trees(S, { n: 3 + S.scale, type: 'giant' });
