@@ -1270,5 +1270,105 @@
       "https://forgottenrealms.fandom.com/wiki/Evermeet",
       "https://forgottenrealms.fandom.com/wiki/Leuthilspar"
     ]
+  },
+  {
+    "id": "hartsvale",
+    "name": "Hartsvale",
+    "aliases": [
+      "Kingdom of Hartsvale",
+      "Hartwick"
+    ],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -325,
+    "foundedNote": "Netherese wanderers settled the first Hartsvale in -325 DR. The War of the Hart, when Hartkiller drove the giants from the valley and his half-human son Brun became its first king, is undated in the sources.",
+    "status": [
+      {
+        "from": -325,
+        "to": 1366,
+        "state": "thriving"
+      },
+      {
+        "from": 1366,
+        "to": 1369,
+        "state": "troubled"
+      },
+      {
+        "from": 1369,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -325,
+        "title": "Netherese wanderers settle the vale",
+        "summary": "Refugees of the Netherese diaspora found the first Hartsvale in the frozen hills north of the Ice Mountains.",
+        "importance": 1
+      },
+      {
+        "year": 1366,
+        "title": "The Ogre's Pact",
+        "summary": "Ice Spire ogres carry off Princess Brianna, payment King Camden promised for their help in the civil war; the firbolg ranger Tavis Burdun rescues her, Camden is exiled and Brianna takes the throne.",
+        "importance": 2
+      },
+      {
+        "year": 1369,
+        "title": "The Twilight Spirit slain",
+        "summary": "Hunted by the firbolg clans, Queen Brianna gives birth to Prince Kaedlaw in hiding; Tavis Burdun slays the Twilight Spirit, the titan Lanaxis, ending his scheme to unite the giant kingdoms through her child.",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "A disputed succession",
+        "summary": "The aging Good King Grauman prepares to hand the Alabaster Throne to his son Taumarik, but many earls object to the prince's marriage to a sorceress from Silverymoon.",
+        "importance": 1
+      }
+    ],
+    "description": "A small human kingdom in a remote valley of the Ice Spires, hemmed in by frost, fire and hill giant steadings and marked off from them by titanic menhirs. Its kings, of House Hartwick, claim descent from Hartkiller, the youngest son of Annam All-Father, who led the smallfolk against his own kin. They rule from Castle Hartwick, a white-granite keep atop a spruce-clad spire of rock in the icy Clear Whirl River, where a Giants' Gate admits envoys of the surrounding tribes. Redwood masts from its forests sail as far south as Westgate.",
+    "population": null,
+    "ruler": "King Grauman, \"the Good King\" (c. 1489)",
+    "tags": [
+      "giants",
+      "firbolgs",
+      "monarchy",
+      "ordning",
+      "redwood"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e4e2dc",
+        "accent": "#3f5e4a",
+        "ink": "#24282b"
+      },
+      "scale": 2,
+      "motifs": [
+        "castle",
+        "keep",
+        "river",
+        "bridge",
+        "trees",
+        "snow",
+        "mountain",
+        "standing-stone",
+        "palisade"
+      ],
+      "terrain": "river",
+      "notes": "A white-granite keep with turrets crowns a tall spruce-covered rock in the middle of an icy river, reached by two drawbridges; a snowy timber town on the west bank, pines behind, a giant's menhir at the edge of the vale."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Hartsvale",
+      "https://forgottenrealms.fandom.com/wiki/Castle_Hartwick",
+      "https://forgottenrealms.fandom.com/wiki/Hartwick",
+      "https://forgottenrealms.fandom.com/wiki/Clear_Whirl_River",
+      "https://forgottenrealms.fandom.com/wiki/Hartkiller",
+      "https://forgottenrealms.fandom.com/wiki/Grauman"
+    ]
   }
 ]

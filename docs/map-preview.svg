@@ -150,6 +150,7 @@
 <circle cx="623.5" cy="200" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="629.5" y="203" font-size="10" fill="#2b2420">sundabar</text>
 <circle cx="543.8" cy="255" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="549.8" y="258" font-size="10" fill="#2b2420">everlund</text>
 <circle cx="493" cy="240" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="499" y="243" font-size="10" fill="#2b2420">nesme</text>
+<circle cx="681.5" cy="75" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="687.5" y="78" font-size="10" fill="#2b2420">hartsvale</text>
 <circle cx="536.5" cy="295" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="542.5" y="298" font-size="10" fill="#2b2420">hellgate-keep</text>
 <circle cx="442.3" cy="310" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="448.3" y="313" font-size="10" fill="#2b2420">high-forest</text>
 <circle cx="551" cy="370" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="557" y="373" font-size="10" fill="#2b2420">evereska</text>
@@ -219,5 +220,5 @@
 <circle cx="336.4" cy="880" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="342.4" y="883" font-size="10" fill="#2b2420">lantan</text>
 <circle cx="971.5" cy="500" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="977.5" y="503" font-size="10" fill="#2b2420">sea-of-fallen-stars</text>
 </g>
-<text x="12" y="988" font-size="12" fill="#5a3d2b">Realms Atlas schematic preview — 90 places — our own stylization, not a WotC map</text>
+<text x="12" y="988" font-size="12" fill="#5a3d2b">Realms Atlas schematic preview — 91 places — our own stylization, not a WotC map</text>
 </svg>

@@ -7,7 +7,7 @@ export const ROSTER = {
   ],
   'silver-marches': [
     'silverymoon', 'everlund', 'sundabar', 'citadel-adbar', 'mithral-hall', 'gauntlgrym', 'hellgate-keep',
-    'evereska', 'high-forest', 'evermeet', 'citadel-felbarr', 'nesme',
+    'evereska', 'high-forest', 'evermeet', 'citadel-felbarr', 'nesme', 'hartsvale',
   ],
   underdark: ['menzoberranzan', 'ched-nasad', 'blingdenstone', 'gracklstugh', 'mantol-derith', 'araumycos'],
   'western-heartlands': [
