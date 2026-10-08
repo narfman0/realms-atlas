@@ -1,0 +1,1405 @@
+[
+  {
+    "id": "suzail",
+    "name": "Suzail",
+    "aliases": [
+      "Suzara's City"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 6,
+    "foundedNote": "Ondeth Obarskyr settles a farmstead on the Dragonmere shore; the wiki infobox gives 10 DR as the formal establishment, and the first dock (making it a port) follows c. 15 DR.",
+    "status": [
+      {
+        "from": 6,
+        "to": 429,
+        "state": "thriving"
+      },
+      {
+        "from": 429,
+        "to": 432,
+        "state": "troubled"
+      },
+      {
+        "from": 432,
+        "to": 1018,
+        "state": "thriving"
+      },
+      {
+        "from": 1018,
+        "to": 1019,
+        "state": "troubled"
+      },
+      {
+        "from": 1019,
+        "to": 1486,
+        "state": "thriving"
+      },
+      {
+        "from": 1486,
+        "to": 1487,
+        "state": "troubled"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1486,
+        "title": "Siege of Suzail",
+        "summary": "Shadovar armies besiege the capital; King Irvel dies charging a disguised wyvern, and the siege breaks when the Western Marches host arrives from Arabel.",
+        "importance": 3
+      },
+      {
+        "year": 1018,
+        "title": "Rage of Dragons",
+        "summary": "Three red dragons and then Thauglor the Purple Dragon set the wooden lower wards ablaze and wreck part of the castle; half the city burns and a third of its people die.",
+        "importance": 3
+      },
+      {
+        "year": 429,
+        "title": "Sold to a Minotaur",
+        "summary": "While King Duar fights orcs, a noble sells the city to the pirate Magrath for 500 sacks of gold; Duar ousts him by 432 DR.",
+        "importance": 2
+      },
+      {
+        "year": 26,
+        "title": "Capital of a new kingdom",
+        "summary": "Faerlthann Obarskyr is crowned first king of Cormyr after a pact with the elves, and his family seat becomes the royal capital.",
+        "importance": 2
+      },
+      {
+        "year": 1449,
+        "title": "Suzail Writ",
+        "summary": "King Azoun V proclaims a legal reform limiting noble power and guaranteeing commoners rights such as jury trial.",
+        "importance": 1
+      }
+    ],
+    "description": "Cormyr's royal capital rises behind landward walls some eighty feet tall, its three gatehouses built like castles in their own right. Castle Obarskyr and the Citadel of the Purple Dragons crown the city, while a crowded harbor on the Dragonmere now shelters most of the kingdom's navy. Scarred by Shadovar siege in 1486, it has been rebuilding under Queen Raedra.",
+    "population": 55000,
+    "ruler": "Queen Raedra Obarskyr (crowned 1486 DR)",
+    "tags": [
+      "cormyr",
+      "capital",
+      "harbor",
+      "obarskyr",
+      "purple-dragons",
+      "war-wizards"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9c8a3",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "harbor",
+        "walls",
+        "castle",
+        "gate",
+        "towers",
+        "docks",
+        "ships",
+        "temple"
+      ],
+      "terrain": "coast",
+      "notes": "A massive curtain wall arcs around the landward side with three fortress-gates; the royal castle and a squat citadel sit on high ground inside, and a busy harbor full of ships opens south onto the lake-sea."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Suzail",
+      "https://forgottenrealms.fandom.com/wiki/History_of_Cormyr_(timeline)",
+      "https://forgottenrealms.fandom.com/wiki/Cormyr"
+    ]
+  },
+  {
+    "id": "arabel",
+    "name": "Arabel",
+    "aliases": [
+      "Caravan City",
+      "Overland City of Cormyr",
+      "Granary of the North"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 198,
+    "foundedNote": "Began as a logging camp nearly as old as Suzail; no founding year is given, so 198 DR (its burning by the Hlundadim goblinkin) is the earliest firmly dated mention.",
+    "status": [
+      {
+        "from": 198,
+        "to": 200,
+        "state": "troubled"
+      },
+      {
+        "from": 200,
+        "to": 1038,
+        "state": "thriving"
+      },
+      {
+        "from": 1038,
+        "to": 1050,
+        "state": "troubled"
+      },
+      {
+        "from": 1050,
+        "to": 1371,
+        "state": "thriving"
+      },
+      {
+        "from": 1371,
+        "to": 1374,
+        "state": "troubled"
+      },
+      {
+        "from": 1374,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1352,
+        "title": "The Usurper King",
+        "summary": "Gondegal seizes Arabel to found his own kingdom; eight days later he flees and Azoun IV retakes the city without bloodshed.",
+        "importance": 2
+      },
+      {
+        "year": 1371,
+        "title": "Goblin War",
+        "summary": "Goblin and orc hosts from the Grodd demiplane besiege and briefly take Arabel; displaced families crowd a shanty Pauper's Town for years after.",
+        "importance": 2
+      },
+      {
+        "year": 1038,
+        "title": "Goldfeather secession",
+        "summary": "The city breaks from the crown under House Goldfeather; Azoun II spends a decade bringing it back, finally exiling the family in 1050 DR.",
+        "importance": 2
+      },
+      {
+        "year": 198,
+        "title": "Burned by goblinkin",
+        "summary": "The Hlundadim goblin horde sweeps out of the north and puts the young town to the torch.",
+        "importance": 1
+      },
+      {
+        "year": 1358,
+        "title": "Tymora walks the streets",
+        "summary": "During the Time of Troubles the goddess of luck herself appears in Arabel.",
+        "importance": 2
+      },
+      {
+        "year": 1486,
+        "title": "March to Suzail",
+        "summary": "The army of the Western Marches sets out from Arabel to break the Shadovar siege of the capital.",
+        "importance": 2
+      }
+    ],
+    "description": "A walled crossroads city where the High Road, the East Way, Calantar's Way and the Moonsea Ride meet, Arabel is northern Cormyr's market and staging ground. Its cellars and attics are stocked against winter, firewood is stacked along the inside of its walls, and it trades coal, jewelry, horses and hired swords. Arabellans have rebelled against the crown more than once and still carry their blades unpeacebonded.",
+    "population": 30600,
+    "ruler": "Crown-appointed Lord of Arabel (Myrmeen Lhal held the post 1353–1370s DR)",
+    "tags": [
+      "cormyr",
+      "crossroads",
+      "trade",
+      "mercenaries",
+      "granary"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6c49b",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "gate",
+        "towers",
+        "temple",
+        "farms",
+        "keep"
+      ],
+      "terrain": "plain",
+      "notes": "A compact ring-walled city at a four-way road junction on open farmland, with a domed temple of Tymora and stacked granaries; the Storm Horns hint at the northern edge."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Arabel",
+      "https://forgottenrealms.fandom.com/wiki/History_of_Cormyr_(timeline)",
+      "https://forgottenrealms.fandom.com/wiki/Goblin_War"
+    ]
+  },
+  {
+    "id": "tilverton",
+    "name": "Tilverton",
+    "aliases": [
+      "Tilverton Scar",
+      "Black Crater",
+      "New Tilverton"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "ruin",
+    "archetype": "ruin",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Grew up around the keep of the archwizard Tilvara as a human and elven trading post, at an undated time after the fall of Netheril; the status timeline starts at c. 1300 DR, its earliest dated activity (Gharri's temple of Gond).",
+    "status": [
+      {
+        "from": 1300,
+        "to": 1356,
+        "state": "troubled"
+      },
+      {
+        "from": 1356,
+        "to": 1372,
+        "state": "thriving"
+      },
+      {
+        "from": 1372,
+        "to": null,
+        "state": "destroyed"
+      }
+    ],
+    "events": [
+      {
+        "year": 1372,
+        "title": "Swallowed by shadow",
+        "summary": "The Shadovar of Thultanthar assault the evacuated town; clashing magic between Vangerdahast and Rivalen Tanthul opens a rift to the Plane of Shadow that devours Tilverton, leaving a mile-wide crater.",
+        "importance": 3
+      },
+      {
+        "year": 1356,
+        "title": "Annexed by Cormyr",
+        "summary": "Purple Dragons from High Horn rout an orc army besieging the town, and Tilverton accepts Cormyrean rule as a fortified protectorate.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Plagueland",
+        "summary": "The Spellplague turns the Black Crater into the Tilverton Scar, an endless spiral of shadow and blue fire and the only active plagueland in Cormyr.",
+        "importance": 2
+      },
+      {
+        "year": 1373,
+        "title": "New Tilverton",
+        "summary": "Survivors build a new settlement a few miles from the crater, but an unseen killer soon begins stalking its people.",
+        "importance": 1
+      },
+      {
+        "year": 1300,
+        "title": "The priest Gharri arrives",
+        "summary": "c. the early 1300s DR a priest of Gond founds the Wondermaker temple atop the Old Town hill, making the town famous for gears and locks.",
+        "importance": 1
+      }
+    ],
+    "description": "Where a hill-crowned caravan town once guarded Tilver's Gap there is now only the Scar: a crater roughly a mile wide in which shadowstuff and blue flame endlessly rise and collapse. Cormyr keeps a small watch-keep at a wary distance and routes the Moonsea Ride around the site, and those who stray too close may come away spellscarred or wasting.",
+    "population": 0,
+    "ruler": "None; watched by a Cormyrean garrison",
+    "tags": [
+      "cormyr",
+      "tilvers-gap",
+      "shadovar",
+      "plagueland",
+      "crater"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#bfb6a4",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "ruins",
+        "rubble",
+        "glow",
+        "keep"
+      ],
+      "terrain": "plain",
+      "notes": "A dark circular crater in open plain with a slow spiral of shadow and faint blue glow; a lone small keep stands on a ridge at the rim. Before 1372 show a walled town on a knoll with a ruined palace on top."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Tilverton",
+      "https://forgottenrealms.fandom.com/wiki/Tilverton_Scar",
+      "https://forgottenrealms.fandom.com/wiki/Tilver's_Palace",
+      "https://forgottenrealms.fandom.com/wiki/Tilvara",
+      "https://forgottenrealms.fandom.com/wiki/Tilver's_Gap"
+    ]
+  },
+  {
+    "id": "marsember",
+    "name": "Marsember",
+    "aliases": [
+      "City of Spices"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "city",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -74,
+    "foundedNote": "Smugglers and pirates settle the marsh at the Starwater mouth; date from the wiki infobox.",
+    "status": [
+      {
+        "from": -74,
+        "to": 289,
+        "state": "thriving"
+      },
+      {
+        "from": 289,
+        "to": 400,
+        "state": "abandoned"
+      },
+      {
+        "from": 400,
+        "to": 1486,
+        "state": "thriving"
+      },
+      {
+        "from": 1486,
+        "to": 1487,
+        "state": "abandoned"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 289,
+        "title": "Siege and flood",
+        "summary": "King Torst and his brother die besieging Marsember; the drowned city is left to lizardfolk and later sits in ruins as a pirate haunt (abandoned twice before 376 DR).",
+        "importance": 2
+      },
+      {
+        "year": 1486,
+        "title": "Third abandonment",
+        "summary": "As Netheril invades Cormyr the citizens flee; Grand Duke Farnig Seasilver is cut down by a shade while escaping by ship.",
+        "importance": 2
+      },
+      {
+        "year": 1227,
+        "title": "Seized by the crown",
+        "summary": "King Dhalmass takes the independent port for Cormyr; he and his queen die suspiciously on their way home.",
+        "importance": 2
+      },
+      {
+        "year": 1188,
+        "title": "Sembian bid",
+        "summary": "Sembia tries to acquire the nominally free city but withdraws after a failed attempt on King Pryntaler.",
+        "importance": 1
+      },
+      {
+        "year": 26,
+        "title": "Rival of Suzail",
+        "summary": "c. 26 DR rumors of plague or a sea monster in Marsember send trade to nearby Suzail instead.",
+        "importance": 1
+      }
+    ],
+    "description": "Built across sandy islands in the swampy mouth of the Starwater, Marsember is a misty maze of stucco-and-stone houses joined by bridges and canals that serve as streets and sewers alike. Purple Dragons patrol in skiffs, spice and fish fill its markets, and quarry rubble is dumped seaward to stop the isles washing away. Twice deserted in its early centuries and again in 1486, it has refilled each time.",
+    "population": 38000,
+    "ruler": "Crown governance after Grand Duke Farnig Seasilver (d. 1486 DR)",
+    "tags": [
+      "cormyr",
+      "harbor",
+      "canals",
+      "spices",
+      "navy",
+      "smugglers"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9c3ab",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "canal",
+        "bridge",
+        "harbor",
+        "docks",
+        "ships",
+        "towers"
+      ],
+      "terrain": "swamp",
+      "notes": "A cluster of low islands threaded by canals and arched bridges, with a tower and stucco houses on each isle, fog-grey water around and marsh reeds at the edges."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Marsember",
+      "https://forgottenrealms.fandom.com/wiki/History_of_Cormyr_(timeline)"
+    ]
+  },
+  {
+    "id": "high-horn",
+    "name": "High Horn",
+    "aliases": [
+      "Castle High Horn"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "fortress",
+    "archetype": "fortress",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "The first fortification raised in the Storm Horns, excavated by dwarves emigrating from Anauria (which fell c. 111 DR); no construction year is given. The status timeline starts at 111 DR as an approximation.",
+    "status": [
+      {
+        "from": 111,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1356,
+        "title": "Relief of Tilverton",
+        "summary": "Cormyr marches an army out of High Horn to secure Tilver's Gap, routing the orcs besieging Tilverton.",
+        "importance": 2
+      },
+      {
+        "year": 1371,
+        "title": "Goblin War in the Storm Horns",
+        "summary": "Gates to the Grodd demiplane open in the range and mountain settlements are emptied, but the hold stands.",
+        "importance": 2
+      },
+      {
+        "year": 1300,
+        "title": "Royal mint",
+        "summary": "c. 1300 DR High Horn begins striking Cormyrean coin, marked with two parallel crescent moons.",
+        "importance": 1
+      },
+      {
+        "year": 1358,
+        "title": "Time of Troubles watch",
+        "summary": "Lord Commander Kae Deverell holds the pass while gods walk the Realms.",
+        "importance": 1
+      },
+      {
+        "year": 1367,
+        "title": "Never besieged",
+        "summary": "Under Lord Commander Thursk Dembarron about four hundred soldiers hold the peak, and the castle has yet to face a serious siege.",
+        "importance": 1
+      }
+    ],
+    "description": "High Horn is a stone castle dug into a peak of the Storm Horns, commanding the High Horn Pass that is one of only two easy ways west out of Cormyr. In winter it houses half the kingdom's army, along with War Wizards, royal gem mines and a mint. Its guest rooms are spartan and its discipline strict; no enemy has yet broken it.",
+    "population": 400,
+    "ruler": "Lord Commander of High Horn (Thursk Dembarron in the 1360s DR)",
+    "tags": [
+      "cormyr",
+      "storm-horns",
+      "purple-dragons",
+      "pass",
+      "mint"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cfc7b4",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "mountain",
+        "castle",
+        "walls",
+        "gate",
+        "mines",
+        "snow"
+      ],
+      "terrain": "mountain",
+      "notes": "A massive walled castle on a mountain shoulder above a road winding through a pass; snow on the peak and a dark mine adit below the walls."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/High_Horn_(hold)",
+      "https://forgottenrealms.fandom.com/wiki/High_Horn_(mountain)",
+      "https://forgottenrealms.fandom.com/wiki/High_Horn_Pass",
+      "https://forgottenrealms.fandom.com/wiki/Storm_Horns",
+      "https://forgottenrealms.fandom.com/wiki/Anauria",
+      "https://forgottenrealms.fandom.com/wiki/Cormyr"
+    ]
+  },
+  {
+    "id": "shadowdale",
+    "name": "Shadowdale",
+    "aliases": [
+      "Land Under Shadow"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "town",
+    "archetype": "frontier-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 906,
+    "foundedNote": "Ashaba becomes first human lord after the drow are driven from the Twisted Tower; human settlers had migrated in over earlier centuries.",
+    "status": [
+      {
+        "from": 906,
+        "to": 1339,
+        "state": "thriving"
+      },
+      {
+        "from": 1339,
+        "to": 1348,
+        "state": "troubled"
+      },
+      {
+        "from": 1348,
+        "to": 1374,
+        "state": "thriving"
+      },
+      {
+        "from": 1374,
+        "to": 1375,
+        "state": "troubled"
+      },
+      {
+        "from": 1375,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1358,
+        "title": "Second Battle of Shadowdale",
+        "summary": "During the Time of Troubles the avatar of Bane leads Zhentil Keep's army into the dale and is turned back by Lord Mourngrym and its defenders.",
+        "importance": 3
+      },
+      {
+        "year": 906,
+        "title": "Ashaba takes the Tower",
+        "summary": "Dalesmen besiege the drow-held Twisted Tower for about a year; the water wizard Ashaba becomes lord and gives his name to tower and river.",
+        "importance": 2
+      },
+      {
+        "year": 1339,
+        "title": "Aumry assassinated",
+        "summary": "Zhentarim agents kill Lord Aumry; the false lord Jyordhan, a Zhent agent, follows until Khelben slays him in 1345 DR.",
+        "importance": 2
+      },
+      {
+        "year": 1374,
+        "title": "Darkhope's invasion",
+        "summary": "A Zhentarim army under Scyllua Darkhope, aided by Sharrans and drow, strikes the dale under cover of night.",
+        "importance": 2
+      },
+      {
+        "year": 1357,
+        "title": "First Battle of Shadowdale",
+        "summary": "Mourngrym leads the dale against the would-be lord Lyran Nanther.",
+        "importance": 1
+      }
+    ],
+    "description": "An unwalled farming dale on the River Ashaba, Shadowdale is ruled from the Twisted Tower by a lord the dalesfolk choose, usually an outsider who has done them a great service. It is famous as the home of Elminster and of Storm Silverhand, and for the ruins that draw adventuring companies. By the late 1490s it prospers under Lady Mareldraea Hawkguard with smiths, wainwrights and tilemakers at work.",
+    "population": 16000,
+    "ruler": "Lady Mareldraea Hawkguard (late 1490s DR)",
+    "tags": [
+      "dalelands",
+      "elminster",
+      "twisted-tower",
+      "adventurers",
+      "zhentarim"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d3c79d",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "river",
+        "bridge",
+        "towers",
+        "farms",
+        "trees",
+        "ruins"
+      ],
+      "terrain": "river",
+      "notes": "A small open village along a river, dominated by one gnarled, twisted stone tower; fields and patchy woods around and forest edge to the east."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Shadowdale",
+      "https://forgottenrealms.fandom.com/wiki/History_of_Shadowdale"
+    ]
+  },
+  {
+    "id": "myth-drannor",
+    "name": "Myth Drannor",
+    "aliases": [
+      "Cormanthor (city)",
+      "City of Song",
+      "City of Love",
+      "The Towers of Song"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "ruin",
+    "archetype": "elven-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -3983,
+    "foundedNote": "Founded as the elven city of Cormanthor by Coronal Kahvoerm Irithyl in -3983 DR; renamed Myth Drannor at the Opening and the raising of its mythal in 261 DR.",
+    "status": [
+      {
+        "from": -3983,
+        "to": 714,
+        "state": "thriving"
+      },
+      {
+        "from": 714,
+        "to": 1374,
+        "state": "ruined"
+      },
+      {
+        "from": 1374,
+        "to": 1377,
+        "state": "troubled"
+      },
+      {
+        "from": 1377,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "destroyed"
+      }
+    ],
+    "events": [
+      {
+        "year": 714,
+        "title": "Fall of Myth Drannor",
+        "summary": "After three years of the Weeping War the Army of Darkness overruns the city, burning and pillaging it for nearly a month; the elven Retreat begins.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Thultanthar falls",
+        "summary": "The flying Netherese enclave, hovering overhead in a bid to seize the mythal, crashes onto the city and levels both; Ilsevele and the survivors flee to Semberholme.",
+        "importance": 3
+      },
+      {
+        "year": 261,
+        "title": "The Opening",
+        "summary": "Coronal Eltargrim completes the mythal and opens the city to all peoples; Cormanthor is renamed Myth Drannor and its golden age begins.",
+        "importance": 3
+      },
+      {
+        "year": 1374,
+        "title": "Reclaimed by the elves",
+        "summary": "The Elven Crusade of Seiveril Miritar retakes the ruins from the daemonfey, and restoration begins under his daughter Ilsevele.",
+        "importance": 2
+      },
+      {
+        "year": 1377,
+        "title": "A coronal again",
+        "summary": "The Srinshee grants Ilsevele Miritar the Rulers' Blade, making her the first coronal of the Present Age.",
+        "importance": 2
+      },
+      {
+        "year": 1346,
+        "title": "Gate to Avernus",
+        "summary": "Banites manipulated by alhoons open a portal to the Nine Hells in the ruins, and devils pour in.",
+        "importance": 1
+      }
+    ],
+    "description": "For seven centuries the City of Song was a fiend-haunted ruin of fallen towers, then for one bright century it rose again under elven rule with its mythal repaired. In 1487 the shadow-city Thultanthar dropped out of the sky onto it, and now the site is a field of shattered spires and Netherese rubble swallowed by the forest of Cormanthor.",
+    "population": 0,
+    "ruler": "None since 1487; Coronal Ilsevele Miritar rules in exile from Semberholme",
+    "tags": [
+      "cormanthyr",
+      "elves",
+      "mythal",
+      "weeping-war",
+      "thultanthar",
+      "dungeon"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cdd2b3",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "giant-trees",
+        "spires",
+        "mythal",
+        "bridge",
+        "ruins",
+        "rubble"
+      ],
+      "terrain": "forest",
+      "notes": "Graceful elven spires fused with giant trees and skybridges under a faint dome of light while thriving; when ruined, broken spires among overgrowth; after 1487, a great tilted slab of crashed black Netherese stone crushing the center."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Myth_Drannor",
+      "https://forgottenrealms.fandom.com/wiki/History_of_Myth_Drannor",
+      "https://forgottenrealms.fandom.com/wiki/Cormanthor"
+    ]
+  },
+  {
+    "id": "standing-stone",
+    "name": "Standing Stone",
+    "aliases": [],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "landmark",
+    "archetype": "landmark-monolith",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1,
+    "foundedNote": "Raised to seal the Dales Compact between the elves of Cormanthyr and human settlers; its raising is year 1 of Dalereckoning.",
+    "status": [
+      {
+        "from": 1,
+        "to": 1374,
+        "state": "thriving"
+      },
+      {
+        "from": 1374,
+        "to": 1425,
+        "state": "destroyed"
+      },
+      {
+        "from": 1425,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1,
+        "title": "Dalereckoning begins",
+        "summary": "Elves and humans raise the monolith to seal the Dales Compact, and the calendar used across Faerûn counts its years from this moment.",
+        "importance": 3
+      },
+      {
+        "year": 1374,
+        "title": "Shattered by the daemonfey",
+        "summary": "On Flamerule 21 the fey'ri of House Dlardrageth destroy the Stone after defeating Hillsfar's army nearby.",
+        "importance": 2
+      },
+      {
+        "year": 1425,
+        "title": "Raised anew",
+        "summary": "c. 1425 DR (just over fifty years after its fall) the folk of Ashabenford rebuild the Stone after the Dales renew their compact with restored Myth Drannor.",
+        "importance": 2
+      },
+      {
+        "year": 913,
+        "title": "Rauthauvyr's Road",
+        "summary": "Sembia's founder forces a road through the elven woods, routed to pass within sight of the Stone.",
+        "importance": 1
+      },
+      {
+        "year": 950,
+        "title": "Galath's raids",
+        "summary": "c. the 900s DR a bandit lord preys on travellers near the Stone until Sembian merchant-mages break his band.",
+        "importance": 1
+      }
+    ],
+    "description": "A dark, glossy grey obelisk about twenty feet tall stands where Rauthauvyr's Road meets the Moonsea Ride south of Myth Drannor. Elven runes spelling out the Dales Compact cover its faces, and enchantments heal any scratch made on it. The present stone is a rebuilding, raised by the Dalesfolk after the original was smashed in 1374.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "dalelands",
+      "cormanthyr",
+      "dalereckoning",
+      "monument",
+      "dales-compact"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cfd0b0",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 1,
+      "motifs": [
+        "standing-stone",
+        "obelisk",
+        "trees",
+        "glow"
+      ],
+      "terrain": "forest",
+      "notes": "A single tall dark obelisk at a forest crossroads, faintly glowing runes on its faces, with two dirt roads meeting at its base."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Standing_Stone",
+      "https://forgottenrealms.fandom.com/wiki/Ordulin"
+    ]
+  },
+  {
+    "id": "cormanthor",
+    "name": "Cormanthor",
+    "aliases": [
+      "The Elven Woods",
+      "The Northern Forest",
+      "Arcorar"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "landmark",
+    "archetype": "landmark-forest",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Primeval forest (once Arcorar, the Great King Forest); elves colonized it after the Crown Wars.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 714,
+        "title": "Cormanthyr falls",
+        "summary": "The Army of Darkness destroys Myth Drannor, ending the elven empire that ruled the forest for nearly five thousand years.",
+        "importance": 3
+      },
+      {
+        "year": 1344,
+        "title": "The Retreat peaks",
+        "summary": "More than nine elves in ten abandon the woods for Evermeet, Evereska and other western refuges; drow move into the empty holdings.",
+        "importance": 2
+      },
+      {
+        "year": 1374,
+        "title": "Cormanthor War",
+        "summary": "Daemonfey, Zhentarim, Sembia, Hillsfar and an elven crusade fight across the forest; the crusaders win and claim it.",
+        "importance": 2
+      },
+      {
+        "year": 1377,
+        "title": "Coronal of the Present Age",
+        "summary": "Ilsevele Miritar draws the Rulers' Blade and reclaims rule of Cormanthyr for the first time in seven centuries.",
+        "importance": 2
+      },
+      {
+        "year": 661,
+        "title": "The Dusk",
+        "summary": "Coronal Eltargrim dies and the empire begins its long fracture into rival city-states.",
+        "importance": 1
+      }
+    ],
+    "description": "Cormanthor is a vast, damp woodland of ever-larger trees, ringed by sparse pine Rimwood, then ash and beech, and at its heart the Starwood of oaks and maples rising hundreds of feet. Mists cling along the Elvenflow and the Ashaba, wild-magic edgelands drift through it in summer, and the ruins of the elven empire Cormanthyr lie scattered beneath its canopy.",
+    "population": 154223,
+    "ruler": "Elves of Cormanthyr under Coronal Ilsevele Miritar (from Semberholme)",
+    "tags": [
+      "forest",
+      "elves",
+      "cormanthyr",
+      "retreat",
+      "drow"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c5cca6",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "giant-trees",
+        "trees",
+        "river",
+        "ruins",
+        "mythal"
+      ],
+      "terrain": "forest",
+      "notes": "A dense dome of forest with low pines at the edge rising to towering oaks in the center, a river cutting through, and a few pale ruined spires poking above the canopy."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Cormanthor",
+      "https://forgottenrealms.fandom.com/wiki/Myth_Drannor"
+    ]
+  },
+  {
+    "id": "selgaunt",
+    "name": "Selgaunt",
+    "aliases": [
+      "Chancelgaunt",
+      "Chauncelgaunt"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 380,
+    "foundedNote": "c. 380 DR, settled as Chancelgaunt by Chondathan traders; renamed for the merchant-king Selgar when Sembia forms in 913 DR.",
+    "status": [
+      {
+        "from": 380,
+        "to": 400,
+        "state": "thriving"
+      },
+      {
+        "from": 400,
+        "to": 415,
+        "state": "troubled"
+      },
+      {
+        "from": 415,
+        "to": 1374,
+        "state": "thriving"
+      },
+      {
+        "from": 1374,
+        "to": 1487,
+        "state": "troubled"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1374,
+        "title": "Battle of Selgaunt",
+        "summary": "Saerloon teleports an army to the gates; with help from the Shadovar princes Rivalen and Brennus, Selgaunt wins, binding Sembia to Netheril for a century.",
+        "importance": 3
+      },
+      {
+        "year": 913,
+        "title": "Sembia is born",
+        "summary": "Free of Chondath, the city takes the name Selgaunt in honor of the merchant-king Selgar.",
+        "importance": 2
+      },
+      {
+        "year": 1368,
+        "title": "The great wave",
+        "summary": "During a spell of wild luck a pair of giant waves smash into the harbor, hurling ships into the streets.",
+        "importance": 2
+      },
+      {
+        "year": 1487,
+        "title": "Freed from Netheril",
+        "summary": "With Sakkors destroyed and Netheril fallen, Selgaunt and Sembia regain independence; the city serves as interim capital until Ordulin is rebuilt.",
+        "importance": 2
+      },
+      {
+        "year": 400,
+        "title": "Orc onslaught",
+        "summary": "Goblin and orc raids nearly overrun the colony until Chondath sends half its army; fighting lasts until 415 DR.",
+        "importance": 1
+      },
+      {
+        "year": 1294,
+        "title": "Pirate fleet",
+        "summary": "Forty pirate ships under Thevren raid Selgaunt and Saerloon with alarming success.",
+        "importance": 1
+      }
+    ],
+    "description": "Selgaunt is a showpiece merchant port of Yhauntan-stone mansions, brownstone tallhouses, statuary and fountains, with the spired Palace of the Hulorn rising above the old noble quarter. A crowded High Bridge carries houses and a fish market over the Arkhen River. Having served as Sembia's capital under Netherese rule, it is back to trading on its own account.",
+    "population": 60000,
+    "ruler": "The Hulorn (Thamalon Uskevren II held the office through the Netherese era)",
+    "tags": [
+      "sembia",
+      "harbor",
+      "merchants",
+      "nobility",
+      "netheril"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dacbae",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "harbor",
+        "docks",
+        "spires",
+        "bridge",
+        "river",
+        "statue",
+        "walls"
+      ],
+      "terrain": "coast",
+      "notes": "A dense coastal city at a river mouth on a curved bay, a many-spired palace in the center and a house-lined bridge over the river; ships crowd the quays."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Selgaunt",
+      "https://forgottenrealms.fandom.com/wiki/Sembia"
+    ]
+  },
+  {
+    "id": "saerloon",
+    "name": "Saerloon",
+    "aliases": [
+      "Chondathan"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 380,
+    "foundedNote": "c. 380s DR, established as Chondathan, a Chondathan colonial foothold; renamed for the merchant Saer in 913 DR.",
+    "status": [
+      {
+        "from": 380,
+        "to": 400,
+        "state": "thriving"
+      },
+      {
+        "from": 400,
+        "to": 415,
+        "state": "troubled"
+      },
+      {
+        "from": 415,
+        "to": 1374,
+        "state": "thriving"
+      },
+      {
+        "from": 1374,
+        "to": 1487,
+        "state": "troubled"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1374,
+        "title": "Defeat at Selgaunt",
+        "summary": "Saerloon's army, aided by a green dragon, teleports to Selgaunt's gates and is broken by Selgaunt and the Shadovar.",
+        "importance": 2
+      },
+      {
+        "year": 902,
+        "title": "Independence and a dracolich",
+        "summary": "Chondathan breaks from Chondath after the Rotting War; soon after, Sammaster's Cult of the Dragon makes its first dracolich in the city.",
+        "importance": 2
+      },
+      {
+        "year": 1478,
+        "title": "Shar's governor",
+        "summary": "Lord Governor Haelia Johannes, backed by Netheril, begins stamping out every faith but Shar.",
+        "importance": 2
+      },
+      {
+        "year": 1358,
+        "title": "Temple of Mystra destroyed",
+        "summary": "In the Time of Troubles fire and lightning level the city's temple of the goddess of magic.",
+        "importance": 1
+      },
+      {
+        "year": 913,
+        "title": "Named for Saer",
+        "summary": "With Sembia's founding the port takes the name of its master merchant.",
+        "importance": 1
+      }
+    ],
+    "description": "Old Saerloon is a walled town of pointed arches, blade-like buttresses, needle spires and gargoyle-crowded roofs, many of the gargoyles secretly watchful. Docks crowd every stretch of shore on Saerloon Bay, and smoky suburbs of inns, stockyards and tanneries spill for miles beyond the walls. It is a place of exotic tastes, thieves and intrigue.",
+    "population": 50000,
+    "ruler": "Lord Governor (Haelia Johannes from 1478 DR)",
+    "tags": [
+      "sembia",
+      "harbor",
+      "gothic",
+      "intrigue",
+      "cult-of-the-dragon"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cfc3ad",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "harbor",
+        "docks",
+        "walls",
+        "spires",
+        "statue",
+        "temple"
+      ],
+      "terrain": "coast",
+      "notes": "A tight walled core of dark needle spires and gargoyle-topped roofs on a bay, a sprawl of low buildings outside the walls, and quays running all along the waterfront."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Saerloon",
+      "https://forgottenrealms.fandom.com/wiki/Sembia"
+    ]
+  },
+  {
+    "id": "ordulin",
+    "name": "Ordulin",
+    "aliases": [
+      "Moondale",
+      "Ordulin Maelstrom"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "ruin",
+    "archetype": "ruin",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1,
+    "foundedNote": "c. 1 DR: settled as Moondale, a Dalelands farming community, just after the Standing Stone was raised; annexed by Sembia and renamed Ordulin c. 1067 DR, when it became the capital.",
+    "status": [
+      {
+        "from": 1,
+        "to": 1374,
+        "state": "thriving"
+      },
+      {
+        "from": 1374,
+        "to": 1484,
+        "state": "destroyed"
+      },
+      {
+        "from": 1484,
+        "to": 1487,
+        "state": "ruined"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": 1374,
+        "title": "The Shadowstorm",
+        "summary": "On Nightal 1 the Sharran Elyril Hraven opens a rift to the Plane of Shadow; the Adumbral Calyx annihilates the capital, leaving a whirling maelstrom of shadowstuff.",
+        "importance": 3
+      },
+      {
+        "year": 1484,
+        "title": "Maelstrom closed",
+        "summary": "Vasen Cale and Drasek Riven seal the void at its heart, and the floating enclave Sakkors is deliberately crashed into it to end the storm.",
+        "importance": 3
+      },
+      {
+        "year": 1067,
+        "title": "Capital of Sembia",
+        "summary": "c. 1067 DR Sembia peacefully annexes Moondale, renames it Ordulin and makes it the capital, away from the older coastal cities.",
+        "importance": 2
+      },
+      {
+        "year": 913,
+        "title": "Rauthauvyr's Road",
+        "summary": "Moondale becomes the southern end of the road Sembia forces through the elven woods.",
+        "importance": 1
+      },
+      {
+        "year": 1318,
+        "title": "Duel of archmages",
+        "summary": "c. 1318 DR two wizards trade meteor swarms over the city until both die, damaging many tall buildings.",
+        "importance": 1
+      }
+    ],
+    "description": "Sembia's old capital vanished in 1374 into a maelstrom of shadow that churned for over a century beneath a hovering Netherese citadel. Since the storm was ended in 1484 by crashing that citadel into it, Sembians have been raising a new city on the wreckage, and they mean to make it the capital again.",
+    "population": null,
+    "ruler": "Council of Sembia (rebuilding; capital restored by 1499 DR)",
+    "tags": [
+      "sembia",
+      "capital",
+      "shadowstorm",
+      "shar",
+      "netheril"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#bdb7ab",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "ruins",
+        "rubble",
+        "glow",
+        "walls"
+      ],
+      "terrain": "plain",
+      "notes": "Before 1374, a broad inland city with a central guard tower and fortress-like mint; 1374–1484, a black vortex of shadow with a floating rock citadel above; afterward, crash rubble with new scaffolded buildings rising at the edges."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Ordulin",
+      "https://forgottenrealms.fandom.com/wiki/Sembia",
+      "https://forgottenrealms.fandom.com/wiki/Standing_Stone"
+    ]
+  },
+  {
+    "id": "westgate",
+    "name": "Westgate",
+    "aliases": [
+      "Gateway to the West"
+    ],
+    "world": "toril",
+    "region": "heartlands-east",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -1000,
+    "foundedNote": "c. -1000 DR: humans from the Vilhon Reach settle this stretch of the Dragon Coast, about a thousand years before the Standing Stone; Westgate becomes the largest of their towns.",
+    "status": [
+      {
+        "from": -1000,
+        "to": -349,
+        "state": "troubled"
+      },
+      {
+        "from": -349,
+        "to": -286,
+        "state": "thriving"
+      },
+      {
+        "from": -286,
+        "to": -137,
+        "state": "troubled"
+      },
+      {
+        "from": -137,
+        "to": 257,
+        "state": "thriving"
+      },
+      {
+        "from": 257,
+        "to": 429,
+        "state": "troubled"
+      },
+      {
+        "from": 429,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -286,
+        "title": "The Night King",
+        "summary": "The vampire Orlak takes the city in one night with a mercenary band and rules it until paladins of Lathander overthrow him (-137 DR).",
+        "importance": 2
+      },
+      {
+        "year": -349,
+        "title": "Dragon slain",
+        "summary": "The Netherese wizard Saldrinar kills the topaz dragon Kisonraathiisar, who had tyrannized the town, and becomes Westgate's first human king.",
+        "importance": 2
+      },
+      {
+        "year": 257,
+        "title": "Pirate Kings",
+        "summary": "Raiders from the Pirate Isles seize the city, beginning nearly two centuries of pirate rule ended by the mercenary Mulsantir Illistine in 429 DR.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Docks left dry",
+        "summary": "After the Spellplague the Sea of Fallen Stars drains away from the old quays; new docks rise on the receded shore as Tidetown (1393 DR).",
+        "importance": 2
+      },
+      {
+        "year": 1487,
+        "title": "Great Rain",
+        "summary": "The Second Sundering refills the sea, flooding Tidetown and exposing hidden dungeons; the vampire Kirenkirsalai revives the Night Masks.",
+        "importance": 2
+      },
+      {
+        "year": 1477,
+        "title": "Gang war",
+        "summary": "Fire Knives and Nine Golden Swords fight across the city, costing Croamarkh Jaundamicar Bleth much of his family and power.",
+        "importance": 1
+      }
+    ],
+    "description": "The richest and most crooked port on the Sea of Fallen Stars, Westgate welcomes anyone with coin and asks few questions. Crime syndicates, merchant houses and old vampire lords run its alleys, and its streets have been reshaped repeatedly as the sea fell away after the Spellplague and then rose again, flooding the lower harbor district of Tidetown.",
+    "population": 40000,
+    "ruler": "Croamarkh Jaundamicar Bleth (as of 1479–1487 DR)",
+    "tags": [
+      "dragon-coast",
+      "harbor",
+      "crime",
+      "night-masks",
+      "fire-knives",
+      "vampires"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cbbfa6",
+        "accent": "#5b3f7d",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "harbor",
+        "docks",
+        "ships",
+        "walls",
+        "towers",
+        "gate"
+      ],
+      "terrain": "coast",
+      "notes": "A crowded walled port with a cramped skyline of towers and a lower, half-flooded harbor district stepped down toward the water; a large gate faces inland to the west."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Westgate",
+      "https://forgottenrealms.fandom.com/wiki/History_of_Westgate"
+    ]
+  }
+]

@@ -1,0 +1,1600 @@
+[
+  {
+    "id": "eltabbar",
+    "name": "Eltabbar",
+    "aliases": [],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "city",
+    "archetype": "wizard-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 922,
+    "foundedNote": "Raised by the Red Wizards after Thay won independence from Mulhorand in 922 DR, laid out as a glyph to bind the demon lord Eltab; exact year approximate",
+    "status": [
+      {
+        "from": 922,
+        "to": 1367,
+        "state": "thriving"
+      },
+      {
+        "from": 1367,
+        "to": 1368,
+        "state": "troubled"
+      },
+      {
+        "from": 1368,
+        "to": 1375,
+        "state": "thriving"
+      },
+      {
+        "from": 1375,
+        "to": 1385,
+        "state": "troubled"
+      },
+      {
+        "from": 1385,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 922,
+        "title": "Eltab bound beneath the city",
+        "summary": "After the revolt against Mulhorand, Jorgmacdon's wizards imprison the demon lord Eltab under the river mouth and build the city as a sealing glyph.",
+        "importance": 3
+      },
+      {
+        "year": 1367,
+        "title": "Eltab breaks loose",
+        "summary": "Szass Tam frees the demon in a failed bid to enslave him; quakes and Eltar floods flatten much of the city, which undead labor rebuilds within months.",
+        "importance": 2
+      },
+      {
+        "year": 1375,
+        "title": "Riots over the regency vote",
+        "summary": "The zulkirs reject Szass Tam's bid for regency in Eltabbar's council hall, setting off riots and the decade-long War of the Zulkirs.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Spared by the Spellplague",
+        "summary": "The city comes through the Spellplague unscathed, though it later loses its role as Thay's capital.",
+        "importance": 2
+      },
+      {
+        "year": 1479,
+        "title": "Shield against the ash",
+        "summary": "Tharchioness Sylora Salm keeps wards over the city that hold off the volcanic ash smothering the rest of Thay.",
+        "importance": 1
+      }
+    ],
+    "description": "Eltabbar spreads along Lake Thaylambar where the River Eltar spills off the plateau and threads the city through broad ornamental canals. Its streets, waterways and towers are drawn as one vast warding glyph, a lock on the demon that still rumbles in the deep. Under Szass Tam's regency it is no longer the capital, yet it remains a gilded, fad-chasing haven for Red Wizards, kept clear of Thay's ash by its tharchioness's magic.",
+    "population": 100000,
+    "ruler": "Tharchioness Sylora Salm, under Regent Szass Tam (c. 1479)",
+    "tags": [
+      "thay",
+      "red-wizards",
+      "capital-former",
+      "canals",
+      "slavery"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9c4a8",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "canal",
+        "towers",
+        "spires",
+        "walls",
+        "lake",
+        "waterfall",
+        "glow"
+      ],
+      "terrain": "river",
+      "notes": "Canals radiating in a glyph-like pattern from a waterfall at one edge, crowned with tall exotic wizard towers; faint red glow lines tracing the street-glyph."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Eltabbar",
+      "https://forgottenrealms.fandom.com/wiki/Thay"
+    ]
+  },
+  {
+    "id": "bezantur",
+    "name": "Bezantur",
+    "aliases": [
+      "City of a Thousand Temples",
+      "Citadel of Thieves",
+      "Kensten"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -150,
+    "foundedNote": "Earliest attested as the Raumathari port of Kensten during the Great Conflagration (c. -150 DR); the port's own founding is undated",
+    "status": [
+      {
+        "from": -150,
+        "to": -135,
+        "state": "destroyed"
+      },
+      {
+        "from": -135,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": -150,
+        "title": "Kossuth burns Kensten",
+        "summary": "Raumathari mages summon an avatar of the fire lord to repel Narfell; it destroys the attackers, then turns its wrath on Kensten itself (c.).",
+        "importance": 3
+      },
+      {
+        "year": -135,
+        "title": "Rebuilt under Mulhorand",
+        "summary": "Mulhorand resettles the burned port and appeases Kossuth with a temple whose first high priest is named Bezantur.",
+        "importance": 2
+      },
+      {
+        "year": 932,
+        "title": "Taken by the Red Wizards",
+        "summary": "After a two-week siege aided by Kossuthan priests, Thay captures the city and renames it Bezantur.",
+        "importance": 2
+      },
+      {
+        "year": 1357,
+        "title": "Capital of Priador",
+        "summary": "After the Salamander War the city becomes seat of the new tharch of Priador under zulkir Aznar Thrul.",
+        "importance": 1
+      },
+      {
+        "year": 1385,
+        "title": "Harbor burned in the civil war",
+        "summary": "In the last clash of Thay's civil war, Szass Tam's Banite priests burn the harbor to stop the fleeing zulkirs; the Bane priest Zekidh Shezim becomes autharch.",
+        "importance": 3
+      }
+    ],
+    "description": "Bezantur is Thay's great southern seaport, a black-walled city ringed by festering shantytowns and fronting a harbor crammed with Alamber Sea shipping. Temples to nearly every god Thay otherwise suppresses crowd its center, while thieves' guilds bribe their way through every quarter. Since 1385 it answers to a Banite autharch appointed by Szass Tam.",
+    "population": 136800,
+    "ruler": "Autharch Zekidh Shezim, priest of Bane (from 1385)",
+    "tags": [
+      "thay",
+      "harbor",
+      "temples",
+      "thieves-guilds",
+      "alamber-sea"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cdbb9b",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "harbor",
+        "walls",
+        "temple",
+        "domes",
+        "docks",
+        "ships",
+        "keep"
+      ],
+      "terrain": "coast",
+      "notes": "A dense mass of mismatched temple domes and spires inside high black walls, a dark central keep, shanty sprawl hugging the walls, crowded docks on the sea side."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Bezantur",
+      "https://forgottenrealms.fandom.com/wiki/Thay"
+    ]
+  },
+  {
+    "id": "immilmar",
+    "name": "Immilmar",
+    "aliases": [],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Grew outward from the Huhrong's Citadel, which was built over the ruins of a Narfell-era fortress; no founding year recorded",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1365,
+        "state": "thriving"
+      },
+      {
+        "from": 1365,
+        "to": 1366,
+        "state": "troubled"
+      },
+      {
+        "from": 1366,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -4963,
+        "title": "Rashemen founded",
+        "summary": "The followers of the chieftain Shemen found the Rashemi nation that Immilmar will one day lead.",
+        "importance": 2
+      },
+      {
+        "year": 934,
+        "title": "Thay repulsed at Gauros",
+        "summary": "The Witches of Rashemen crush the first Thayan invasion in the Gorge of Gauros.",
+        "importance": 2
+      },
+      {
+        "year": 1358,
+        "title": "Spirits silenced",
+        "summary": "During the Time of Troubles dead-magic zones cut the Wychlaran off from the land's spirits, driving some witches and berserkers mad.",
+        "importance": 2
+      },
+      {
+        "year": 1365,
+        "title": "Thayan flood",
+        "summary": "Thayan agents melt part of the Icerim glacier, flooding part of the city.",
+        "importance": 2
+      }
+    ],
+    "description": "Immilmar sits on the shore of Lake Ashane, the seat of Rashemen's Iron Lord though everyone knows the masked Witches hold the true reins. Stone workshops of smiths, tanners and woodcarvers ring the witch-raised citadel at its heart, giving way to steep-roofed timber lodges and a busy fishing waterfront. Berserker lodges and foreign embassies make it one of the few Rashemi towns where outsiders are welcome.",
+    "population": 25000,
+    "ruler": "Iron Lord (Huhrong) Mangan Uruk, by leave of the Wychlaran (c. 1479)",
+    "tags": [
+      "rashemen",
+      "witches",
+      "berserkers",
+      "lake-ashane",
+      "crafts"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6d0bf",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "castle",
+        "lake",
+        "docks",
+        "trees",
+        "walls",
+        "snow"
+      ],
+      "terrain": "tundra",
+      "notes": "Squat stone citadel in the middle, surrounded by steep-gabled timber lodges among saplings; a lakeshore with small fishing boats on the west side, a dusting of snow."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Immilmar",
+      "https://forgottenrealms.fandom.com/wiki/Rashemen"
+    ]
+  },
+  {
+    "id": "velprintalar",
+    "name": "Velprintalar",
+    "aliases": [
+      "Veltalar",
+      "Velprin"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "city",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 756,
+    "foundedNote": "Founded by Chessentan human colonists in 756 DR on the site of the older royal seat of Velprin",
+    "status": [
+      {
+        "from": 756,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1395,
+        "state": "troubled"
+      },
+      {
+        "from": 1395,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 756,
+        "title": "Founded by Chessentan colonists",
+        "summary": "Human settlers from Chessenta establish the port that becomes Aglarond's chief harbor.",
+        "importance": 2
+      },
+      {
+        "year": 1320,
+        "title": "The Simbul takes the palace",
+        "summary": "The witch-queen known as the Simbul begins her long reign from the Palace of the Simbul.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "The sea pulls back",
+        "summary": "The Spellplague drains the Sea of Fallen Stars; the shore retreats and the city chases it, leaving the old core to decay into the slum of Old Velprintalar.",
+        "importance": 3
+      },
+      {
+        "year": 1425,
+        "title": "Rule of the Simbarch Council",
+        "summary": "The Simbul's palace passes to the Simbarch Council, which governs Aglarond thereafter.",
+        "importance": 2
+      }
+    ],
+    "description": "Velprintalar, renamed Veltalar in the 15th century, is Aglarond's only real seaport: an unwalled city of lighthouses, shipyards and griffon-riders on the edge of the Yuirwood. When the Inner Sea sank it pushed new quays out across the exposed shore, leaving its old hillside heart a patchwork slum of stacked, mismatched storeys. The Simbarch Council meets in the old palace of the Simbul.",
+    "population": 70000,
+    "ruler": "Simbarch Council (from 1425)",
+    "tags": [
+      "aglarond",
+      "harbor",
+      "simbul",
+      "half-elves",
+      "yuirwood"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d3cdae",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "harbor",
+        "lighthouse",
+        "docks",
+        "ships",
+        "domes",
+        "trees",
+        "keep"
+      ],
+      "terrain": "coast",
+      "notes": "No city wall; an older tight-packed hillside quarter stepping down toward a newer waterfront pushed out onto former seabed, a stone lighthouse with a magic flame at the harbor mouth."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Velprintalar",
+      "https://forgottenrealms.fandom.com/wiki/Aglarond"
+    ]
+  },
+  {
+    "id": "skuld",
+    "name": "Skuld",
+    "aliases": [
+      "City of Eternity",
+      "City of Shadows"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "metropolis",
+    "archetype": "desert-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -2100,
+    "foundedNote": "Wiki gives c. -2100 DR; Mulhorand itself was founded by its god-kings in -2135 DR",
+    "status": [
+      {
+        "from": -2100,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "destroyed"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": -2135,
+        "title": "Mulhorand founded",
+        "summary": "Manifested gods of the Mulan found Mulhorand after overthrowing Imaskar; Skuld rises as its capital (c.).",
+        "importance": 3
+      },
+      {
+        "year": -1071,
+        "title": "Re slain in the Orcgate Wars",
+        "summary": "The sun god Re falls to Gruumsh in the Battle of the Gods during the gray orc invasion.",
+        "importance": 2
+      },
+      {
+        "year": 922,
+        "title": "Thay breaks away",
+        "summary": "The Red Wizards declare the northern provinces independent of Skuld's god-kings.",
+        "importance": 2
+      },
+      {
+        "year": 1379,
+        "title": "Third Mulhorandi Empire",
+        "summary": "Mulhorand completes its conquest of shattered Unther, briefly ruling both old empires from Skuld.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Buried by the Spellplague",
+        "summary": "The Spellplague levels the City of Eternity and its walls, unbreached for 35 centuries, leaving only rubble; Mulhorand's lands fall to High Imaskar.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Mulhorand reborn",
+        "summary": "Chosen of the returned Mulhorandi gods, aided by Nezram, drive out the Imaskari and begin rebuilding the realm, abolishing slavery.",
+        "importance": 3
+      }
+    ],
+    "description": "Skuld was the walled capital of Mulhorand on the Alamber Sea, a city of god-temples and palaces that claimed to be the oldest living settlement in Faerûn. The Spellplague brought its ancient walls down and buried its streets in rubble, and for a century it was a ruin under Imaskari rule. Since the gods of Mulhorand returned in the Sundering, the Mulan are clearing the wreckage of their ancient capital.",
+    "population": null,
+    "ruler": "Restored Mulhorandi pantheon (post-1487); no recorded ruler of the city",
+    "tags": [
+      "mulhorand",
+      "old-empires",
+      "god-kings",
+      "spellplague",
+      "alamber-sea"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e0cc9c",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "walls",
+        "pyramid",
+        "temple",
+        "obelisk",
+        "harbor",
+        "statue",
+        "ruins"
+      ],
+      "terrain": "desert",
+      "notes": "Massive square walls enclosing walled sub-districts, a temple quarter of pyramids and obelisks, a small sea harbor; in later eras show rubble and broken walls with fresh scaffolding."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Skuld",
+      "https://forgottenrealms.fandom.com/wiki/Mulhorand"
+    ]
+  },
+  {
+    "id": "unthalass",
+    "name": "Unthalass",
+    "aliases": [
+      "City of Gems"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "metropolis",
+    "archetype": "desert-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -2087,
+    "foundedNote": "Founded by the god-king Enlil as Unther's first city in -2087 DR",
+    "status": [
+      {
+        "from": -2087,
+        "to": 1358,
+        "state": "thriving"
+      },
+      {
+        "from": 1358,
+        "to": 1385,
+        "state": "troubled"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "ruined"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": -2087,
+        "title": "Founded by Enlil",
+        "summary": "The god Enlil founds Unthalass, later leaving it and all Unther to Gilgeam.",
+        "importance": 3
+      },
+      {
+        "year": 108,
+        "title": "First great flood",
+        "summary": "The River Alamber floods the city; Gilgeam builds over the damage instead of repairing it.",
+        "importance": 1
+      },
+      {
+        "year": 731,
+        "title": "Second great flood",
+        "summary": "Another Alamber flood further erodes the once-peerless city.",
+        "importance": 1
+      },
+      {
+        "year": 1358,
+        "title": "Gilgeam and Tiamat clash",
+        "summary": "The god-king and the dragon goddess battle in the city during the Time of Troubles, destroying most of it; Mulhorand later occupies the ruins.",
+        "importance": 3
+      },
+      {
+        "year": 1385,
+        "title": "Unther lost",
+        "summary": "The Spellplague finishes Unthalass and sweeps Unther's lands to Abeir; lamias claim the ruins beside dragonborn Tymanther.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Gilgeam reclaims his city",
+        "summary": "Untherans returning from Abeir in the Sundering retake the ruins and begin rebuilding them as the capital of a reborn Unther, soon at war with Tymanther.",
+        "importance": 3
+      }
+    ],
+    "description": "Unthalass was once called the greatest city in the Realms, the gem-rich capital of Gilgeam's Unther. Floods, a duel of gods and the Spellplague reduced it to a lamia-haunted ruin. Now a second Gilgeam has returned from Abeir and is raising a new capital on the old foundations, its armies pressing against neighboring Tymanther.",
+    "population": null,
+    "ruler": "God-king Gilgeam (from 1487)",
+    "tags": [
+      "unther",
+      "old-empires",
+      "god-kings",
+      "spellplague",
+      "tymanther"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dcc69a",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "ziggurat",
+        "walls",
+        "river",
+        "ruins",
+        "rubble",
+        "statue"
+      ],
+      "terrain": "river",
+      "notes": "Stepped ziggurats rising from layers of half-buried older buildings by a river; show broken masonry and rubble heaps, with new construction on top in the latest era."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Unthalass",
+      "https://forgottenrealms.fandom.com/wiki/Tymanther",
+      "https://forgottenrealms.fandom.com/wiki/Mulhorand"
+    ]
+  },
+  {
+    "id": "cimbar",
+    "name": "Cimbar",
+    "aliases": [],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "metropolis",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -526,
+    "foundedNote": "Founded as an Untheric port 'five centuries before Cormyr' (Cormyr dates from -26 DR), so c. -526 DR",
+    "status": [
+      {
+        "from": -526,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "ruined"
+      }
+    ],
+    "events": [
+      {
+        "year": 902,
+        "title": "Tchazzar's capital",
+        "summary": "The red dragon Tchazzar, disguised as a man, unites the Chessentan city-states and makes Cimbar his seat.",
+        "importance": 3
+      },
+      {
+        "year": 929,
+        "title": "Chessenta freed from Unther",
+        "summary": "Tchazzar's armies drive Unther's legions back to the Riders to the Sky.",
+        "importance": 2
+      },
+      {
+        "year": 1154,
+        "title": "Besieged by rivals",
+        "summary": "The city-states of Akanax and Soorenar lay siege to Cimbar.",
+        "importance": 1
+      },
+      {
+        "year": 1373,
+        "title": "Tchazzar returns",
+        "summary": "The dragon reappears in his true form and retakes rule of the city.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Lost in the Spellplague",
+        "summary": "Cimbar vanishes in the Spellplague, believed destroyed; it is later found to have been cast into Abeir.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Returned in ruins",
+        "summary": "The Sundering brings Chessenta's lost cities back to Toril, but Cimbar is a ruin as Chessenta splinters into feuding city-states.",
+        "importance": 2
+      }
+    ],
+    "description": "Cimbar was Chessenta's largest city and its spiritual capital, a clean, art-loving port where even slaves could read and citizens were expected to practice the arts. Its old quarter held the Sceptanar's palace and a famed university, the newer port quarter theaters, a hippodrome and the Inner Sea's second-largest navy. The Spellplague tore it away to Abeir, and what returned in the Sundering is largely ruin.",
+    "population": null,
+    "ruler": "None recorded (ruins, 1490s); formerly the Sceptanar",
+    "tags": [
+      "chessenta",
+      "old-empires",
+      "tchazzar",
+      "spellplague",
+      "university"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dbcaa5",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "harbor",
+        "arena",
+        "library",
+        "temple",
+        "ships",
+        "ruins"
+      ],
+      "terrain": "coast",
+      "notes": "Two-part walled port: an old upper town with a palace and university and a lower harbor town with an arena and hippodrome; latest era shows broken walls and toppled colonnades."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Cimbar",
+      "https://forgottenrealms.fandom.com/wiki/Chessenta"
+    ]
+  },
+  {
+    "id": "arrabar",
+    "name": "Arrabar",
+    "aliases": [
+      "Golden Arrabar",
+      "Shining Arrabar"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 50,
+    "foundedNote": "Settled in 50 DR alongside Mussum and Samra on the Vilhon Reach",
+    "status": [
+      {
+        "from": 50,
+        "to": 900,
+        "state": "thriving"
+      },
+      {
+        "from": 900,
+        "to": 903,
+        "state": "troubled"
+      },
+      {
+        "from": 903,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "ruined"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 139,
+        "title": "Capital of Chondath",
+        "summary": "After the Battle of the Elven Tears, Arrabar leads the alliance of cities that becomes Chondath.",
+        "importance": 2
+      },
+      {
+        "year": 902,
+        "title": "The Rotting War",
+        "summary": "Chondath's civil war ends in summoned necromantic plagues that kill most of the armies; Arrabar loses its hold on the realm.",
+        "importance": 3
+      },
+      {
+        "year": 1346,
+        "title": "Wizard of the Tome attacks",
+        "summary": "Jaulothan Marlyx materializes in the city with two beholders; desperate local mages summon demons to stop him.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Chondath laid waste",
+        "summary": "The Spellplague ravages Chondath, and Arrabar is believed destroyed along with its sister cities.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Restored",
+        "summary": "As Mystra returns in the Sundering the land heals and Arrabar is again a port of call on the Vilhon Reach.",
+        "importance": 2
+      }
+    ],
+    "description": "Arrabar is Chondath's capital and busiest port, a gilded but crooked city on the southeastern shore of the Vilhon Reach whose banner shows three golden balls. Once the 'Shining' heart of a Vilhon empire, it never fully recovered its reach after the plague-ridden Rotting War. Thought lost in the Spellplague, it is back on the trade routes of the Reach and the Golden Road.",
+    "population": 61012,
+    "ruler": "Lord of Arrabar (name unrecorded for the 1490s)",
+    "tags": [
+      "chondath",
+      "vilhon-reach",
+      "harbor",
+      "corruption",
+      "spellplague"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d8c7a0",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "harbor",
+        "docks",
+        "ships",
+        "walls",
+        "towers",
+        "domes",
+        "temple"
+      ],
+      "terrain": "coast",
+      "notes": "Busy harbor crescent backed by gilded domes and a palace; golden accents on rooftops."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Arrabar"
+    ]
+  },
+  {
+    "id": "alaghon",
+    "name": "Alaghôn",
+    "aliases": [
+      "Jewel of Turmish",
+      "Throne of Turmish"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -37,
+    "foundedNote": "Founded as a trading port by Chondathan settlers in -37 DR, the first recorded settlement of Turmish",
+    "status": [
+      {
+        "from": -37,
+        "to": 352,
+        "state": "thriving"
+      },
+      {
+        "from": 352,
+        "to": 362,
+        "state": "troubled"
+      },
+      {
+        "from": 362,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -247,
+        "title": "Procession of Justice",
+        "summary": "Tyr bursts through a portal near the future city site and spends nine years pacifying the ruins of Jhaamdath.",
+        "importance": 3
+      },
+      {
+        "year": -37,
+        "title": "Port founded",
+        "summary": "Chondathan settlers build a waystation port that grows into Turmish's capital.",
+        "importance": 2
+      },
+      {
+        "year": 352,
+        "title": "The great fire",
+        "summary": "Fire guts the shipyards and granaries, bringing famine and a decade of unchecked piracy.",
+        "importance": 2
+      },
+      {
+        "year": 1370,
+        "title": "A child returns from the vaults",
+        "summary": "A boy emerges from the catacombs with an ancient coin and tales of a red-eyed woman, then never wakes; a lich queen lingers below.",
+        "importance": 1
+      }
+    ],
+    "description": "Alaghôn is Turmish's capital and the busiest port on the southern Inner Sea, funneling dwarf metals and plains goods out to the wider world. Generations of human stonework laid over older dwarven vaults have honeycombed the city with forgotten passages, where children play and sometimes vanish. Since the Spellplague it is run in practice by rival merchant costers under the gaze of druids.",
+    "population": 75000,
+    "ruler": "Assembly of Stars, dominated by merchant costers (late 15th c.)",
+    "tags": [
+      "turmish",
+      "vilhon-reach",
+      "harbor",
+      "republic",
+      "catacombs"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d2c6a2",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "harbor",
+        "docks",
+        "ships",
+        "walls",
+        "domes",
+        "temple",
+        "cavern"
+      ],
+      "terrain": "coast",
+      "notes": "Stone port city of solid vaulted buildings on a rocky shore, with a palace on a rise; a hint of catacomb openings below street level."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Alaghôn",
+      "https://forgottenrealms.fandom.com/wiki/Turmish"
+    ]
+  },
+  {
+    "id": "halarahh",
+    "name": "Halarahh",
+    "aliases": [],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "city",
+    "archetype": "wizard-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1263,
+    "foundedNote": "Earliest attested date: became Halruaa's capital (replacing Halagard) in 1263 DR; the city itself is likely older",
+    "status": [
+      {
+        "from": 1263,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": 1263,
+        "title": "Capital of Halruaa",
+        "summary": "Halarahh replaces Halagard as the seat of the wizard nation.",
+        "importance": 2
+      },
+      {
+        "year": 1368,
+        "title": "Crop failure",
+        "summary": "A rare blight withers Halruaa's harvests, a ripple of trouble in the gods' realms.",
+        "importance": 1
+      },
+      {
+        "year": 1385,
+        "title": "The Great Sacrifice",
+        "summary": "As the Spellplague strikes, Halruaan elders pour their lives into a forceweb that hurls the realm to Abeir; on Toril only blue-fire-haunted shells remain.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Return to Toril",
+        "summary": "The Sundering brings Halruaa back, poorer, less populous and wary of magic, guarded by wand-bearing militia and reclusive archlords.",
+        "importance": 3
+      }
+    ],
+    "description": "Halarahh stands where two rivers meet Lake Halruaa: pink coral houses, towers of colored marble and crystal, and streets paved with semiprecious stone around a vast tree-shaded mosaic plaza. Magic once cooled every street with captured lake breezes and conjured ice. Returned from its century in Abeir, it is a quieter, more cautious capital whose wizards hoard what magic they kept.",
+    "population": null,
+    "ruler": "Archlords and local septars of returned Halruaa (post-1487)",
+    "tags": [
+      "halruaa",
+      "wizards",
+      "spellplague",
+      "abeir",
+      "lake"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e3d3bb",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "spires",
+        "towers",
+        "lake",
+        "river",
+        "glow",
+        "trees",
+        "docks"
+      ],
+      "terrain": "river",
+      "notes": "Slender pastel and crystal spires around a large open plaza with big shade trees, on a triangle of land between two rivers and a lake; soft arcane glow."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Halarahh",
+      "https://forgottenrealms.fandom.com/wiki/Halruaa"
+    ]
+  },
+  {
+    "id": "port-nyanzaru",
+    "name": "Port Nyanzaru",
+    "aliases": [
+      "Gateway to Chult"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "city",
+    "archetype": "jungle-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Built on the site of a lost civilization's ziggurats; no founding year recorded. Attested as Chult's chief trade hub by the mid-14th century DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1370,
+        "state": "thriving"
+      },
+      {
+        "from": 1370,
+        "to": 1480,
+        "state": "troubled"
+      },
+      {
+        "from": 1480,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1370,
+        "title": "Amnian rule",
+        "summary": "Amn imposes colonial control (c., late 14th c.); outsiders to its trading companies are pushed outside the walls.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Last city of Chult",
+        "summary": "With Mezro gone and Chult cut off as an island, the port is the only major settlement left.",
+        "importance": 2
+      },
+      {
+        "year": 1479,
+        "title": "The great hunt",
+        "summary": "Amnian trading companies host a monster-hunting contest drawing adventurers from across Faerûn.",
+        "importance": 1
+      },
+      {
+        "year": 1480,
+        "title": "Independence from Amn",
+        "summary": "Pressured by powerful merchants, Amn withdraws (c.); seven merchant princes take control.",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "The death curse",
+        "summary": "Adventurers flood the port seeking the source of Acererak's death curse, while yuan-ti plots target the city (c., Tomb of Annihilation).",
+        "importance": 3
+      }
+    ],
+    "description": "Port Nyanzaru is the gateway to Chult, a walled harbor city of brightly patterned stone ruled by seven merchant princes. Ancient ziggurats of a forgotten people loom over its slums, dinosaurs race through its streets each week, and an iron chain can close its harbor against pirates. Outside the walls, shantytowns face the jungle with little but luck and volunteers for protection.",
+    "population": 12000,
+    "ruler": "The seven merchant princes (from c. 1480)",
+    "tags": [
+      "chult",
+      "harbor",
+      "merchant-princes",
+      "dinosaurs",
+      "tomb-of-annihilation"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6c89a",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "harbor",
+        "walls",
+        "ziggurat",
+        "lighthouse",
+        "docks",
+        "trees",
+        "arena"
+      ],
+      "terrain": "coast",
+      "notes": "High patterned stone walls around a harbor with a chain-guarded mouth and lighthouse; stepped ziggurats outside the wall in a shanty quarter, jungle crowding the edges."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Port_Nyanzaru",
+      "https://forgottenrealms.fandom.com/wiki/Death_curse"
+    ]
+  },
+  {
+    "id": "omu",
+    "name": "Omu",
+    "aliases": [
+      "The Forbidden City"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "ruin",
+    "archetype": "ruin",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Founding undated; an ancient Chultan mining city that fell in the 13th century DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1280,
+        "state": "thriving"
+      },
+      {
+        "from": 1280,
+        "to": 1370,
+        "state": "troubled"
+      },
+      {
+        "from": 1370,
+        "to": 1450,
+        "state": "abandoned"
+      },
+      {
+        "from": 1450,
+        "to": null,
+        "state": "ruined"
+      }
+    ],
+    "events": [
+      {
+        "year": 1280,
+        "title": "Forsaken by Ubtao",
+        "summary": "Ubtao abandons the cruel, slave-driven city (c., 13th c.); its clerics lose their power and slaves revolt.",
+        "importance": 3
+      },
+      {
+        "year": 1370,
+        "title": "Acererak's conquest",
+        "summary": "The lich slays the nine trickster gods, forces the Omuans to dig the Tomb of the Nine Gods, then murders them (c., late 14th c.).",
+        "importance": 3
+      },
+      {
+        "year": 1450,
+        "title": "Yuan-ti settle",
+        "summary": "Yuan-ti from Hisari move into the ruins, later led by Ras Nsi (c., mid-15th c.).",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "Tomb of Annihilation",
+        "summary": "Adventurers breach the tomb beneath Omu and destroy the Soulmonger, ending the death curse (c.; canon places it 1488-1492).",
+        "importance": 3
+      }
+    ],
+    "description": "Omu lies hidden in a cliff-walled basin deep in Chult's southern jungle, a once-rich city of gem mines and conquering armies. After its god turned away it rotted into a ruin of shrines to nine trickster spirits, then became the doorstep of Acererak's Tomb of the Nine Gods. Yuan-ti now coil through its overgrown streets.",
+    "population": null,
+    "ruler": "Ras Nsi and the yuan-ti (late 15th c.)",
+    "tags": [
+      "chult",
+      "ruin",
+      "acererak",
+      "tomb-of-annihilation",
+      "yuan-ti"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9c49a",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "ruins",
+        "rubble",
+        "trees",
+        "temple",
+        "statue",
+        "mountain"
+      ],
+      "terrain": "forest",
+      "notes": "Crumbled stone city in a sunken bowl ringed by cliffs, choked with jungle; nine broken shrines with statues around a central plaza."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Omu",
+      "https://forgottenrealms.fandom.com/wiki/Death_curse"
+    ]
+  },
+  {
+    "id": "mezro",
+    "name": "Mezro",
+    "aliases": [
+      "The Lost City"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "city",
+    "archetype": "jungle-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -2637,
+    "foundedNote": "Founded by the god Ubtao in -2637 DR, who raised its temple and amphitheater from the jungle",
+    "status": [
+      {
+        "from": -2637,
+        "to": 863,
+        "state": "thriving"
+      },
+      {
+        "from": 863,
+        "to": 1363,
+        "state": "hidden"
+      },
+      {
+        "from": 1363,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1489,
+        "state": "hidden"
+      },
+      {
+        "from": 1489,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -2637,
+        "title": "Raised by Ubtao",
+        "summary": "The god founds Mezro, lifting its temple and amphitheater out of the jungle.",
+        "importance": 3
+      },
+      {
+        "year": -137,
+        "title": "Eshowdow's assault",
+        "summary": "In the war between the Tabaxi and Eshowe, the shadow being Eshowdow nearly ruins the city.",
+        "importance": 2
+      },
+      {
+        "year": 863,
+        "title": "The city turns invisible",
+        "summary": "A magical wall hides Mezro from the world for nearly five centuries (c.).",
+        "importance": 2
+      },
+      {
+        "year": 1363,
+        "title": "Mezro reopens",
+        "summary": "After defeating the Batiri goblins the barae lower the wards and welcome travelers again.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Withdrawn to a demiplane",
+        "summary": "As the Spellplague splits Chult from the mainland, the barae move the whole city to a demiplane, leaving decoy ruins.",
+        "importance": 3
+      },
+      {
+        "year": 1489,
+        "title": "Return",
+        "summary": "With the Soulmonger destroyed and Ras Nsi's threat ended, Mezro is free to return (c.; inferred).",
+        "importance": 2
+      }
+    ],
+    "description": "Mezro is a circular holy city on the River Olung, split into four quarters around Ubtao's nine-story golden-domed temple: farms, adobe homes, markets with a god-built amphitheater, and scholars' halls. Its immortal barae have twice hidden it from the world, the second time by lifting it whole into a demiplane during the Spellplague. The ruins outsiders picked over were a decoy.",
+    "population": 28126,
+    "ruler": "The barae under King Osaw I (last recorded 1372)",
+    "tags": [
+      "chult",
+      "ubtao",
+      "hidden",
+      "spellplague",
+      "demiplane"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d4c79c",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "temple",
+        "domes",
+        "river",
+        "farms",
+        "arena",
+        "library",
+        "trees",
+        "glow"
+      ],
+      "terrain": "forest",
+      "notes": "Round city split into four quadrants by wide avenues meeting at a tall golden-domed temple; a river bends along two sides; jungle beyond."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Mezro",
+      "https://forgottenrealms.fandom.com/wiki/Death_curse"
+    ]
+  },
+  {
+    "id": "caer-callidyrr",
+    "name": "Caer Callidyrr",
+    "aliases": [
+      "Callidyrr",
+      "City of Callidyrr"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 201,
+    "foundedNote": "Founded by Cymrych Hugh in 201 DR and named for his father",
+    "status": [
+      {
+        "from": 201,
+        "to": 1373,
+        "state": "thriving"
+      },
+      {
+        "from": 1373,
+        "to": 1376,
+        "state": "troubled"
+      },
+      {
+        "from": 1376,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 201,
+        "title": "Founded by Cymrych Hugh",
+        "summary": "The first High King of the Ffolk founds the city on Whitefish Bay.",
+        "importance": 2
+      },
+      {
+        "year": 1346,
+        "title": "Kendrick crowned",
+        "summary": "After a rebellion, Tristan Kendrick claims the Crown of the Isles; his line still rules.",
+        "importance": 2
+      },
+      {
+        "year": 1373,
+        "title": "Hoondarrh's attack",
+        "summary": "In the Rage of Dragons a red dragon sets the castle aflame and kills High King Keane before druids drive it off.",
+        "importance": 3
+      },
+      {
+        "year": 1482,
+        "title": "Amn expelled",
+        "summary": "After the death of Prince Owaren, High King Derid allies with the Northlanders to force Amn out of the Moonshaes (c.).",
+        "importance": 2
+      }
+    ],
+    "description": "Caer Callidyrr is the walled capital of the Ffolk on the isle of Alaron, a busy harbor town spread in four quarters below a great castle overlooking Whitefish Bay. Its streets ring with music almost every day, its smiths export fine steel, and cranes unload fishing boats behind a druid-raised seawall. The High Kings of the Moonshaes rule from the castle.",
+    "population": 21486,
+    "ruler": "High King Derid Kendrick (late 15th c.)",
+    "tags": [
+      "moonshae-isles",
+      "ffolk",
+      "high-king",
+      "harbor",
+      "island"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9cfb2",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "castle",
+        "walls",
+        "harbor",
+        "docks",
+        "ships",
+        "mountain"
+      ],
+      "terrain": "island",
+      "notes": "A towering castle on high ground above a walled port town of four quarters around a central market square; harbor protected by a curved seawall."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Caer_Callidyrr",
+      "https://forgottenrealms.fandom.com/wiki/Moonshae_Isles"
+    ]
+  },
+  {
+    "id": "lantan",
+    "name": "Lantan",
+    "aliases": [
+      "Sambar"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "island",
+    "archetype": "island-haven",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Island nation of gnomes and humans; no founding date, but trading widely by c. the 8th century DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1246,
+        "title": "First bombards",
+        "summary": "Lantanna inventors test early gunpowder cannons.",
+        "importance": 1
+      },
+      {
+        "year": 1358,
+        "title": "Gond made state faith",
+        "summary": "After the Time of Troubles, worship of Gond becomes Lantan's state religion.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Swallowed by the Spellplague",
+        "summary": "Smokepowder stores explode, tsunamis strike, and most of Lantan is wrenched to Abeir; the remnant floods, Orlil sinks and Suj splits.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Lantan returns",
+        "summary": "The Sundering restores the islands; Lantanese ships reappear on the Sword Coast, more secretive and more advanced than before.",
+        "importance": 3
+      }
+    ],
+    "description": "Lantan is a cluster of rocky, jungle-clad islands in the Trackless Sea where gnomes and red-haired humans devote themselves to Gond and invention. Turreted homes perch above the canopy, linked by railless spiderweb bridges, and maroon-sailed ships carry clockwork wonders abroad. After a century lost to Abeir it is back, guarding even more secrets than before.",
+    "population": null,
+    "ruler": "The Ayrorch, a council of twelve led by the Ayrar",
+    "tags": [
+      "island",
+      "gond",
+      "gnomes",
+      "technology",
+      "spellplague"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cfd0b2",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "bridge",
+        "towers",
+        "trees",
+        "docks",
+        "ships",
+        "mountain",
+        "windmill"
+      ],
+      "terrain": "island",
+      "notes": "Rocky jungle island with stone pinnacles; turreted towers raised on stilts above the trees joined by thin rope-and-plank bridges; a harbor with lateen-rigged ships."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Lantan"
+    ]
+  },
+  {
+    "id": "sea-of-fallen-stars",
+    "name": "Sea of Fallen Stars",
+    "aliases": [
+      "Inner Sea",
+      "Serôs"
+    ],
+    "world": "toril",
+    "region": "east-and-south",
+    "type": "landmark",
+    "archetype": "landmark-sea",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Primordial; formed in the Tearfall at the close of the Days of Thunder (c. -31000 DR)",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1486,
+        "state": "troubled"
+      },
+      {
+        "from": 1486,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -31000,
+        "title": "The Tearfall",
+        "summary": "The primordial Asgorath hurls an ice moon at Toril, wiping out the batrachi and forming the sea (c.).",
+        "importance": 3
+      },
+      {
+        "year": 1201,
+        "title": "Pirate Wars",
+        "summary": "The death of the pirate lord Immurk sets off years of feuding and raiding across the sea.",
+        "importance": 2
+      },
+      {
+        "year": 1358,
+        "title": "Umberlee's storms",
+        "summary": "The sea goddess dwells in the Inner Sea during the Time of Troubles, wrecking the Pirate Isles.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "The sea drains",
+        "summary": "Spellplague rifts drain vast amounts of water into the Underdark over a decade, stranding ports inland and exposing old wrecks.",
+        "importance": 3
+      },
+      {
+        "year": 1485,
+        "title": "The Great Rain",
+        "summary": "An unending year-long storm during the Sundering refills the sea to near its old size, drowning coastal lands.",
+        "importance": 3
+      }
+    ],
+    "description": "The Sea of Fallen Stars is the great inland sea at the heart of Faerûn, the trade road binding Cormyr, Sembia, Impiltur, Thay, Chessenta and the Vilhon. Beneath its waves lie the undersea realms of Serôs, home to merfolk, sea elves, sahuagin and dragon turtles. The Spellplague drained it for a century; the Great Rain of the Sundering brought most of it back.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "landmark",
+      "sea",
+      "trade",
+      "spellplague",
+      "serôs"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c7cfc6",
+        "accent": "#b5562b",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "ships",
+        "harbor",
+        "lighthouse",
+        "glow"
+      ],
+      "terrain": "coast",
+      "notes": "A broad tile of water with a few sails and tiny islands; shoreline rim that visibly drops in 1385-1486 to show exposed seabed and wrecks."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Sea_of_Fallen_Stars"
+    ]
+  }
+]

@@ -1,0 +1,1455 @@
+[
+  {
+    "id": "baldurs-gate",
+    "name": "Baldur's Gate",
+    "aliases": [
+      "The Gate",
+      "Gray Harbor",
+      "Loklee",
+      "City of Blood"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 204,
+    "foundedNote": "Earliest dated mention: by 204 DR Gray Harbor and the fishing village of Loklee were a known port of call; Loklee itself predates 0 DR. The name 'Baldur's Gate' is attested by 446 DR.",
+    "status": [
+      {
+        "from": 204,
+        "to": 1368,
+        "state": "thriving"
+      },
+      {
+        "from": 1368,
+        "to": 1369,
+        "state": "troubled"
+      },
+      {
+        "from": 1369,
+        "to": 1482,
+        "state": "thriving"
+      },
+      {
+        "from": 1482,
+        "to": 1483,
+        "state": "troubled"
+      },
+      {
+        "from": 1483,
+        "to": 1492,
+        "state": "thriving"
+      },
+      {
+        "from": 1492,
+        "to": 1493,
+        "state": "troubled"
+      },
+      {
+        "from": 1493,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1492,
+        "title": "The Absolute's siege",
+        "summary": "The illithid cult of the Absolute marches on the city while a netherbrain empowered by the Crown of Karsus erupts from caverns below, wrecking whole districts before heroes bring it down.",
+        "importance": 3
+      },
+      {
+        "year": 1368,
+        "title": "Iron Throne crisis",
+        "summary": "The Bhaalspawn Sarevok Anchev schemes through the Iron Throne to push the Gate into war with Amn; his half-sibling Abdel Adrian unmasks and defeats him.",
+        "importance": 3
+      },
+      {
+        "year": 1385,
+        "title": "Refuge of the Spellplague",
+        "summary": "Untouched by the blue fire, the open city takes in refugees from the stricken east and its population roughly triples within a few years.",
+        "importance": 2
+      },
+      {
+        "year": 1482,
+        "title": "Murder in Baldur's Gate",
+        "summary": "Grand Duke Abdel Adrian dies on Returning Day; riots and martial law follow until Duke Torlin Silvershield is exposed as Bhaal's Chosen and slain.",
+        "importance": 2
+      },
+      {
+        "year": 1235,
+        "title": "Black Horde repelled",
+        "summary": "The city answers the Lords' Alliance call against an invading orc horde, and its general Eldrith later turns traitor and is killed in the Marsh of Chelimber.",
+        "importance": 1
+      },
+      {
+        "year": 1249,
+        "title": "Bread Riots",
+        "summary": "Food riots sweep the city; Duke Suldrian's ill-fated charge in self-polishing enchanted armor ends with his death at the mob's hands.",
+        "importance": 1
+      }
+    ],
+    "description": "A crescent of crowded roofs wraps a fog-bound harbor on the north bank of the Chionthar, its walled Upper City perched above the steep bluffs of the Lower City and a sprawl of shanties spilling beyond the gates. Merchant dukes, the mercenary Flaming Fist, and the thieves of the Guild jostle for control of the busiest port between Waterdeep and Amn. Still clearing rubble from the netherbrain's rampage of 1492, the Gate remains the hard-bargaining heart of the Western Heartlands.",
+    "population": 125000,
+    "ruler": "Grand Duke Ulder Ravengard and the Council of Four (1490s)",
+    "tags": [
+      "lords-alliance",
+      "harbor",
+      "flaming-fist",
+      "bhaalspawn",
+      "river-chionthar",
+      "baldurs-gate-3"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d3c4a0",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "harbor",
+        "walls",
+        "towers",
+        "docks",
+        "ships",
+        "river",
+        "temple",
+        "gate"
+      ],
+      "terrain": "coast",
+      "notes": "A crescent-shaped walled city hugging a bay on a river mouth: a high, flat Upper City behind a massive granite wall, a stepped Lower City tumbling down bluffs to crowded docks, and Wyrm's Rock fortress on a bridge to the south."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Baldur%27s_Gate"
+    ]
+  },
+  {
+    "id": "candlekeep",
+    "name": "Candlekeep",
+    "aliases": [
+      "Castle of Tomes",
+      "Citadel of Lies"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "fortress",
+    "archetype": "library-fortress",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -200,
+    "foundedNote": "The wiki dates the keep's founding to c. -200 DR (Year of Stonerising), about a century before the seer Alaundo arrived; older sources wrongly claimed it grew around Alaundo's tower.",
+    "status": [
+      {
+        "from": -200,
+        "to": 1486,
+        "state": "thriving"
+      },
+      {
+        "from": 1486,
+        "to": 1488,
+        "state": "troubled"
+      },
+      {
+        "from": 1488,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1487,
+        "title": "Battle for the mythal",
+        "summary": "After a dragon-borne raid on an abandoned tower, Shadovar agents, the Silverhand sisters, Elminster and the lich Larloch clash over the keep's warding mythal; the Keeper of Tomes and many monks die.",
+        "importance": 3
+      },
+      {
+        "year": 75,
+        "title": "Alaundo arrives",
+        "summary": "The seer Alaundo comes to study the keep's writings; after his death his prophecies become the order's most treasured holding.",
+        "importance": 2
+      },
+      {
+        "year": 1368,
+        "title": "Sarevok's infiltration",
+        "summary": "During the Iron Throne crisis, doppelgangers serving Sarevok Anchev slip into the Great Library and its catacombs; the sage Gorion leaves with his ward Abdel shortly before.",
+        "importance": 2
+      },
+      {
+        "year": 1486,
+        "title": "Sundering-era siege of supplicants",
+        "summary": "As the Second Sundering spreads chaos, the rich and foreign envoys clamor at the gates for shelter and lore while Shadovar infiltrators quietly make monks vanish (c. 1486).",
+        "importance": 1
+      }
+    ],
+    "description": "A cluster of slender towers crowds a volcanic crag at the tip of a sea-cliff peninsula, so many spires rising together that from above it resembles a cake bristling with candles. Behind its gates the Avowed guard the largest hoard of writing in Faerûn, and visitors buy entry with a book the library does not yet own. Sea spray rimes its western towers in winter, and sages sleep in tombs cut into the rock below.",
+    "population": 300,
+    "ruler": "Keeper of the Tomes Janussi (1492)",
+    "tags": [
+      "library",
+      "avowed",
+      "prophecies-of-alaundo",
+      "oghma",
+      "mythal",
+      "sword-coast"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cdb0",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "library",
+        "towers",
+        "spires",
+        "walls",
+        "mountain",
+        "mythal",
+        "graveyard"
+      ],
+      "terrain": "coast",
+      "notes": "A tight cluster of many thin candle-like towers of varied height on a dark rocky crag at the end of a narrow sea-cliff peninsula, ringed by a single curtain wall with one gate on the landward side."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Candlekeep"
+    ]
+  },
+  {
+    "id": "elturel",
+    "name": "Elturel",
+    "aliases": [
+      "Capital of Elturgard"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1090,
+    "foundedNote": "No founding date given. The hilltop was a troll, ogre and orc stronghold before humans raised a castle there; 1090 DR (Battle of Bones contingent) is the earliest dated reference.",
+    "status": [
+      {
+        "from": 1090,
+        "to": 1492,
+        "state": "thriving"
+      },
+      {
+        "from": 1492,
+        "to": 1492,
+        "state": "relocated"
+      },
+      {
+        "from": 1492,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1492,
+        "title": "Dragged into Avernus",
+        "summary": "The Companion turns into a black orb and rips the whole city into Avernus, payment on High Observer Kreeg's pact with Zariel; heroes and Grand Duke Ravengard fight to save it and the city is returned to the Heartlands.",
+        "importance": 3
+      },
+      {
+        "year": 1444,
+        "title": "The Companion rises",
+        "summary": "The High Rider is revealed as a vampire lord and undead overrun the streets until a second sun blazes into being overhead, burning the vampires to ash.",
+        "importance": 3
+      },
+      {
+        "year": 1437,
+        "title": "Elturgard proclaimed",
+        "summary": "Through the late 1430s Elturel absorbs its neighbors into 'Elturel's Guard', becoming the theocratic Kingdom of the Two Suns (c. 1437).",
+        "importance": 2
+      },
+      {
+        "year": 1384,
+        "title": "Helm slain",
+        "summary": "Tyr kills Helm, leaving the Helm-devoted Hellriders and their city without their patron on the eve of the Spellplague.",
+        "importance": 1
+      },
+      {
+        "year": 1281,
+        "title": "Malarite Wild Hunt",
+        "summary": "A beast-cult of Malar looses caged monsters in the streets and hunts citizens and watchmen alike before being rooted out of its hidden temple.",
+        "importance": 1
+      }
+    ],
+    "description": "A walled city climbs a defensible hill above the Chionthar, split by a ravine and stitched back together by bridges, with High Hall crowning the heights. For half a century an unsetting second sun hung over its towers; since its rescue from the Nine Hells the city has been rebuilding, wary and scarred, with its tieflings driven out in a wave of suspicion.",
+    "population": 17000,
+    "ruler": "High Overseer Thavius Kreeg until his flight in 1492; Order of the Companion",
+    "tags": [
+      "elturgard",
+      "torm",
+      "hellriders",
+      "companion",
+      "avernus",
+      "river-chionthar"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6c9a4",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "castle",
+        "bridge",
+        "river",
+        "temple",
+        "glow",
+        "towers"
+      ],
+      "terrain": "river",
+      "notes": "A walled hill city cleft by a ravine with two bridges joining the halves, a castle-hall at the summit, and a glowing orb hovering directly overhead; the river runs along its foot."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Elturel",
+      "https://forgottenrealms.fandom.com/wiki/Elturgard",
+      "https://forgottenrealms.fandom.com/wiki/Hellriders"
+    ]
+  },
+  {
+    "id": "berdusk",
+    "name": "Berdusk",
+    "aliases": [
+      "Jewel of the Vale"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 241,
+    "foundedNote": "No founding date given; built over an elven moot-hall and a human fishing village, named for Berdusk Orcslayer. The rapids bore his name by 241 DR, the earliest dated reference.",
+    "status": [
+      {
+        "from": 241,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1479,
+        "title": "Joins Elturgard",
+        "summary": "By 1479 Berdusk has been folded into the young theocracy of Elturgard.",
+        "importance": 2
+      },
+      {
+        "year": 1358,
+        "title": "High Sun riot",
+        "summary": "Food shortages during the Time of Troubles spark a riot in which the town bakery burns.",
+        "importance": 1
+      },
+      {
+        "year": 1312,
+        "title": "Cult of the Eyeless",
+        "summary": "Before 1312 an elder orb and its eyeless cult take root in the city until the Helm-sponsored hero Thom Wainwright drives them out (c.).",
+        "importance": 1
+      }
+    ],
+    "description": "Tall, steep-roofed stone houses press shoulder to shoulder inside high walls where the Uldoon Trail meets the Chionthar in Sunset Vale. A hilltop castle houses the High Lady and her guard, and the many-spired temple of Milil hosts the evening revels of the city's First Folk. Hidden in its streets, Twilight Hall has long served the Harpers of the west.",
+    "population": 20242,
+    "ruler": "High Lady Cylyria Dragonbreast (1370s); within Elturgard by 1479",
+    "tags": [
+      "harpers",
+      "twilight-hall",
+      "elturgard",
+      "river-chionthar",
+      "sunset-vale"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d5c8a2",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "castle",
+        "river",
+        "temple",
+        "spires",
+        "gate"
+      ],
+      "terrain": "river",
+      "notes": "A compact walled river city of tall pointed roofs with six gates, a castle on a central hill and one many-spired temple, beside river rapids."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Berdusk"
+    ]
+  },
+  {
+    "id": "iriaebor",
+    "name": "Iriaebor",
+    "aliases": [
+      "Overland City",
+      "City of a Thousand Spires"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1264,
+    "foundedNote": "No founding date on the wiki; 1264 DR (an orc and goblin army repulsed from its walls) is the earliest dated event and is used as a placeholder.",
+    "status": [
+      {
+        "from": 1264,
+        "to": 1363,
+        "state": "thriving"
+      },
+      {
+        "from": 1363,
+        "to": 1364,
+        "state": "troubled"
+      },
+      {
+        "from": 1364,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1363,
+        "title": "Zhentarim coup",
+        "summary": "Lord Bron vanishes in autumn and the Zhentarim install their puppet Lord Ravendas, briefly seizing a choke point of southern Sword Coast trade.",
+        "importance": 2
+      },
+      {
+        "year": 1264,
+        "title": "Goblinoid host turned back",
+        "summary": "A great orc and goblin army besieges the city; the Helmite Garshond is said to receive the Helm of Helm and wear it until the attackers break.",
+        "importance": 2
+      },
+      {
+        "year": 1367,
+        "title": "Spotted plague",
+        "summary": "Some four years after the coup, a spotted plague kills a score of citizens before the city's temples contain it (c.).",
+        "importance": 1
+      },
+      {
+        "year": 1484,
+        "title": "Great earthquake",
+        "summary": "On the eve of the Second Sundering a memorable earthquake shakes the Tor.",
+        "importance": 1
+      }
+    ],
+    "description": "Leaning stone towers crowd a long ridge called the Tor above the north fork of the Chionthar, so thick with bridges and overhanging balconies that the lanes below lie in shadow at noon. Land is so scarce the city builds upward, its merchants scheming as fiercely as any in Waterdeep. It stays proudly independent, resisting Elturgard's gifts and paladins.",
+    "population": 16193,
+    "ruler": "Merchant oligarchy, an independent city-state (1480s)",
+    "tags": [
+      "lords-alliance",
+      "merchants",
+      "towers",
+      "river-chionthar",
+      "sunset-vale",
+      "zhentarim"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d2c4a3",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "towers",
+        "spires",
+        "bridge",
+        "walls",
+        "river",
+        "docks"
+      ],
+      "terrain": "river",
+      "notes": "A dense forest of tall, slightly leaning stone towers packed along a ridge and linked by sky-bridges, with docks at the ridge's foot on a river and a lower walled quarter on the flat behind."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Iriaebor",
+      "https://forgottenrealms.fandom.com/wiki/Elturgard"
+    ]
+  },
+  {
+    "id": "scornubel",
+    "name": "Scornubel",
+    "aliases": [
+      "Caravan City",
+      "The Divided City",
+      "Zirta"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "city",
+    "archetype": "market-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "No founding date given. The southern half was once the rival city of Zirta, absorbed in the undated War of Lords. Status begins at the earliest dated reference (a 1358 DR map).",
+    "status": [
+      {
+        "from": 1358,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1437,
+        "state": "troubled"
+      },
+      {
+        "from": 1437,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Trade collapse",
+        "summary": "After the Spellplague, caravan traffic dries up and the starving Caravan City's fortunes collapse.",
+        "importance": 2
+      },
+      {
+        "year": 1437,
+        "title": "Annexed by Elturgard",
+        "summary": "Impoverished, Scornubel's elders let Elturgard annex the city in exchange for protection (c. 1437).",
+        "importance": 2
+      },
+      {
+        "year": 1372,
+        "title": "Ambermantle council",
+        "summary": "Lady Rhessajan Ambermantle governs with three Lord High Advisors drawn from the merchant class and a wider merchants' council.",
+        "importance": 1
+      }
+    ],
+    "description": "Wagon yards, corrals and warehouses sprawl along the north bank of the Chionthar where the Trade Way meets the river and barges unload for the overland caravans. Rough-edged and noisy, the Caravan City lives off whoever is passing through, much to the disapproval of the paladins of Elturgard who now claim it.",
+    "population": 14000,
+    "ruler": "Elturgard (annexed; earlier Lady Rhessajan Ambermantle, 1372)",
+    "tags": [
+      "caravans",
+      "trade-way",
+      "elturgard",
+      "river-chionthar"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d8c9a2",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "tents",
+        "river",
+        "docks",
+        "walls",
+        "farms"
+      ],
+      "terrain": "river",
+      "notes": "A low, sprawling trade town on a riverbank with a large open caravan ground full of wagons and tents, a few warehouses and river barges at a quay."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Scornubel",
+      "https://forgottenrealms.fandom.com/wiki/Elturgard"
+    ]
+  },
+  {
+    "id": "darkhold",
+    "name": "Darkhold",
+    "aliases": [
+      "Keep of the Far Hills",
+      "Farkeep",
+      "Sunset Keep",
+      "Wild Hold"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "fortress",
+    "archetype": "fortress",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Builders unknown: legend credits giants of a 'Giant Empire', possibly servants of Netheril, who held it after Netheril fell (-339 DR). Status starts at -339 as the earliest anchor.",
+    "status": [
+      {
+        "from": -339,
+        "to": 1312,
+        "state": "troubled"
+      },
+      {
+        "from": 1312,
+        "to": 1372,
+        "state": "thriving"
+      },
+      {
+        "from": 1372,
+        "to": 1374,
+        "state": "troubled"
+      },
+      {
+        "from": 1374,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1312,
+        "title": "Zhentarim conquest",
+        "summary": "Manshoon and Fzoul Chembryl destroy the lich-queen Varalla and seize the keep; Manshoon's apprentice Sememmon becomes Master of Darkhold.",
+        "importance": 3
+      },
+      {
+        "year": 1372,
+        "title": "Sememmon vanishes",
+        "summary": "As Bane returns and Banites and Cyricists vie for the Zhentarim, Sememmon and Ashemmi abandon the keep, leaving it to the Pereghost.",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "Heart of the new Zhentarim",
+        "summary": "With Zhentil Keep and the Citadel of the Raven gone, Darkhold is the reformed Black Network's main headquarters under the Pereghost.",
+        "importance": 2
+      },
+      {
+        "year": 1360,
+        "title": "Truce with Cormyr",
+        "summary": "After the Zhentarim help turn back the Tuigan horde, King Azoun IV bars the Purple Dragons from fighting Darkhold for a year.",
+        "importance": 1
+      }
+    ],
+    "description": "A giant-scaled keep of fused black stone juts from the flank of the Grey Watcher in the Far Hills, its tall spires and cavernous courtyard built as if for titans. Tunnels honeycomb the mountain behind it. Brigands, a lich and a dragon held it in turn before the Zhentarim; now it is the Black Network's last great fortress, staging ground for mercenaries and caravan raids.",
+    "population": 800,
+    "ruler": "The Pereghost, Master of Darkhold (1489)",
+    "tags": [
+      "zhentarim",
+      "far-hills",
+      "sunset-mountains",
+      "giants"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#bfb39a",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "keep",
+        "spires",
+        "mountain",
+        "cavern",
+        "gate",
+        "walls"
+      ],
+      "terrain": "mountain",
+      "notes": "An oversized single-piece black keep with tall spires growing straight out of a mountainside, a huge gate and courtyard, tunnel mouths in the rock around it."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Darkhold"
+    ]
+  },
+  {
+    "id": "beregost",
+    "name": "Beregost",
+    "aliases": [],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "town",
+    "archetype": "market-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1026,
+    "foundedNote": "Began as a farming village 'some time after' 1026 DR to supply Ulcaster's school of wizardry; 1026 used as the founding year.",
+    "status": [
+      {
+        "from": 1026,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1106,
+        "title": "Ulcaster School destroyed",
+        "summary": "Calishite mages wreck the wizard school across the Coast Way; ghost tales keep the town growing on the opposite side.",
+        "importance": 2
+      },
+      {
+        "year": 1345,
+        "title": "Coast Plague",
+        "summary": "A caravan from the south brings plague that kills a fifth of the townsfolk.",
+        "importance": 2
+      },
+      {
+        "year": 1368,
+        "title": "Crossroads of the Iron Throne crisis",
+        "summary": "Governor and high priest Kelddath Ormlyr rules from the Song of the Morning as adventurers and Khelben Arunsun pass through the town.",
+        "importance": 1
+      }
+    ],
+    "description": "A small town of about forty main buildings straddles the Coast Way halfway between Baldur's Gate and Amn, its life bent around the sprawling Lathanderite temple of the Song of the Morning. On a hill to the east the haunted shell of Ulcaster's school broods over sheep pastures. Caravans stop for its pipeweed, its blue-veined cheese and its smiths.",
+    "population": 2915,
+    "ruler": "Most Radiant Kelddath Ormlyr, high priest of Lathander (1368–1372)",
+    "tags": [
+      "lathander",
+      "coast-way",
+      "caravans",
+      "ulcaster"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba5",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "temple",
+        "farms",
+        "ruins",
+        "river"
+      ],
+      "terrain": "plain",
+      "notes": "A modest roadside town of low houses dominated by one large temple complex, with a ruined castle on a hill across the road and sheep fields around."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Beregost"
+    ]
+  },
+  {
+    "id": "boareskyr-bridge",
+    "name": "Boareskyr Bridge",
+    "aliases": [],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "landmark",
+    "archetype": "landmark-monolith",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Built by the adventurer Boareskyr; no date given. Status starts c. 1350 DR, when its tent-town and Bridgefort are first described.",
+    "status": [
+      {
+        "from": 1350,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1358,
+        "title": "Cyric slays Bhaal",
+        "summary": "During the Time of Troubles Cyric and Bhaal fight upon the bridge; Bhaal's death poisons the Winding Water below.",
+        "importance": 3
+      },
+      {
+        "year": 1450,
+        "title": "Tamal Thent vanishes",
+        "summary": "The likely next High Observer of Elturgard disappears with her retinue near the bridge; Thavius Kreeg takes the post and raises Fort Tamal on the old Bridgefort (c.).",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "Village under the fort",
+        "summary": "Trade at the crossing is routine and a small village has grown around Fort Tamal and its caravan ground.",
+        "importance": 1
+      }
+    ],
+    "description": "A black granite bridge spans the Winding Water, a statue of Cyric at one end and of Bhaal at the other to recall the murder-god's death on this spot. White tents, corrals and market stalls cluster around it, watched over by the paladins of Fort Tamal. Travellers still curse each other to drink from the west side of the bridge.",
+    "population": null,
+    "ruler": "Order of the Companion garrison of Fort Tamal (Elturgard)",
+    "tags": [
+      "trade-way",
+      "time-of-troubles",
+      "bhaal",
+      "cyric",
+      "elturgard",
+      "caravans"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d4c6a2",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 1,
+      "motifs": [
+        "bridge",
+        "river",
+        "statue",
+        "tents",
+        "keep"
+      ],
+      "terrain": "river",
+      "notes": "A dark stone bridge over a river with a large statue at each end, a small square fort beside it and a ring of white tents."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Boareskyr_Bridge"
+    ]
+  },
+  {
+    "id": "athkatla",
+    "name": "Athkatla",
+    "aliases": [
+      "City of Coin"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 100,
+    "foundedNote": "Founded c. 100 DR by the Shoon Imperium with mostly Calishite settlers; the oldest city of Amn.",
+    "status": [
+      {
+        "from": 100,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1333,
+        "title": "Council of Six",
+        "summary": "During the worst of Amn's trade wars Thayze Selemchant forces five rival houses into a ruling council seated in Athkatla, ending the embargo.",
+        "importance": 3
+      },
+      {
+        "year": 460,
+        "title": "Amn independent",
+        "summary": "With the Shoon Imperium gone, Amn becomes its own nation, though Esmeltaran, not Athkatla, is its first capital.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Maztica lost",
+        "summary": "The Spellplague carries Maztica away to Abeir, severing the colonial trade that flowed through Athkatla's port; afterwards the council shrinks to an openly held Council of Five.",
+        "importance": 2
+      },
+      {
+        "year": 1369,
+        "title": "Temples at odds",
+        "summary": "The churches of Lathander and Talos grow into bitter rivals for dominance of the city.",
+        "importance": 1
+      }
+    ],
+    "description": "Amn's capital spreads along both banks of the Alandor where it meets the Sea of Swords, a walled maze of bazaars, mansions and slums lit at night by huge storm-lanterns. Gold rules everything: the merchant houses of the Council of Five, the Shadow Thieves and the licensed Cowled Wizards act with near impunity while unlicensed magic is a crime. The great temple of Goldspires watches over the Gem District's gaudy wealth.",
+    "population": 122000,
+    "ruler": "Council of Five of Amn (late 1400s)",
+    "tags": [
+      "amn",
+      "shadow-thieves",
+      "cowled-wizards",
+      "waukeen",
+      "harbor",
+      "trade"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dac8a0",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "harbor",
+        "walls",
+        "river",
+        "temple",
+        "domes",
+        "docks",
+        "ships",
+        "bridge",
+        "gate"
+      ],
+      "terrain": "coast",
+      "notes": "A large walled harbor city split by a river with a central bridge and chained sea-gates, crowned by a gleaming golden-spired temple; many domed merchant palaces."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Athkatla",
+      "https://forgottenrealms.fandom.com/wiki/Amn"
+    ]
+  },
+  {
+    "id": "darromar",
+    "name": "Darromar",
+    "aliases": [
+      "Ithmong",
+      "Calimaronn"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "metropolis",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -370,
+    "foundedNote": "Began as the Calishite garrison town of Calimaronn; Tethyrian clans under Mong Ithal took it and renamed it Ithmong after the Empire Plague (c. -370 DR, used here). The garrison itself is older.",
+    "status": [
+      {
+        "from": -370,
+        "to": 1347,
+        "state": "thriving"
+      },
+      {
+        "from": 1347,
+        "to": 1369,
+        "state": "troubled"
+      },
+      {
+        "from": 1369,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1369,
+        "title": "Capital of a reborn Tethyr",
+        "summary": "Queen Zaranda and King Haedrak III end the Interregnum and make Ithmong, renamed Darromar, their capital (c. 1370 rename).",
+        "importance": 3
+      },
+      {
+        "year": -370,
+        "title": "Fall of Calimaronn",
+        "summary": "Tethyrian tribes led by Mong Ithal sack the Calishite frontier town and rename it Ithmong (c.).",
+        "importance": 2
+      },
+      {
+        "year": 1347,
+        "title": "Ten Black Days",
+        "summary": "Noble families around Ithmong are hunted and slain, their manors burned, as Tethyr plunges into the Interregnum.",
+        "importance": 2
+      },
+      {
+        "year": 319,
+        "title": "Great Fires",
+        "summary": "Qysar Shoon VII's sewer fires leave Ithmong nearly destroyed along with other imperial cities.",
+        "importance": 2
+      },
+      {
+        "year": 1468,
+        "title": "Queen Anais",
+        "summary": "Anais Rhindaun takes the throne of Tethyr and still reigns from Darromar in 1489.",
+        "importance": 1
+      }
+    ],
+    "description": "Tethyr's capital is quartered by the River Ith and the Ithal Road, which cross at the great Ithal Bridge in its center. Brick river-walks shaded by willows run beside barracks for the royal army, and its central place lets the crown's riders reach any corner of the realm within days. It is a busy, growing city of mercenaries, monster-hunters and courtiers.",
+    "population": 125000,
+    "ruler": "Queen Anais Rhindaun of Tethyr (1489)",
+    "tags": [
+      "tethyr",
+      "capital",
+      "river-ith",
+      "royal-court"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d8c7a0",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "river",
+        "bridge",
+        "castle",
+        "towers",
+        "trees"
+      ],
+      "terrain": "river",
+      "notes": "A walled city cut into four quarters by a river and a crossing road, with a prominent central bridge, a royal castle and willow-lined riverbanks."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Darromar",
+      "https://forgottenrealms.fandom.com/wiki/Tethyr",
+      "https://forgottenrealms.fandom.com/wiki/Calimshan"
+    ]
+  },
+  {
+    "id": "zazesspur",
+    "name": "Zazesspur",
+    "aliases": [
+      "Zaz",
+      "The Carpet City",
+      "Zazesspur the Wicked",
+      "Fort Karlag"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -1570,
+    "foundedNote": "A Calishite fishing village, fortified as the seat of the Emir of Tethyr in -1570 DR; dwarven Ultoksurllur of Deep Shanatar lies beneath it.",
+    "status": [
+      {
+        "from": -1570,
+        "to": 1347,
+        "state": "thriving"
+      },
+      {
+        "from": 1347,
+        "to": 1369,
+        "state": "troubled"
+      },
+      {
+        "from": 1369,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1347,
+        "title": "Interregnum begins",
+        "summary": "The Ten Black Days of Eleint wreck Tethyr's nobility; refugees flood the capital and its walls are left gapped as two decades of civil war (1347–1369) follow.",
+        "importance": 3
+      },
+      {
+        "year": -315,
+        "title": "Fort Karlag",
+        "summary": "After a short siege Tethyrian tribes take the city from Calimshan and rename it for their warlord.",
+        "importance": 2
+      },
+      {
+        "year": -5,
+        "title": "Shoon's capital",
+        "summary": "Amahl Shoon I restores the name Zazesspur and builds a new palace, making it the capital of the kingdom.",
+        "importance": 2
+      },
+      {
+        "year": 1370,
+        "title": "Capital moves to Darromar",
+        "summary": "With Queen Zaranda's court in Darromar, Zazesspur's prestige and population begin to decline (c.).",
+        "importance": 2
+      },
+      {
+        "year": -1320,
+        "title": "Trade Way built",
+        "summary": "Slaves build the road from Zazesspur to Memnon, soon crowded with merchants.",
+        "importance": 1
+      }
+    ],
+    "description": "An old port of tall, ornamented stone buildings and a skyline of spires sits where the Sulduskoon River meets the sea, its harbor sheltered by a mountainous peninsula. The older Low City of smithies and mercenary quarters lies south of the river; the larger High City spreads north. Famed for carpets and cabinetry, the former capital still nurses its pride as Darromar rises.",
+    "population": 100000,
+    "ruler": "Council of Lords",
+    "tags": [
+      "tethyr",
+      "harbor",
+      "interregnum",
+      "carpets",
+      "sword-coast"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dbc9a2",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "harbor",
+        "spires",
+        "walls",
+        "river",
+        "docks",
+        "ships",
+        "gate",
+        "mountain"
+      ],
+      "terrain": "coast",
+      "notes": "A harbor city of many tall spires divided by a river into a walled older south bank and a larger north bank, with a rugged headland sheltering the bay."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Zazesspur",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Black_Days_of_Eleint",
+      "https://forgottenrealms.fandom.com/wiki/Tethyr"
+    ]
+  },
+  {
+    "id": "calimport",
+    "name": "Calimport",
+    "aliases": [
+      "City of Glory",
+      "City of Slaves"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "metropolis",
+    "archetype": "desert-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -7800,
+    "foundedNote": "Built c. -7800 DR by the human and halfling slaves of the djinni lord Calim; razed and rebuilt many times since.",
+    "status": [
+      {
+        "from": -7800,
+        "to": -3332,
+        "state": "thriving"
+      },
+      {
+        "from": -3332,
+        "to": -3232,
+        "state": "abandoned"
+      },
+      {
+        "from": -3232,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1489,
+        "state": "troubled"
+      },
+      {
+        "from": 1489,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Second Era of Skyfire",
+        "summary": "The Spellplague shatters the crystal binding Calim and Memnon; the djinni retakes Calimport, windsoul genasi rule, and humans are enslaved for the arenas until 1450.",
+        "importance": 3
+      },
+      {
+        "year": -7800,
+        "title": "Calim's city",
+        "summary": "The djinni Calim and his slaves found the city that becomes the heart of the Calim Empire (c.).",
+        "importance": 3
+      },
+      {
+        "year": -6500,
+        "title": "First Era of Skyfire",
+        "summary": "Calim's war with the efreet Memnon begins and ends only when elven high magic imprisons both (c.).",
+        "importance": 2
+      },
+      {
+        "year": -3332,
+        "title": "Sunset Plague",
+        "summary": "Plague nearly annihilates Calimport, which stands empty for close to a century.",
+        "importance": 2
+      },
+      {
+        "year": 1018,
+        "title": "Rage of Dragons",
+        "summary": "The blue dragon Sapphiraktar obliterates Calimport during the Rage of Dragons.",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "Slaves overthrow the genasi",
+        "summary": "Inspired by a Chosen of Ilmater, the human slaves rise and depose the genie lords of Calimport (by 1489).",
+        "importance": 2
+      }
+    ],
+    "description": "The ancient southern metropolis sprawls behind genie-built sea walls along a vast harbor, a jumble of domes, minarets and burned-and-rebuilt quarters layered over a lawless undercity. Raised by a djinni's slaves and ruled again by djinn and windsoul genasi through the Spellplague years, it has only lately thrown off its genie masters. Its arenas, palaces and slave markets bear the marks of a hundred fires.",
+    "population": 60000,
+    "ruler": "Uncertain after slave revolts deposed the genie lords (c. 1489)",
+    "tags": [
+      "calimshan",
+      "genies",
+      "djinn",
+      "genasi",
+      "harbor",
+      "second-era-of-skyfire"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e3cfa1",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "domes",
+        "minarets",
+        "harbor",
+        "walls",
+        "arena",
+        "docks",
+        "ships",
+        "temple"
+      ],
+      "terrain": "desert",
+      "notes": "A huge sun-bleached harbor city of domes and minarets behind thick sea walls, with an arena and a palace complex; scorched patches suggest repeated burning."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Calimport",
+      "https://forgottenrealms.fandom.com/wiki/Calimshan"
+    ]
+  },
+  {
+    "id": "memnon",
+    "name": "Memnon",
+    "aliases": [
+      "City of Soldiers",
+      "The Scarlet City",
+      "Desert's Gateway",
+      "Memnonnar"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "city",
+    "archetype": "desert-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -6800,
+    "foundedNote": "Founded as Memnonnar by the efreeti Memnon c. -6800 DR on the River Agis; ruined after -6100 and rebuilt in turn by dwarves of High Shanatar and the Calishites.",
+    "status": [
+      {
+        "from": -6800,
+        "to": -6100,
+        "state": "thriving"
+      },
+      {
+        "from": -6100,
+        "to": -5960,
+        "state": "ruined"
+      },
+      {
+        "from": -5960,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1489,
+        "state": "troubled"
+      },
+      {
+        "from": 1489,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Memnon's Blessed Return",
+        "summary": "Freed by the Spellplague, the efreeti Memnon reclaims his city with firesoul genasi and wages the Second Era of Skyfire against Calim until both vanish in 1450.",
+        "importance": 3
+      },
+      {
+        "year": -6800,
+        "title": "Memnonnar founded",
+        "summary": "The efreeti Memnon and his Army of Fire arrive through the Great Brass Gate and force dwarves to build a river-spanning capital (c.).",
+        "importance": 3
+      },
+      {
+        "year": -6100,
+        "title": "Fall of Memnonnar",
+        "summary": "Elven high mages strike Memnon down at Teshyllal Fields and the city decays into ruin (c.).",
+        "importance": 2
+      },
+      {
+        "year": -78,
+        "title": "Rise of Akkabar Shoon",
+        "summary": "Memnon's syl-vizar Akkabar Shoon maneuvers his way to rule of all Calimshan, founding the Shoon Imperium.",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "Genie lords deposed",
+        "summary": "Slave uprisings drive the fire genasi lords from Memnon (by 1489).",
+        "importance": 2
+      },
+      {
+        "year": 319,
+        "title": "Great Fires",
+        "summary": "Qysar Shoon VII's sewer fires nearly destroy the city.",
+        "importance": 1
+      }
+    ],
+    "description": "A garrison city of reddish stone straddles the River Agis at the edge of the Calim Desert, a gateway for caravans and armies heading into the sands. It was founded by an efreeti and ruled by him again in the decades after the Spellplague, when firesoul genasi made it their stronghold. Now freed of its fiery masters, it trades in the exotic goods those years left behind.",
+    "population": 35000,
+    "ruler": "Uncertain after slave revolts deposed the genie lords (c. 1489)",
+    "tags": [
+      "calimshan",
+      "genies",
+      "efreeti",
+      "genasi",
+      "desert",
+      "second-era-of-skyfire"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#ddbf96",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "domes",
+        "minarets",
+        "river",
+        "bridge",
+        "walls",
+        "glow"
+      ],
+      "terrain": "desert",
+      "notes": "A walled desert city of red domes and minarets built across a river on bridges, with a faint fiery glow and barracks-like fortifications."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Memnon",
+      "https://forgottenrealms.fandom.com/wiki/Calimport"
+    ]
+  },
+  {
+    "id": "almraiven",
+    "name": "Almraiven",
+    "aliases": [
+      "City of Spells"
+    ],
+    "world": "toril",
+    "region": "western-heartlands",
+    "type": "city",
+    "archetype": "wizard-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -6000,
+    "foundedNote": "Founded c. -6000 DR as part of eastern Coramshan.",
+    "status": [
+      {
+        "from": -6000,
+        "to": -170,
+        "state": "thriving"
+      },
+      {
+        "from": -170,
+        "to": -166,
+        "state": "troubled"
+      },
+      {
+        "from": -166,
+        "to": 1370,
+        "state": "thriving"
+      },
+      {
+        "from": 1370,
+        "to": 1371,
+        "state": "troubled"
+      },
+      {
+        "from": 1371,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "The WeavePasha",
+        "summary": "Barely touched by the Spellplague, the city's mages beat off genasi attacks and the Caleph Arcane Acham el Jhotos seizes power, remaking Almraiven as a human-ruled haven for freed slaves.",
+        "importance": 3
+      },
+      {
+        "year": 1370,
+        "title": "Bottlemist Plague",
+        "summary": "Smuggled djinni bottles release a mist that makes victims burst into flame; over 4,000 die and the western waterfront is left nearly deserted.",
+        "importance": 2
+      },
+      {
+        "year": -170,
+        "title": "Eye Tyrant Wars",
+        "summary": "Beholders of the Alimir Hive take the city within months; human rule returns by -166.",
+        "importance": 2
+      },
+      {
+        "year": 733,
+        "title": "Port Fires",
+        "summary": "Rundeen ships packed with magic explode in the harbor, burning docks and shipyards.",
+        "importance": 1
+      },
+      {
+        "year": 1479,
+        "title": "Fleet of carracks",
+        "summary": "The WeavePasha has his famed shipyards build a fleet of deep-hulled carracks, purpose unknown.",
+        "importance": 1
+      }
+    ],
+    "description": "A seaport of mages and shipwrights on the Calishite coast, home to the oldest Guild Arcane in the land. Its towers and sabbans survived the Spellplague almost untouched, and under the WeavePasha it has become a stern refuge for slaves fleeing the genasi cities. Its renowned shipyards are busy with a mysterious new fleet.",
+    "population": 38000,
+    "ruler": "WeavePasha Acham el Jhotos (1479)",
+    "tags": [
+      "calimshan",
+      "guild-arcane",
+      "harbor",
+      "shipyards",
+      "janessar"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e0cca2",
+        "accent": "#9c4a2c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "spires",
+        "domes",
+        "harbor",
+        "docks",
+        "ships",
+        "glow",
+        "minarets"
+      ],
+      "terrain": "coast",
+      "notes": "A coastal desert city of domes and slender arcane-glowing spires around a harbor crowded with shipyards and half-built hulls."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Almraiven"
+    ]
+  }
+]

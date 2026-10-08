@@ -1,0 +1,238 @@
+[
+  {
+    "id": "menzoberranzan",
+    "name": "Menzoberranzan",
+    "aliases": ["City of Spiders", "Jewel of the Underdark"],
+    "world": "toril",
+    "region": "underdark",
+    "type": "underdark-city",
+    "archetype": "drow-city",
+    "map": { "x": null, "y": null },
+    "founded": -3917,
+    "foundedNote": "Menzoberra the Kinless leads seven drow families north out of Golothaer in Great Bhaerynden at Lolth's urging",
+    "status": [
+      { "from": -3917, "to": 1372, "state": "thriving" },
+      { "from": 1372, "to": 1373, "state": "troubled" },
+      { "from": 1373, "to": 1485, "state": "thriving" },
+      { "from": 1485, "to": 1490, "state": "troubled" },
+      { "from": 1490, "to": null, "state": "thriving" }
+    ],
+    "events": [
+      { "year": 1372, "title": "Silence of Lolth and the Siege", "summary": "Lolth falls silent, a slave revolt ignites the streets, and duergar of Gracklstugh with Kaanyr Vhok's tanarukks besiege the city until the goddess returns in Ches 1373.", "importance": 3 },
+      { "year": 1486, "title": "Demogorgon in the City", "summary": "Gromph Baenre's summoning, steered by Lolth, unleashes the Prince of Demons, who smashes Sorcere and gouges a trench across the cavern before the city's pooled magic, channeled through Drizzt, destroys him.", "importance": 3 },
+      { "year": 1358, "title": "March on Mithral Hall", "summary": "Riding Lolth's favor after crushing House Oblodra, the drow host assaults Mithral Hall; Matron Yvonnel Baenre falls to Bruenor's axe at Keeper's Dale.", "importance": 2 },
+      { "year": 1339, "title": "Fall of House Do'Urden", "summary": "After Drizzt's defiance costs his family Lolth's favor, House Baenre annihilates House Do'Urden.", "importance": 2 },
+      { "year": 1490, "title": "Baenre Civil War", "summary": "Quenthel and Yvonnel II's heretical cure of eight hundred driders splits the houses into open war; afterward some 2,000 heretics are exiled and Sos'Umptu Baenre takes the city's leadership.", "importance": 2 },
+      { "year": -3864, "title": "Founder's Fall", "summary": "A war between Houses Nasadra and Thaeyalla collapses a cavern wall, killing Menzoberra; the losing faction departs to found Ched Nasad.", "importance": 1 }
+    ],
+    "description": "A two-mile cavern shaped like an arrowhead, where calcite stalagmites and stalactites have been hollowed into the fortress-homes of rival noble houses, all limned in violet, blue, and green faerie fire. The great pillar Narbondel glows and dims as the city's only clock, while House Baenre's compound dominates the plateau of Qu'ellarz'orl and the academy spires of Tier Breche watch from the north. Spider carvings cover nearly everything, and the matriarchs of Lolth still rule through poison and patience after decades of demons, sieges, and civil war.",
+    "population": 20000,
+    "ruler": "Matron Mother Sos'Umptu Baenre (from 1490), nominally with the Ruling Council of eight matrons",
+    "tags": ["drow", "lolth", "house-baenre", "bregan-daerthe", "drizzt", "northdark", "out-of-the-abyss"],
+    "visual": {
+      "palette": { "base": "#c9bfae", "accent": "#7b4bb7", "ink": "#1f1a26" },
+      "scale": 5,
+      "motifs": ["cavern", "stalactites", "spires", "faerie-fire", "glow", "castle", "lake", "statue"],
+      "terrain": "cavern",
+      "notes": "Arrowhead cavern with hanging stalactite houses and stalagmite castles washed in violet faerie fire; a single tall glowing column (Narbondel) at center, the Baenre stalagmite cluster on a raised plateau, a small dark lake to one side."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Menzoberranzan",
+      "https://forgottenrealms.fandom.com/wiki/Blaspheme",
+      "https://forgottenrealms.fandom.com/wiki/House_Baenre",
+      "https://forgottenrealms.fandom.com/wiki/Silence_of_Lolth"
+    ]
+  },
+  {
+    "id": "ched-nasad",
+    "name": "Ched Nasad",
+    "aliases": ["City of Shimmering Webs", "City of Webs"],
+    "world": "toril",
+    "region": "underdark",
+    "type": "ruin",
+    "archetype": "drow-city",
+    "map": { "x": null, "y": null },
+    "founded": -3843,
+    "foundedNote": "Settled by House Nasadra's faction, exiled from Menzoberranzan after the -3864 house war; an avatar of Lolth spun the first web, later turned to stone",
+    "status": [
+      { "from": -3843, "to": 1372, "state": "thriving" },
+      { "from": 1372, "to": 1373, "state": "destroyed" },
+      { "from": 1373, "to": null, "state": "ruined" }
+    ],
+    "events": [
+      { "year": 1372, "title": "The City Falls", "summary": "During the Silence of Lolth, duergar mercenaries hired in a house feud unleash stonefire; the burning webs and a rampaging guardian spider send the city crashing into its chasm on Uktar 3 (War of the Spider Queen).", "importance": 3 },
+      { "year": -3843, "title": "Founding", "summary": "Exiled drow reach a deep V-shaped gorge where Lolth's avatar weaves the web that becomes the city's petrified streets.", "importance": 2 },
+      { "year": 1373, "title": "Shadow Over the Ruins", "summary": "The Jaezred Chaulssin assassins seize the wreckage as the chasm floor begins bleeding into the Plane of Shadow.", "importance": 2 },
+      { "year": 1233, "title": "Birth of the Chitines", "summary": "Mages of House Mylyl leave for the Far Forest, where their experiments create the spider-like chitines.", "importance": 1 },
+      { "year": 1479, "title": "Teh'Kinrellz Council", "summary": "A council of seven houses led by Matron Faathryll Teh'Kinrellz governs a few thousand survivors amid ruins that are still largely unrebuilt.", "importance": 1 }
+    ],
+    "description": "Once a mile-deep gorge strung with layer upon layer of calcified web, its cocoon-homes glowing amber, green, and purple, Ched Nasad is now mostly a smoking heap of stone strands on the chasm floor. A handful of houses survive where they clung to the cliff walls, and the bottom of the pit has grown dim and strange where shadowstuff seeps in. Its remaining drow live under a council the matrons of Menzoberranzan call an abomination, with male assassins of the Jaezred Chaulssin pulling strings from behind.",
+    "population": 7500,
+    "ruler": "Matron Faathryll Teh'Kinrellz and a council of seven houses, under Jaezred Chaulssin influence (1479)",
+    "tags": ["drow", "lolth", "war-of-the-spider-queen", "jaezred-chaulssin", "ruin", "northdark"],
+    "visual": {
+      "palette": { "base": "#c4baa8", "accent": "#b07d2c", "ink": "#221d1a" },
+      "scale": 4,
+      "motifs": ["cavern", "bridge", "faerie-fire", "glow", "ruins", "rubble", "stalactites"],
+      "terrain": "cavern",
+      "notes": "A deep V-shaped gorge spanned by many horizontal stone web-bridges with cocoon pods hanging above and below; when ruined, most webs are snapped and piled as rubble at the bottom, with only a few wall-clinging pods still lit."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Ched_Nasad",
+      "https://forgottenrealms.fandom.com/wiki/Silence_of_Lolth"
+    ]
+  },
+  {
+    "id": "blingdenstone",
+    "name": "Blingdenstone",
+    "aliases": ["City of Speaking Stones"],
+    "world": "toril",
+    "region": "underdark",
+    "type": "underdark-city",
+    "archetype": "underdark-city",
+    "map": { "x": null, "y": null },
+    "founded": -690,
+    "foundedNote": "Founded by svirfneblin fleeing the phaerimm, built around the ancient Speaking Stones menhirs",
+    "status": [
+      { "from": -690, "to": 1371, "state": "thriving" },
+      { "from": 1371, "to": 1440, "state": "abandoned" },
+      { "from": 1440, "to": 1487, "state": "troubled" },
+      { "from": 1487, "to": null, "state": "thriving" }
+    ],
+    "events": [
+      { "year": 1371, "title": "Drow Retribution", "summary": "Menzoberranzan sends summoned bebilith demons into the city, killing some 9,000 deep gnomes; survivors flee to the Silver Marches and shelter in Mithral Hall.", "importance": 3 },
+      { "year": 1440, "title": "The Return Begins", "summary": "With help from Mithral Hall and Silverymoon, svirfneblin start clearing and resettling the ruined warrens.", "importance": 2 },
+      { "year": 1338, "title": "Drizzt Among the Gnomes", "summary": "The renegade drow finds weeks of refuge here with Burrow Warden Belwar Dissengulp under King Schnicktick.", "importance": 2 },
+      { "year": 1358, "title": "Emptied Before the Host", "summary": "The gnomes abandon the city ahead of the drow march on Mithral Hall, return afterward, and Belwar's band helps defend Keeper's Dale.", "importance": 1 },
+      { "year": 1373, "title": "Scavengers and Wererats", "summary": "Drow of House Duskryn dig for buried spellgems while a pack of svirfneblin wererats holds the entry maze.", "importance": 1 },
+      { "year": 1486, "title": "Reclaiming Blingdenstone", "summary": "c. Out of the Abyss era: the resettled city still fights to clear lingering threats from its outer caverns.", "importance": 1 }
+    ],
+    "description": "A gnome city that looks, from outside, like nothing at all: a stair, an iron gate, and then a deliberate maze before chambers of smoothly carved stone where houses pass for heaps of rubble. At its heart stand the Speaking Stones, ancient menhirs the deep gnomes built around. Emptied by a drow demon-raid in 1371, it has been patiently reclaimed by returning svirfneblin, though it is smaller than it was.",
+    "population": 5000,
+    "ruler": "Most Honored Burrow Warden Kargien Dissengulp (from c. 1439)",
+    "tags": ["svirfneblin", "deep-gnome", "drizzt", "out-of-the-abyss", "northdark", "resettled"],
+    "visual": {
+      "palette": { "base": "#cbc3b2", "accent": "#3f8f86", "ink": "#22201c" },
+      "scale": 3,
+      "motifs": ["cavern", "gate", "walls", "standing-stone", "mines", "glow"],
+      "terrain": "cavern",
+      "notes": "Low cave with an iron gate and stair at the front, a zigzag maze wall behind it, then lumpy rock-pile houses ringed around a cluster of upright menhirs; faint gem-teal glints, no faerie fire."
+    },
+    "sources": ["https://forgottenrealms.fandom.com/wiki/Blingdenstone"]
+  },
+  {
+    "id": "gracklstugh",
+    "name": "Gracklstugh",
+    "aliases": ["City of Blades"],
+    "world": "toril",
+    "region": "underdark",
+    "type": "underdark-city",
+    "archetype": "underdark-city",
+    "map": { "x": null, "y": null },
+    "founded": -3717,
+    "foundedNote": "Founded by duergar escaping the fall of Deep Shanatar and enslavement in Oryndoll",
+    "status": [
+      { "from": -3717, "to": 1486, "state": "thriving" },
+      { "from": 1486, "to": 1490, "state": "troubled" },
+      { "from": 1490, "to": null, "state": "thriving" }
+    ],
+    "events": [
+      { "year": 1372, "title": "March on Menzoberranzan", "summary": "Deepking Horgar Steelshadow IV exploits the Silence of Lolth, routs the drow at the Pillars of Woe, and besieges Menzoberranzan for months.", "importance": 3 },
+      { "year": 1373, "title": "Siege Collapses", "summary": "When Lolth's priestesses regain their power, the duergar are driven off and Horgar IV is slain during the retreat; Horgar V takes the throne.", "importance": 2 },
+      { "year": -3392, "title": "The Deepkingdom", "summary": "Horgar Steelshadow II unites the gray dwarf clans into an Underdark empire that slowly shrinks back to the city over millennia.", "importance": 2 },
+      { "year": 972, "title": "Derro Uniting War", "summary": "Derro tribes kill Deepking Barthorn V; his successor purges them across the Northdark and drags captives back as slaves (freed in 1063, after which derro savants gain hidden influence).", "importance": 1 },
+      { "year": 1486, "title": "Madness Under the Smog", "summary": "c. Out of the Abyss era: demonic influence spreads paranoia among the duergar, and a mind flayer later dominates the mad Deepking until an adventurer frees city and dragon around 1490.", "importance": 2 }
+    ],
+    "description": "A foundry city on the shore of the Darklake, lit only by smelter fires glowing between stalagmites under a ceiling of choking smog. The 200-foot rift of Laduguer's Furrow splits it in two, crossed by a dozen stone bridges; outsiders keep to the northern docks and bazaar, while the Deepking's hold, the stone giants' Cairngorm Cavern, and the lair of the red dragon Themberchaud, who breathes life into the forges, lie south. The gray dwarves here sell the finest blades in the Underdark and trust no one who buys them.",
+    "population": 12050,
+    "ruler": "Deepking Horgar Steelshadow V, with the Council of Lairds and derro Council of Savants",
+    "tags": ["duergar", "derro", "darklake", "themberchaud", "forges", "out-of-the-abyss", "northdark"],
+    "visual": {
+      "palette": { "base": "#c7bca9", "accent": "#c4502a", "ink": "#1e1a17" },
+      "scale": 4,
+      "motifs": ["cavern", "stalactites", "lake", "docks", "bridge", "glow", "mines", "keep"],
+      "terrain": "cavern",
+      "notes": "Cavern floor split by one deep straight rift crossed by several short bridges; blocky forge-buildings with ember-orange glows and smoke haze, docks on a dark lake edge to the north, a squat keep and a side cave (dragon/giants) to the south."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Gracklstugh",
+      "https://forgottenrealms.fandom.com/wiki/Themberchaud",
+      "https://forgottenrealms.fandom.com/wiki/Darklake",
+      "https://forgottenrealms.fandom.com/wiki/Out_of_the_Abyss"
+    ]
+  },
+  {
+    "id": "mantol-derith",
+    "name": "Mantol-Derith",
+    "aliases": [],
+    "world": "toril",
+    "region": "underdark",
+    "type": "town",
+    "archetype": "underdark-city",
+    "map": { "x": null, "y": null },
+    "founded": null,
+    "foundedNote": "Founding date unknown; earliest dated mention in the wiki is 1372 DR",
+    "status": [
+      { "from": 1372, "to": 1373, "state": "troubled" },
+      { "from": 1373, "to": null, "state": "thriving" }
+    ],
+    "events": [
+      { "year": 1372, "title": "Quiet Market", "summary": "Trade slumps during the Silence of Lolth; Quenthel Baenre's party lodges here while seeking passage across the Darklake to Gracklstugh.", "importance": 2 },
+      { "year": 1373, "title": "Trade Resumes", "summary": "c. With Lolth's return and the siege of Menzoberranzan over, caravans of drow, duergar, and deep gnomes return to the neutral market.", "importance": 1 },
+      { "year": 1486, "title": "Out of the Abyss", "summary": "c. The hidden market serves as a stop for travelers fleeing the demon-maddened Underdark.", "importance": 1 }
+    ],
+    "description": "A secret neutral bazaar three miles down on the far shore of the Darklake from Gracklstugh, where drow, duergar, svirfneblin, and even illithids trade under heavy guard and heavier magic. The water-carved cave glitters with crystals and gems in its walls, threaded by streams, pools, and small falls crossed on bridges of cut crystal. It is mostly caravan camps, a fungus-ringed central market, and a great warehouse in each corner, one for every faction, with the secretive Twilight Traders at its center.",
+    "population": null,
+    "ruler": "No ruler; neutral ground policed by its factions and the Twilight Traders",
+    "tags": ["trade", "neutral-ground", "darklake", "twilight-traders", "out-of-the-abyss", "northdark"],
+    "visual": {
+      "palette": { "base": "#cdc5b6", "accent": "#4a86b0", "ink": "#1f2124" },
+      "scale": 2,
+      "motifs": ["cavern", "waterfall", "river", "bridge", "glow", "tents"],
+      "terrain": "cavern",
+      "notes": "A low, wide cave with gem-studded walls glinting blue, small streams and a waterfall crossed by thin crystal bridges, clusters of tents around a central ring of giant mushrooms, and four boxy warehouses at the corners."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Mantol-Derith",
+      "https://forgottenrealms.fandom.com/wiki/Twilight_Traders",
+      "https://forgottenrealms.fandom.com/wiki/Darklake"
+    ]
+  },
+  {
+    "id": "araumycos",
+    "name": "Araumycos",
+    "aliases": ["King Araumycos", "Great Fungus"],
+    "world": "toril",
+    "region": "underdark",
+    "type": "landmark",
+    "archetype": "landmark-forest",
+    "map": { "x": null, "y": null },
+    "founded": null,
+    "foundedNote": "Origin unknown; elven legend ties its birth to Vyshaantar sorcery, and some call it Toril's oldest living thing",
+    "status": [
+      { "from": -35000, "to": null, "state": "thriving" }
+    ],
+    "events": [
+      { "year": 1385, "title": "The Fungus Wakes", "summary": "After the Spellplague, Araumycos proves to be aware, styles itself King Araumycos, enthralls millions of myconids, and sends seductive nightmares across hundreds of miles.", "importance": 3 },
+      { "year": 1486, "title": "Zuggtmoy's Wedding", "summary": "c. The demon lady of fungi, loose in the Underdark, plots a mock wedding to merge with the organism (Out of the Abyss).", "importance": 3 },
+      { "year": -4100, "title": "Ammarindar Below Eaerlann", "summary": "The dwarven kingdom of Ammarindar is founded; its mines beneath the elven realm are later (date unknown) surrendered to the creeping fungus.", "importance": 1 },
+      { "year": 1372, "title": "Growth Halts", "summary": "Observers note the fungus has stopped spreading into new territory, apparently at its full extent.", "importance": 1 }
+    ],
+    "description": "A single grey, spongy organism that fills nearly every tunnel and cave beneath the High Forest from one to three miles down, its surface folded like the outside of a brain. Magic slides off it, cut sections regrow, and patches occasionally wither to expose sealed caverns and ancient ruins before the growth swallows them again. Since the Spellplague it has called itself a king, drowning nearby minds in dreams of the comfort of joining the mass.",
+    "population": null,
+    "ruler": "Itself (King Araumycos), ruling enthralled myconids",
+    "tags": ["landmark", "fungus", "high-forest", "myconid", "zuggtmoy", "out-of-the-abyss", "northdark"],
+    "visual": {
+      "palette": { "base": "#c8c2b4", "accent": "#8a9a6a", "ink": "#24231f" },
+      "scale": 5,
+      "motifs": ["cavern", "giant-trees", "glow", "ruins"],
+      "terrain": "cavern",
+      "notes": "A tile completely choked with rounded, brain-folded grey-green fungal masses and a few giant mushroom caps standing like trees; one broken dwarven arch or black stalactite fang half-swallowed in the growth."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Araumycos",
+      "https://forgottenrealms.fandom.com/wiki/Zuggtmoy",
+      "https://forgottenrealms.fandom.com/wiki/Ammarindar_(kingdom)"
+    ]
+  }
+]

@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 1000" width="1450" height="1000" font-family="Georgia, serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#7a6a50" stroke-width="1"/></pattern></defs>
+<rect width="1450" height="1000" fill="#e9dcbc"/>
+<g id="coast">
+<polyline data-name="Sword Coast (Icewind Dale to Calimshan)" points="203,0 188.5,40 210.2,90 232,130 239.3,170 246.5,200 253.7,230 261,270 268.3,300 275.5,330 290,360 297.3,400 290,440 304.5,460 336.4,476 311.8,480 282.8,495 290,530 311.8,570 326.3,600 304.5,630 304.5,660 275.5,690 253.7,720 261,750 304.5,780 355.3,785 435,790 493,790 536.5,778" fill="none" stroke="#3b2f24" stroke-width="2.5" stroke-linejoin="round"/>
+<polyline data-name="Shining Sea shore, Chultan peninsula, and the Great Sea coast east to Halruaa" points="558.3,778 623.5,785 696,780 768.5,785 841,795 884.5,815 870,835 812,840 725,845 652.5,850 594.5,848 536.5,850 478.5,852 435,865 420.5,890 435,930 478.5,965 551,975 638,970 710.5,955 797.5,950 870,930 913.5,905 971.5,900 1044,905 1160,915 1305,910 1450,900" fill="none" stroke="#3b2f24" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon data-name="Sea of Fallen Stars (with Dragonmere, Dragon Reach, Aglarond, Alamber Sea, Vilhon Reach)" points="623.5,490 667,485 725,490 783,490 841,480 870,460 913.5,430 928,380 949.8,320 971.5,310 986,340 983.1,390 1044,410 1145.5,415 1189,430 1160,440 1080.3,440 1044,460 1073,480 1131,485 1174.5,500 1181.8,525 1160,535 1145.5,565 1116.5,595 1044,585 1000.5,590 942.5,600 913.5,625 870,620 826.5,610 783,600 790.3,580 826.5,565 812,545 768.5,530 725,515 667,515 623.5,505 623.5,490" fill="#b9c7c4" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Moonsea" points="833.7,232 855.5,215 913.5,210 971.5,215 1000.5,228 971.5,243 913.5,240 870,246 833.7,232" fill="#b9c7c4" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Lake of Steam" points="507.5,700 551,670 609,670 645.3,700 623.5,740 580,750 558.3,778 536.5,778 522,750 500.2,730 507.5,700" fill="#b9c7c4" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Evermeet" points="72.5,330 101.5,360 108.8,410 94.3,460 72.5,510 43.5,490 36.3,430 43.5,370 72.5,330" fill="#e3d3ac" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Moonshaes: Alaron" points="145,380 195.8,375 210.2,405 174,420 145,410 145,380" fill="#e3d3ac" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Moonshaes: Gwynneth" points="166.8,440 217.5,435 224.8,470 181.3,480 159.5,465 166.8,440" fill="#e3d3ac" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Lantan" points="319,868 350.9,864 358.1,887 326.3,895 319,868" fill="#e3d3ac" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Nimbral" points="275.5,950 326.3,945 333.5,970 290,975 275.5,950" fill="#e3d3ac" stroke="#3b2f24" stroke-width="2"/>
+</g><g id="ranges">
+<polyline data-name="Spine of the World" points="217.5,115 290,105 362.5,110 435,115 507.5,110 580,100 638,90" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M218.5,118.2 L223.5,108.2 L228.5,118.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M230.6,116.5 L235.6,106.5 L240.6,116.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M242.7,114.8 L247.7,104.8 L252.7,114.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M254.8,113.2 L259.8,103.2 L264.8,113.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M266.9,111.5 L271.9,101.5 L276.9,111.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M279.0,109.8 L284,99.8 L289.0,109.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M291.0,109.4 L296,99.4 L301.0,109.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M303.1,110.3 L308.1,100.3 L313.1,110.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M315.2,111.1 L320.2,101.1 L325.2,111.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M327.3,111.9 L332.3,101.9 L337.3,111.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M339.4,112.8 L344.4,102.8 L349.4,112.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M351.5,113.6 L356.5,103.6 L361.5,113.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M363.5,114.4 L368.5,104.4 L373.5,114.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M375.6,115.3 L380.6,105.3 L385.6,115.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M387.7,116.1 L392.7,106.1 L397.7,116.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M399.8,116.9 L404.8,106.9 L409.8,116.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M411.9,117.8 L416.9,107.8 L421.9,117.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M424.0,118.6 L429,108.6 L434.0,118.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M436.0,118.6 L441,108.6 L446.0,118.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M448.1,117.8 L453.1,107.8 L458.1,117.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M460.2,116.9 L465.2,106.9 L470.2,116.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M472.3,116.1 L477.3,106.1 L482.3,116.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M484.4,115.3 L489.4,105.3 L494.4,115.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M496.5,114.4 L501.5,104.4 L506.5,114.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M508.5,113.2 L513.5,103.2 L518.5,113.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M520.6,111.5 L525.6,101.5 L530.6,111.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M532.7,109.8 L537.7,99.8 L542.7,109.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M544.8,108.2 L549.8,98.2 L554.8,108.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M556.9,106.5 L561.9,96.5 L566.9,106.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M569.0,104.8 L574,94.8 L579.0,104.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M580.8,103.0 L585.8,93.0 L590.8,103.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M592.4,101.0 L597.4,91.0 L602.4,101.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M604.0,99.0 L609,89.0 L614.0,99.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M615.6,97.0 L620.6,87.0 L625.6,97.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M627.2,95.0 L632.2,85.0 L637.2,95.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<polyline data-name="Nether Mountains" points="565.5,235 609,230 652.5,215 674.3,190" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M565.9,238.4 L570.9,228.4 L575.9,238.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M576.8,237.1 L581.8,227.1 L586.8,237.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M587.7,235.9 L592.7,225.9 L597.7,235.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M598.6,234.6 L603.6,224.6 L608.6,234.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M609.4,232.1 L614.4,222.1 L619.4,232.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M620.3,228.4 L625.3,218.4 L630.3,228.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M631.2,224.6 L636.2,214.6 L641.2,224.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M642.1,220.9 L647.1,210.9 L652.1,220.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M651.1,214.8 L656.1,204.8 L661.1,214.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M658.4,206.5 L663.4,196.5 L668.4,206.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M665.6,198.2 L670.6,188.2 L675.6,198.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<polyline data-name="Storm Horns and Thunder Peaks" points="616.3,500 626.4,455 642.4,410 667,385 710.5,378 746.8,390 756.9,440" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M612.5,498.4 L617.5,488.4 L622.5,498.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M615.1,487.1 L620.1,477.1 L625.1,487.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M617.6,475.9 L622.6,465.9 L627.6,475.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M620.1,464.6 L625.1,454.6 L630.1,464.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M623.4,453.4 L628.4,443.4 L633.4,453.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M627.4,442.1 L632.4,432.1 L637.4,442.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M631.4,430.9 L636.4,420.9 L641.4,430.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M635.4,419.6 L640.4,409.6 L645.4,419.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M641.5,409.8 L646.5,399.8 L651.5,409.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M649.7,401.5 L654.7,391.5 L659.7,401.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M657.9,393.2 L662.9,383.2 L667.9,393.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M667.4,388.1 L672.4,378.1 L677.4,388.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M678.3,386.4 L683.3,376.4 L688.3,386.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M689.2,384.6 L694.2,374.6 L699.2,384.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M700.1,382.9 L705.1,372.9 L710.1,382.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M711.5,384.0 L716.5,374.0 L721.5,384.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M723.6,388.0 L728.6,378.0 L733.6,388.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M735.7,392.0 L740.7,382.0 L745.7,392.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M743.0,400.3 L748,390.3 L753.0,400.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M745.6,412.8 L750.6,402.8 L755.6,412.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M748.1,425.3 L753.1,415.3 L758.1,425.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M750.6,437.8 L755.6,427.8 L760.6,437.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<polyline data-name="Cloud Peaks" points="340.8,618 391.5,612 449.5,620" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M342.1,621.3 L347.1,611.3 L352.1,621.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M354.8,619.8 L359.8,609.8 L364.8,619.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M367.5,618.3 L372.5,608.3 L377.5,618.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M380.2,616.8 L385.2,606.8 L390.2,616.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M392.3,616.8 L397.3,606.8 L402.3,616.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M403.9,618.4 L408.9,608.4 L413.9,618.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M415.5,620.0 L420.5,610.0 L425.5,620.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M427.1,621.6 L432.1,611.6 L437.1,621.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M438.7,623.2 L443.7,613.2 L448.7,623.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<polyline data-name="Graypeaks" points="565.5,300 577.1,325 587.3,345" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M563.4,310.3 L568.4,300.3 L573.4,310.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M569.2,322.8 L574.2,312.8 L579.2,322.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M574.6,334.0 L579.6,324.0 L584.6,334.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M579.7,344.0 L584.7,334.0 L589.7,344.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<polyline data-name="Sunset Mountains" points="598.9,375 606.1,410 594.5,445" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M595.1,384.8 L600.1,374.8 L605.1,384.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M597.5,396.5 L602.5,386.5 L607.5,396.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M599.9,408.2 L604.9,398.2 L609.9,408.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M599.2,419.8 L604.2,409.8 L609.2,419.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M595.3,431.5 L600.3,421.5 L605.3,431.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M591.4,443.2 L596.4,433.2 L601.4,443.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+</g><g id="features">
+<text data-kind="mountains" x="435" y="95" text-anchor="middle" fill="#6b5a42" font-size="15" letter-spacing="2">SPINE OF THE WORLD</text>
+<text data-kind="forest" x="456.8" y="325" text-anchor="middle" fill="#4d6b3c" font-size="16" font-style="italic">HIGH FOREST</text>
+<text data-kind="desert" x="725" y="150" text-anchor="middle" fill="#9a6b2f" font-size="20" letter-spacing="6">ANAUROCH</text>
+<text data-kind="forest" x="870" y="375" text-anchor="middle" fill="#4d6b3c" font-size="16" font-style="italic">CORMANTHOR</text>
+<text data-kind="sea" x="986" y="520" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">SEA OF FALLEN STARS</text>
+<text data-kind="sea" x="916.4" y="228" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">MOONSEA</text>
+<text data-kind="sea" x="696" y="510" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">DRAGONMERE</text>
+<text data-kind="sea" x="572.8" y="715" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">LAKE OF STEAM</text>
+<text data-kind="sea" x="681.5" y="818" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">SHINING SEA</text>
+<text data-kind="sea" x="116" y="620" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">TRACKLESS SEA</text>
+<text data-kind="region" x="580" y="952" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">CHULT</text>
+<text data-kind="region" x="1305" y="510" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">THAY</text>
+<text data-kind="region" x="391.5" y="735" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">CALIMSHAN</text>
+<text data-kind="region" x="710.5" y="430" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">CORMYR</text>
+<text data-kind="region" x="826.5" y="440" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">SEMBIA</text>
+<text data-kind="region" x="812" y="335" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">DALELANDS</text>
+<text data-kind="region" x="522" y="60" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">THE NORTH</text>
+<text data-kind="region" x="478.5" y="548" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">WESTERN HEARTLANDS</text>
+<rect x="414.5" y="117" width="128" height="26" fill="none" stroke="#5a3d2b" stroke-dasharray="6 4"/>
+<text data-kind="region" x="478.5" y="135" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">UNDERDARK</text>
+</g><g id="places">
+<circle cx="275.5" cy="65" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="281.5" y="68" font-size="10" fill="#2b2420">bryn-shander</text>
+<circle cx="261" cy="190" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="267" y="193" font-size="10" fill="#2b2420">luskan</text>
+<circle cx="340.8" cy="165" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="346.8" y="168" font-size="10" fill="#2b2420">mirabar</text>
+<circle cx="398.8" cy="125" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="404.8" y="128" font-size="10" fill="#2b2420">spine-of-the-world</text>
+<circle cx="275.5" cy="240" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="281.5" y="243" font-size="10" fill="#2b2420">neverwinter</text>
+<circle cx="326.3" cy="215" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="332.3" y="218" font-size="10" fill="#2b2420">gauntlgrym</text>
+<circle cx="379.9" cy="210" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="385.9" y="213" font-size="10" fill="#2b2420">longsaddle</text>
+<circle cx="326.3" cy="265" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="332.3" y="268" font-size="10" fill="#2b2420">phandalin</text>
+<circle cx="391.5" cy="260" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="397.5" y="263" font-size="10" fill="#2b2420">triboar</text>
+<circle cx="442.3" cy="250" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="448.3" y="253" font-size="10" fill="#2b2420">yartar</text>
+<circle cx="290" cy="320" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="296" y="323" font-size="10" fill="#2b2420">waterdeep</text>
+<circle cx="348" cy="315" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="354" y="318" font-size="10" fill="#2b2420">undermountain</text>
+<circle cx="311.8" cy="355" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="317.8" y="358" font-size="10" fill="#2b2420">skullport</text>
+<circle cx="333.5" cy="395" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="339.5" y="398" font-size="10" fill="#2b2420">daggerford</text>
+<circle cx="384.3" cy="425" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="390.3" y="428" font-size="10" fill="#2b2420">dragonspear-castle</text>
+<circle cx="485.8" cy="185" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="491.8" y="188" font-size="10" fill="#2b2420">mithral-hall</text>
+<circle cx="543.8" cy="205" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="549.8" y="208" font-size="10" fill="#2b2420">silverymoon</text>
+<circle cx="572.8" cy="160" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="578.8" y="163" font-size="10" fill="#2b2420">citadel-felbarr</text>
+<circle cx="638" cy="130" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="644" y="133" font-size="10" fill="#2b2420">citadel-adbar</text>
+<circle cx="623.5" cy="200" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="629.5" y="203" font-size="10" fill="#2b2420">sundabar</text>
+<circle cx="543.8" cy="255" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="549.8" y="258" font-size="10" fill="#2b2420">everlund</text>
+<circle cx="493" cy="240" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="499" y="243" font-size="10" fill="#2b2420">nesme</text>
+<circle cx="536.5" cy="295" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="542.5" y="298" font-size="10" fill="#2b2420">hellgate-keep</text>
+<circle cx="442.3" cy="310" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="448.3" y="313" font-size="10" fill="#2b2420">high-forest</text>
+<circle cx="551" cy="370" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="557" y="373" font-size="10" fill="#2b2420">evereska</text>
+<circle cx="65.3" cy="420" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="71.3" y="423" font-size="10" fill="#2b2420">evermeet</text>
+<circle cx="522" cy="155" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="528" y="158" font-size="10" fill="#2b2420">menzoberranzan</text>
+<circle cx="435" cy="175" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="441" y="178" font-size="10" fill="#2b2420">blingdenstone</text>
+<circle cx="435" cy="212" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="441" y="215" font-size="10" fill="#2b2420">mantol-derith</text>
+<circle cx="493" cy="275" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="499" y="278" font-size="10" fill="#2b2420">gracklstugh</text>
+<circle cx="420.5" cy="345" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="426.5" y="348" font-size="10" fill="#2b2420">araumycos</text>
+<circle cx="601.8" cy="320" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="607.8" y="323" font-size="10" fill="#2b2420">ched-nasad</text>
+<circle cx="297.3" cy="490" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="303.3" y="493" font-size="10" fill="#2b2420">candlekeep</text>
+<circle cx="348" cy="465" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="354" y="468" font-size="10" fill="#2b2420">baldurs-gate</text>
+<circle cx="348" cy="525" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="354" y="528" font-size="10" fill="#2b2420">beregost</text>
+<circle cx="435" cy="410" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="441" y="413" font-size="10" fill="#2b2420">boareskyr-bridge</text>
+<circle cx="420.5" cy="465" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="426.5" y="468" font-size="10" fill="#2b2420">elturel</text>
+<circle cx="471.3" cy="440" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="477.3" y="443" font-size="10" fill="#2b2420">scornubel</text>
+<circle cx="514.8" cy="475" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="520.8" y="478" font-size="10" fill="#2b2420">berdusk</text>
+<circle cx="565.5" cy="460" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="571.5" y="463" font-size="10" fill="#2b2420">iriaebor</text>
+<circle cx="558.3" cy="410" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="564.3" y="413" font-size="10" fill="#2b2420">darkhold</text>
+<circle cx="348" cy="585" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="354" y="588" font-size="10" fill="#2b2420">athkatla</text>
+<circle cx="406" cy="660" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="412" y="663" font-size="10" fill="#2b2420">darromar</text>
+<circle cx="326.3" cy="650" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="332.3" y="653" font-size="10" fill="#2b2420">zazesspur</text>
+<circle cx="275.5" cy="725" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="281.5" y="728" font-size="10" fill="#2b2420">memnon</text>
+<circle cx="355.3" cy="765" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="361.3" y="768" font-size="10" fill="#2b2420">calimport</text>
+<circle cx="471.3" cy="775" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="477.3" y="778" font-size="10" fill="#2b2420">almraiven</text>
+<circle cx="616.3" cy="435" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="622.3" y="438" font-size="10" fill="#2b2420">high-horn</text>
+<circle cx="667" cy="460" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="673" y="463" font-size="10" fill="#2b2420">suzail</text>
+<circle cx="717.8" cy="475" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="723.8" y="478" font-size="10" fill="#2b2420">marsember</text>
+<circle cx="681.5" cy="405" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="687.5" y="408" font-size="10" fill="#2b2420">arabel</text>
+<circle cx="717.8" cy="360" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="723.8" y="363" font-size="10" fill="#2b2420">tilverton</text>
+<circle cx="681.5" cy="535" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="687.5" y="538" font-size="10" fill="#2b2420">westgate</text>
+<circle cx="775.8" cy="470" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="781.8" y="473" font-size="10" fill="#2b2420">saerloon</text>
+<circle cx="833.7" cy="460" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="839.7" y="463" font-size="10" fill="#2b2420">selgaunt</text>
+<circle cx="790.3" cy="420" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="796.3" y="423" font-size="10" fill="#2b2420">ordulin</text>
+<circle cx="775.8" cy="350" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="781.8" y="353" font-size="10" fill="#2b2420">standing-stone</text>
+<circle cx="797.5" cy="305" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="803.5" y="308" font-size="10" fill="#2b2420">shadowdale</text>
+<circle cx="848.3" cy="320" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="854.3" y="323" font-size="10" fill="#2b2420">myth-drannor</text>
+<circle cx="848.3" cy="360" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="854.3" y="363" font-size="10" fill="#2b2420">cormanthor</text>
+<circle cx="819.2" cy="205" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="825.2" y="208" font-size="10" fill="#2b2420">zhentil-keep</text>
+<circle cx="884.5" cy="190" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="890.5" y="193" font-size="10" fill="#2b2420">phlan</text>
+<circle cx="1000.5" cy="200" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1006.5" y="203" font-size="10" fill="#2b2420">melvaunt</text>
+<circle cx="870" cy="265" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="876" y="268" font-size="10" fill="#2b2420">hillsfar</text>
+<circle cx="957" cy="262" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="963" y="265" font-size="10" fill="#2b2420">mulmaster</text>
+<circle cx="935.3" cy="145" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="941.3" y="148" font-size="10" fill="#2b2420">citadel-of-the-raven</text>
+<circle cx="696" cy="220" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="702" y="223" font-size="10" fill="#2b2420">thultanthar</text>
+<circle cx="638" cy="270" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="644" y="273" font-size="10" fill="#2b2420">anauroch</text>
+<circle cx="1044" cy="110" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1050" y="113" font-size="10" fill="#2b2420">castle-perilous</text>
+<circle cx="1138.3" cy="150" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1144.3" y="153" font-size="10" fill="#2b2420">helgabal</text>
+<circle cx="1036.8" cy="270" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1042.8" y="273" font-size="10" fill="#2b2420">tantras</text>
+<circle cx="1022.2" cy="315" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1028.2" y="318" font-size="10" fill="#2b2420">ravens-bluff</text>
+<circle cx="1000.5" cy="360" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1006.5" y="363" font-size="10" fill="#2b2420">procampur</text>
+<circle cx="1123.8" cy="310" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1129.8" y="313" font-size="10" fill="#2b2420">lyrabar</text>
+<circle cx="1276" cy="360" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1282" y="363" font-size="10" fill="#2b2420">immilmar</text>
+<circle cx="1102" cy="460" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1108" y="463" font-size="10" fill="#2b2420">velprintalar</text>
+<circle cx="1261.5" cy="470" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1267.5" y="473" font-size="10" fill="#2b2420">eltabbar</text>
+<circle cx="1196.3" cy="545" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1202.3" y="548" font-size="10" fill="#2b2420">bezantur</text>
+<circle cx="1276" cy="620" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1282" y="623" font-size="10" fill="#2b2420">skuld</text>
+<circle cx="1116.5" cy="625" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="1122.5" y="628" font-size="10" fill="#2b2420">unthalass</text>
+<circle cx="986" cy="615" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="992" y="618" font-size="10" fill="#2b2420">cimbar</text>
+<circle cx="884.5" cy="655" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="890.5" y="658" font-size="10" fill="#2b2420">alaghon</text>
+<circle cx="783" cy="635" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="789" y="638" font-size="10" fill="#2b2420">arrabar</text>
+<circle cx="986" cy="860" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="992" y="863" font-size="10" fill="#2b2420">halarahh</text>
+<circle cx="536.5" cy="868" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="542.5" y="871" font-size="10" fill="#2b2420">port-nyanzaru</text>
+<circle cx="638" cy="910" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="644" y="913" font-size="10" fill="#2b2420">mezro</text>
+<circle cx="551" cy="925" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="557" y="928" font-size="10" fill="#2b2420">omu</text>
+<circle cx="174" cy="400" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="180" y="403" font-size="10" fill="#2b2420">caer-callidyrr</text>
+<circle cx="336.4" cy="880" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="342.4" y="883" font-size="10" fill="#2b2420">lantan</text>
+<circle cx="971.5" cy="500" r="4" fill="#8b1e1e" stroke="#2b2420"/><text x="977.5" y="503" font-size="10" fill="#2b2420">sea-of-fallen-stars</text>
+</g>
+<text x="12" y="988" font-size="12" fill="#5a3d2b">Realms Atlas schematic preview — 90 places — our own stylization, not a WotC map</text>
+</svg>

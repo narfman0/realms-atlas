@@ -1,0 +1,1362 @@
+[
+  {
+    "id": "zhentil-keep",
+    "name": "Zhentil Keep",
+    "aliases": [
+      "Thargate Keep",
+      "the Keep"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 640,
+    "foundedNote": "Earliest attested: a trading camp on the Moonsea's north shore c. 640 DR; fortified from 747 DR.",
+    "status": [
+      {
+        "from": 640,
+        "to": 1368,
+        "state": "thriving"
+      },
+      {
+        "from": 1368,
+        "to": 1383,
+        "state": "troubled"
+      },
+      {
+        "from": 1383,
+        "to": 1491,
+        "state": "ruined"
+      },
+      {
+        "from": 1491,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": 1260,
+        "title": "Rise of the Zhentarim",
+        "summary": "Manshoon and Chess seize council seats; within a year Manshoon and Fzoul Chembryl found the Black Network.",
+        "importance": 3
+      },
+      {
+        "year": 1368,
+        "title": "The Keep falls",
+        "summary": "Divine strife around Cyric's church levels the city save the Foreign Quarter; white dragons and frost giants besiege the ruins the next year.",
+        "importance": 3
+      },
+      {
+        "year": 1383,
+        "title": "Razed by the Shadovar",
+        "summary": "In the Shadowbane War, Netherese forces flatten the city after learning the Zhentarim courted the phaerimm.",
+        "importance": 3
+      },
+      {
+        "year": 753,
+        "title": "The Dark Shrine",
+        "summary": "A temple to Bane is consecrated, beginning centuries of Banite rule over the city.",
+        "importance": 2
+      },
+      {
+        "year": 1491,
+        "title": "Zhentarim return",
+        "summary": "The Black Network retakes its namesake ruin and bars returning refugees.",
+        "importance": 2
+      }
+    ],
+    "description": "A black-walled fortress city straddling the River Tesh at the Moonsea's northwest corner, long the citadel of Bane's priests and the Zhentarim. Twice laid low, its northern wards became a pirates' haunt while the southern bank sank into an undead-ridden gloom. By the 1490s the Zhentarim hold the shattered keep again, rebuilding behind closed gates.",
+    "population": null,
+    "ruler": "The Zhentarim (retaken c. 1491)",
+    "tags": [
+      "zhentarim",
+      "bane",
+      "moonsea",
+      "river-tesh",
+      "fortified-bridge"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d4c8a6",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "keep",
+        "towers",
+        "bridge",
+        "river",
+        "docks",
+        "ruins",
+        "temple"
+      ],
+      "terrain": "river",
+      "notes": "A dark walled city split by a river, a fortified bridge and gatetower joining the halves; a massive keep in the northwest quarter, half the city in rubble."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Zhentil_Keep"
+    ]
+  },
+  {
+    "id": "mulmaster",
+    "name": "Mulmaster",
+    "aliases": [
+      "City of Danger"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 934,
+    "foundedNote": "Founded 934 DR as a fortified trading post linking the Moonsea to the Dragon Reach via the River Lis.",
+    "status": [
+      {
+        "from": 934,
+        "to": 1491,
+        "state": "thriving"
+      },
+      {
+        "from": 1491,
+        "to": 1492,
+        "state": "troubled"
+      },
+      {
+        "from": 1492,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1306,
+        "title": "The Moonsea War",
+        "summary": "Mulmaster's bid to dominate the region ends in defeat by an alliance of Zhentil Keep, Hillsfar, Phlan, Melvaunt and Sembia.",
+        "importance": 2
+      },
+      {
+        "year": 1366,
+        "title": "Twin usurper",
+        "summary": "High Blade Selfaril is murdered by his twin Rassendyll, who takes his place and weds the Thayan tharchioness Dmitra Flass.",
+        "importance": 2
+      },
+      {
+        "year": 1369,
+        "title": "Pool of radiance",
+        "summary": "A corrupted pool spawned by the Cult of the Dragon drains lives in the city until its source is destroyed.",
+        "importance": 1
+      },
+      {
+        "year": 1491,
+        "title": "Elemental Evil",
+        "summary": "Rival elemental cults bring heatwave, fire and storm to the city; adventurers break their plots.",
+        "importance": 2
+      },
+      {
+        "year": 1486,
+        "title": "Fort Iron",
+        "summary": "The Blades and Tymoran priests reclaim the Point Iron mine from duergar and fortify it.",
+        "importance": 1
+      }
+    ],
+    "description": "A steep, smoke-stained port climbing from its harbor toward a crescent of mountains, ruled by the sword-wielding High Blade and his council of Blades. Its docks are squalid and dangerous, its upper terraces walled and wealthy, and its harbor floor is said to be littered with the bones of the High Blade's enemies. Ambition, greed and secret alliances with Thay and the Zhentarim define its politics.",
+    "population": 50000,
+    "ruler": "High Blade Jaseen Drakehorn (1490s)",
+    "tags": [
+      "moonsea",
+      "high-blade",
+      "elemental-evil",
+      "adventurers-league"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6c7a4",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "harbor",
+        "walls",
+        "towers",
+        "docks",
+        "mountain",
+        "ships"
+      ],
+      "terrain": "coast",
+      "notes": "A tiered city sloping down to a deep harbor, walled at the top, with the tall Towers of the Blade crowning the slope and peaks behind."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Mulmaster"
+    ]
+  },
+  {
+    "id": "hillsfar",
+    "name": "Hillsfar",
+    "aliases": [
+      "Hillsafar"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 673,
+    "foundedNote": "Founded 673 DR by elves, half-elves and humans on Tailings Bay, originally named Hillsafar.",
+    "status": [
+      {
+        "from": 673,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1357,
+        "title": "Maalthiir's coup",
+        "summary": "Maalthiir overthrows the council, becomes First Lord, and with his Red Plume mercenaries expels nonhumans from the city.",
+        "importance": 3
+      },
+      {
+        "year": 673,
+        "title": "Founding",
+        "summary": "Settlers found the town to trade with emigrant dwarves, watch Moander's Crypt, and keep drow at bay.",
+        "importance": 2
+      },
+      {
+        "year": 679,
+        "title": "Deepspawn horde",
+        "summary": "Monsters out of the Beast Marches nearly destroy the young settlement.",
+        "importance": 2
+      },
+      {
+        "year": 1356,
+        "title": "Dragon in the harbor",
+        "summary": "The greatest dragon of the Flight is slain over the city and its corpse blocks the harbor.",
+        "importance": 1
+      },
+      {
+        "year": 1369,
+        "title": "Pool of radiance",
+        "summary": "A Cult of the Dragon pool rises in the harbor, consuming citizens until its source is broken.",
+        "importance": 1
+      }
+    ],
+    "description": "A walled port on the Moonsea's southern shore, enforced by the scarlet-plumed mercenaries who keep its human-only laws. Its great arena hosts gladiatorial bouts and races, and Castle Maalthiir looms over the streets. Trade with Sembia and the Dales keeps it rich even as its rulers grow ever more harsh.",
+    "population": 35000,
+    "ruler": "First Lord Torin Nomerthal (late 15th c.)",
+    "tags": [
+      "moonsea",
+      "red-plumes",
+      "arena",
+      "human-supremacist"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6c7a4",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "arena",
+        "castle",
+        "harbor",
+        "docks",
+        "towers"
+      ],
+      "terrain": "coast",
+      "notes": "A ringed wall around a dense port; a large open-air arena and a hulking castle are the two readable landmarks."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Hillsfar"
+    ]
+  },
+  {
+    "id": "phlan",
+    "name": "Phlan",
+    "aliases": [
+      "Jewel of the Moonsea"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 367,
+    "foundedNote": "Founded 367 DR as a trading outpost between Myth Drannor's elves and the Dragonspine dwarves.",
+    "status": [
+      {
+        "from": 367,
+        "to": 400,
+        "state": "thriving"
+      },
+      {
+        "from": 400,
+        "to": 712,
+        "state": "ruined"
+      },
+      {
+        "from": 712,
+        "to": 1303,
+        "state": "thriving"
+      },
+      {
+        "from": 1303,
+        "to": 1306,
+        "state": "troubled"
+      },
+      {
+        "from": 1306,
+        "to": 1340,
+        "state": "ruined"
+      },
+      {
+        "from": 1340,
+        "to": 1356,
+        "state": "troubled"
+      },
+      {
+        "from": 1356,
+        "to": 1357,
+        "state": "destroyed"
+      },
+      {
+        "from": 1357,
+        "to": 1383,
+        "state": "troubled"
+      },
+      {
+        "from": 1383,
+        "to": 1486,
+        "state": "thriving"
+      },
+      {
+        "from": 1486,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": 1340,
+        "title": "Pool of Radiance",
+        "summary": "Adventurers drive monsters from occupied Phlan and confront Tyranthraxus, who rules from the pool beneath Valjevo Castle.",
+        "importance": 3
+      },
+      {
+        "year": 1489,
+        "title": "Tears of Virulence",
+        "summary": "The Cult of the Dragon and the green dragon Vorgansharax seize Phlan; a Moonsea alliance retakes Valjevo Castle.",
+        "importance": 2
+      },
+      {
+        "year": 400,
+        "title": "First Turnabout",
+        "summary": "A humanoid horde levels the young town, which lies ruined for three centuries.",
+        "importance": 2
+      },
+      {
+        "year": 1306,
+        "title": "The Dragon Run",
+        "summary": "Dragons and their armies sweep out of Thar and destroy the city for the third time.",
+        "importance": 2
+      },
+      {
+        "year": 1356,
+        "title": "Rage of Dragons",
+        "summary": "Barely rebuilt, Phlan is nearly flattened again by dragon attacks.",
+        "importance": 1
+      },
+      {
+        "year": 1375,
+        "title": "Zhentish conquest",
+        "summary": "Zhentil Keep's forces take the city; Cvaal Daoran later makes himself Lord Protector.",
+        "importance": 1
+      }
+    ],
+    "description": "A stubborn port on the Moonsea's north shore, grown around Valjevo Castle on its delta isle and rebuilt after every catastrophe. Beneath the castle the sinister pool of radiance keeps resurfacing, drawing tyrants, cultists and adventurers alike. In the 1490s it is recovering from martial law and a dragon's occupation, its walled Old City ringed by docks and ruins.",
+    "population": 20000,
+    "ruler": "Lord Regent Ector Brahms of the Black Fist (c. 1489)",
+    "tags": [
+      "moonsea",
+      "pool-of-radiance",
+      "tyranthraxus",
+      "cult-of-the-dragon",
+      "adventurers-league"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d4c8a6",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "castle",
+        "river",
+        "docks",
+        "ruins",
+        "rubble",
+        "harbor"
+      ],
+      "terrain": "river",
+      "notes": "A walled town on a river-mouth isle with a large castle at its heart; patches of rubble and broken walls show the cycle of ruin and rebuilding."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Phlan"
+    ]
+  },
+  {
+    "id": "melvaunt",
+    "name": "Melvaunt",
+    "aliases": [
+      "City of Swords"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 902,
+    "foundedNote": "Founding date unknown; earliest attested event is its naval defense of Phlan in 902 DR.",
+    "status": [
+      {
+        "from": 902,
+        "to": 1356,
+        "state": "thriving"
+      },
+      {
+        "from": 1356,
+        "to": 1367,
+        "state": "troubled"
+      },
+      {
+        "from": 1367,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 902,
+        "title": "War with Zhentil Keep",
+        "summary": "Melvaunt's navy rescues Phlan from Zhent invaders, leading to a four-year war ended by the Treaty of the Ride.",
+        "importance": 2
+      },
+      {
+        "year": 1303,
+        "title": "Ogre horde",
+        "summary": "Melvaunt refuses aid to Phlan but survives the same Tharian ogre army itself.",
+        "importance": 2
+      },
+      {
+        "year": 1356,
+        "title": "Dragon conquest",
+        "summary": "A dragon from the Dragon Run briefly seizes the city and burns its new fleet; Lord Orm later flees with the treasury, sparking civil strife.",
+        "importance": 2
+      },
+      {
+        "year": 1383,
+        "title": "Pact with Myth Drannor",
+        "summary": "After the Shadowbane War, Melvaunt allies with the elves to check Netheril on the Moonsea.",
+        "importance": 1
+      }
+    ],
+    "description": "An iron-hard industrial port on the Moonsea's north shore, its forges and foundries glowing through a permanent pall of coal smoke and sea fog. No green thing grows within its walls; the city lives by its smiths, its swords, and its slavers. Noble merchant families jostle for seats on its ruling council.",
+    "population": 34408,
+    "ruler": "Lord Ghunduilith Leiyraghon",
+    "tags": [
+      "moonsea",
+      "forges",
+      "smithing",
+      "slavers"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6c7a4",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "harbor",
+        "docks",
+        "towers",
+        "glow",
+        "ships"
+      ],
+      "terrain": "coast",
+      "notes": "A dense, dark walled port with many smokestacks and pinpoint forge-glows beneath a low smoke cloud."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Melvaunt"
+    ]
+  },
+  {
+    "id": "citadel-of-the-raven",
+    "name": "Citadel of the Raven",
+    "aliases": [],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "fortress",
+    "archetype": "fortress",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -18000,
+    "foundedNote": "Traditionally dated to c. -18000 DR; built by unknown hands, rebuilt by Moonsea alliance in 1276 DR.",
+    "status": [
+      {
+        "from": -18000,
+        "to": 1276,
+        "state": "ruined"
+      },
+      {
+        "from": 1276,
+        "to": 1383,
+        "state": "thriving"
+      },
+      {
+        "from": 1383,
+        "to": null,
+        "state": "ruined"
+      }
+    ],
+    "events": [
+      {
+        "year": 1276,
+        "title": "Moonsea garrison",
+        "summary": "Zhentil Keep leads nine Moonsea powers to clear, rebuild and jointly garrison the ancient fortress.",
+        "importance": 2
+      },
+      {
+        "year": 1355,
+        "title": "Zhentish betrayal",
+        "summary": "The Zhent garrison abandons its allies to an orc attack and seizes the citadel outright.",
+        "importance": 2
+      },
+      {
+        "year": 1383,
+        "title": "Razed by the Shadovar",
+        "summary": "Netherese forces destroy the citadel alongside Zhentil Keep during the Shadowbane War.",
+        "importance": 3
+      },
+      {
+        "year": 1361,
+        "title": "Manshoon's base",
+        "summary": "Manshoon makes the citadel the Zhentarim's chief headquarters.",
+        "importance": 1
+      },
+      {
+        "year": 1487,
+        "title": "Court of the Three",
+        "summary": "Shadovar survivors of Thultanthar's fall hide in an intact tower and plot their people's survival.",
+        "importance": 1
+      }
+    ],
+    "description": "The tumbled remains of a mountain fortress on the western slopes of the Dragonspine, its outer towers now overgrown heaps above miles of buried tunnels. Once the shared garrison of the Moonsea cities and later the Zhentarim's stronghold, it was shattered by Netheril. A few surviving towers shelter Zhent scouts and fugitive Shadovar.",
+    "population": null,
+    "ruler": "Contested: returning Zhentarim and the Shadovar 'Court of the Three' (after 1487)",
+    "tags": [
+      "moonsea",
+      "zhentarim",
+      "dragonspine",
+      "shadovar"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cbbd9c",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "mountain",
+        "keep",
+        "towers",
+        "walls",
+        "ruins",
+        "rubble"
+      ],
+      "terrain": "mountain",
+      "notes": "A broad mountainside fortress of several towers and curtain walls; in its ruined state only one or two towers stand amid rubble."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Citadel_of_the_Raven"
+    ]
+  },
+  {
+    "id": "thultanthar",
+    "name": "Thultanthar",
+    "aliases": [
+      "City of Shade",
+      "Shade Enclave",
+      "Shade"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "ruin",
+    "archetype": "floating-enclave",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -1471,
+    "foundedNote": "Created -1471 DR as a Netherese floating enclave.",
+    "status": [
+      {
+        "from": -1471,
+        "to": -339,
+        "state": "thriving"
+      },
+      {
+        "from": -339,
+        "to": 1372,
+        "state": "hidden"
+      },
+      {
+        "from": 1372,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "destroyed"
+      }
+    ],
+    "events": [
+      {
+        "year": -339,
+        "title": "Flight into Shadow",
+        "summary": "Days before Karsus's Folly, the enclave's high mage shifts the whole city into the Plane of Shadow, where it is trapped for nearly 1,700 years.",
+        "importance": 3
+      },
+      {
+        "year": 1372,
+        "title": "Return of the Shades",
+        "summary": "The city reappears over Anauroch under Telamont Tanthul and his princes, seeding a new Netherese empire.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Fall onto Myth Drannor",
+        "summary": "Elminster brings the flying city down onto Myth Drannor, destroying both.",
+        "importance": 3
+      },
+      {
+        "year": -1471,
+        "title": "Enclave raised",
+        "summary": "Netherese arcanists lift Thultanthar as a flying city.",
+        "importance": 2
+      }
+    ],
+    "description": "Once a flying Netherese city on an upturned mountain of rock, crowned with black spires and grim walls, with bats roosting on its underside. It spent centuries in the Plane of Shadow, returned as the seat of the Shadovar, and finally crashed onto Myth Drannor. Only shattered rubble and a few scattered survivors remain.",
+    "population": 35000,
+    "ruler": "Telamont Tanthul (until 1487)",
+    "tags": [
+      "netheril",
+      "shadovar",
+      "shar",
+      "flying-city",
+      "enclave"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e2cf9f",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "floating",
+        "spires",
+        "walls",
+        "towers",
+        "glow",
+        "mountain"
+      ],
+      "terrain": "desert",
+      "notes": "An inverted mountain cone hovering above the board, topped with jagged black spires; after 1487 it should come down as scattered rubble."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Thultanthar"
+    ]
+  },
+  {
+    "id": "anauroch",
+    "name": "Anauroch",
+    "aliases": [
+      "The Great Desert",
+      "The Great Sand Sea",
+      "Land of Lost Dreams"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "landmark",
+    "archetype": "landmark-desert",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Landmark; the land existed always (sentinel -35000). Became desert as the phaerimm drained Netheril from -461 DR; named Anauroch in 10 DR.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -339,
+        "title": "Fall of Netheril",
+        "summary": "Karsus's Folly topples the empire whose lands the spreading desert is already consuming.",
+        "importance": 3
+      },
+      {
+        "year": -461,
+        "title": "Phaerimm blight",
+        "summary": "The phaerimm begin the life-draining magic that will turn Netheril into desert.",
+        "importance": 3
+      },
+      {
+        "year": 1372,
+        "title": "Shadovar return",
+        "summary": "Thultanthar arrives; its princes conjure the Shadow Sea and begin melting the High Ice.",
+        "importance": 2
+      },
+      {
+        "year": 1479,
+        "title": "The greening",
+        "summary": "Under Netherese rule, rain and rivers bring grasslands and young forests to parts of the desert (c. 1479).",
+        "importance": 2
+      },
+      {
+        "year": 1487,
+        "title": "Empire's end",
+        "summary": "Thultanthar's fall breaks Netheril; Bedine and Netherese war in the sands and the desert reclaims its green patches.",
+        "importance": 2
+      },
+      {
+        "year": 10,
+        "title": "Named Anauroch",
+        "summary": "The former heartland of Netheril becomes known as Anauroch.",
+        "importance": 1
+      }
+    ],
+    "description": "A vast desert spreading over the grave of Netheril, from the frozen High Ice in the north through stony plains to southern dunes. Bedine tribes roam it, phaerimm still lurk beneath, and ruined enclaves lie under the sand. Briefly greened by Shadovar weather-magic, it has turned back to dust since Netheril's fall.",
+    "population": 114048,
+    "ruler": "None (Bedine tribes; Netherese remnants)",
+    "tags": [
+      "netheril",
+      "bedine",
+      "phaerimm",
+      "desert",
+      "high-ice"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e2cf9f",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "standing-stone",
+        "ruins",
+        "tents",
+        "snow"
+      ],
+      "terrain": "desert",
+      "notes": "Rolling dunes with a few half-buried ruins and tent clusters; a white icy fringe on the northern edge."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Anauroch"
+    ]
+  },
+  {
+    "id": "castle-perilous",
+    "name": "Castle Perilous",
+    "aliases": [
+      "Citadel of the Witch-King"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "fortress",
+    "archetype": "tower-keep",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1347,
+    "foundedNote": "Raised in a single night in 1347 DR by Zhengyi with demonic aid.",
+    "status": [
+      {
+        "from": 1347,
+        "to": 1359,
+        "state": "thriving"
+      },
+      {
+        "from": 1359,
+        "to": 1477,
+        "state": "ruined"
+      },
+      {
+        "from": 1477,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": 1347,
+        "title": "Raised in a night",
+        "summary": "The lich Zhengyi summons the castle with demons, names himself Witch-King and musters armies against Vaasa and Damara.",
+        "importance": 3
+      },
+      {
+        "year": 1359,
+        "title": "Fall of the Witch-King",
+        "summary": "Gareth Dragonsbane's company slays Zhengyi and the castle collapses into ruin.",
+        "importance": 3
+      },
+      {
+        "year": 1477,
+        "title": "Uncanny renewal",
+        "summary": "After an earthquake the castle sheds its ruined shell to reveal sleek, rune-warded black stone; an Abyssal portal beneath has reawakened.",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "Unsolved mystery",
+        "summary": "Warlock Knights, a would-be heir, and chromatic dragons all fail to breach the renewed wards.",
+        "importance": 1
+      }
+    ],
+    "description": "A tall, narrow dark-stone fortress on a lifeless crag in the Vaasan tundra, streaked red as if with blood and capped by an onion dome. Long a broken ruin infested with monsters and dragons, it has inexplicably remade itself in gleaming black stone. Within, servants of Orcus guard a reopened portal to the Abyss.",
+    "population": null,
+    "ruler": "None openly; tanarukks serving Orcus within (1480s)",
+    "tags": [
+      "vaasa",
+      "zhengyi",
+      "witch-king",
+      "abyss",
+      "bloodstone-lands"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d8d6cc",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "keep",
+        "towers",
+        "domes",
+        "mountain",
+        "snow",
+        "gate",
+        "ruins"
+      ],
+      "terrain": "tundra",
+      "notes": "A single very tall slender keep with an onion dome and four spiked side towers on a jagged crag; ruined phase shows bare foundations amid rubble."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Castle_Perilous"
+    ]
+  },
+  {
+    "id": "helgabal",
+    "name": "Helgabal",
+    "aliases": [
+      "Heliogabalus"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1075,
+    "foundedNote": "Founded c. 1075 DR as Heliogabalus by Feldrin Bloodfeathers, first King of Damara.",
+    "status": [
+      {
+        "from": 1075,
+        "to": 1357,
+        "state": "thriving"
+      },
+      {
+        "from": 1357,
+        "to": 1359,
+        "state": "troubled"
+      },
+      {
+        "from": 1359,
+        "to": 1469,
+        "state": "thriving"
+      },
+      {
+        "from": 1469,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": 1357,
+        "title": "Witch-King's grip",
+        "summary": "Zhengyi seizes Damara and ends the Bloodfeather line's rule from the city.",
+        "importance": 3
+      },
+      {
+        "year": 1359,
+        "title": "Capital moves",
+        "summary": "With Zhengyi slain, King Gareth Dragonsbane rules from Bloodstone Village instead.",
+        "importance": 2
+      },
+      {
+        "year": 1469,
+        "title": "Capital again",
+        "summary": "Bloodstone City is razed by Vaasan Warlock Knights; usurper Yarin Frostmantle returns the throne to Helgabal and bans its old name.",
+        "importance": 2
+      },
+      {
+        "year": 1075,
+        "title": "Royal founding",
+        "summary": "Feldrin Bloodfeathers founds Heliogabalus as Damara's royal seat.",
+        "importance": 1
+      }
+    ],
+    "description": "Damara's royal city on the northwest shore of Lake Mogador where the Goliad River meets it, a guild-rich hub on the King's Road. Its merchants have long held more real power than any baron or king. Under the despotic King Frostmantle, who outlawed the name Heliogabalus, southern traders now hesitate to come.",
+    "population": 25000,
+    "ruler": "King Yarin Frostmantle (1479)",
+    "tags": [
+      "damara",
+      "bloodstone-lands",
+      "capital",
+      "lake"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba8",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "castle",
+        "lake",
+        "river",
+        "towers",
+        "farms"
+      ],
+      "terrain": "plain",
+      "notes": "A walled city at a lakeshore and river mouth with a royal castle; snowy northern tones."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Heliogabalus"
+    ]
+  },
+  {
+    "id": "ravens-bluff",
+    "name": "Ravens Bluff",
+    "aliases": [
+      "The Living City",
+      "Gateway to the Vast",
+      "City of Adventurers",
+      "Jewel of the Fire River"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "city",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1222,
+    "foundedNote": "Settled 1222 DR by mercenaries and homesteaders at the mouth of the Fire River.",
+    "status": [
+      {
+        "from": 1222,
+        "to": 1370,
+        "state": "thriving"
+      },
+      {
+        "from": 1370,
+        "to": 1372,
+        "state": "troubled"
+      },
+      {
+        "from": 1372,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1370,
+        "title": "War with Myrkyssa Jelan",
+        "summary": "Pirates wreck the fleet while a warlord's horde razes outlying estates; the city barely holds after half a year.",
+        "importance": 3
+      },
+      {
+        "year": 1341,
+        "title": "O'Kane's games",
+        "summary": "Contests choose a new leader; Charles Oliver O'Kane becomes mayor and revives the city.",
+        "importance": 2
+      },
+      {
+        "year": 1222,
+        "title": "Settlement",
+        "summary": "Mercenaries and farming families settle the mouth of the Fire River.",
+        "importance": 2
+      },
+      {
+        "year": 1372,
+        "title": "Impostor unmasked",
+        "summary": "Lady Mayor Thoden is revealed as Jelan in disguise; O'Kane resumes office.",
+        "importance": 1
+      },
+      {
+        "year": 1450,
+        "title": "Vesperin",
+        "summary": "Ravens Bluff joins Tantras and Calaunt in the merchant nation of Vesperin (c. 1400s, date uncertain).",
+        "importance": 1
+      }
+    ],
+    "description": "A bustling port where the Fire River spills into the Dragon Reach, split by the river and ringed by hills, a waterfall and a tall rock spire. Known as the City of Adventurers, it survived a brutal siege and grew into the richest city of Vesperin, swelled by Sembian merchants fleeing Netheril.",
+    "population": 40000,
+    "ruler": "Lord Mayor Charles Oliver O'Kane (last attested)",
+    "tags": [
+      "the-vast",
+      "vesperin",
+      "living-city",
+      "harbor"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6c7a4",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "harbor",
+        "walls",
+        "river",
+        "bridge",
+        "waterfall",
+        "docks",
+        "ships"
+      ],
+      "terrain": "coast",
+      "notes": "A walled harbor city divided by a river with bridges; a lone rock spire near the north wall and a waterfall in the hills."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Ravens_Bluff"
+    ]
+  },
+  {
+    "id": "procampur",
+    "name": "Procampur",
+    "aliases": [
+      "Proeskampalar"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -153,
+    "foundedNote": "Dwarves of the Earthfast found underground Proeskampalar in -153 DR, joined by Jhaamdathan settlers; the surface city of Procampur dates from 523 DR.",
+    "status": [
+      {
+        "from": -153,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -153,
+        "title": "Proeskampalar",
+        "summary": "Earthfast dwarves and Jhaamdathan refugees found a boomtown famed for goldsmiths and gemcutters.",
+        "importance": 2
+      },
+      {
+        "year": 523,
+        "title": "Surface city",
+        "summary": "The human city of Procampur rises above the dwarven warrens as a disciplined fortress-city.",
+        "importance": 2
+      },
+      {
+        "year": 1209,
+        "title": "Pirate Wars",
+        "summary": "Procampur joins the eastern fleet that helps destroy the Dragonisle pirate armada.",
+        "importance": 1
+      },
+      {
+        "year": 1344,
+        "title": "First Thayan enclave",
+        "summary": "Thay's first trade enclave opens in the city.",
+        "importance": 1
+      },
+      {
+        "year": 1358,
+        "title": "Time of Troubles",
+        "summary": "The head of Oghma's church vanishes and merchants flee to country estates.",
+        "importance": 1
+      }
+    ],
+    "description": "The oldest city of the Vast, a gem-cutter's stronghold built as a set of walled districts linked by guarded gates. Ruled by a hereditary Thultyrl with a mysterious Hamayarch at his side, it prizes order and has repelled every pirate who reached its harbor. Its jewelers and temples to Oghma and Deneir give it a scholarly, wealthy air.",
+    "population": 24631,
+    "ruler": "Thultyrl Rendeth (last attested 1372)",
+    "tags": [
+      "the-vast",
+      "jewelers",
+      "walled-districts",
+      "thayan-enclave"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6c7a4",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "harbor",
+        "castle",
+        "temple",
+        "docks",
+        "mines"
+      ],
+      "terrain": "coast",
+      "notes": "A city of nested walls dividing compact districts, a castle district at the core and a harbor outside the main walls."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Procampur"
+    ]
+  },
+  {
+    "id": "tantras",
+    "name": "Tantras",
+    "aliases": [],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "city",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 649,
+    "foundedNote": "Earliest attested: a harbor settled during the Vast's Time of Glorious Fools from 649 DR.",
+    "status": [
+      {
+        "from": 649,
+        "to": 1358,
+        "state": "thriving"
+      },
+      {
+        "from": 1358,
+        "to": 1360,
+        "state": "troubled"
+      },
+      {
+        "from": 1360,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1358,
+        "title": "Torm against Bane",
+        "summary": "In the Time of Troubles Torm and Bane destroy one another in the harbor, leaving wards ruined and a dead-magic zone.",
+        "importance": 3
+      },
+      {
+        "year": 1357,
+        "title": "Butcher of Tantras",
+        "summary": "Gang lord Kaverin Ebonhand is tried in Ravens Bluff for his crimes in the city.",
+        "importance": 1
+      },
+      {
+        "year": 1370,
+        "title": "Tyrantfog and the warlord",
+        "summary": "A Banite fog engulfs the city and Myrkyssa Jelan's army threatens it before withdrawing.",
+        "importance": 1
+      },
+      {
+        "year": 1479,
+        "title": "Capital of Vesperin",
+        "summary": "Tantras is the capital of the new merchant nation of Vesperin (date of union uncertain).",
+        "importance": 2
+      }
+    ],
+    "description": "A prosperous walled port on the Vast's coast, its harbor guarded by the Sea Tower, catapult towers and a great chain boom. Once the earthly home of Torm, it bears his shrine and the memory of a god-war in its bay. Today it governs the young nation of Vesperin.",
+    "population": 23000,
+    "ruler": "High Council",
+    "tags": [
+      "the-vast",
+      "vesperin",
+      "torm",
+      "harbor"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6c7a4",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "harbor",
+        "towers",
+        "temple",
+        "docks",
+        "lighthouse",
+        "ships"
+      ],
+      "terrain": "coast",
+      "notes": "A walled harbor with a strong sea tower at the bay mouth and a chain-boom gate; a prominent temple inland."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Tantras"
+    ]
+  },
+  {
+    "id": "lyrabar",
+    "name": "Lyrabar",
+    "aliases": [
+      "Impil's Tor"
+    ],
+    "world": "toril",
+    "region": "moonsea-and-north-east",
+    "type": "city",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -135,
+    "foundedNote": "Founded -135 DR as Impil's Tor by Impil Mirandor atop the dwarfhold of Felimar; renamed Lyrabar in -118 DR.",
+    "status": [
+      {
+        "from": -135,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "troubled"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Sea recedes",
+        "summary": "The Spellplague drains the Sea of Fallen Stars from its shore, stranding the port; the king dies heirless and demons roam Impiltur.",
+        "importance": 3
+      },
+      {
+        "year": 1295,
+        "title": "Royal capital",
+        "summary": "King Rilimbrar makes Lyrabar the capital of a restored Impiltur after Dilpur is sacked.",
+        "importance": 2
+      },
+      {
+        "year": -135,
+        "title": "Impil's Tor",
+        "summary": "A Jhaamdathan refugee founds the town upon an old dwarven hold.",
+        "importance": 2
+      },
+      {
+        "year": -118,
+        "title": "Renamed Lyrabar",
+        "summary": "Impil's son renames the town and opens trade with neighbors.",
+        "importance": 1
+      },
+      {
+        "year": 1489,
+        "title": "Recovery",
+        "summary": "With the Sundering, the sea returns and Impiltur regains much of its standing.",
+        "importance": 1
+      }
+    ],
+    "description": "Impiltur's capital, a long, narrow port stretching more than a mile along the northern Sea of Fallen Stars, rich in palaces and towers. When the sea fell back in 1385 it rebuilt its harbor further out; criminal guilds and secret deals with the watch flourished in the hard century that followed. With the waters restored, it awaits the return of a monarch.",
+    "population": 50000,
+    "ruler": "Grand Council of Impiltur (no monarch since 1385)",
+    "tags": [
+      "impiltur",
+      "capital",
+      "ilmater",
+      "harbor"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6c7a4",
+        "accent": "#6b3d5c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "harbor",
+        "towers",
+        "castle",
+        "docks",
+        "ships",
+        "spires"
+      ],
+      "terrain": "coast",
+      "notes": "A long thin city along a shoreline, a royal palace and slender towers, docks running the whole front."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Lyrabar",
+      "https://forgottenrealms.fandom.com/wiki/Impiltur"
+    ]
+  }
+]

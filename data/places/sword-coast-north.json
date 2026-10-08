@@ -1,0 +1,1370 @@
+[
+  {
+    "id": "waterdeep",
+    "name": "Waterdeep",
+    "aliases": [
+      "City of Splendors",
+      "Crown of the North"
+    ],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1032,
+    "foundedNote": "Ahghairon becomes the first Lord of Waterdeep; Northreckoning counts from this year. Farms and a warlord-held port (Nimoar's Hold) existed for centuries before.",
+    "status": [
+      {
+        "from": 1032,
+        "to": 1248,
+        "state": "thriving"
+      },
+      {
+        "from": 1248,
+        "to": 1273,
+        "state": "troubled"
+      },
+      {
+        "from": 1273,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1358,
+        "title": "Time of Troubles",
+        "summary": "Shar impersonates Selûne in the city, Myrkul's night riders invade, and Midnight destroys the Lord of the Dead atop Blackstaff Tower before ascending as Mystra.",
+        "importance": 3
+      },
+      {
+        "year": 1032,
+        "title": "First Lord of Waterdeep",
+        "summary": "The wizard Ahghairon takes power and the warlord port becomes a true city.",
+        "importance": 3
+      },
+      {
+        "year": 1248,
+        "title": "Guildwars",
+        "summary": "Guild masters seize the city, plunging it into decades of feuding until the masked Lords of Waterdeep take control in 1273.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague",
+        "summary": "The city survives intact, but its embedded magic warps and the dormant Walking Statues awaken and rampage through the streets.",
+        "importance": 2
+      },
+      {
+        "year": 1489,
+        "title": "Laeral becomes Open Lord",
+        "summary": "Dagult Neverember is ousted and exiled; the archmage Laeral Silverhand takes the Open Lord's seat.",
+        "importance": 2
+      },
+      {
+        "year": 1492,
+        "title": "Dragon Heist",
+        "summary": "Xanathar's Guild, Zhentarim, Harpers and others hunt for half a million gold dragons embezzled by Neverember.",
+        "importance": 1
+      }
+    ],
+    "description": "A walled port of a million souls packed between the bulk of Mount Waterdeep and a busy southern harbor, Waterdeep runs on trade, guild politics and the quiet hand of its masked Lords. Castle Waterdeep broods on the mountain's flank, wizards' towers crowd the wards, and beneath it all the endless halls of Undermountain wait for the next fool with a lantern. An ancient dragonward keeps wyrms from its skies.",
+    "population": 1347680,
+    "ruler": "Open Lord Laeral Silverhand (1490s)",
+    "tags": [
+      "lords-alliance",
+      "harbor",
+      "undermountain",
+      "metropolis",
+      "masked-lords"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d8c9a6",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "harbor",
+        "mountain",
+        "castle",
+        "walls",
+        "towers",
+        "spires",
+        "ships"
+      ],
+      "terrain": "coast",
+      "notes": "Mount Waterdeep rises on the west edge with Castle Waterdeep on its slope; dense walled city with many towers fills the rest, harbor and ships on the south side."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Waterdeep",
+      "https://forgottenrealms.fandom.com/wiki/Neverwinter"
+    ]
+  },
+  {
+    "id": "neverwinter",
+    "name": "Neverwinter",
+    "aliases": [
+      "Jewel of the North",
+      "City of Skilled Hands",
+      "Eigersstor"
+    ],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "city",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -10,
+    "foundedNote": "Legendary date: the sun elf Halueth Never's last stand where the river meets the sea, after which he founded the city. Eigersstor was its Illuskan name.",
+    "status": [
+      {
+        "from": -10,
+        "to": 1451,
+        "state": "thriving"
+      },
+      {
+        "from": 1451,
+        "to": 1468,
+        "state": "destroyed"
+      },
+      {
+        "from": 1468,
+        "to": 1484,
+        "state": "troubled"
+      },
+      {
+        "from": 1484,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1451,
+        "title": "Mount Hotenow erupts",
+        "summary": "The volcano east of the city explodes, laying Neverwinter to waste, tearing open the Chasm and killing the entire Alagondar royal line.",
+        "importance": 3
+      },
+      {
+        "year": 1468,
+        "title": "New Neverwinter",
+        "summary": "Lord Dagult Neverember of Waterdeep proclaims himself Lord Protector and pours his fortune and Mintarn mercenaries into rebuilding.",
+        "importance": 2
+      },
+      {
+        "year": 1484,
+        "title": "Chasm sealed",
+        "summary": "The plaguechanged pit in the southeast quarter is magically closed (c. 1484–1485), at a cost that leaves outer walls unrepaired.",
+        "importance": 2
+      },
+      {
+        "year": 1372,
+        "title": "Wailing Death",
+        "summary": "A deadly plague strikes down much of the city's population.",
+        "importance": 2
+      },
+      {
+        "year": -10,
+        "title": "Never's Winter",
+        "summary": "Legend tells of Halueth Never choosing the river mouth for a doomed stand against Illuskan invaders, then founding a city when allies saved him.",
+        "importance": 1
+      },
+      {
+        "year": 1489,
+        "title": "Neverember turns to Neverwinter",
+        "summary": "Exiled from Waterdeep, Neverember devotes himself to Neverwinter and rules with an increasingly heavy hand.",
+        "importance": 1
+      }
+    ],
+    "description": "Neverwinter straddles a river warmed by fire elementals beneath Mount Hotenow, so its harbor never freezes and its famed gardens bloom through the northern winter. The 1451 eruption broke the city and opened a monster-spawning chasm, but by the 1490s Lord Neverember's coin and mercenaries have raised it again; only the Winged Wyvern survives of its three carved bridges, and some outer neighborhoods still lie in rubble.",
+    "population": 23192,
+    "ruler": "Lord Protector Dagult Neverember (1491)",
+    "tags": [
+      "harbor",
+      "river",
+      "volcano",
+      "rebuilt",
+      "gardens"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d4cba8",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "harbor",
+        "river",
+        "bridge",
+        "walls",
+        "waterfall",
+        "trees",
+        "ruins"
+      ],
+      "terrain": "coast",
+      "notes": "Eye-shaped walled city split east-west by a steaming river with one ornate bridge and small falls into the harbor; a smoking volcano and dark forest behind, a patch of rubble on the southeast quarter."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Neverwinter"
+    ]
+  },
+  {
+    "id": "luskan",
+    "name": "Luskan",
+    "aliases": [
+      "City of Sails"
+    ],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "city",
+    "archetype": "harbor-metropolis",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1302,
+    "foundedNote": "Bloody Tusk orcs expelled from the ruins of Illusk (founded c. -425 DR); Luskan rises on its bones.",
+    "status": [
+      {
+        "from": 1302,
+        "to": 1376,
+        "state": "thriving"
+      },
+      {
+        "from": 1376,
+        "to": 1385,
+        "state": "troubled"
+      },
+      {
+        "from": 1385,
+        "to": 1486,
+        "state": "ruined"
+      },
+      {
+        "from": 1486,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": 1376,
+        "title": "Fall of the Hosttower",
+        "summary": "Captain Deudermont and Lord Brambleberry's Waterdhavian force storm the city and destroy the Hosttower of the Arcane; Deudermont's brief governorship ends in street war and his death.",
+        "importance": 3
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague and collapse",
+        "summary": "In the century after the Spellplague, Luskan decays into a lawless ruin of gangs, cultists and monsters, falling to about 4,000 people by 1480.",
+        "importance": 3
+      },
+      {
+        "year": 1311,
+        "title": "Arcane Brotherhood",
+        "summary": "Arklem Greeth gathers the wizard cabal that will rule Luskan from behind the High Captains (full control c. 1357).",
+        "importance": 2
+      },
+      {
+        "year": 1361,
+        "title": "War with Ruathym",
+        "summary": "Luskan conquers Ruathym but is forced to give it back under threat of war from the Lords' Alliance.",
+        "importance": 1
+      },
+      {
+        "year": 1486,
+        "title": "Hosttower restored",
+        "summary": "The Hosttower is magically rebuilt and the Arcane Brotherhood returns; the High Captains, secretly guided by Jarlaxle's Bregan D'aerthe, revive sea trade.",
+        "importance": 2
+      }
+    ],
+    "description": "Luskan squats on islands and banks at the mouth of the River Mirar, a pirate port ruled by rival Ships whose captains answer, quietly, to drow mercenaries. After a century of post-Spellplague anarchy, rickety bridges and haunted Illuskan ruins still mark it, but the tree-like Hosttower has risen again on Cutlass Island and its sails are back on the Sword Coast.",
+    "population": 4000,
+    "ruler": "Five High Captains, under the sway of Jarlaxle and Bregan D'aerthe (1489)",
+    "tags": [
+      "harbor",
+      "pirates",
+      "arcane-brotherhood",
+      "bregan-daerthe",
+      "illusk"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cfc6ad",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "harbor",
+        "river",
+        "bridge",
+        "towers",
+        "ruins",
+        "ships"
+      ],
+      "terrain": "coast",
+      "notes": "Low grey town split by a river mouth with small islands and bridges; one tall tree-shaped tower with four branching spires on the central island, ruined walls and pirate ships in the bay."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Luskan",
+      "https://forgottenrealms.fandom.com/wiki/Arcane_Brotherhood",
+      "https://forgottenrealms.fandom.com/wiki/Illusk"
+    ]
+  },
+  {
+    "id": "mirabar",
+    "name": "Mirabar",
+    "aliases": [],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 626,
+    "foundedNote": "Prince Ereskas Torlath of Amn builds on the foundations of Gharraghaur's Iron Tower.",
+    "status": [
+      {
+        "from": 626,
+        "to": 753,
+        "state": "thriving"
+      },
+      {
+        "from": 753,
+        "to": 812,
+        "state": "troubled"
+      },
+      {
+        "from": 812,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 626,
+        "title": "Founding",
+        "summary": "Amnian prince Ereskas Torlath raises the city over an older iron tower.",
+        "importance": 2
+      },
+      {
+        "year": 753,
+        "title": "Sacked by goblins",
+        "summary": "During the Goblin Wars, chieftain Nethaug's horde from the Valley of Khedrun sacks the city.",
+        "importance": 2
+      },
+      {
+        "year": 1253,
+        "title": "Orc assault",
+        "summary": "An orc horde feints at the west wall and strikes the east; dwarves including Torgar Hammerstriker hold the line.",
+        "importance": 1
+      },
+      {
+        "year": 1370,
+        "title": "Torgar's exodus",
+        "summary": "Marchion Elastul imprisons Torgar for courting Mithral Hall; dwarven riots force his release and some four hundred dwarves leave the city.",
+        "importance": 2
+      },
+      {
+        "year": 812,
+        "title": "Trade with Illusk",
+        "summary": "Trade with Illusk and Stornanter begins, enriching all three.",
+        "importance": 1
+      }
+    ],
+    "description": "Mirabar is a grim, prosperous mining city of humans above and shield dwarves below, its walls set on the River Mirar beneath the Spine of the World. Ore, gems and iron trade bars flow downriver to Luskan, and a council of mine-lords guides the marchion's hand. Old rivalry with Mithral Hall and deep suspicion of Luskanites shape its politics.",
+    "population": 10307,
+    "ruler": "Marchion Selin Ramur (after 1485)",
+    "tags": [
+      "mining",
+      "dwarves",
+      "river",
+      "lords-alliance"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cdc3a8",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "mines",
+        "keep",
+        "river",
+        "mountain",
+        "snow"
+      ],
+      "terrain": "river",
+      "notes": "Stout walled city on a river with a squat keep and mine shafts/headframes; snowy peaks of the Spine looming to the north."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Mirabar"
+    ]
+  },
+  {
+    "id": "bryn-shander",
+    "name": "Bryn Shander",
+    "aliases": [
+      "Ten-Towns"
+    ],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "town",
+    "archetype": "frozen-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1080,
+    "foundedNote": "Approximate. The Ten Towns were founded during the 11th century DR and Bryn Shander was the last of them, growing from a single traveler's cabin.",
+    "status": [
+      {
+        "from": 1080,
+        "to": 1487,
+        "state": "thriving"
+      },
+      {
+        "from": 1487,
+        "to": 1489,
+        "state": "troubled"
+      },
+      {
+        "from": 1489,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1351,
+        "title": "Barbarian siege",
+        "summary": "Icewind Dale's tribes attack the Ten Towns and are broken at Bryn Shander's gates with help from Drizzt Do'Urden and Bruenor Battlehammer.",
+        "importance": 2
+      },
+      {
+        "year": 1356,
+        "title": "Akar Kessell's siege",
+        "summary": "The wizard of the Crystal Shard besieges the town until dwarves and a united barbarian host relieve it (c. 1356).",
+        "importance": 2
+      },
+      {
+        "year": 1487,
+        "title": "Everlasting Rime",
+        "summary": "Auril's endless winter (begun 1486–1487) darkens Icewind Dale; food runs short and towns turn to sacrifice until it lifts in 1489.",
+        "importance": 3
+      },
+      {
+        "year": 1466,
+        "title": "Errtu slain",
+        "summary": "Tiago Baenre defeats the demon Errtu on the plain outside town; a statue marks the spot.",
+        "importance": 1
+      },
+      {
+        "year": 1486,
+        "title": "Frost giant raid",
+        "summary": "Frost giants under Drufi attack seeking Artus Cimber and the Ring of Winter (some time after 1485) and are driven off.",
+        "importance": 1
+      }
+    ],
+    "description": "The capital and market of Ten-Towns sits on a lone hill above the frozen tundra, a ring of timber and stone walls that shelters folk from the lakeside towns when war comes. Scrimshaw from knucklehead trout bone is its trade, caravans from south of the Spine its lifeline, and the long dark of Auril's Rime its freshest scar.",
+    "population": 1200,
+    "ruler": "Speaker Duvessa Shane (1485)",
+    "tags": [
+      "ten-towns",
+      "icewind-dale",
+      "tundra",
+      "walled"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e3e1d6",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "walls",
+        "snow",
+        "gate",
+        "palisade"
+      ],
+      "terrain": "tundra",
+      "notes": "Small circular walled town crowning a single hill in a flat snowfield, three gates; a lone mountain (Kelvin's Cairn) on the horizon."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Bryn_Shander",
+      "https://forgottenrealms.fandom.com/wiki/Ten_Towns",
+      "https://forgottenrealms.fandom.com/wiki/Icewind_Dale",
+      "https://forgottenrealms.fandom.com/wiki/Everlasting_Rime"
+    ]
+  },
+  {
+    "id": "phandalin",
+    "name": "Phandalin",
+    "aliases": [],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "town",
+    "archetype": "frontier-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 900,
+    "foundedNote": "Approximate. An old farming community that joined Phandelver's Pact c. 10th century DR; flourishing by 950 DR.",
+    "status": [
+      {
+        "from": 900,
+        "to": 951,
+        "state": "thriving"
+      },
+      {
+        "from": 951,
+        "to": 1370,
+        "state": "abandoned"
+      },
+      {
+        "from": 1370,
+        "to": 1385,
+        "state": "troubled"
+      },
+      {
+        "from": 1385,
+        "to": 1486,
+        "state": "ruined"
+      },
+      {
+        "from": 1486,
+        "to": 1492,
+        "state": "troubled"
+      },
+      {
+        "from": 1492,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 951,
+        "title": "Overrun by orcs",
+        "summary": "Starving orcs of Uruth Ukrypt, backed by hired wizards, overrun Phandalin and then Wave Echo Cave; the town is abandoned for centuries.",
+        "importance": 3
+      },
+      {
+        "year": 950,
+        "title": "Phandelver's Pact",
+        "summary": "Humans, dwarves and gnomes share the Forge of Spells in Wave Echo Cave; Mayor Alderleaf dreams of rivaling Neverwinter.",
+        "importance": 2
+      },
+      {
+        "year": 1370,
+        "title": "First resettlement",
+        "summary": "Settlers reoccupy the ruins and work cold iron mines (some years before 1374), only to lose it again after the Spellplague.",
+        "importance": 1
+      },
+      {
+        "year": 1486,
+        "title": "Second resettlement",
+        "summary": "Folk from Neverwinter and Waterdeep rebuild the town, which is well established by 1491.",
+        "importance": 2
+      },
+      {
+        "year": 1491,
+        "title": "Redbrands and Cryovain",
+        "summary": "Redbrand ruffians terrorize the town from under Tresendar Manor while the white dragon Cryovain claims the region.",
+        "importance": 2
+      },
+      {
+        "year": 1496,
+        "title": "First mayoral election",
+        "summary": "Harbin Wester and Sildar Hallwinter contest the town's first election since resettlement.",
+        "importance": 1
+      }
+    ],
+    "description": "A young frontier town of new timber built among the weathered stone of a far older settlement, Phandalin sits in the foothills of the Sword Mountains on the Triboar Trail. Adventurers, tourists and prospectors come for the legend of Wave Echo Cave and its lost forge, though the promised mine wealth has been slow to arrive.",
+    "population": null,
+    "ruler": "Townmaster Harbin Wester (1491); first election 1496",
+    "tags": [
+      "frontier",
+      "mining",
+      "wave-echo-cave",
+      "lost-mine"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cca5",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 1,
+      "motifs": [
+        "palisade",
+        "ruins",
+        "farms",
+        "mountain"
+      ],
+      "terrain": "plain",
+      "notes": "Scatter of small wooden houses among older stone ruins and a ruined manor on a rise; rugged mountains behind."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Phandalin"
+    ]
+  },
+  {
+    "id": "daggerford",
+    "name": "Daggerford",
+    "aliases": [],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "town",
+    "archetype": "market-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 947,
+    "foundedNote": "Duke Tyndal moves his seat here and begins the Ducal Castle after Delimbiyran is destroyed; the dagger legend itself dates to 931 DR.",
+    "status": [
+      {
+        "from": 947,
+        "to": 1356,
+        "state": "thriving"
+      },
+      {
+        "from": 1356,
+        "to": 1364,
+        "state": "troubled"
+      },
+      {
+        "from": 1364,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 931,
+        "title": "The boy with the dagger",
+        "summary": "Young Tyndal kills six lizardfolk raiders at the river ford with only a dagger, giving the town its name.",
+        "importance": 2
+      },
+      {
+        "year": 947,
+        "title": "Ducal Castle begun",
+        "summary": "After a falling white dragon wrecks Delimbiyran, Duke Tyndal builds his castle atop the ruins of Morlin Castle.",
+        "importance": 2
+      },
+      {
+        "year": 1320,
+        "title": "Council of Guilds",
+        "summary": "Duke Conan grants the town self-rule through a council of guildmasters.",
+        "importance": 1
+      },
+      {
+        "year": 1363,
+        "title": "Battle of Daggerford",
+        "summary": "The fiend-led army of the Second Dragonspear War assaults the town and is defeated by elves, dwarves and men.",
+        "importance": 2
+      },
+      {
+        "year": 1485,
+        "title": "Succubus duchess",
+        "summary": "A Thayan-backed succubus kills or displaces Duke Maldwyn and rules in the guise of Lady Morwen (c. 1485).",
+        "importance": 1
+      }
+    ],
+    "description": "Daggerford is a modest walled market town on the north bank of the Delimbiyr, guarding the Trade Way ford between Waterdeep and Baldur's Gate. Its duke's castle stands over older, haunted foundations, and its farmers and craftsfolk have weathered devil wars, Zhentarim plots and a fiend wearing their duchess's face.",
+    "population": 1200,
+    "ruler": "Duchess Morwen Daggerford (1489; possibly an impostor)",
+    "tags": [
+      "lords-alliance",
+      "river",
+      "trade-way",
+      "ford"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d8cda4",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "walls",
+        "castle",
+        "river",
+        "bridge",
+        "farms"
+      ],
+      "terrain": "river",
+      "notes": "Small walled town on a river bank with a compact castle; ford/bridge across the river and farm fields around."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Daggerford"
+    ]
+  },
+  {
+    "id": "skullport",
+    "name": "Skullport",
+    "aliases": [
+      "Port of Shadows"
+    ],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "underdark-city",
+    "archetype": "underdark-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -750,
+    "foundedNote": "Netherese Sargauth Enclave built in the cavern; Skullport proper founded by Halaster's apprentice Shradin Mulophor in 1148 DR.",
+    "status": [
+      {
+        "from": -750,
+        "to": -339,
+        "state": "thriving"
+      },
+      {
+        "from": -339,
+        "to": 1148,
+        "state": "ruined"
+      },
+      {
+        "from": 1148,
+        "to": 1384,
+        "state": "thriving"
+      },
+      {
+        "from": 1384,
+        "to": 1480,
+        "state": "ruined"
+      },
+      {
+        "from": 1480,
+        "to": 1492,
+        "state": "troubled"
+      },
+      {
+        "from": 1492,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -339,
+        "title": "Karsus's Folly",
+        "summary": "Netheril's fall backfires the Enclave's mythal, collapsing the cavern and turning its archmages into the mad Skulls of Skullport.",
+        "importance": 3
+      },
+      {
+        "year": 1148,
+        "title": "Shradin founds Skullport",
+        "summary": "The Lord of Bones clears the ruins and opens a trading port that soon draws drow, duergar and illithid merchants.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague",
+        "summary": "Already buried by a cavern collapse just before (c. 1384), the town loses most of its mythal; survivors flee and the population falls into the hundreds.",
+        "importance": 3
+      },
+      {
+        "year": 1480,
+        "title": "Mithral revival",
+        "summary": "Mithral found in the ruins draws miners, merchants and miscreants back in the later 15th century (date approximate).",
+        "importance": 1
+      },
+      {
+        "year": 1492,
+        "title": "Xanathar's haven",
+        "summary": "The beholder Xanathar controls Skullport and extorts its shops while the Skulls drift silently overhead.",
+        "importance": 2
+      },
+      {
+        "year": -750,
+        "title": "Sargauth Enclave",
+        "summary": "Netherese mages build a mythal-lit research city on the underground River Sargauth.",
+        "importance": 1
+      }
+    ],
+    "description": "Deep below Waterdeep on the River Sargauth, Skullport is a smugglers' and slavers' harbor of rickety stacked buildings in a vast cavern, linked to the sea by magical locks. Flaming skulls of long-dead Netherese wizards still haunt its lanes, but in the 1490s it is the Xanathar's beholder-run guild that collects the rents.",
+    "population": null,
+    "ruler": "The Xanathar (1492); the Skulls of Skullport nominally",
+    "tags": [
+      "undermountain",
+      "black-market",
+      "netheril",
+      "xanathar",
+      "underdark"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#b9b09a",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "cavern",
+        "stalactites",
+        "docks",
+        "ships",
+        "glow",
+        "ruins"
+      ],
+      "terrain": "cavern",
+      "notes": "Cavern bowl with a dark underground lake and docks, ramshackle tiered buildings on the shore, a few drifting flame-lit skulls glowing overhead."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Skullport"
+    ]
+  },
+  {
+    "id": "undermountain",
+    "name": "Undermountain",
+    "aliases": [
+      "Halaster's Halls",
+      "Underhalls"
+    ],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "dungeon",
+    "archetype": "ruin",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -1288,
+    "foundedNote": "Clan Melairkyn dwarves dig the Underhalls in Mount Melairbode; Halaster Blackcloak arrives in 168 DR and remakes them as his dungeon.",
+    "status": [
+      {
+        "from": -1288,
+        "to": 34,
+        "state": "thriving"
+      },
+      {
+        "from": 34,
+        "to": 211,
+        "state": "troubled"
+      },
+      {
+        "from": 211,
+        "to": 1302,
+        "state": "hidden"
+      },
+      {
+        "from": 1302,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": -1288,
+        "title": "The Underhalls",
+        "summary": "Dwarves of Clan Melairkyn find mithral under Mount Melairbode and carve halls protected by elven magic.",
+        "importance": 2
+      },
+      {
+        "year": 168,
+        "title": "Halaster arrives",
+        "summary": "The mad mage and his seven apprentices begin delving; by 309 DR he has exterminated the drow and duergar and claimed the halls.",
+        "importance": 3
+      },
+      {
+        "year": 1302,
+        "title": "The Yawning Portal",
+        "summary": "Durnan and Mirt return rich; Durnan builds the Yawning Portal inn over the dungeon's well-mouth and Waterdeep begins dumping criminals below.",
+        "importance": 2
+      },
+      {
+        "year": 1375,
+        "title": "Halaster's death",
+        "summary": "The Mad Mage dies in a botched ritual; an earthquake reshapes the dungeon, and the Spellplague a decade later warps or destroys its portals.",
+        "importance": 2
+      },
+      {
+        "year": 1485,
+        "title": "The Mad Mage returns",
+        "summary": "After the Second Sundering, Halaster re-forms and resumes tending his dungeon (1480s).",
+        "importance": 1
+      }
+    ],
+    "description": "A colossal dungeon spiraling down beneath Mount Waterdeep through more than twenty levels, Undermountain began as dwarven mithral halls before the wizard Halaster turned it into a trap-laden laboratory and monster zoo. Its best-known door is a well in the floor of the Yawning Portal tavern, where adventurers are lowered on a rope to seek fortune or death.",
+    "population": null,
+    "ruler": "Halaster Blackcloak, the Mad Mage (returned after the Second Sundering)",
+    "tags": [
+      "dungeon",
+      "waterdeep",
+      "halaster",
+      "yawning-portal"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#bfb49c",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "mountain",
+        "cavern",
+        "stalactites",
+        "gate",
+        "glow",
+        "ruins"
+      ],
+      "terrain": "cavern",
+      "notes": "A mountain cut away to show stacked cavern levels descending into darkness; a lone inn with a round well-shaft at the top, faint arcane glow in the deepest level."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Undermountain",
+      "https://forgottenrealms.fandom.com/wiki/Halaster_Blackcloak"
+    ]
+  },
+  {
+    "id": "dragonspear-castle",
+    "name": "Dragonspear Castle",
+    "aliases": [],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "fortress",
+    "archetype": "fortress",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1255,
+    "foundedNote": "Built by the adventurer Daeros Dragonspear around his copper dragon companion's lair.",
+    "status": [
+      {
+        "from": 1255,
+        "to": 1290,
+        "state": "thriving"
+      },
+      {
+        "from": 1290,
+        "to": 1315,
+        "state": "ruined"
+      },
+      {
+        "from": 1315,
+        "to": 1354,
+        "state": "troubled"
+      },
+      {
+        "from": 1354,
+        "to": null,
+        "state": "ruined"
+      }
+    ],
+    "events": [
+      {
+        "year": 1290,
+        "title": "Portal to Avernus",
+        "summary": "Ithtaerus Casalia opens a hidden gate to the Nine Hells beneath the keep; Daeros dies and rival dragons wreck the castle.",
+        "importance": 3
+      },
+      {
+        "year": 1356,
+        "title": "First Dragonspear War",
+        "summary": "Devils who seized the ruins in 1354 are burned out by the armies of Waterdeep and Baldur's Gate.",
+        "importance": 2
+      },
+      {
+        "year": 1363,
+        "title": "Second Dragonspear War",
+        "summary": "The pit fiend Baazka's devil-led horde pours out of the castle and is stopped after attacking Daggerford.",
+        "importance": 2
+      },
+      {
+        "year": 1368,
+        "title": "Shining Crusade",
+        "summary": "Caelar Argent's crusaders hold the castle until the Coalition storms it and the Bhaalspawn closes the reopened portal.",
+        "importance": 2
+      },
+      {
+        "year": 1485,
+        "title": "Portal reopened",
+        "summary": "Szarlnaxi vampires, manipulated by a rakshasa, briefly reopen the Avernus gate before Sir Isteval's band seals it (c. 1485).",
+        "importance": 1
+      }
+    ],
+    "description": "Dragonspear Castle sprawls across three low hills at the edge of the High Moor, a coffin-shaped ring of broken walls and nine towers above tunnels that reach the underground Nepenthe River. Beneath its keep lies an unsealable portal to Avernus, and every few decades devils, crusaders or undead claim the ruin and drag the Sword Coast into war.",
+    "population": null,
+    "ruler": "None (contested ruin)",
+    "tags": [
+      "ruin",
+      "avernus",
+      "dragonspear-wars",
+      "high-moor"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cbbf9c",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "castle",
+        "walls",
+        "towers",
+        "ruins",
+        "rubble",
+        "gate",
+        "glow"
+      ],
+      "terrain": "plain",
+      "notes": "Hexagonal coffin-shaped castle wall with corner turrets on three low hills, partly collapsed; a faint red infernal glow from a cellar opening."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Dragonspear_Castle"
+    ]
+  },
+  {
+    "id": "spine-of-the-world",
+    "name": "Spine of the World",
+    "aliases": [
+      "The Wall",
+      "Barakmornolor"
+    ],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "landmark",
+    "archetype": "landmark-mountain",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Geography; always present.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -2100,
+        "title": "Settlers of the dale",
+        "summary": "Illuskan refugees cross into Icewind Dale beyond the range, ancestors of the Reghedmen tribes.",
+        "importance": 1
+      },
+      {
+        "year": 1170,
+        "title": "Slow Cedric's Gallop",
+        "summary": "A frontier settlement on the Southern Pass through the Spine is overrun and destroyed.",
+        "importance": 1
+      },
+      {
+        "year": 1356,
+        "title": "Crystal Shard",
+        "summary": "The Crystal Shard, cast long ago into a snowy dell of the Spine, arms Akar Kessell's goblin and giant army against Ten-Towns (c. 1356).",
+        "importance": 2
+      }
+    ],
+    "description": "A wall of ice-capped peaks, some over twenty thousand feet, runs across the top of Faerûn from the Sea of Moving Ice toward the Silver Marches, cutting Icewind Dale off from the warmer North. Giants, orcs, white dragons and dwarves share its passes, and the folk to the south call it simply the Wall, the place where the world ends.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "mountains",
+      "icewind-dale",
+      "giants",
+      "frontier"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e2e0d8",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "mountain",
+        "snow"
+      ],
+      "terrain": "mountain",
+      "notes": "Long east-west ridge of jagged snow-covered peaks, four similar sister summits in a row near the middle."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Spine_of_the_World",
+      "https://forgottenrealms.fandom.com/wiki/Icewind_Dale",
+      "https://forgottenrealms.fandom.com/wiki/Crystal_Shard"
+    ]
+  },
+  {
+    "id": "longsaddle",
+    "name": "Longsaddle",
+    "aliases": [],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "town",
+    "archetype": "frontier-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1042,
+    "foundedNote": "Founded by Shardra Harpell, an escaped Calishite slave.",
+    "status": [
+      {
+        "from": 1042,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1042,
+        "title": "Founded by the Harpells",
+        "summary": "Shardra Harpell settles the grasslands and starts the eccentric wizard family that rules here ever after.",
+        "importance": 2
+      },
+      {
+        "year": 1376,
+        "title": "Malarite rabbits",
+        "summary": "Two feuding Malarite sects try to build churches by a magical lake; the Harpells turn the worst troublemakers into rabbits.",
+        "importance": 1
+      },
+      {
+        "year": 1479,
+        "title": "The Bidderdoos",
+        "summary": "Werewolf descendants of Bidderdoo Harpell roam the woods, feared but protective (by 1479).",
+        "importance": 1
+      },
+      {
+        "year": 1479,
+        "title": "Catti-brie returns",
+        "summary": "The reincarnated Catti-brie, as Delly Curtie, studies magic at the Ivy Mansion until 1482.",
+        "importance": 1
+      }
+    ],
+    "description": "A ranching hamlet on open grassland, Longsaddle is famous far beyond its size as the home of the Harpells, a clan of brilliant and thoroughly unpredictable wizards. Their ivy-covered mansion and its odd magical experiments dominate the village, where cattle, sheep and the occasional transmuted rabbit wander the pastures.",
+    "population": 130,
+    "ruler": "Dowell Harpell (1489)",
+    "tags": [
+      "harpells",
+      "wizards",
+      "ranching",
+      "lords-alliance"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9d0a6",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 1,
+      "motifs": [
+        "farms",
+        "towers",
+        "lake",
+        "glow"
+      ],
+      "terrain": "plain",
+      "notes": "A handful of farmhouses and corrals on flat grassland around one big ivy-green mansion with odd towers and a soft magical glow; a small lake beside it."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Longsaddle"
+    ]
+  },
+  {
+    "id": "triboar",
+    "name": "Triboar",
+    "aliases": [
+      "Gateway to the North",
+      "Town Where Only Gwaeron Sleeps"
+    ],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "town",
+    "archetype": "market-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1040,
+    "foundedNote": "Approximate. Resettled by Waterdeep-sponsored pioneers after 1032 DR; its name comes from a mid-11th-century tale of three boars slain in a day.",
+    "status": [
+      {
+        "from": 1040,
+        "to": 1356,
+        "state": "thriving"
+      },
+      {
+        "from": 1356,
+        "to": 1357,
+        "state": "abandoned"
+      },
+      {
+        "from": 1357,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 614,
+        "title": "Rout of Phalorm",
+        "summary": "An orc horde smashes Phalorm's armies on the future town site, driving them into the Mere of Dead Men.",
+        "importance": 2
+      },
+      {
+        "year": 1356,
+        "title": "Ransacked by devils",
+        "summary": "The devil-led army of the First Dragonspear War sacks Triboar and its people flee north.",
+        "importance": 2
+      },
+      {
+        "year": 1369,
+        "title": "Fall of Faurael",
+        "summary": "Lord Protector Faurael Blackhammer dies defending the Citadel of the Mists against Hellgate Keep's fiends.",
+        "importance": 1
+      },
+      {
+        "year": 1486,
+        "title": "Fire giant raid",
+        "summary": "Fire giants and orcs attack at midday to dig a fragment of the Vonindod from under the caravan grounds (sometime after 1485).",
+        "importance": 2
+      },
+      {
+        "year": 1491,
+        "title": "Elemental cults",
+        "summary": "The militia intercepts a Cult of the Eternal Flame devastation orb, which is later stolen from the town vault.",
+        "importance": 1
+      }
+    ],
+    "description": "Triboar is a busy, unwalled caravan town where the Long Road meets the Evermoor Way, its outskirts full of horse ranches, wagonwrights and camping trains bound for every corner of the North. An elected Lord Protector and a volunteer militia called the Twelve keep order, and the town has seen more than its share of orc hordes, devils and giants.",
+    "population": 2500,
+    "ruler": "Lord Protector Darathra Shendrel (1491)",
+    "tags": [
+      "crossroads",
+      "caravans",
+      "dessarin-valley",
+      "lords-alliance"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d8cfa3",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "farms",
+        "tents",
+        "windmill"
+      ],
+      "terrain": "plain",
+      "notes": "Open crossroads town of low wooden buildings with a large field of caravan wagons and tents at its edge; ranch fences around."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Triboar",
+      "https://forgottenrealms.fandom.com/wiki/Dessarin_Valley"
+    ]
+  },
+  {
+    "id": "yartar",
+    "name": "Yartar",
+    "aliases": [],
+    "world": "toril",
+    "region": "sword-coast-north",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1000,
+    "foundedNote": "Approximate. One of the Dessarin Valley villages that grew up c. 1000 DR as Waterdeep expanded.",
+    "status": [
+      {
+        "from": 1000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1000,
+        "title": "Founding",
+        "summary": "Yartar is among the villages founded in the Dessarin Valley in the wake of Waterdeep's growth (c. 1000).",
+        "importance": 1
+      },
+      {
+        "year": 1361,
+        "title": "Kraken Society plot",
+        "summary": "Waterbaron Alahar Khaumfros schemes to push the Lords' Alliance into war with Ruathym and is exposed.",
+        "importance": 2
+      },
+      {
+        "year": 1366,
+        "title": "Waterbaron murdered",
+        "summary": "Four mind flayers kill Alahar in the Waterbaron's Hall over embezzled Kraken Society funds (c. 1366).",
+        "importance": 1
+      },
+      {
+        "year": 1491,
+        "title": "Elemental cult abductions",
+        "summary": "Cultists carry off the city's poor for conversion or sacrifice; the Hand of Yartar auctions a stolen devastation orb.",
+        "importance": 1
+      },
+      {
+        "year": 1492,
+        "title": "Nautiloid attack",
+        "summary": "A mind flayer ship destroys a tower and snatches citizens before githyanki on red dragons drive it off.",
+        "importance": 2
+      }
+    ],
+    "description": "Yartar is a crowded, fortified river city on the east bank of the Surbrin near its meeting with the Dessarin, joined by a broad defended bridge to a citadel on the far shore. Barges, caravans and smugglers move through day and night, and the Waterbaron's honest government contends with a thriving underworld.",
+    "population": 6000,
+    "ruler": "Waterbaron Nestra Ruthiol (1491)",
+    "tags": [
+      "lords-alliance",
+      "river",
+      "barges",
+      "kraken-society",
+      "dessarin-valley"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6cba6",
+        "accent": "#2a4d69",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "river",
+        "bridge",
+        "keep",
+        "docks"
+      ],
+      "terrain": "river",
+      "notes": "Walled city on one riverbank with barge docks, a long fortified bridge crossing to a small citadel on the opposite bank."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Yartar",
+      "https://forgottenrealms.fandom.com/wiki/Dessarin_Valley"
+    ]
+  }
+]

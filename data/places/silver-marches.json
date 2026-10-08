@@ -1,0 +1,1273 @@
+[
+  {
+    "id": "silverymoon",
+    "name": "Silverymoon",
+    "aliases": [
+      "Gem of the North",
+      "Shining Towers",
+      "Silvertowers",
+      "Aerasumé"
+    ],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "metropolis",
+    "archetype": "wizard-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 637,
+    "foundedNote": "Wall raised and first High Mage, Ecamane Truesilver, elected in 637; a rope-and-plank ford bridge stood on the site from 384 DR.",
+    "status": [
+      {
+        "from": 637,
+        "to": 1484,
+        "state": "thriving"
+      },
+      {
+        "from": 1484,
+        "to": 1486,
+        "state": "troubled"
+      },
+      {
+        "from": 1486,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 637,
+        "title": "Silverymoon becomes a city",
+        "summary": "Silverymoon Town gains its first stone wall and elects Ecamane Truesilver as High Mage, beginning its tradition as a seat of lore.",
+        "importance": 2
+      },
+      {
+        "year": 843,
+        "title": "The Moonbridge raised",
+        "summary": "Elué Dualen and fellow wizards conjure the Moonbridge, an invisible-by-day span over the Rauvin that becomes the city's emblem.",
+        "importance": 2
+      },
+      {
+        "year": 1235,
+        "title": "Alustriel takes the throne",
+        "summary": "Orcs breach the walls for the first time in the High Mages' era; Alustriel and Storm Silverhand drive them out and Alustriel is chosen ruler by acclaim.",
+        "importance": 3
+      },
+      {
+        "year": 1371,
+        "title": "League of the Silver Marches",
+        "summary": "With Alustriel as High Lady, Silverymoon anchors a new confederation of northern cities and dwarfholds against the orc hordes.",
+        "importance": 3
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague breaks the mythal",
+        "summary": "The blue fire shatters Silverymoon's mythal, though its collapse shields the city from the plague's worst ravages.",
+        "importance": 2
+      },
+      {
+        "year": 1484,
+        "title": "War of the Silver Marches",
+        "summary": "Besieged by the Many-Arrows horde; Silverymoon's tepid aid to Sundabar is blamed for the war's losses and the League's collapse.",
+        "importance": 3
+      }
+    ],
+    "description": "A city of slender towers and garden terraces straddling the River Rauvin, Silverymoon has long been the North's beacon of scholarship, music, and gentle magic. Its colleges and libraries draw sages from across Faerûn, and the shimmering Moonbridge links its two halves. Since the War of the Silver Marches its prestige has dimmed, and by the 1490s it is governed by Lord Methrammar Aerasumé.",
+    "population": null,
+    "ruler": "Lord Methrammar Aerasumé (from c. 1489)",
+    "tags": [
+      "luruar",
+      "lords-alliance",
+      "harpers",
+      "magic",
+      "library",
+      "mythal"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dcd3bd",
+        "accent": "#5b7a99",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "spires",
+        "towers",
+        "bridge",
+        "river",
+        "trees",
+        "mythal",
+        "library",
+        "glow"
+      ],
+      "terrain": "river",
+      "notes": "Slender silver-roofed spires and tree-lined terraces climb both banks of the Rauvin, joined by the arching, faintly glowing Moonbridge; a low wall rings the whole."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Silverymoon",
+      "https://forgottenrealms.fandom.com/wiki/War_of_the_Silver_Marches"
+    ]
+  },
+  {
+    "id": "everlund",
+    "name": "Everlund",
+    "aliases": [],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 515,
+    "foundedNote": "Resettled by humans from Ascalhorn on the site of Besander's Blockhouse.",
+    "status": [
+      {
+        "from": 515,
+        "to": 1484,
+        "state": "thriving"
+      },
+      {
+        "from": 1484,
+        "to": 1486,
+        "state": "troubled"
+      },
+      {
+        "from": 1486,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 515,
+        "title": "Everlund founded",
+        "summary": "Settlers from Ascalhorn establish a fortified trading post and river crossing on the Rauvin.",
+        "importance": 2
+      },
+      {
+        "year": 1357,
+        "title": "Holding Turnstone Pass",
+        "summary": "Everlund's Army of the Vale joins Silverymoon, Sundabar, and Adbar in sealing Turnstone Pass against the fiends of Hellgate Keep.",
+        "importance": 2
+      },
+      {
+        "year": 1371,
+        "title": "Joins the Silver Marches",
+        "summary": "Everlund becomes a founding member of the League of the Silver Marches.",
+        "importance": 2
+      },
+      {
+        "year": 1484,
+        "title": "War of the Silver Marches",
+        "summary": "Orc and drow armies ravage the Marches; Luruar collapses as the dwarven realms withdraw, leaving Everlund's caravan trade exposed.",
+        "importance": 2
+      }
+    ],
+    "description": "Everlund is a sturdy, mercantile river town at the junction of the Evermoor Way and the roads to Silverymoon and Sundabar. Its two bridges and bustling Bell Market make it the Marches' great caravan stop, and it is home to a notable Harper outpost at Moongleam Tower. Governed by a council of its leading citizens, it prides itself on practicality rather than its neighbor's grandeur.",
+    "population": 21388,
+    "ruler": "Council of Elders",
+    "tags": [
+      "luruar",
+      "trade",
+      "caravans",
+      "harpers"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d8cbaa",
+        "accent": "#5b7a99",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "river",
+        "bridge",
+        "towers",
+        "temple",
+        "farms"
+      ],
+      "terrain": "river",
+      "notes": "A walled trading town astride the Rauvin with two stone bridges (Knightbridge and Dwarfbridge) and five gatehouses; a bell-towered market square at its heart."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Everlund",
+      "https://forgottenrealms.fandom.com/wiki/War_of_the_Silver_Marches"
+    ]
+  },
+  {
+    "id": "sundabar",
+    "name": "Sundabar",
+    "aliases": [
+      "Citadel Sundbarr",
+      "Hartusk Keep"
+    ],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "city",
+    "archetype": "dwarven-hold",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -500,
+    "foundedNote": "Built as the Delzoun dwarfhold Citadel Sundbarr c. -500 DR; humans settled the surface in 882.",
+    "status": [
+      {
+        "from": -500,
+        "to": 329,
+        "state": "thriving"
+      },
+      {
+        "from": 329,
+        "to": 882,
+        "state": "troubled"
+      },
+      {
+        "from": 882,
+        "to": 1484,
+        "state": "thriving"
+      },
+      {
+        "from": 1484,
+        "to": 1486,
+        "state": "ruined"
+      },
+      {
+        "from": 1486,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": -500,
+        "title": "Citadel Sundbarr raised",
+        "summary": "Delzoun dwarves build a subterranean citadel around the Everfire, a natural inferno that powers its great forges (c.).",
+        "importance": 2
+      },
+      {
+        "year": 329,
+        "title": "Orcs plunder the surface",
+        "summary": "The citadel's surface works are sacked, beginning centuries of monster raids.",
+        "importance": 1
+      },
+      {
+        "year": 882,
+        "title": "Refugees of Ascalhorn arrive",
+        "summary": "Fleeing the fall of Ascalhorn, human refugees are granted the abandoned upper citadel, and dwarves and humans together build Sundabar.",
+        "importance": 3
+      },
+      {
+        "year": 1369,
+        "title": "Hellgate's fiends attack",
+        "summary": "Demons from Hellgate Keep set much of the city alight and kill about a quarter of its people before being driven out.",
+        "importance": 2
+      },
+      {
+        "year": 1484,
+        "title": "Fall to Many-Arrows",
+        "summary": "Hartusk's orc army takes the city and renames it Hartusk Keep; the surface population is wiped out, and blame for the loss shatters Luruar.",
+        "importance": 3
+      }
+    ],
+    "description": "Once the hammer-and-anvil heart of the Silver Marches, Sundabar is a human city built atop an ancient dwarven citadel whose forges drink from the Everfire below. In 1484 the orcs of Many-Arrows overran it and slaughtered its surface folk, and the war's end found it a scarred shell. In the 1490s it is a city clawing its way back from ruin, its dwarven undercity the firmest part of what remains.",
+    "population": null,
+    "ruler": "Ruling Master Helm Dwarf-Friend (last recorded, pre-1484)",
+    "tags": [
+      "luruar",
+      "dwarves",
+      "forges",
+      "war-of-the-silver-marches"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cdbfa3",
+        "accent": "#5b7a99",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "keep",
+        "castle",
+        "gate",
+        "cavern",
+        "lava",
+        "rubble"
+      ],
+      "terrain": "plain",
+      "notes": "A squat fortress-city of thick dwarf-cut walls over a deep undercity, with a glow of the Everfire rising from a rift; post-1484 its surface is scarred and partly ruined."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Sundabar",
+      "https://forgottenrealms.fandom.com/wiki/War_of_the_Silver_Marches",
+      "https://forgottenrealms.fandom.com/wiki/Hellgate_Keep"
+    ]
+  },
+  {
+    "id": "citadel-adbar",
+    "name": "Citadel Adbar",
+    "aliases": [],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "fortress",
+    "archetype": "dwarven-hold",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -370,
+    "foundedNote": "King Adbar began construction in -370 DR; completed -272 DR.",
+    "status": [
+      {
+        "from": -370,
+        "to": 1484,
+        "state": "thriving"
+      },
+      {
+        "from": 1484,
+        "to": 1486,
+        "state": "troubled"
+      },
+      {
+        "from": 1486,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -370,
+        "title": "Construction begins",
+        "summary": "King Adbar starts carving the citadel into the Ice Mountains; it takes nearly a century to complete.",
+        "importance": 2
+      },
+      {
+        "year": -272,
+        "title": "Citadel completed",
+        "summary": "Adbar's fortress is finished, becoming one of the great holds of Delzoun's north.",
+        "importance": 1
+      },
+      {
+        "year": 1357,
+        "title": "War on Hellgate's border",
+        "summary": "Adbar's dwarves help hold Turnstone Pass against the fiends of Hellgate Keep.",
+        "importance": 1
+      },
+      {
+        "year": 1371,
+        "title": "Joins the Silver Marches",
+        "summary": "Citadel Adbar becomes a member of the League of the Silver Marches.",
+        "importance": 2
+      },
+      {
+        "year": 1484,
+        "title": "Battle of the Cold Vale",
+        "summary": "Tricked by a half-drow envoy, King Bromm leads an army into an orc-and-drow ambush and is slain; Adbar is besieged and later leaves the League.",
+        "importance": 3
+      }
+    ],
+    "description": "Citadel Adbar is the mightiest dwarfhold of the Marches, a mine-riddled fortress-city in the Ice Mountains whose surface towers bristle with spikes to ward off dragons. Its smiths turn out mithral, arms, and armor, and its sealed Caravan Door bars the way to the Underdark. The war of 1484 cost it a king and much of an army, and it now stands apart from the broken Luruar alliance.",
+    "population": 19962,
+    "ruler": "King Harnoth (impersonated by a doppelganger after his death in the war)",
+    "tags": [
+      "dwarves",
+      "delzoun",
+      "ice-mountains",
+      "mithral"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cfc4ad",
+        "accent": "#5b7a99",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "mountain",
+        "towers",
+        "gate",
+        "keep",
+        "mines",
+        "snow",
+        "bridge"
+      ],
+      "terrain": "mountain",
+      "notes": "A mountain fortress whose spiked 'Dragonspike' towers rise above the snow, a smoking foundry chimney in the central tower, and a drawbridge at the surface gate."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Citadel_Adbar",
+      "https://forgottenrealms.fandom.com/wiki/Harnoth",
+      "https://forgottenrealms.fandom.com/wiki/Bromm",
+      "https://forgottenrealms.fandom.com/wiki/War_of_the_Silver_Marches"
+    ]
+  },
+  {
+    "id": "citadel-felbarr",
+    "name": "Citadel Felbarr",
+    "aliases": [
+      "Citadel of Many Arrows"
+    ],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "fortress",
+    "archetype": "dwarven-hold",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -1900,
+    "foundedNote": "Completed as a Delzoun hold in -1900 DR.",
+    "status": [
+      {
+        "from": -1900,
+        "to": 1054,
+        "state": "thriving"
+      },
+      {
+        "from": 1054,
+        "to": 1104,
+        "state": "troubled"
+      },
+      {
+        "from": 1104,
+        "to": 1367,
+        "state": "ruined"
+      },
+      {
+        "from": 1367,
+        "to": 1484,
+        "state": "thriving"
+      },
+      {
+        "from": 1484,
+        "to": 1486,
+        "state": "troubled"
+      },
+      {
+        "from": 1486,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -1900,
+        "title": "Felbarr completed",
+        "summary": "Delzoun dwarves finish the citadel in the mountains north-east of Silverymoon.",
+        "importance": 1
+      },
+      {
+        "year": 1054,
+        "title": "Dwarves depart",
+        "summary": "The dwarves abandon Felbarr; Silverymoon garrisons it with three thousand soldiers (c.).",
+        "importance": 2
+      },
+      {
+        "year": 1104,
+        "title": "Battle of Many Arrows",
+        "summary": "After a months-long siege the orcs overrun Silverymoon's garrison and claim the fortress as the Citadel of Many Arrows.",
+        "importance": 3
+      },
+      {
+        "year": 1367,
+        "title": "Reclaimed by Emerus Warcrown",
+        "summary": "Dwarves under Emerus Warcrown, aided by Silverymoon, retake the citadel while the orcs are spent from infighting.",
+        "importance": 3
+      },
+      {
+        "year": 1486,
+        "title": "King Emerus marches to Gauntlgrym",
+        "summary": "Emerus abdicates to join Bruenor's march on Gauntlgrym; later Morinn and Tithmel reign jointly.",
+        "importance": 2
+      }
+    ],
+    "description": "Citadel Felbarr is a dwarven stronghold guarded by a gauntlet of three great gates, the last carved with lethal runes. For over two centuries it was an orc fortress named for the battle that won it, until Clan Warcrown took it back in 1367. In the 1490s it is ruled jointly by King Morinn and Queen Tithmel, who sponsor adventurers against the giants troubling the region.",
+    "population": 6987,
+    "ruler": "King Morinn and Queen Tithmel (late 1480s–1490s)",
+    "tags": [
+      "dwarves",
+      "delzoun",
+      "orcs",
+      "reclaimed"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cfc4ad",
+        "accent": "#5b7a99",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "mountain",
+        "gate",
+        "walls",
+        "keep",
+        "river",
+        "mines"
+      ],
+      "terrain": "mountain",
+      "notes": "A dwarven mountain gate approached by three successive stone gateways (the Hammer, the Anvil, and the rune-carved Runegate), flanked by catapult towers."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Citadel_Felbarr",
+      "https://forgottenrealms.fandom.com/wiki/Silverymoon"
+    ]
+  },
+  {
+    "id": "nesme",
+    "name": "Nesmé",
+    "aliases": [
+      "Nesme"
+    ],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "town",
+    "archetype": "frontier-town",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": 1307,
+    "foundedNote": "Algraetha the Enchantress cleared the wyverns from Thaurog's Keep and rebuilt the settlement as Nesmé.",
+    "status": [
+      {
+        "from": 1307,
+        "to": 1370,
+        "state": "thriving"
+      },
+      {
+        "from": 1370,
+        "to": 1372,
+        "state": "ruined"
+      },
+      {
+        "from": 1372,
+        "to": 1484,
+        "state": "thriving"
+      },
+      {
+        "from": 1484,
+        "to": null,
+        "state": "destroyed"
+      }
+    ],
+    "events": [
+      {
+        "year": 1307,
+        "title": "Nesmé founded",
+        "summary": "Algraetha the Enchantress drives wyverns from a ruined half-orc bandit keep and builds a town around it.",
+        "importance": 2
+      },
+      {
+        "year": 1358,
+        "title": "Keeper's Dale",
+        "summary": "Nesmé's Riders march to aid Mithral Hall against the drow of Menzoberranzan.",
+        "importance": 1
+      },
+      {
+        "year": 1370,
+        "title": "Troll siege",
+        "summary": "Trolls displaced from the Evermoors overrun and wreck the town until dwarves of Mithral Hall and Mirabar break the siege.",
+        "importance": 2
+      },
+      {
+        "year": 1372,
+        "title": "Rebuilt grander",
+        "summary": "Funded by Silverymoon, refugees spend the winter raising sturdier buildings and a double wall facing the moors.",
+        "importance": 2
+      },
+      {
+        "year": 1484,
+        "title": "Fall of Nesmé",
+        "summary": "After a long siege the town is overrun by orcs and the white dragon Arauthator; 600 survivors are taken captive and the drow proclaim themselves its duke and duchess.",
+        "importance": 3
+      },
+      {
+        "year": 1485,
+        "title": "Left in ruins",
+        "summary": "Evermoor monsters thwart every attempt to resettle; the ruins later serve as a meeting place for Zhentarim and fire giant agents.",
+        "importance": 1
+      }
+    ],
+    "description": "Nesmé was a hardy frontier town on the Surbrin's banks, the Marches' bulwark against the trolls and horrors of the Evermoors. Its famous Riders patrolled the moors until the orc-and-drow war of 1484 brought dragonfire down on its walls. Today only scorched foundations and broken ramparts remain, a waypoint for smugglers and monsters.",
+    "population": null,
+    "ruler": "None (ruined; last First Speaker Jolen Firth, 1484)",
+    "tags": [
+      "frontier",
+      "evermoors",
+      "ruins",
+      "war-of-the-silver-marches"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6c9a8",
+        "accent": "#5b7a99",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "walls",
+        "keep",
+        "ruins",
+        "rubble",
+        "palisade",
+        "farms"
+      ],
+      "terrain": "plain",
+      "notes": "Burned double walls and a toppled old keep at the edge of grey moorland; little more than blackened foundations remain."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Nesm%C3%A9",
+      "https://forgottenrealms.fandom.com/wiki/War_of_the_Silver_Marches"
+    ]
+  },
+  {
+    "id": "mithral-hall",
+    "name": "Mithral Hall",
+    "aliases": [
+      "Mithril Hall"
+    ],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "fortress",
+    "archetype": "dwarven-hold",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Founded by Gandalug Battlehammer at an unknown date before 0 DR.",
+    "status": [
+      {
+        "from": null,
+        "to": 1104,
+        "state": "thriving"
+      },
+      {
+        "from": 1104,
+        "to": 1356,
+        "state": "ruined"
+      },
+      {
+        "from": 1356,
+        "to": 1370,
+        "state": "thriving"
+      },
+      {
+        "from": 1370,
+        "to": 1372,
+        "state": "troubled"
+      },
+      {
+        "from": 1372,
+        "to": 1484,
+        "state": "thriving"
+      },
+      {
+        "from": 1484,
+        "to": 1486,
+        "state": "troubled"
+      },
+      {
+        "from": 1486,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1104,
+        "title": "Shimmergloom's Darkening",
+        "summary": "Miners breach a shadow-linked cavern; the shadow dragon Shimmergloom and duergar hordes slaughter the Battlehammers, and a few hundred survivors flee (c.; the wiki gives only 'the 1100s').",
+        "importance": 3
+      },
+      {
+        "year": 1356,
+        "title": "Reclamation",
+        "summary": "Bruenor Battlehammer and the Companions of the Hall return; Bruenor slays Shimmergloom in Garumn's Gorge and an allied army clears out the duergar.",
+        "importance": 3
+      },
+      {
+        "year": 1358,
+        "title": "Battle of Keeper's Dale",
+        "summary": "A drow army from Menzoberranzan assails the Hall and is thrown back by dwarves, gnomes, barbarians, and Silverymoon's knights.",
+        "importance": 2
+      },
+      {
+        "year": 1372,
+        "title": "Treaty of Garumn's Gorge",
+        "summary": "After two years of war, Bruenor and King Obould sign a peace that recognizes the orc Kingdom of Many-Arrows.",
+        "importance": 3
+      },
+      {
+        "year": 1484,
+        "title": "War of the Silver Marches",
+        "summary": "Mithral Hall is besieged by Hartusk's horde; King Connerad later dies in the 1486 reclamation of Gauntlgrym.",
+        "importance": 2
+      }
+    ],
+    "description": "Mithral Hall is the ancestral seat of Clan Battlehammer, a warren of mines beneath Fourthpeak threaded with veins of mithral. Lost for generations to a shadow dragon and its duergar, it was famously won back by Bruenor and his companions in 1356 and has survived drow invasion and orc war since. In the 1490s it is ruled by Queen Dagnabbet, its first queen.",
+    "population": 4991,
+    "ruler": "Queen Dagnabbet (from 1486)",
+    "tags": [
+      "dwarves",
+      "battlehammer",
+      "mithral",
+      "companions-of-the-hall"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cbc1ab",
+        "accent": "#5b7a99",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "mountain",
+        "gate",
+        "mines",
+        "bridge",
+        "cavern",
+        "keep"
+      ],
+      "terrain": "mountain",
+      "notes": "A hidden gate in the flank of Fourthpeak opening onto vast mines, with a narrow bridge spanning the chasm of Garumn's Gorge inside."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Mithral_Hall",
+      "https://forgottenrealms.fandom.com/wiki/Haerinvureem",
+      "https://forgottenrealms.fandom.com/wiki/Clan_Battlehammer"
+    ]
+  },
+  {
+    "id": "gauntlgrym",
+    "name": "Gauntlgrym",
+    "aliases": [
+      "Q'Xorlarrin (drow-held section, 1484)"
+    ],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "underdark-city",
+    "archetype": "dwarven-hold",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -335,
+    "foundedNote": "Construction began -335 DR by Delzoun dwarves and the wizards of Illusk; finished -321 DR.",
+    "status": [
+      {
+        "from": -335,
+        "to": -111,
+        "state": "thriving"
+      },
+      {
+        "from": -111,
+        "to": 141,
+        "state": "ruined"
+      },
+      {
+        "from": 141,
+        "to": 153,
+        "state": "thriving"
+      },
+      {
+        "from": 153,
+        "to": 1486,
+        "state": "ruined"
+      },
+      {
+        "from": 1486,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -321,
+        "title": "Gauntlgrym completed",
+        "summary": "Dwarves of Delzoun and wizards of Illusk finish a city built around the slumbering fire primordial Maegera, whose heat fuels a legendary forge.",
+        "importance": 3
+      },
+      {
+        "year": -111,
+        "title": "Lost in the Orc Marches",
+        "summary": "Orc hordes overrun the city.",
+        "importance": 2
+      },
+      {
+        "year": 153,
+        "title": "Mind flayer conquest",
+        "summary": "A brief dwarven resettlement (141) falls to illithids and lycanthropes, who hold the lower halls for over a millennium.",
+        "importance": 2
+      },
+      {
+        "year": 1451,
+        "title": "Maegera unleashed",
+        "summary": "A dominated Athrogate pulls the forge lever, freeing the primordial; the eruption of Mount Hotenow destroys Neverwinter.",
+        "importance": 3
+      },
+      {
+        "year": 1462,
+        "title": "The Summons",
+        "summary": "Dwarven ghosts call the Delzoun to defend the city; Bruenor reseals Maegera but dies of his wounds.",
+        "importance": 2
+      },
+      {
+        "year": 1486,
+        "title": "Dwarven reclamation",
+        "summary": "Bruenor, Connerad Brawnanvil, and Emerus Warcrown lead dwarves of Mithral Hall and Felbarr to drive out the drow; Bruenor becomes its third king.",
+        "importance": 3
+      }
+    ],
+    "description": "Gauntlgrym is the fabled lost city of the Delzoun dwarves, carved beneath the Crags around the chained fire primordial whose heat drives its great forge. For more than a thousand years it was a legend sung in a dwarven canticle while mind flayers and worse ruled its depths. Reclaimed in 1486, it is again a dwarven kingdom under Bruenor Battlehammer, though its fiery heart remains a perilous trust.",
+    "population": null,
+    "ruler": "King Bruenor Battlehammer (from 1486)",
+    "tags": [
+      "dwarves",
+      "delzoun",
+      "primordial",
+      "underdark",
+      "neverwinter"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c8b9a0",
+        "accent": "#5b7a99",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "cavern",
+        "gate",
+        "lava",
+        "mines",
+        "statue",
+        "keep"
+      ],
+      "terrain": "cavern",
+      "notes": "Massive mithral doors set in a cavern wall open onto colonnaded halls; at the core a great forge glows with the bound fire primordial."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Gauntlgrym",
+      "https://forgottenrealms.fandom.com/wiki/Bruenor_Battlehammer"
+    ]
+  },
+  {
+    "id": "hellgate-keep",
+    "name": "Hellgate Keep",
+    "aliases": [
+      "Ascalhorn",
+      "Ascal's Horn",
+      "Ghoul-Hold",
+      "Hellgate Dell"
+    ],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "ruin",
+    "archetype": "ruin",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -372,
+    "foundedNote": "Eaerlanni elves under Ascal Rachiilstar founded the fortress town of Ascal's Horn.",
+    "status": [
+      {
+        "from": -372,
+        "to": 820,
+        "state": "thriving"
+      },
+      {
+        "from": 820,
+        "to": 882,
+        "state": "troubled"
+      },
+      {
+        "from": 882,
+        "to": 1369,
+        "state": "ruined"
+      },
+      {
+        "from": 1369,
+        "to": null,
+        "state": "destroyed"
+      }
+    ],
+    "events": [
+      {
+        "year": -333,
+        "title": "Netherese refugees sheltered",
+        "summary": "Eaerlann takes in refugees from fallen Netheril; within a generation humans govern the town, renamed Ascalhorn.",
+        "importance": 2
+      },
+      {
+        "year": 820,
+        "title": "Devils summoned",
+        "summary": "The paranoid arcanist Wulgreth calls baatezu into Ascalhorn, setting its wizards against one another.",
+        "importance": 2
+      },
+      {
+        "year": 882,
+        "title": "Fall to the demons",
+        "summary": "Desperate wizards summon tanar'ri to fight the devils; the demons win, the city dies, and survivors name it Hellgate Keep.",
+        "importance": 3
+      },
+      {
+        "year": 886,
+        "title": "Warded",
+        "summary": "Elminster and Khelben weave a near-mythal that traps the greater demons inside the keep.",
+        "importance": 2
+      },
+      {
+        "year": 1369,
+        "title": "Hellgate destroyed",
+        "summary": "Harper agents and the Mistmaster use the Gatekeeper's Crystal to implode the wards, leveling the keep and freeing the imprisoned daemonfey.",
+        "importance": 3
+      },
+      {
+        "year": 1370,
+        "title": "Hellgate Dell",
+        "summary": "Turlang's treants and the Druids of Tall Trees bury the ruins under root and soil and begin reforesting the crater.",
+        "importance": 1
+      }
+    ],
+    "description": "Once the elven-built city of Ascalhorn, a haven of Netherese refugees and learned magic, this crag in the High Forest's north-east became a fortress of demons for nearly five centuries. In 1369 a magical implosion blasted it apart, turning the peak into a deep gulch. What remains is a root-choked crater guarded by treants, its sealed depths still hiding fiendish remnants.",
+    "population": null,
+    "ruler": "None (guarded by the treant Turlang)",
+    "tags": [
+      "ruins",
+      "demons",
+      "harpers",
+      "high-forest",
+      "fey-ri"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c4b69c",
+        "accent": "#7a3b2e",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "ruins",
+        "rubble",
+        "trees",
+        "towers",
+        "glow"
+      ],
+      "terrain": "forest",
+      "notes": "A deep, inverted-pyramid gulch choked with roots and young trees where a towered fortress once stood on a crag; shattered tower stumps on the rim."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Hellgate_Keep"
+    ]
+  },
+  {
+    "id": "evereska",
+    "name": "Evereska",
+    "aliases": [
+      "Fortress Home",
+      "The Hidden Realm",
+      "LastHome"
+    ],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "city",
+    "archetype": "elven-city",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -8600,
+    "foundedNote": "Settled by clans from Aryvandaar c. -8600 DR as a secret refuge.",
+    "status": [
+      {
+        "from": -8600,
+        "to": 244,
+        "state": "hidden"
+      },
+      {
+        "from": 244,
+        "to": 1371,
+        "state": "thriving"
+      },
+      {
+        "from": 1371,
+        "to": 1375,
+        "state": "troubled"
+      },
+      {
+        "from": 1375,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -8600,
+        "title": "Secret refuge founded",
+        "summary": "Elven clans from Aryvandaar settle a hidden vale among the Greycloak Hills (c.).",
+        "importance": 2
+      },
+      {
+        "year": 244,
+        "title": "Discovered by humans",
+        "summary": "Local human tribes learn of the vale, ending its total secrecy.",
+        "importance": 1
+      },
+      {
+        "year": 1371,
+        "title": "Phaerimm siege",
+        "summary": "Phaerimm loosed from the Sharn Wall devastate the outer vale and damage the mythal; the siege is broken in 1372 with help from Waterdeep, the Lords' Alliance, and the Shadovar.",
+        "importance": 3
+      },
+      {
+        "year": 1374,
+        "title": "Seiveril's Crusade",
+        "summary": "An army from Evermeet saves Evereska from Sarya Dlardrageth's fey'ri host.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Touched by the Feywild",
+        "summary": "After the Spellplague the vale straddles the world and the Feywild, and Evereska slowly opens its borders.",
+        "importance": 2
+      },
+      {
+        "year": 1487,
+        "title": "Myth Drannor refugees",
+        "summary": "Survivors of Myth Drannor's second fall seek shelter in the vale.",
+        "importance": 1
+      }
+    ],
+    "description": "Evereska is the last great elven city of the Faerûnian mainland, a hidden vale in the Greycloak Hills sheltered by a mythal rewoven with both Weave and shadow. Gardens, tree-towers, and bridges fill the valley, still scarred by the phaerimm siege of the 1370s. Once utterly closed, it now admits outsiders and stands as a refuge for elves displaced by the Realms' upheavals.",
+    "population": 22000,
+    "ruler": "High Lord Erlan Duirsar (as of 1479)",
+    "tags": [
+      "elves",
+      "mythal",
+      "greycloak-hills",
+      "feywild"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d5d8c0",
+        "accent": "#4f8a6e",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "mountain",
+        "giant-trees",
+        "spires",
+        "mythal",
+        "bridge",
+        "glow",
+        "waterfall"
+      ],
+      "terrain": "mountain",
+      "notes": "A hidden green vale ringed by steep hills, with tree-fused elven spires and arching bridges beneath a softly shimmering mythal dome."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Evereska"
+    ]
+  },
+  {
+    "id": "high-forest",
+    "name": "High Forest",
+    "aliases": [],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "landmark",
+    "archetype": "landmark-forest",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": null,
+    "foundedNote": "Ancient forest; home to elven realms since before the Crown Wars.",
+    "status": [
+      {
+        "from": null,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -4550,
+        "title": "Eaerlann founded",
+        "summary": "Sharrven nobles found the elven kingdom of Eaerlann in the forest to check the ambitions of Siluvanede.",
+        "importance": 2
+      },
+      {
+        "year": -339,
+        "title": "Karsus falls",
+        "summary": "The body of the Netherese archwizard Karsus crashes into the Dire Wood, saturating it with wild arcane energy.",
+        "importance": 3
+      },
+      {
+        "year": 882,
+        "title": "Demons ravage the Delimbiyr",
+        "summary": "The fiends of fallen Ascalhorn sweep down the vale, bringing ruin to Eaerlann and the dwarves of Ammarindar.",
+        "importance": 3
+      },
+      {
+        "year": 1344,
+        "title": "The Retreat",
+        "summary": "The forest's remaining elves withdraw to Evermeet, leaving the treant Turlang as guardian.",
+        "importance": 2
+      },
+      {
+        "year": 1369,
+        "title": "Hellgate leveled",
+        "summary": "Hellgate Keep in the forest's north-east is destroyed and the treants begin reclaiming its crater.",
+        "importance": 2
+      },
+      {
+        "year": 1372,
+        "title": "Eaerlann reborn",
+        "summary": "Wood elves return under Morgwais, Lady of the Wood, and fight orcs and fey'ri to restore the old kingdom.",
+        "importance": 2
+      }
+    ],
+    "description": "The High Forest is the North's greatest wilderness, a sprawling old-growth woodland crowned by the Star Mounts and laced with rivers like the falls-strewn Unicorn Run. Fallen elven kingdoms, a dead archwizard's corrupting crater in the Dire Wood, and the treant shepherd Turlang all lie beneath its canopy. Largely spared by the Spellplague, it remains wild and jealously guarded.",
+    "population": 29088,
+    "ruler": "Turlang the treant; Lady Morgwais of the elves",
+    "tags": [
+      "wilderness",
+      "elves",
+      "treants",
+      "eaerlann",
+      "star-mounts"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9cfa6",
+        "accent": "#4f7a52",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "giant-trees",
+        "trees",
+        "mountain",
+        "river",
+        "waterfall",
+        "ruins"
+      ],
+      "terrain": "forest",
+      "notes": "A vast primeval forest with the Star Mounts rising from its center and waterfall-laced rivers threading out; overgrown elven ruins peek through the canopy."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/High_Forest"
+    ]
+  },
+  {
+    "id": "evermeet",
+    "name": "Evermeet",
+    "aliases": [
+      "The Green Isle",
+      "Leuthilspar"
+    ],
+    "world": "toril",
+    "region": "silver-marches",
+    "type": "island",
+    "archetype": "island-haven",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "founded": -17600,
+    "foundedNote": "Evermeet created by elven high magic c. -17600 DR (the First Sundering); the wiki gives no separate founding date for Leuthilspar.",
+    "status": [
+      {
+        "from": -17600,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1487,
+        "state": "hidden"
+      },
+      {
+        "from": 1487,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -17600,
+        "title": "The First Sundering",
+        "summary": "An elven high-magic ritual draws a piece of Arvandor into the world as Evermeet, tearing apart the continents in the process (c.).",
+        "importance": 3
+      },
+      {
+        "year": 1344,
+        "title": "The Retreat",
+        "summary": "Elves across Faerûn begin withdrawing to Evermeet through magical portals, swelling Leuthilspar.",
+        "importance": 2
+      },
+      {
+        "year": 1371,
+        "title": "Nimesin's invasion",
+        "summary": "Kymil Nimesin's forces, aided by Lolth and the Ityak-Ortheel, break through the isle's defenses while the elfgates are sabotaged.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Drawn into the Feywild",
+        "summary": "The Spellplague severs all contact; Evermeet's cities shift into the Feywild, leaving only an empty echo of the isle on Toril.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Return in the Sundering",
+        "summary": "As the Second Sundering ends, Evermeet returns to Toril, coexisting with the Feywild and Arvandor.",
+        "importance": 3
+      }
+    ],
+    "description": "Evermeet is the elves' island homeland far west across the Trackless Sea, and Leuthilspar on its eastern shore is its glittering capital: buildings grown from stone and living wood, roofs of crystal and gemstone, and a harbor guarded by a leviathan. After the Spellplague the inhabited isle slipped into the Feywild, leaving the world believing it lost. Since the Sundering it has returned, existing at once on Toril, in the Feywild, and in Arvandor.",
+    "population": 60000,
+    "ruler": "Royal Council (Queen Amlaruil gone after 1385); Leuthilspar governed by a council of nobles",
+    "tags": [
+      "elves",
+      "island",
+      "feywild",
+      "retreat",
+      "seldarine"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d4dcc8",
+        "accent": "#4a7fa0",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "harbor",
+        "spires",
+        "giant-trees",
+        "mythal",
+        "docks",
+        "ships",
+        "glow"
+      ],
+      "terrain": "island",
+      "notes": "A green island with a crystal-roofed elven capital at a river mouth: glittering spires among great trees, magically grown piers, and a chained harbor mouth."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Evermeet",
+      "https://forgottenrealms.fandom.com/wiki/Leuthilspar"
+    ]
+  }
+]
