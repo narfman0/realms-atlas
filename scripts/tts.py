@@ -54,6 +54,8 @@ PRONOUNCE = {
     "Evereska": "Ev-er-ess-ka",
     "Ilsevele": "Il-seh-vell",
     "Raurlor": "Rowr-lor",
+    "Lanaxis": "Lan-ax-iss",
+    "Burdun": "Bur-dun",
 }
 
 

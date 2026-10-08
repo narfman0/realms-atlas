@@ -89,6 +89,12 @@
     "voice": "bm_george",
     "engine": "kokoro"
   },
+  "twilight-giants-hartsvale": {
+    "hash": "e18f35a44cf64b23",
+    "durationSec": 67.0,
+    "voice": "bm_george",
+    "engine": "kokoro"
+  },
   "weeping-war": {
     "hash": "94eec13f02f3048b",
     "durationSec": 63.9,

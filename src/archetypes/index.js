@@ -26,6 +26,7 @@ import landmarkDesert from './landmark-desert.js';
 import landmarkSea from './landmark-sea.js';
 import landmarkMonolith from './landmark-monolith.js';
 import frozenTown from './frozen-town.js';
+import islandKeep from './island-keep.js';
 import ringCity from './ring-city.js';
 import celestialBody from './celestial-body.js';
 
@@ -53,6 +54,7 @@ export const ARCHETYPES = {
   'landmark-sea': landmarkSea,
   'landmark-monolith': landmarkMonolith,
   'frozen-town': frozenTown,
+  'island-keep': islandKeep,
   'ring-city': ringCity,
   'celestial-body': celestialBody,
   'asteroid-port': walledCity,

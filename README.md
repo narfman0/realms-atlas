@@ -1,9 +1,9 @@
 # Realms Atlas
 
-An explorable three.js cabinet of Forgotten Realms cities, towns and landmarks — ninety in Faerûn and a
+An explorable three.js cabinet of Forgotten Realms cities, towns and landmarks — ninety-one in Faerûn and a
 hundred more across seven other boards (Ten-Towns, the Planes, Realmspace, Kara-Tur, Zakhara, Maztica,
 Laerakond) — with a Dalereckoning (DR) time scrubber that shows them changing from the Days of Thunder to
-1496 DR, and sixteen tales read aloud at the moments that changed them.
+1496 DR, and seventeen tales read aloud at the moments that changed them.
 
 Every place is a small procedural **diorama** built in code from one shared low-poly kit — walls, towers,
 spires, domes, minarets, keeps, house clusters, trees, mountains, caverns, ships, bridges, ruins, glows —
@@ -70,7 +70,7 @@ with a fire-glow), `ice` (floes on water, a glacier on land).
 
 ## Narration
 
-`data/stories.json` holds sixteen tales (120–180 words each, told by an Avowed of Candlekeep) tied to the
+`data/stories.json` holds seventeen tales (120–180 words each, told by an Avowed of Candlekeep) tied to the
 events that shaped the Realms. An open-book glyph marks each tale on the scrubber and on the labels of the
 places it touches; the panel lists a place's tales. A **Tale** card shows the title, year and text (drop cap)
 with **Hear the tale** and a progress bar. Playing a tale jumps the year, flies to its first place (switching
@@ -131,7 +131,7 @@ src/kit/                  the shared architecture kit: Builder (merges geometry 
                           instancing prototypes, materials with per-diorama status uniforms, palette, Site
                           (terrain height function + occupancy grid), pieces.js (every architectural piece)
 src/kit/cosmos.js         phase-2 pieces: gears, chasms, ice, faceted spheres, rings, floating rock tiles, orreries
-src/archetypes/           one generator per archetype (23 + ring-city, celestial-body), composing kit pieces
+src/archetypes/           one generator per archetype (23 + ring-city, celestial-body, island-keep), composing kit pieces
                           from visual.motifs/terrain/scale; index.js picks motif-driven looks and adrift tiles
 src/diorama.js            the status machinery: setYear() → tweened rise / collapse / scorch / fade / ghost / lift
 src/layouts/              atlas, map, chronicle, wheel (the Planes), orbit (Realmspace)
@@ -153,7 +153,7 @@ a place is ruined; a pre-built `ruin` layer of stumps and rubble rises), and by 
 
 1. Add a record to the right `data/places/<region>.json` (or `data/places/<world>.json`; see `docs/SPEC.md` and
    `docs/SPEC-2.md`): id, name, region,
-   type, `archetype` (one of the 23), `founded`, a `status` timeline, 3–6 `events`, an original `description`,
+   type, `archetype` (one of the 23, or `island-keep`), `founded`, a `status` timeline, 3–6 `events`, an original `description`,
    `visual` (`palette`, `scale` 1–5, `motifs`, `terrain`, `notes`) and `sources`.
 2. Add its coordinates to `places` in `data/map.json` or `data/maps/<world>.json` (see `docs/MAP.md`); the Planes
    use `ring: {order, plane}` and Realmspace `orbit: {index, radius}` instead.

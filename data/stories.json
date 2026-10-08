@@ -119,6 +119,20 @@
     "durationSec": 63.4
   },
   {
+    "id": "twilight-giants-hartsvale",
+    "title": "The Ogre's Pact",
+    "year": 1369,
+    "worldId": "toril",
+    "placeIds": [
+      "hartsvale"
+    ],
+    "eventTitle": null,
+    "narrator": "an Avowed of Candlekeep",
+    "text": "Every kingdom keeps a bargain it would rather forget, and Hartsvale's is an ugly one. To take the throne from his own twin, Prince Camden bought the clubs of the Ice Spire ogres, and the price was his firstborn daughter. He expected sons. He got Brianna. In 1366 the ogres came to collect, and a firbolg innkeeper from Stagwick named Tavis Burdun went after them, an orphan thief at his heels. He brought the princess home, the king's bargain came out into the light, and Camden went into exile while his daughter took the Alabaster Throne. Yet the ogres were only errand-runners. Behind them stood the Twilight Spirit, who was Lanaxis, father of the titans, and he wanted Brianna's child as a crown for all giantkind. In 1369, hunted through the snows by frightened firbolg clans, the queen gave birth in a cave. The thief Avner died guarding the cradle, and Tavis struck the titan down. Our copy of this account is bound in Hartsvale redwood. Fitting, I think.",
+    "audio": "narration/twilight-giants-hartsvale.mp3",
+    "durationSec": 67.0
+  },
+  {
     "id": "ched-nasad-falls",
     "title": "The Fall of the City of Shimmering Webs",
     "year": 1372,

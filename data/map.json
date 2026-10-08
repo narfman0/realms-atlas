@@ -126,6 +126,7 @@
   ],
   "features": [
     { "label": "Spine of the World", "x": 0.3, "y": 0.095, "kind": "mountains" },
+    { "label": "Ice Spires", "x": 0.535, "y": 0.04, "kind": "mountains", "size": 0.8 },
     { "label": "High Forest", "x": 0.315, "y": 0.325, "kind": "forest" },
     { "label": "Anauroch", "x": 0.5, "y": 0.15, "kind": "desert" },
     { "label": "Cormanthor", "x": 0.6, "y": 0.375, "kind": "forest" },
@@ -151,6 +152,7 @@
     { "name": "Storm Horns and Thunder Peaks", "points": [[0.425,0.5],[0.432,0.455],[0.443,0.41],[0.46,0.385],[0.49,0.378],[0.515,0.39],[0.522,0.44]] },
     { "name": "Cloud Peaks", "points": [[0.235,0.618],[0.27,0.612],[0.31,0.62]] },
     { "name": "Graypeaks", "points": [[0.39,0.3],[0.398,0.325],[0.405,0.345]] },
-    { "name": "Sunset Mountains", "points": [[0.413,0.375],[0.418,0.41],[0.41,0.445]] }
+    { "name": "Sunset Mountains", "points": [[0.413,0.375],[0.418,0.41],[0.41,0.445]] },
+    { "name": "Ice Spires", "points": [[0.448,0.05],[0.47,0.042],[0.495,0.046],[0.512,0.062],[0.518,0.085]] }
   ]
 }

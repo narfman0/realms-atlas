@@ -106,8 +106,20 @@
 <path d="M599.2,419.8 L604.2,409.8 L609.2,419.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
 <path d="M595.3,431.5 L600.3,421.5 L605.3,431.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
 <path d="M591.4,443.2 L596.4,433.2 L601.4,443.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<polyline data-name="Ice Spires" points="649.6,50 681.5,42 717.8,46 742.4,62 751.1,85" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M649.9,52.7 L654.9,42.7 L659.9,52.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M660.5,50.0 L665.5,40.0 L670.5,50.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M671.2,47.3 L676.2,37.3 L681.2,47.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M682.5,46.7 L687.5,36.7 L692.5,46.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M694.6,48.0 L699.6,38.0 L704.6,48.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M706.7,49.3 L711.7,39.3 L716.7,49.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M718.9,54.0 L723.9,44.0 L728.9,54.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M731.2,62.0 L736.2,52.0 L741.2,62.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M739.6,71.8 L744.6,61.8 L749.6,71.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M743.9,83.3 L748.9,73.3 L753.9,83.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
 </g><g id="features">
 <text data-kind="mountains" x="435" y="95" text-anchor="middle" fill="#6b5a42" font-size="15" letter-spacing="2">SPINE OF THE WORLD</text>
+<text data-kind="mountains" x="775.8" y="40" text-anchor="middle" fill="#6b5a42" font-size="15" letter-spacing="2">ICE SPIRES</text>
 <text data-kind="forest" x="456.8" y="325" text-anchor="middle" fill="#4d6b3c" font-size="16" font-style="italic">HIGH FOREST</text>
 <text data-kind="desert" x="725" y="150" text-anchor="middle" fill="#9a6b2f" font-size="20" letter-spacing="6">ANAUROCH</text>
 <text data-kind="forest" x="870" y="375" text-anchor="middle" fill="#4d6b3c" font-size="16" font-style="italic">CORMANTHOR</text>

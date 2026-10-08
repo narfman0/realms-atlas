@@ -87,7 +87,7 @@ spine-of-the-world (landmark), longsaddle, triboar, yartar
 
 **silver-marches** (`data/places/silver-marches.json`): silverymoon, everlund, sundabar, citadel-adbar,
 mithral-hall, gauntlgrym, hellgate-keep (Ascalhorn), evereska, high-forest (landmark), evermeet (Leuthilspar),
-luruar-moonwood? → NO, skip. Add: citadel-felbarr, nesme
+luruar-moonwood? → NO, skip. Add: citadel-felbarr, nesme, hartsvale (Ice Spires kingdom; added later)
 
 **underdark** (`data/places/underdark.json`): menzoberranzan, ched-nasad, blingdenstone, gracklstugh,
 mantol-derith, araumycos (landmark, fungal mass)

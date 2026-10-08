@@ -12,6 +12,8 @@ export const ARCHETYPES = [
   'landmark-sea', 'landmark-monolith', 'frozen-town',
   // phase 2
   'ring-city', 'celestial-body', 'asteroid-port',
+  // later additions
+  'island-keep',
 ];
 export const STATES = ['thriving', 'troubled', 'ruined', 'abandoned', 'destroyed', 'hidden', 'relocated'];
 export const MOTIFS = [

@@ -1280,8 +1280,8 @@
     ],
     "world": "toril",
     "region": "silver-marches",
-    "type": "town",
-    "archetype": "frozen-town",
+    "type": "city",
+    "archetype": "island-keep",
     "map": {
       "x": null,
       "y": null

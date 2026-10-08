@@ -38,6 +38,7 @@ const SHOTS = [
   ['solo-neverwinter-1460', '?solo=neverwinter&year=1460'],
   ['solo-elturel-1492', '?solo=elturel&year=1492'],
   ['solo-high-forest', '?solo=high-forest'],
+  ['solo-hartsvale', '?solo=hartsvale'],
   // phase 2: worlds and narration
   ['board-planes', '?world=planes'],
   ['board-realmspace', '?world=realmspace'],

@@ -20,7 +20,7 @@ each other. It was not traced from, and does not embed, any WotC map.
 | key | shape | use |
 |---|---|---|
 | `canvas` | `{aspect}` | canvas proportions |
-| `places` | `{ id: {x, y} }` | one entry for every roster id in `docs/SPEC.md` (90 ids) |
+| `places` | `{ id: {x, y} }` | one entry for every roster id in `docs/SPEC.md` (91 ids) |
 | `coast` | `[[x,y], ...][]` | polylines. A closed shape repeats its first vertex at the end |
 | `coastMeta` | `{name, closed, kind}[]` | matches `coast` by index. `kind` is `mainland`, `water` (fill as sea) or `island` (fill as land) |
 | `features` | `{label, x, y, kind, style?}[]` | lettering. `kind` is one of `mountains, forest, desert, sea, region`. `style: "dashed-inset"` marks the Underdark label |
@@ -78,6 +78,8 @@ the source of truth for positions.** If the two disagree, the build should take 
 - The **Shining Sea** is drawn as a closed bay between Calimshan/the Lake of Steam and Chult's north coast. Chult is a
   peninsula joined to the mainland east of the bay's end. The Great Sea coast runs east from there, with
   Halruaa (Halarahh) inland on it, east of the Shining Sea.
+- **Hartsvale** sits north of Citadel Adbar under a short Ice Spires range line drawn beyond the Spine of the World's
+  eastern end. The Ice Mountains are not drawn.
 - Coastlines of the far east (Rashemen, Mulhorand) and the northern ice are not drawn. The frame simply ends
   there.
 
