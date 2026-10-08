@@ -141,7 +141,7 @@ export function decorate(S, done = new Set(), o = {}) {
   if (want('glow') || want('faerie-fire')) K.glowPoints(S, { n: 8 + S.scale * 2, color: want('faerie-fire') ? '#c47aff' : P.glow, spread: 3 });
   if (want('mythal')) K.mythal(S, { r: 4.2, h: 4.2 });
   if (want('giant-trees')) K.trees(S, { n: 3 + S.scale, type: 'giant' });
-  if (o.trees !== false) {
+  if (o.trees !== false && !S.has('gears')) { // clockwork planes and towns are not wooded
     const t = S.terrain;
     const type = t === 'tundra' || t === 'mountain' ? 'con' : t === 'jungle' || (t === 'coast' && S.place.region === 'east-and-south' && S.place.archetype === 'jungle-city') ? 'palm' : t === 'cavern' ? 'mushroom' : 'mixed';
     const n = o.treeCount ?? (want('trees') ? 22 : t === 'forest' ? 26 : t === 'desert' ? 2 : t === 'cavern' ? 0 : 10);

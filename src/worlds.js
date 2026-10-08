@@ -23,7 +23,7 @@ export function primaryLayout(w) {
   return d === 'wheel' || d === 'orbit' ? d : 'map';
 }
 /** chart size for a world's Map layout: Faerûn is the big board; the others are smaller and more crowded */
-export const mapOpts = (w) => (w === 'toril' ? { W: 300, s: 0.66 } : { W: 205, s: 0.92 });
+export const mapOpts = (w) => (w === 'toril' ? { W: 300, s: 0.66 } : { W: 215, s: 1.2 });
 
 /** stories touching a place (by placeIds) */
 const byPlace = new Map();

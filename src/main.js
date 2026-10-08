@@ -530,6 +530,7 @@ function tourGo() {
     tour.timer = setTimeout(next, Math.max(9000, st.text.length * 30));
     return;
   }
+  if (tale.story) tale.close();
   focusPlace(i, { fromTour: true, dur: 2.4 });
   const dwell = Math.max(7000, (p.description || '').length * 42);
   tour.timer = setTimeout(next, dwell);
@@ -550,6 +551,9 @@ async function switchWorld(w, { layout } = {}) {
   if (SOLO || !WORLD_BY_ID[w] || state.switching) return;
   if (w === world && !layout) return;
   state.switching = true;
+  try { await swapWorld(w, layout); } finally { state.switching = false; }
+}
+async function swapWorld(w, layout) {
   stopTour();
   stopPlay();
   const fade = !SHOT && !REDUCED;
@@ -575,7 +579,6 @@ async function switchWorld(w, { layout } = {}) {
   shadowDirty = true;
   updateURL();
   if (fade) { veil.classList.remove('on'); setTimeout(() => { veil.hidden = true; }, 420); }
-  state.switching = false;
 }
 function stepWorld(dir) {
   const k = WORLDS.findIndex((x) => x.id === world);

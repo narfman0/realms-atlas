@@ -242,7 +242,7 @@ export function drawParchment(map, places, { width = 3000, title = 'Faerûn' } =
   g.translate(W - 110, H * 0.79);
   g.textAlign = 'right';
   g.fillStyle = INK;
-  g.font = '600 92px "Cormorant Garamond", Georgia, serif';
+  g.font = `600 ${W >= 3000 ? 92 : 70}px "Cormorant Garamond", Georgia, serif`;
   g.fillText(spaced(title.toUpperCase()), 0, 0);
   g.font = 'italic 500 40px "Cormorant Garamond", Georgia, serif';
   g.fillText('a schematic chart, not to scale', -6, 54);
@@ -500,7 +500,8 @@ export function makeWheelBoard(L) {
   const ci = (L.R2 * 0.98) * k, box = 13 * k;
   g.strokeRect(c + ci - box, c - ci - box, box * 2, box * 2);
   g.setLineDash([]); g.font = 'italic 600 38px "Cormorant Garamond", Georgia, serif'; g.fillStyle = 'rgba(58,44,32,0.85)'; g.textAlign = 'center';
-  g.fillText('beyond the Wheel: the Inner Planes', c + ci, c - ci - box - 18);
+  g.fillText('beyond the Wheel:', c + ci, c - ci + box + 44);
+  g.fillText('the Inner Planes', c + ci, c - ci + box + 84);
   g.restore();
   compass(g, 230, 230, 120, INK);
   const tex = new THREE.CanvasTexture(cv);

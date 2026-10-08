@@ -50,6 +50,10 @@ const SHOTS = [
   ['solo-ps-sigil', '?solo=ps-sigil'],
   ['solo-sj-rock-of-bral', '?solo=sj-rock-of-bral'],
   ['solo-tt-bryn-shander', '?solo=tt-bryn-shander'],
+  ['solo-ps-mechanus', '?solo=ps-mechanus'],
+  ['solo-ps-the-abyss', '?solo=ps-the-abyss'],
+  ['solo-sj-toril', '?solo=sj-toril'],
+  ['solo-sj-the-sun', '?solo=sj-the-sun'],
 ];
 
 let server;

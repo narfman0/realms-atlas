@@ -9,7 +9,9 @@ const BANDS = [
 
 export function atlas(places) {
   const present = new Set(places.map((p) => p.region));
-  const extra = [...present].filter((r) => !REGION_ORDER.includes(r));
+  // regions outside the Faerûn bands (the other worlds' regions) form a band of their own, in name order
+  const inBands = new Set(BANDS.flat());
+  const extra = [...present].filter((r) => !inBands.has(r)).sort((a, b) => (REGION_ORDER.indexOf(a) + 1 || 999) - (REGION_ORDER.indexOf(b) + 1 || 999));
   const bands = BANDS.map((b) => b.filter((r) => present.has(r)));
   if (extra.length) bands.push(extra);
   const items = new Array(places.length);
