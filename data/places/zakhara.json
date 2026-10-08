@@ -1,0 +1,744 @@
+[
+  {
+    "world": "zakhara",
+    "region": "zakhara",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "zk-huzuz",
+    "name": "Huzuz",
+    "aliases": [
+      "City of Delights",
+      "Huzuz the Golden",
+      "Gem of Zakhara"
+    ],
+    "type": "metropolis",
+    "archetype": "desert-city",
+    "founded": null,
+    "foundedNote": "Already a minor trading village when the scrolls of the Loregiver were found there c. 800 DR; the status timeline starts at that date.",
+    "status": [
+      {
+        "from": 800,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 800,
+        "title": "The Loregiver's scrolls found",
+        "summary": "An al-Badia youth has a vision at the Loregiver's house and finds her scrolls of Law (c. 800 DR). The village is among the first to follow him, he becomes the first Grand Caliph, and the Golden Mosque is later raised over the house.",
+        "importance": 3
+      },
+      {
+        "year": 1327,
+        "title": "Genies annihilate a besieging army",
+        "summary": "On 12 Nau 1327 DR the sixteenth Grand Caliph, Bahamal al-Assad, summons a host of genies that destroys a renegade sheikh's army at the gates; no one openly attacks the city for generations afterwards.",
+        "importance": 2
+      },
+      {
+        "year": 1345,
+        "title": "Khalil ascends the Enlightened Throne",
+        "summary": "Khalil al-Assad al-Zahir becomes the eighteenth Grand Caliph at 18 and spends years slipping away from the palace to adventure in disguise.",
+        "importance": 2
+      },
+      {
+        "year": 1366,
+        "title": "A scandal from the minarets",
+        "summary": "A smitten noble uses the Golden Mosque's voice-projecting minaret to declare his love across the city; to escape a death sentence he must perform three impossible tasks.",
+        "importance": 1
+      }
+    ],
+    "description": "Huzuz spreads along the Al-Sarif where Suq Bay narrows into the Golden Gulf, its domes and towers covered in gold leaf, tile and inlaid glass that shine across the water. The Golden Mosque's four 300-foot gilded minarets rise over the Pilgrims' District and the whole continent comes to it on pilgrimage. Facing the mosque, the Court of Enlightenment can hold fifty thousand people when the Grand Caliph speaks from the Enlightened Throne's pavilion. Genie allies, a navy and carpet-riding battle-mages guard the city.",
+    "population": 800000,
+    "ruler": "Grand Caliph Khalil al-Assad al-Zahir (1367)",
+    "tags": [
+      "zakhara",
+      "capital",
+      "pilgrimage",
+      "grand-caliph",
+      "genies"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#ead9a8",
+        "accent": "#1c7c8c",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "domes",
+        "minarets",
+        "temple",
+        "walls",
+        "harbor",
+        "river",
+        "glow",
+        "farms"
+      ],
+      "terrain": "coast",
+      "notes": "A sprawl of gilded domes on a strait, dominated by one great golden dome with four very tall golden minarets and a vast open court in front; two harbours on the water."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Huzuz",
+      "https://forgottenrealms.fandom.com/wiki/Golden_Mosque",
+      "https://forgottenrealms.fandom.com/wiki/Court_of_Enlightenment",
+      "https://forgottenrealms.fandom.com/wiki/Khalil_al-Assad_al-Zahir"
+    ]
+  },
+  {
+    "world": "zakhara",
+    "region": "zakhara",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "zk-qudra",
+    "name": "Qudra",
+    "aliases": [
+      "City of Power"
+    ],
+    "type": "metropolis",
+    "archetype": "desert-city",
+    "founded": null,
+    "foundedNote": "No founding date. The status timeline uses c. 800 DR, when Zakhara was unified under the first Grand Caliph, as a placeholder.",
+    "status": [
+      {
+        "from": 800,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1357,
+        "title": "Fleet broken at Hawa",
+        "summary": "A Qudran mamluk fleet tries to take the corsair city of Hawa and is driven off with heavy losses (c. 1357 DR).",
+        "importance": 2
+      },
+      {
+        "year": 1367,
+        "title": "Bulwark of the north",
+        "summary": "Under Emir Hatit Abd al-Wajib of the Dutiful mamluks, Qudra has the strongest fortifications in Zakhara, built up over centuries of pirate and barbarian raids. Pinned to the 1367 DR \"present\" of the Al-Qadim sourcebooks; the source gives no exact year.",
+        "importance": 2
+      },
+      {
+        "year": 800,
+        "title": "Sworn to the Grand Caliph",
+        "summary": "Qudra's mamluk rulers follow the Grand Caliph in Huzuz. The source only says this happened when Enlightenment spread across Zakhara (c. 800 DR); the year is a placeholder.",
+        "importance": 1
+      }
+    ],
+    "description": "Qudra stands at the mouth of the Al-Faddi, a grey, heavily walled port facing the Great Sea and the 'barbarian' north. Mamluk societies fiercely loyal to the Grand Caliph run it in a spirit of duty and order. It is known for disciplined slave soldiers, fine armour and the best-regulated slave market in the Land of Fate.",
+    "population": 500000,
+    "ruler": "Emir Hatit Abd al-Wajib (1367)",
+    "tags": [
+      "zakhara",
+      "mamluks",
+      "fortress-city",
+      "port"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6cbb2",
+        "accent": "#1c7c8c",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "walls",
+        "towers",
+        "gate",
+        "harbor",
+        "domes",
+        "minarets",
+        "river"
+      ],
+      "terrain": "coast",
+      "notes": "A grey, massively walled city on a river mouth facing the sea, thick towers along the shore and a few domes and minarets behind the ramparts."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Qudra",
+      "https://forgottenrealms.fandom.com/wiki/Hatit_Abd_al-Wajib",
+      "https://forgottenrealms.fandom.com/wiki/Hawa"
+    ]
+  },
+  {
+    "world": "zakhara",
+    "region": "zakhara",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "zk-hiyal",
+    "name": "Hiyal",
+    "aliases": [
+      "City of Intrigue"
+    ],
+    "type": "metropolis",
+    "archetype": "desert-city",
+    "founded": null,
+    "foundedNote": "No founding date. The status timeline uses c. 800 DR, the unification under the Grand Caliphs, as a placeholder.",
+    "status": [
+      {
+        "from": 800,
+        "to": 1362,
+        "state": "thriving"
+      },
+      {
+        "from": 1362,
+        "to": 1363,
+        "state": "troubled"
+      },
+      {
+        "from": 1363,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1362,
+        "title": "The sultan dies at dinner",
+        "summary": "Hiyal's sultan dies suddenly at a meal. His widow Alurah persuades her Huzuzi allies that only she can end the chaos, and she takes the throne.",
+        "importance": 2
+      },
+      {
+        "year": 1367,
+        "title": "Princes' mamluks brawl",
+        "summary": "Each of the ailing sultana's children commands mamluks loyal only to them, and their feuds spill into the smoky streets. Pinned to the 1367 DR \"present\" of the Al-Qadim sourcebooks; the source gives no exact year.",
+        "importance": 1
+      }
+    ],
+    "description": "Hiyal is a soot-black industrial city in the Al-Wahl valley at the inner end of Suq Bay, facing its rival Huzuz across the water. Smoke from its foundries and kilns covers the city, and the gloom suits its smugglers and information brokers. Its forges make some of the best blades and armour in Zakhara.",
+    "population": 600000,
+    "ruler": "Sultana Alurah bint Asrah (1367)",
+    "tags": [
+      "zakhara",
+      "intrigue",
+      "foundries",
+      "cities-of-the-heart"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9bca2",
+        "accent": "#1c7c8c",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "domes",
+        "minarets",
+        "walls",
+        "river",
+        "harbor",
+        "lava"
+      ],
+      "terrain": "river",
+      "notes": "A dense domed city in a river valley at the head of a bay, smudged dark, with many forge chimneys and an orange glow under a haze of smoke."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Hiyal",
+      "https://forgottenrealms.fandom.com/wiki/Alurah_bint_Asrah"
+    ]
+  },
+  {
+    "world": "zakhara",
+    "region": "zakhara",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "zk-muluk",
+    "name": "Muluk",
+    "aliases": [
+      "City of Kings",
+      "In'aash"
+    ],
+    "type": "metropolis",
+    "archetype": "desert-city",
+    "founded": null,
+    "foundedNote": "Founded as In'aash in pre-Enlightenment times, undated. It was renamed after its caliph accepted the Law of the Loregiver (after c. 800 DR); the status timeline starts at 800.",
+    "status": [
+      {
+        "from": 800,
+        "to": 1366,
+        "state": "thriving"
+      },
+      {
+        "from": 1366,
+        "to": 1367,
+        "state": "troubled"
+      },
+      {
+        "from": 1367,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 800,
+        "title": "In'aash becomes Muluk",
+        "summary": "The city's caliph accepts the Law of the Loregiver, and the old Anwahran name 'place of life-giving refreshment' gives way to Muluk. The source only says this was centuries after the founding; c. 800 is an estimate.",
+        "importance": 2
+      },
+      {
+        "year": 1366,
+        "title": "Threatened by Umara",
+        "summary": "Umara's old caliph hires barbarian troops for a campaign against Muluk, but they murder him in a palace coup instead. The source puts this shortly before 1367 DR; the year is pinned.",
+        "importance": 2
+      },
+      {
+        "year": 1367,
+        "title": "Caliph Aswiyah's alliances",
+        "summary": "Caliph Aswiyah al-Muftahir negotiates alliances with each of the Free Cities. Pinned to the 1367 DR \"present\" of the Al-Qadim sourcebooks; the source gives no exact year.",
+        "importance": 1
+      }
+    ],
+    "description": "Muluk lies at the mouth of the Al-Zalim between Umara and Qadib and is proud of an unbroken line of rulers that earns it the name City of Kings. It trades in many goods, above all the regal purple dye its looms are known for, and it is home to the Respected mamluk society. Its present caliph, crafty like her ancestors, has made it the hinge of the Free Cities' alliances.",
+    "population": 90000,
+    "ruler": "Caliph Aswiyah al-Muftahir (1367)",
+    "tags": [
+      "zakhara",
+      "free-cities",
+      "dye",
+      "trade"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e2d3b4",
+        "accent": "#1c7c8c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "domes",
+        "minarets",
+        "walls",
+        "harbor",
+        "river",
+        "castle"
+      ],
+      "terrain": "coast",
+      "notes": "A walled port city at a river mouth with a prominent royal palace; purple-dyed awnings in the bazaar as the accent."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Muluk",
+      "https://forgottenrealms.fandom.com/wiki/Aswiyah_al-Muftahir",
+      "https://forgottenrealms.fandom.com/wiki/Umara"
+    ]
+  },
+  {
+    "world": "zakhara",
+    "region": "zakhara",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "zk-afyal",
+    "name": "Afyal",
+    "aliases": [
+      "Isle of the Elephant",
+      "Medina al-Afyal"
+    ],
+    "type": "island",
+    "archetype": "jungle-city",
+    "founded": null,
+    "foundedNote": "The island kingdom has no founding date; the ruins of an older fallen empire are undated. The status timeline begins at c. 800 DR as a placeholder.",
+    "status": [
+      {
+        "from": 800,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1367,
+        "title": "The Lost One's idols destroyed",
+        "summary": "Jungle expeditions keep finding monoliths to an elephant-headed god driven off the island before Enlightenment, and the church of Selan destroys each one. Pinned to the 1367 DR \"present\" of the Al-Qadim sourcebooks; the source gives no exact year.",
+        "importance": 2
+      },
+      {
+        "year": 1367,
+        "title": "Wealth of the eastern route",
+        "summary": "Gems, spices and hardwoods, and a position on the sea lanes to Kara-Tur, make Afyal one of Zakhara's richest realms; its jewellery is famous. Pinned to the 1367 DR \"present\" of the Al-Qadim sourcebooks; the source gives no exact year.",
+        "importance": 1
+      }
+    ],
+    "description": "Afyal is a large jungle island at Zakhara's eastern edge, a kingdom of gem mines, spice groves and the ruins of an older empire carved with the forgotten Affa script. Its only real city, Medina al-Afyal, uses polished marble and gleaming hardwood rather than the usual blue tile, and a rigid caste system rules it. Unusually clever elephants carry its elite cavalry, and killing one has been a grave crime since the first padishah, Alon.",
+    "population": null,
+    "ruler": "The padishah of Afyal",
+    "tags": [
+      "zakhara",
+      "island",
+      "elephants",
+      "jungle",
+      "ruined-kingdoms"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d3cfa6",
+        "accent": "#1c7c8c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "trees",
+        "domes",
+        "temple",
+        "ruins",
+        "harbor",
+        "statue"
+      ],
+      "terrain": "island",
+      "notes": "A jungle-covered island with a gleaming marble domed city on its shore and overgrown ruins and an elephant-headed statue in the trees behind."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Afyal",
+      "https://forgottenrealms.fandom.com/wiki/Medina_al-Afyal"
+    ]
+  },
+  {
+    "world": "zakhara",
+    "region": "zakhara",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "zk-jumlat",
+    "name": "Jumlat",
+    "aliases": [
+      "City of Multitudes"
+    ],
+    "type": "metropolis",
+    "archetype": "desert-city",
+    "founded": null,
+    "foundedNote": "No founding date. The status timeline uses c. 800 DR as a placeholder.",
+    "status": [
+      {
+        "from": 800,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1367,
+        "title": "Pearl war with Gana",
+        "summary": "Sultan Kara al-Zalim hires privateers and corsairs to guard Jumlat's pearl fleets and harry rival Gana. Pinned to the 1367 DR \"present\" of the Al-Qadim sourcebooks; the source gives no exact year.",
+        "importance": 2
+      },
+      {
+        "year": 1367,
+        "title": "Bounty on a sea monster",
+        "summary": "Ships keep disappearing off Jumlat, and the sultan offers 100,000 dinars to whoever kills the beast blamed for it. Pinned to the 1367 DR \"present\" of the Al-Qadim sourcebooks; the source gives no exact year.",
+        "importance": 1
+      }
+    ],
+    "description": "Jumlat, the City of Multitudes, is a crowded, plain-looking port on the al-Fatir River where the Golden Gulf opens into the Crowded Sea. Its fortune is pearls: divers work the gulf beds, and a few merchant houses hold most of the city in debt. Between harvests many of its people beg in the streets.",
+    "population": 300000,
+    "ruler": "Sultan Kara al-Zalim (1367)",
+    "tags": [
+      "zakhara",
+      "pearl-cities",
+      "pearls",
+      "port"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e4d8bc",
+        "accent": "#1c7c8c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "harbor",
+        "docks",
+        "ships",
+        "domes",
+        "river",
+        "walls"
+      ],
+      "terrain": "coast",
+      "notes": "A dense, low, crowded city of flat roofs and a few domes at a river mouth, with many small pearling boats along the shore."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Jumlat",
+      "https://forgottenrealms.fandom.com/wiki/Kara_al-Zalim",
+      "https://forgottenrealms.fandom.com/wiki/Pearl_Cities"
+    ]
+  },
+  {
+    "world": "zakhara",
+    "region": "zakhara",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "zk-hawa",
+    "name": "Hawa",
+    "aliases": [
+      "City of Chaos",
+      "City of Stilts"
+    ],
+    "type": "town",
+    "archetype": "island-haven",
+    "founded": null,
+    "foundedNote": "No founding date. The status timeline starts at its first dated mention (c. 1357 DR).",
+    "status": [
+      {
+        "from": 1357,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1357,
+        "title": "Qudra's fleet repulsed",
+        "summary": "The corsairs beat off a mamluk fleet from Qudra with heavy losses; ten years on the city still celebrates the victory every year.",
+        "importance": 3
+      },
+      {
+        "year": 1367,
+        "title": "Kor against the sea cult",
+        "summary": "Grima al-Auni, a hill-giant priest of Kor, fights the growing number of Istishia cultists in the city. Pinned to the 1367 DR \"present\" of the Al-Qadim sourcebooks; the source gives no exact year.",
+        "importance": 1
+      }
+    ],
+    "description": "Hawa is the only real town in the Genie's Turban islands of the Corsair Domains: a rowdy pirate port whose houses stand on stilts over the water. Its people are proud and independent, despise slavery, and count Qudra's mamluks as their worst enemies. They still think of themselves as enlightened, and mosques to Hakiyah, Kor and Najm rise above the piers.",
+    "population": null,
+    "ruler": "Whichever corsair captain holds power",
+    "tags": [
+      "zakhara",
+      "corsairs",
+      "pirates",
+      "stilts"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9d2b8",
+        "accent": "#1c7c8c",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "docks",
+        "ships",
+        "harbor",
+        "domes",
+        "bridge"
+      ],
+      "terrain": "island",
+      "notes": "A ramshackle town of houses on stilts over a lagoon, linked by plank bridges, with three small domed mosques and corsair ships moored around it."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Hawa",
+      "https://forgottenrealms.fandom.com/wiki/Corsair_Domains"
+    ]
+  },
+  {
+    "world": "zakhara",
+    "region": "zakhara",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "zk-umara",
+    "name": "Umara",
+    "aliases": [
+      "City of Knights"
+    ],
+    "type": "metropolis",
+    "archetype": "desert-city",
+    "founded": null,
+    "foundedNote": "No founding date. The status timeline uses c. 800 DR as a placeholder.",
+    "status": [
+      {
+        "from": 800,
+        "to": 1366,
+        "state": "thriving"
+      },
+      {
+        "from": 1366,
+        "to": 1368,
+        "state": "troubled"
+      },
+      {
+        "from": 1368,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1366,
+        "title": "Barbarian palace coup",
+        "summary": "Barbarian troops hired by the old caliph for a war on Muluk turn on him in a bloody palace coup. The source puts this shortly before 1367 DR; the year is pinned.",
+        "importance": 3
+      },
+      {
+        "year": 1367,
+        "title": "Uneasy calm",
+        "summary": "Under Caliph Ubar khel Muhif the city looks peaceful but is still recovering from the coup. Pinned to the 1367 DR \"present\" of the Al-Qadim sourcebooks; the source gives no exact year.",
+        "importance": 1
+      }
+    ],
+    "description": "Umara is a handsome coastal city at the mouth of the Al-Yatir, about 170 miles northeast of Liham. Its walls and domes are covered in its signature blue tilework, and blue textiles fill its markets. The City of Knights looks calm, but the blood of a recent palace coup has barely dried.",
+    "population": 100000,
+    "ruler": "Caliph Ubar khel Muhif (1367)",
+    "tags": [
+      "zakhara",
+      "free-cities",
+      "tilework"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e5dcc6",
+        "accent": "#1c7c8c",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "domes",
+        "minarets",
+        "walls",
+        "harbor",
+        "river",
+        "castle"
+      ],
+      "terrain": "coast",
+      "notes": "A neat walled coastal city at a river mouth with walls and domes in bright blue tile."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Umara",
+      "https://forgottenrealms.fandom.com/wiki/Muluk"
+    ]
+  },
+  {
+    "world": "zakhara",
+    "region": "zakhara",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "zk-haunted-lands",
+    "name": "Haunted Lands",
+    "aliases": [],
+    "type": "landmark",
+    "archetype": "landmark-desert",
+    "founded": null,
+    "foundedNote": "Geography.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 800,
+        "title": "The tribes take the Law",
+        "summary": "The al-Badia herders of the desert accept Enlightenment as it spreads from the first Grand Caliph, himself an al-Badia youth. Undated in the source; c. 800 DR is used.",
+        "importance": 2
+      },
+      {
+        "year": 1367,
+        "title": "Chun inscriptions deciphered",
+        "summary": "Scholars use magic to read some of the savage script on the ruin walls and identify it as dead Chun. Pinned to the 1367 DR \"present\" of the Al-Qadim sourcebooks; the source gives no exact year.",
+        "importance": 1
+      }
+    ],
+    "description": "The Haunted Lands are the larger and more easterly of the two great deserts on Zakhara's high interior, a waste of salt flats, ghost mountains and the ruins of kingdoms that once fought here, such as Moradask, City of the Sun, and Sokkar, City of Eternity. Only a few enlightened al-Badia clans, jann and some sinister nomad bands live here now.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "zakhara",
+      "desert",
+      "ruins",
+      "al-badia",
+      "jann"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e4cf9a",
+        "accent": "#1c7c8c",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "ruins",
+        "rubble",
+        "obelisk",
+        "tents",
+        "mountain"
+      ],
+      "terrain": "desert",
+      "notes": "Pale dunes and a white salt pan, a broken colonnade and half-buried obelisk, a few nomad tents and jagged mountains at one edge."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Haunted_Lands"
+    ]
+  },
+  {
+    "world": "zakhara",
+    "region": "zakhara",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "zk-golden-gulf",
+    "name": "Golden Gulf",
+    "aliases": [],
+    "type": "landmark",
+    "archetype": "landmark-sea",
+    "founded": null,
+    "foundedNote": "Geography.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1367,
+        "title": "Huzuz patrols the gulf",
+        "summary": "Huzuz's forty-ship navy patrols the Golden Gulf and Suq Bay to protect the sea lanes that carry Kara-Turan and Crowded Sea trade north. Pinned to the 1367 DR \"present\" of the Al-Qadim sourcebooks; the source gives no exact year.",
+        "importance": 1
+      }
+    ],
+    "description": "The Golden Gulf cuts deep into central Zakhara and narrows northward into Suq Bay, where golden Huzuz stands. Merchant dhows from the Crowded Sea and the far east cross it to the Cities of the Heart, and pearl divers work its beds. Under the waves locathah and sea elves roam and a sahuagin city lies hidden somewhere in the west. Storms are frequent in its central and eastern reaches.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "zakhara",
+      "sea",
+      "trade",
+      "pearls"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9d4b8",
+        "accent": "#1c7c8c",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "ships",
+        "harbor"
+      ],
+      "terrain": "coast",
+      "notes": "A wide expanse of water narrowing to a strait at one end, with a few sailing dhows and a distant golden glint of domes on the far shore."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Golden_Gulf",
+      "https://forgottenrealms.fandom.com/wiki/Huzuz"
+    ]
+  }
+]

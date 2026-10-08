@@ -84,3 +84,24 @@
 - Rock of Bral ruler dates are inferred, because the wiki gives centuries and reign lengths, not years: Bral c. 1200, Cozar c. 1290 ("end of the 13th century"), Frun c. 1310 (35-year reign), Calar's six days and Andru's accession c. 1345, before the Second Unhuman War (1360). The 5e era (Light of Xaryxis, Spelljammer Academy) is placed at c. 1492. The 5e books may relocate Bral to the Astral Sea, but the wiki pages read don't say so, so no `relocated` status was used.
 - Sun, Karpri, Chandos and Garden have only 1–2 events. Their canon is mostly the 1367-era sourcebook snapshot, and I didn't invent dates. Toril's events (Time of Troubles, Spellplague, Second Sundering) are pointers to the Faerûn atlas. `sj-toril` carries `drill: "toril"`.
 - Palette: all records share accent #4a6fa5 (star-blue) and ink #1c1f2b, and vary only `base` by body colour (sun amber, Karpri sapphire, Glyth dull grey, and so on).
+
+## kara-tur
+
+- Calendars: Shou Year = DR + 1250 (SY 2607 = 1357 DR). Wa Year = DR + 418 (WY 1803 = 1385 DR). Kozakuran Year = DR + 74 (KY 1459 = 1385 DR). These follow the Grand History convention the wiki uses. Each summary gives the original-calendar year in parentheses.
+- Roster substitutions (the `kt-` prefix is kept):
+  - `kt-kuo-meilan` → `kt-kuo-te-lung`. No Kuo Meilan exists on the wiki; Kuo Te' Lung is the Shou capital, though its wiki page is a stub, so Shou Lung and Hungtse Province pages fill it out.
+  - `kt-xi-hu` → `kt-xi-hulang`, the actual Koryo capital.
+  - `kt-celestial-sea` → `kt-dragonwall`. The Celestial Sea page is a two-line stub. The Dragonwall has dated history: breached in 1359 and destroyed by the Spellplague in 1385.
+  - `scripts/roster.mjs` and `data/maps/kara-tur.json` still use the old ids and need updating.
+- Post-1385 Kara-Tur is thin in canon. Shou Lung cities, Uwaji and Saikhoi are `troubled` from the Spellplague (or the 1360 undead conquest, for Saikhoi) to the present, because no recovery is attested. Dojyu recovers in 1479, when the Kozakuran civil war "faded" (KY 1553).
+- Guessed spans: Saikhoi/Thakos is `ruined` -1943→-1000 (in ruins by -1377; the rebuild is undated). Wai is `troubled` 1116–1117 (assassination) and 1352–1375 (twin-heir strife, ending when a tenth emperor is on the throne). U'Chan Gompa's founding is -665, the first year of the -665 to -610 monastic exodus.
+- Undated starts: Uwaji's status begins at 1245, when the capital moved there (the castle is older). Xi Hulang begins at the 1330s Sillan unification.
+- Visual: the Dragonwall uses the `fortress` archetype as a long serpentine wall and should break into rubble from 1385. The Plain of Horses uses `landmark-desert` with plain terrain and yurts, because there is no grassland landmark archetype. Regional accent is #b23a2e (lacquer red).
+
+## zakhara
+
+- Al-Qadim describes a "present" of 1367 DR, so most Zakharan events can only be dated to then. Events marked as pinned say so in their summary ("Pinned to the 1367 DR present..."). Truly dated items: the Loregiver's scrolls c. 800, the genie rout at Huzuz on 12 Nau 1327, Khalil's accession in 1345 (infobox ruler year), Hiyal's sultan dying in 1362, Qudra's fleet failing at Hawa c. 1357, and the minaret scandal in 1366.
+- Every city has `founded: null`. Except Hawa (1357, its first mention), city status timelines start at c. 800 DR, the unification under the first Grand Caliph. This is a placeholder so the cities don't all pop in at 1367. Muluk (pre-Enlightenment In'aash) and Huzuz (a village at 800) are clearly older.
+- Umara's coup against its old caliph (which ended his planned war on Muluk) is put at 1366, "shortly before 1367". Umara is `troubled` 1366–1368 and Muluk 1366–1367. Hiyal is `troubled` 1362–1363 for the succession.
+- No Spellplague or Sundering effects on Zakhara are recorded, so everything stays `thriving` after 1367.
+- zk-afyal is the island kingdom: type `island`, archetype `jungle-city`. Its one city, Medina al-Afyal, is listed as an alias. Hawa uses `island-haven` (stilt town). Regional accent is #1c7c8c (turquoise tile).

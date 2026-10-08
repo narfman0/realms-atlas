@@ -1,0 +1,931 @@
+[
+  {
+    "world": "kara-tur",
+    "region": "kara-tur",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "kt-kuo-te-lung",
+    "name": "Kuo Te' Lung",
+    "aliases": [
+      "Imperial Capital of Shou Lung"
+    ],
+    "type": "metropolis",
+    "archetype": "walled-city",
+    "founded": null,
+    "foundedNote": "No founding date. It became Shou Lung's imperial capital in Shou Year 869 (-381 DR), when the court left plague-struck Hai Sheng; the status timeline starts there.",
+    "status": [
+      {
+        "from": -381,
+        "to": 1359,
+        "state": "thriving"
+      },
+      {
+        "from": 1359,
+        "to": 1360,
+        "state": "troubled"
+      },
+      {
+        "from": 1360,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": -381,
+        "title": "The court moves to Wang Kuo",
+        "summary": "After the Ivory Plague and a ki-rin's warning at Hai Sheng (renamed Kirin), the surviving Hai imperial family relocates the capital to Kuo Te' Lung (Shou Year 869).",
+        "importance": 3
+      },
+      {
+        "year": 1359,
+        "title": "The Tuigan come over the Dragonwall",
+        "summary": "Yamun Khahan's horde invades Shou Lung (Shou Year 2609); Emperor Kai Tsao Shou Chin raises the Army of the Northern Marches from the northern provinces to meet it.",
+        "importance": 3
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague",
+        "summary": "The Spellplague strikes Shou Lung as hard as Faerûn, and many of its people flee west into the Hordelands and beyond.",
+        "importance": 2
+      },
+      {
+        "year": 1369,
+        "title": "A Cormyrean studies the Grand Canal",
+        "summary": "The engineer Ivar Devorast visits the Grand Canal of the Second Emperor on the Wang Kuo–Hungtse border (Shou Year 2619) to learn how the Shou move water.",
+        "importance": 1
+      },
+      {
+        "year": 1357,
+        "title": "The Forbidden City under Kai Tsao Shou Chin",
+        "summary": "In the Year of the Great Sky Serpent (Shou Year 2607) the emperor rules from the Forbidden City, with his chancellor running the eight ministries in his name.",
+        "importance": 1
+      }
+    ],
+    "description": "Kuo Te' Lung is the seat of the Shou emperors in Wang Kuo province, one of the two most crowded and heavily farmed heartlands of the empire. At its core lies the Forbidden City, a walled palace precinct shut to all but the court, ringed by ministries and the mansions of officials. The empire it rules has been shaken by the Tuigan and then by the Spellplague, yet the court's rituals go on.",
+    "population": null,
+    "ruler": "Emperor Kai Tsao Shou Chin (c. 1357)",
+    "tags": [
+      "shou-lung",
+      "capital",
+      "forbidden-city",
+      "imperial"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e2d2b0",
+        "accent": "#b23a2e",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "walls",
+        "gate",
+        "castle",
+        "temple",
+        "towers",
+        "canal",
+        "farms"
+      ],
+      "terrain": "plain",
+      "notes": "Nested square walls with a red-roofed palace precinct (the Forbidden City) at the centre and tiered gatehouses on each side; a canal and rice fields outside."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Kuo_Te'_Lung",
+      "https://forgottenrealms.fandom.com/wiki/Shou_Lung",
+      "https://forgottenrealms.fandom.com/wiki/Hungtse_Province"
+    ]
+  },
+  {
+    "world": "kara-tur",
+    "region": "kara-tur",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "kt-karatin",
+    "name": "Karatin",
+    "aliases": [],
+    "type": "metropolis",
+    "archetype": "harbor-metropolis",
+    "founded": -420,
+    "foundedNote": "Founded under the Hai Dynasty in Shou Year 830 (-420 DR).",
+    "status": [
+      {
+        "from": -420,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": -420,
+        "title": "Founded by the Hai Dynasty",
+        "summary": "The Hai emperors raise Karatin at the mouth of the Hungtse on drained swamp and cleared jungle, among the first Shou cities built to one unified plan (Shou Year 830).",
+        "importance": 2
+      },
+      {
+        "year": 1357,
+        "title": "Gateway for foreigners",
+        "summary": "The largest city in Shou Lung is the usual landing port for outsiders; traders come for silk, rice and Shou learning, and Aurora's Emporium keeps an outlet here.",
+        "importance": 1
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague",
+        "summary": "The Spellplague is as catastrophic in Shou Lung as in Faerûn and drives waves of emigrants westward.",
+        "importance": 2
+      }
+    ],
+    "description": "Karatin is Shou Lung's greatest port, built on reclaimed swamp where the Hungtse River meets the Celestial Sea. Its broad stone avenues and north-facing buildings follow one planned design, centred on the Great Palace of the Sea Lords. Junks crowd its deep, dredged harbour, and the Temple of the Jade Empress shelters a statue of the Hai founder's wife.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "shou-lung",
+      "port",
+      "silk",
+      "trade"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#dccfae",
+        "accent": "#b23a2e",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "harbor",
+        "docks",
+        "ships",
+        "river",
+        "castle",
+        "temple",
+        "statue"
+      ],
+      "terrain": "coast",
+      "notes": "A grid of north-facing roofs on a delta, a great palace at the centre, and a dredged harbour packed with junks where the river reaches the sea."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Karatin",
+      "https://forgottenrealms.fandom.com/wiki/Shou_Lung"
+    ]
+  },
+  {
+    "world": "kara-tur",
+    "region": "kara-tur",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "kt-wai",
+    "name": "Wai",
+    "aliases": [
+      "Chia Wan Ch'uan",
+      "City of Eleven Gates and Nine Great Walls"
+    ],
+    "type": "metropolis",
+    "archetype": "walled-city",
+    "founded": -781,
+    "foundedNote": "Founded as Chia Wan Ch'uan in Shou Year 469 (-781 DR) under the Li Dynasty, 34 years after the Eighteen Garrisons of T'u.",
+    "status": [
+      {
+        "from": -781,
+        "to": 1116,
+        "state": "thriving"
+      },
+      {
+        "from": 1116,
+        "to": 1117,
+        "state": "troubled"
+      },
+      {
+        "from": 1117,
+        "to": 1352,
+        "state": "thriving"
+      },
+      {
+        "from": 1352,
+        "to": 1375,
+        "state": "troubled"
+      },
+      {
+        "from": 1375,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1066,
+        "title": "Capital of T'u Lung",
+        "summary": "After civil war splits Shou Lung, Shin Gisen is proclaimed first emperor of the Lui Dynasty at Chia Wan Ch'uan, and the city becomes the capital of an independent T'u Lung (Shou Year 2316).",
+        "importance": 3
+      },
+      {
+        "year": -781,
+        "title": "Chia Wan Ch'uan founded",
+        "summary": "Li Dynasty Shou Lung founds the city in the middle Fenghsintzu valley as it consolidates its southern garrisons (Shou Year 469).",
+        "importance": 2
+      },
+      {
+        "year": 1116,
+        "title": "Emperor assassinated",
+        "summary": "Emperor Shin Rokan is murdered after trying to curb the barons; Wai Long Hwa takes the throne and seceding nobles open the era of the \"Three Kingdoms\" (Shou Year 2366).",
+        "importance": 2
+      },
+      {
+        "year": 1352,
+        "title": "Twin heirs",
+        "summary": "Emperor Wai Gada Shinzu's twin sons are born and the court splits into factions over the succession; within a few years the empire is in constant strife (Shou Year 2602).",
+        "importance": 2
+      },
+      {
+        "year": 1375,
+        "title": "The emperor travels incognito",
+        "summary": "The young tenth Lui emperor, Wai Yong, secretly visits distant Mulhorand under an assumed name (Shou Year 2625).",
+        "importance": 1
+      }
+    ],
+    "description": "Wai is a city stacked on top of itself: centuries of highways and mansions have been built over the roofs of older slums, so that its streets rise in layers with its social classes. Trolleys and elevators link the levels, and canals called the King's Waters wrap the whole. At the top, the Dakarazu Palace's gilded domes and copper dragons look down on a court where political plots regularly spill into the streets.",
+    "population": null,
+    "ruler": "Emperor Wai Gada Shinzu (c. 1357); later Wai Yong (1375)",
+    "tags": [
+      "tu-lung",
+      "capital",
+      "intrigue",
+      "canals"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#ddcfb0",
+        "accent": "#b23a2e",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "gate",
+        "canal",
+        "river",
+        "domes",
+        "towers",
+        "castle"
+      ],
+      "terrain": "river",
+      "notes": "Terraced, layered city inside many concentric walls, ringed by canals, with a gold-domed palace on the highest tier at the north end."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Wai",
+      "https://forgottenrealms.fandom.com/wiki/T'u_Lung"
+    ]
+  },
+  {
+    "world": "kara-tur",
+    "region": "kara-tur",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "kt-uwaji",
+    "name": "Uwaji",
+    "aliases": [],
+    "type": "metropolis",
+    "archetype": "walled-city",
+    "founded": null,
+    "foundedNote": "No founding date. Uwaji Castle is older than 1245 DR (Wa Year 1663), when the shogunate moved the capital here from Iiso; the status timeline starts at that move.",
+    "status": [
+      {
+        "from": 1245,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": 1245,
+        "title": "Shogunate moves to Uwaji",
+        "summary": "The capital of Wa moves from Iiso to Uwaji (Wa Year 1663). Matasuuri Shogoro finds the castle neglected and makes six daimyo repair it.",
+        "importance": 3
+      },
+      {
+        "year": 1385,
+        "title": "Gargantuas overrun Wa",
+        "summary": "After the Spellplague (Wa Year 1803) gargantuas devastate Wa, and its hengeyokai flee across the sea to Shou Lung.",
+        "importance": 3
+      },
+      {
+        "year": 1257,
+        "title": "The thirty-three ronin",
+        "summary": "A lord who draws his sword on the castle grounds is ordered to commit seppuku; four years later his 33 masterless samurai take revenge on the officer who insulted him (c. Wa Year 1675).",
+        "importance": 2
+      },
+      {
+        "year": 1337,
+        "title": "Juzimura rebellion",
+        "summary": "The shogun crushes the Juzimura revolt and supposedly stamps out the outlawed worship of Chantea (Wa Year 1755).",
+        "importance": 1
+      },
+      {
+        "year": 1357,
+        "title": "Shogun Matasuuri Nagahide",
+        "summary": "Shogun Matasuuri Nagahide holds court in the Palace of Imperial Prosperity, guarded by more than a thousand samurai and bushi (Wa Year 1775).",
+        "importance": 1
+      }
+    ],
+    "description": "Uwaji, on Tsukishima's east coast below the Ikuyu Mountains, is the shogun's city and one of the largest in Kara-Tur. High inner walls divide it into wards whose guarded gates separate samurai, artisans and merchants. Uwaji Castle is almost a town in itself, with pagodas, a peach orchard and the shogun's palace, and drawing a blade inside it means death. Since the Spellplague the land around it has suffered under rampaging gargantuas.",
+    "population": 500000,
+    "ruler": "Shogun Matasuuri Nagahide (1357)",
+    "tags": [
+      "wa",
+      "shogunate",
+      "capital",
+      "castle"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e0d3b6",
+        "accent": "#b23a2e",
+        "ink": "#2b2420"
+      },
+      "scale": 5,
+      "motifs": [
+        "castle",
+        "walls",
+        "gate",
+        "temple",
+        "harbor",
+        "mountain",
+        "bridge"
+      ],
+      "terrain": "coast",
+      "notes": "A multi-tiered castle keep inside layered ward walls on a coastal plain, extinct volcanoes behind and a small harbour in front."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Uwaji",
+      "https://forgottenrealms.fandom.com/wiki/Uwaji_Castle",
+      "https://forgottenrealms.fandom.com/wiki/Wa"
+    ]
+  },
+  {
+    "world": "kara-tur",
+    "region": "kara-tur",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "kt-dojyu",
+    "name": "Dojyu",
+    "aliases": [],
+    "type": "city",
+    "archetype": "walled-city",
+    "founded": 440,
+    "foundedNote": "The Akimatsu emperors moved the imperial capital here from Fukama in Kozakuran Year 514 (440 DR; KY 1459 = 1385 DR).",
+    "status": [
+      {
+        "from": 440,
+        "to": 1341,
+        "state": "thriving"
+      },
+      {
+        "from": 1341,
+        "to": 1347,
+        "state": "troubled"
+      },
+      {
+        "from": 1347,
+        "to": 1385,
+        "state": "thriving"
+      },
+      {
+        "from": 1385,
+        "to": 1479,
+        "state": "troubled"
+      },
+      {
+        "from": 1479,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 440,
+        "title": "Imperial capital moves to the Dai Plain",
+        "summary": "The Akimatsu emperors move the court to Dojyu, beside Kozakura's richest rice land (Kozakuran Year 514).",
+        "importance": 3
+      },
+      {
+        "year": 1046,
+        "title": "Shogun sets up at Gifu",
+        "summary": "After the Tennu War the Hojo shogun sets up the bakufu at Gifu, leaving Dojyu's emperors as divine figureheads (Kozakuran Year 1120).",
+        "importance": 2
+      },
+      {
+        "year": 1341,
+        "title": "Hojo War",
+        "summary": "A shogunal succession crisis sets off six years of war between the great families, ending at Norinoshima in 1347 (KY 1415–1421).",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague and civil war",
+        "summary": "The Spellplague is followed by civil war, fed by the wu jen of the Iridescent Peacock Society who are based in Dojyu. Ronin armies roam until the fighting fades by c. 1479 (KY 1553).",
+        "importance": 3
+      },
+      {
+        "year": 785,
+        "title": "Konjo Temple founded",
+        "summary": "The third of the great temples of the Way of Enlightenment rises outside the Sunset Gate, joining Umoroji (486) and Kanchai (627).",
+        "importance": 1
+      }
+    ],
+    "description": "Dojyu sits on a hill above the Dai River in the middle of Kozakura's great rice plain. Its walled Inner City has four wards: red-tiled palace roofs, ministries, samurai quarters and an old market. Only the stone Sunrise and Sunset Gates lead in. Outside the walls, sprawl, sake breweries and dyers' sheds line the river, and the main temples of three schools of Enlightenment make it the islands' spiritual heart.",
+    "population": null,
+    "ruler": "Emperor Gonijo (1357)",
+    "tags": [
+      "kozakura",
+      "capital",
+      "imperial",
+      "temples"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e3d6b8",
+        "accent": "#b23a2e",
+        "ink": "#2b2420"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "gate",
+        "castle",
+        "temple",
+        "river",
+        "farms"
+      ],
+      "terrain": "river",
+      "notes": "A hilltop walled inner city split by a river into four wards, red-roofed palace at the top, two massive stone gates east and west, rice paddies around."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Dojyu",
+      "https://forgottenrealms.fandom.com/wiki/Kozakura"
+    ]
+  },
+  {
+    "world": "kara-tur",
+    "region": "kara-tur",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "kt-u-chan-gompa",
+    "name": "U'Chan Gompa",
+    "aliases": [
+      "Koko Nur",
+      "U'Chan"
+    ],
+    "type": "fortress",
+    "archetype": "library-fortress",
+    "founded": -665,
+    "foundedNote": "Built by one of fifteen bands of monks who fled persecution in Shou Lung and founded hermitages between Shou Years 585 and 640 (-665 to -610 DR); the earliest year is used.",
+    "status": [
+      {
+        "from": -665,
+        "to": -356,
+        "state": "thriving"
+      },
+      {
+        "from": -356,
+        "to": -355,
+        "state": "troubled"
+      },
+      {
+        "from": -355,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1067,
+        "title": "Seat of the High Lord of Oceans",
+        "summary": "The child-lama H'Dang Li unites the monasteries and overthrows Tabot's nobles; U'Chan becomes the theocracy's capital (Shou Years 2317–2318).",
+        "importance": 3
+      },
+      {
+        "year": -665,
+        "title": "Monks reach the high wilds",
+        "summary": "Persecuted Shou temple militias seek a pure holy land in the mountains; the first hermitage is founded in a \"holy year\", and U'Chan grows from one of these bands (c. Shou Year 585).",
+        "importance": 2
+      },
+      {
+        "year": -604,
+        "title": "Battle of Tsagang",
+        "summary": "Priests and barbarian lords ally to throw back a Shou invasion of Tabot (Shou Year 646).",
+        "importance": 2
+      },
+      {
+        "year": -356,
+        "title": "Crystalline warriors",
+        "summary": "Shou Lung seizes northern Tabot; artisans of Ji and wu jen animate five crystalline warriors to save the realm (Shou Year 894).",
+        "importance": 2
+      },
+      {
+        "year": 1357,
+        "title": "The tortoise-shell omen",
+        "summary": "U'Chan's new-year divination foresees burning rocks falling on rebellious Khampo, and the lamas choose not to warn the city (Shou Year 2607).",
+        "importance": 1
+      }
+    ],
+    "description": "U'Chan Gompa stands in the foothills where the Haraki Ridge meets the Po Yul Dzayul Range, a long white monastery-fortress reached by a grand staircase. Behind its gate are the High Lord of Oceans' palace, forty-five gilded onion-domed towers, twelve taller minarets for meditation, and libraries full of hidden rooms. Below it sprawls Koko Nur, a crowded low-rise town of temples hung with tin dragons, and Tabot's councils all meet here.",
+    "population": 22000,
+    "ruler": "High Lord of Oceans Ning D'Ahn (c. 1357)",
+    "tags": [
+      "tabot",
+      "monastery",
+      "theocracy",
+      "capital"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e6dcc6",
+        "accent": "#b23a2e",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "mountain",
+        "walls",
+        "towers",
+        "domes",
+        "minarets",
+        "library",
+        "temple",
+        "gate"
+      ],
+      "terrain": "mountain",
+      "notes": "A long white fortress-monastery on a foothill shelf with a grand stair, crowded gold onion domes and taller minarets, dark peaks behind and a low town at its feet."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/U'Chan_Gompa",
+      "https://forgottenrealms.fandom.com/wiki/Tabot"
+    ]
+  },
+  {
+    "world": "kara-tur",
+    "region": "kara-tur",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "kt-saikhoi",
+    "name": "Saikhoi",
+    "aliases": [
+      "Thakos"
+    ],
+    "type": "city",
+    "archetype": "walled-city",
+    "founded": -6422,
+    "foundedNote": "As Thakos it rose as capital of eastern Imaskar during the Middle Kingdoms period (-6422 to -4370); the start of that period is used.",
+    "status": [
+      {
+        "from": -6422,
+        "to": -1943,
+        "state": "thriving"
+      },
+      {
+        "from": -1943,
+        "to": -1000,
+        "state": "ruined"
+      },
+      {
+        "from": -1000,
+        "to": 1360,
+        "state": "thriving"
+      },
+      {
+        "from": 1360,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": -2487,
+        "title": "Dragon Throne of Anok-Imaskar",
+        "summary": "After Imaskar falls, Kujawa claims the Dragon Throne at Thakos and founds Anok-Imaskar with Khati at its heart.",
+        "importance": 3
+      },
+      {
+        "year": -1943,
+        "title": "Kujawa slain",
+        "summary": "Kujawa dies fighting a great t'ien lung; his empire breaks into warring states, Ra-Khati among them, and Thakos declines into ruin.",
+        "importance": 2
+      },
+      {
+        "year": -1377,
+        "title": "Tan Chin plunders the ruins",
+        "summary": "Tan Chin digs Imaskari artifacts out of ruined Thakos and uses them to seize the throne of ancient Shou Lung.",
+        "importance": 3
+      },
+      {
+        "year": 1360,
+        "title": "Conquered by the undead raja",
+        "summary": "Raja Ambuchar Devayam of Solon and his undead armies easily overrun Ra-Khati.",
+        "importance": 2
+      }
+    ],
+    "description": "Saikhoi sits on a hill deep in the Katakoro Shan, between the sacred lakes of Norasil and Manasowar. It is the Dalai Lama's seat, rebuilt on the bones of Thakos, the Imaskari eastern capital whose buried relics once made an emperor of Shou Lung. Outsiders who see the holy city are said never to be allowed to leave.",
+    "population": null,
+    "ruler": "Dalai Lama Tsenya Garbo (1359)",
+    "tags": [
+      "ra-khati",
+      "hordelands",
+      "imaskar",
+      "sacred",
+      "capital"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e1d8c4",
+        "accent": "#b23a2e",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "mountain",
+        "lake",
+        "temple",
+        "walls",
+        "ruins",
+        "snow"
+      ],
+      "terrain": "mountain",
+      "notes": "A walled temple city on a hilltop between two small lakes, snowy peaks all around, with half-buried ancient stonework at its base."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Saikhoi",
+      "https://forgottenrealms.fandom.com/wiki/Ra-Khati"
+    ]
+  },
+  {
+    "world": "kara-tur",
+    "region": "kara-tur",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "kt-xi-hulang",
+    "name": "Xi Hulang",
+    "aliases": [],
+    "type": "city",
+    "archetype": "walled-city",
+    "founded": null,
+    "foundedNote": "No founding date. It is first attested as the Sillan and then Koryoan capital; the status timeline starts at Silla's unification of Choson in the 1330s DR.",
+    "status": [
+      {
+        "from": 1330,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1350,
+        "title": "Wanang Sun takes the throne",
+        "summary": "After a tsunami wrecks the King of Silla's secret invasion fleet, the king flees and General Wanang Sun rules from Xi Hulang as King of a unified Koryo (c. 1350).",
+        "importance": 3
+      },
+      {
+        "year": 1330,
+        "title": "Silla unifies Choson",
+        "summary": "The King of Silla conquers Koguryo and Saishu and rules the whole peninsula as the Sillan Empire (1330s).",
+        "importance": 2
+      },
+      {
+        "year": 1357,
+        "title": "War with Kozakura",
+        "summary": "Koryo fights Kozakuran advance forces around Karak, and the king weighs sending more troops from the capital.",
+        "importance": 2
+      }
+    ],
+    "description": "Xi Hulang lies where the Hoparatu River meets Kang Bay and is run like a garrison by its soldier-king. Wanang Sun keeps building its walls and supply depots and enforces curfews, licences and yearly censuses. A few times a year he walks among the townsfolk to hear complaints, and they respect him for it. Rich merchant houses keep mansions in the city.",
+    "population": null,
+    "ruler": "King Wanang Sun (c. 1357)",
+    "tags": [
+      "koryo",
+      "capital",
+      "military"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e0d5bd",
+        "accent": "#b23a2e",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "gate",
+        "castle",
+        "river",
+        "harbor",
+        "towers"
+      ],
+      "terrain": "coast",
+      "notes": "A strongly walled city at a river mouth on a bay, with a squat royal palace and many watchtowers."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Xi_Hulang",
+      "https://forgottenrealms.fandom.com/wiki/Koryo"
+    ]
+  },
+  {
+    "world": "kara-tur",
+    "region": "kara-tur",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "kt-plain-of-horses",
+    "name": "Plain of Horses",
+    "aliases": [
+      "the Taan"
+    ],
+    "type": "landmark",
+    "archetype": "landmark-desert",
+    "founded": null,
+    "foundedNote": "Geography; the Taangan tribes settled the steppe c. -8900.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1358,
+        "state": "thriving"
+      },
+      {
+        "from": 1358,
+        "to": 1360,
+        "state": "troubled"
+      },
+      {
+        "from": 1360,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1358,
+        "title": "The Tuigan subdue the Fankiang",
+        "summary": "Yamun Khahan's Grand Army conquers the Fankiang of Li-Raz (Shou Years 2607–2609); they remain the most rebellious of his subject tribes.",
+        "importance": 3
+      },
+      {
+        "year": -1029,
+        "title": "Li Dynasty expansion",
+        "summary": "Shou Lung under the Li pushes through the plain into the Hordelands and the nomad tribes weaken (Li Dynasty begins Shou Year 221).",
+        "importance": 2
+      },
+      {
+        "year": -240,
+        "title": "Copper Demon of Tros vanquished",
+        "summary": "Heroes end the eight-year tyranny of the Copper Demon over the Kalmyk and western Shou lands (Shou Year 1010).",
+        "importance": 2
+      },
+      {
+        "year": 850,
+        "title": "Jugicha founded",
+        "summary": "Rebels break from Li-Raz and settle Jugicha, which becomes the base of the Tsu-tsu tribe (c. Shou Year 2100).",
+        "importance": 1
+      },
+      {
+        "year": 1357,
+        "title": "The white camels",
+        "summary": "Qaghan Hoijarek of the Tsu-tsu stains forty camels white, sacred to the Fankiang, to lure his rivals into an ambush west of Li-Raz (Shou Year 2607).",
+        "importance": 1
+      }
+    ],
+    "description": "The Plain of Horses is open steppe between Shou Lung and the Hordelands, grazed by big black-and-white sheep, camels and prized steppe horses. Its feuding tribes, the Fankiang, Kashghun and Tsu-tsu chief among them, live in yurts and a few walled cities of mud and brick with gold-roofed temples. Empires from Imaskar to the Tuigan have tried to rule it, but the tribes always split apart again.",
+    "population": null,
+    "ruler": "Rival qaghans of the Fankiang, Kashghun and Tsu-tsu",
+    "tags": [
+      "steppe",
+      "nomads",
+      "tuigan",
+      "hordelands"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cf9e",
+        "accent": "#b23a2e",
+        "ink": "#2b2420"
+      },
+      "scale": 2,
+      "motifs": [
+        "tents",
+        "palisade",
+        "temple",
+        "farms"
+      ],
+      "terrain": "plain",
+      "notes": "Flat grassland with clusters of round yurts and one small walled mud-brick town with a gold-roofed temple against a low hill."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Plain_of_Horses",
+      "https://forgottenrealms.fandom.com/wiki/Li-Raz"
+    ]
+  },
+  {
+    "world": "kara-tur",
+    "region": "kara-tur",
+    "map": {
+      "x": null,
+      "y": null
+    },
+    "id": "kt-dragonwall",
+    "name": "Dragonwall",
+    "aliases": [],
+    "type": "landmark",
+    "archetype": "fortress",
+    "founded": null,
+    "foundedNote": "Legend says it is the petrified body of the sea dragon Pao Hu Jen, carved into ramparts on an emperor's orders; there is no date.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1359,
+        "state": "thriving"
+      },
+      {
+        "from": 1359,
+        "to": 1385,
+        "state": "troubled"
+      },
+      {
+        "from": 1385,
+        "to": null,
+        "state": "ruined"
+      }
+    ],
+    "events": [
+      {
+        "year": 1359,
+        "title": "Breached at Lo Tu",
+        "summary": "The Tuigan Horde breaks through the wall near Lo Tu and pours into Ching Tung, the first time the dragon's ramparts have failed.",
+        "importance": 3
+      },
+      {
+        "year": 1385,
+        "title": "Pao Hu Jen released",
+        "summary": "The Spellplague destroys the Dragonwall and frees the dragon's spirit from its stone prison.",
+        "importance": 3
+      }
+    ],
+    "description": "The Dragonwall runs for thousands of miles along the edge of the Quoya Desert, guarding Shou Lung from the steppe. Legend says it is the stone body of the sea dragon Pao Hu Jen, petrified by a stolen jade mirror and carved into battlements. A signal tower stands every mile, a blockhouse every ten and a great gatehouse every fifty, though their garrisons grew lax trusting the dragon's strength. Since the Spellplague freed the dragon's spirit, only broken stretches remain.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "shou-lung",
+      "wall",
+      "dragon",
+      "tuigan"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d8c9a0",
+        "accent": "#b23a2e",
+        "ink": "#2b2420"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "towers",
+        "gate",
+        "statue",
+        "rubble"
+      ],
+      "terrain": "desert",
+      "notes": "A long serpentine wall snaking across the tile with scale-like stonework and a dragon-head gatehouse; after 1385 it breaks into rubble segments."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Dragonwall",
+      "https://forgottenrealms.fandom.com/wiki/Kara-Tur"
+    ]
+  }
+]
