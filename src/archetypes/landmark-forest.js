@@ -15,7 +15,7 @@ export default function compose(S, K, C) {
     return;
   }
   if (S.has('mountain')) { K.mountain(S, { x: S.r.sign() * 2.6, z: -3, r: 1.6, h: 2.4 }); }
-  K.trees(S, { n: 4 + S.scale, type: 'giant', size: 1.1 });
+  K.trees(S, { n: 3 + Math.floor(S.scale / 2), type: 'giant', size: 0.85 });
   K.trees(S, { n: 110, type: 'mixed', size: 1.05, dense: true });
   C.decorate(S, new Set(['giant-trees', 'trees', 'mountain']), { trees: false });
 }

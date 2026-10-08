@@ -33,15 +33,15 @@ export function atlas(places) {
       });
       const rows = Math.ceil(idx.length / COLS);
       maxRows = Math.max(maxRows, rows);
-      labels.push({ text: regionName(r), sub: `${idx.length} places`, x: x + colW / 2, z: z - STEP * 0.68, kind: 'region' });
+      labels.push({ text: regionName(r), sub: `${idx.length} places`, x: x + colW / 2, z: z - STEP * 0.98, kind: 'region' });
       x += colW + STEP + colGap;
     }
-    z += maxRows * STEP + STEP * 0.75;
+    z += maxRows * STEP + STEP * 1.05;
   }
-  const oz = -(z - STEP * 0.75 - STEP) / 2;
+  const oz = -(z - STEP * 1.05 - STEP) / 2;
   for (const it of items) it.z += oz;
   for (const l of labels) l.z += oz;
   const b = boundsOf(items);
-  b.z0 -= STEP * 0.6; // room for the region captions
+  b.z0 -= STEP * 0.9; // room for the region captions
   return { name: 'atlas', items, labels, order, bounds: b };
 }
