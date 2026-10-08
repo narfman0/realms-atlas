@@ -1,0 +1,10 @@
+[
+  {"id": "toril", "name": "Faerûn", "kind": "continent", "layoutDefault": "map", "parent": null},
+  {"id": "ten-towns", "name": "Ten-Towns", "kind": "region", "layoutDefault": "map", "parent": "toril", "parentPlace": "bryn-shander"},
+  {"id": "planes", "name": "The Planes", "kind": "planar", "layoutDefault": "wheel", "parent": null},
+  {"id": "realmspace", "name": "Realmspace", "kind": "space", "layoutDefault": "orbit", "parent": null},
+  {"id": "kara-tur", "name": "Kara-Tur", "kind": "continent", "layoutDefault": "map", "parent": null},
+  {"id": "zakhara", "name": "Zakhara", "kind": "continent", "layoutDefault": "map", "parent": null},
+  {"id": "maztica", "name": "Maztica", "kind": "continent", "layoutDefault": "map", "parent": null},
+  {"id": "laerakond", "name": "Laerakond", "kind": "continent", "layoutDefault": "map", "parent": null}
+]

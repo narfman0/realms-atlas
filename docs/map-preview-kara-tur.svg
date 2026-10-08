@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 1000" width="1450" height="1000" font-family="Georgia, serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#7a6a50" stroke-width="1"/></pattern></defs>
+<rect width="1450" height="1000" fill="#b9c7c4"/>
+<polygon data-name="land" points="870,0 891.8,70 942.5,130 1015,150 1065.8,190 1087.5,260 1073,330 1036.8,400 1000.5,430 964.3,390 949.8,320 928,260 899,235 862.8,250 833.7,290 819.2,340 833.7,390 848.3,450 870,490 862.8,530 891.8,580 928,630 920.8,680 891.8,720 877.3,770 855.5,810 833.7,850 783,900 725,950 681.5,1000 0,1000 0,0" fill="#e9dcbc" stroke="none"/>
+<g id="coast">
+<polyline data-name="Coast of Shou Lung, Koryo and T'u Lung" points="870,0 891.8,70 942.5,130 1015,150 1065.8,190 1087.5,260 1073,330 1036.8,400 1000.5,430 964.3,390 949.8,320 928,260 899,235 862.8,250 833.7,290 819.2,340 833.7,390 848.3,450 870,490 862.8,530 891.8,580 928,630 920.8,680 891.8,720 877.3,770 855.5,810 833.7,850 783,900 725,950 681.5,1000" fill="none" stroke="#3b2f24" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon data-name="Kozakura" points="1247,150 1305,170 1334,240 1319.5,330 1276,420 1218,480 1174.5,460 1189,380 1225.3,300 1232.5,220 1247,150" fill="#e3d3ac" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Wa (Tsukishima)" points="1131,600 1203.5,580 1261.5,620 1276,690 1232.5,750 1160,760 1116.5,710 1102,650 1131,600" fill="#e3d3ac" stroke="#3b2f24" stroke-width="2"/>
+</g><g id="rivers">
+<polyline data-name="Hungtse" points="580,440 638,470 696,455 754,470 804.8,465 848.3,470" fill="none" stroke="#4f6f78" stroke-width="2" stroke-linejoin="round"/>
+</g><g id="ranges">
+<polyline data-name="Tabot heights" points="87,800 188.5,770 290,790 391.5,780 493,800 580,840" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M87.6,802.3 L92.6,792.3 L97.6,802.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M98.9,799.0 L103.9,789.0 L108.9,799.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M110.2,795.7 L115.2,785.7 L120.2,795.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M121.5,792.3 L126.5,782.3 L131.5,792.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M132.8,789.0 L137.8,779.0 L142.8,789.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M144.0,785.7 L149,775.7 L154.0,785.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M155.3,782.3 L160.3,772.3 L165.3,782.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M166.6,779.0 L171.6,769.0 L176.6,779.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M177.9,775.7 L182.9,765.7 L187.9,775.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M189.1,775.1 L194.1,765.1 L199.1,775.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M200.4,777.3 L205.4,767.3 L210.4,777.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M211.7,779.6 L216.7,769.6 L221.7,779.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M223.0,781.8 L228,771.8 L233.0,781.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M234.3,784.0 L239.3,774.0 L244.3,784.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M245.5,786.2 L250.5,776.2 L255.5,786.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M256.8,788.4 L261.8,778.4 L266.8,788.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M268.1,790.7 L273.1,780.7 L278.1,790.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M279.4,792.9 L284.4,782.9 L289.4,792.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M291.3,793.4 L296.3,783.4 L301.3,793.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M304.0,792.1 L309,782.1 L314.0,792.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M316.7,790.9 L321.7,780.9 L326.7,790.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M329.4,789.6 L334.4,779.6 L339.4,789.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M342.1,788.4 L347.1,778.4 L352.1,788.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M354.8,787.1 L359.8,777.1 L364.8,787.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M367.5,785.9 L372.5,775.9 L377.5,785.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M380.2,784.6 L385.2,774.6 L390.2,784.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M392.1,785.1 L397.1,775.1 L402.1,785.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M403.4,787.3 L408.4,777.3 L413.4,787.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M414.7,789.6 L419.7,779.6 L424.7,789.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M426.0,791.8 L431,781.8 L436.0,791.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M437.3,794.0 L442.3,784.0 L447.3,794.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M448.5,796.2 L453.5,786.2 L458.5,796.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M459.8,798.4 L464.8,788.4 L469.8,798.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M471.1,800.7 L476.1,790.7 L481.1,800.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M482.4,802.9 L487.4,792.9 L492.4,802.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M493.4,806.5 L498.4,796.5 L503.4,806.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M504.3,811.5 L509.3,801.5 L514.3,811.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M515.2,816.5 L520.2,806.5 L525.2,816.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M526.1,821.5 L531.1,811.5 L536.1,821.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M536.9,826.5 L541.9,816.5 L546.9,826.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M547.8,831.5 L552.8,821.5 L557.8,831.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M558.7,836.5 L563.7,826.5 L568.7,836.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M569.6,841.5 L574.6,831.5 L579.6,841.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<polyline data-name="Dragonwall" points="145,330 261,290 377,265 493,245 609,220 725,180 826.5,130" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M145.8,332.0 L150.8,322.0 L155.8,332.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M157.4,328.0 L162.4,318.0 L167.4,328.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M169.0,324.0 L174,314.0 L179.0,324.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M180.6,320.0 L185.6,310.0 L190.6,320.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M192.2,316.0 L197.2,306.0 L202.2,316.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M203.8,312.0 L208.8,302.0 L213.8,312.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M215.4,308.0 L220.4,298.0 L225.4,308.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M227.0,304.0 L232,294.0 L237.0,304.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M238.6,300.0 L243.6,290.0 L248.6,300.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M250.2,296.0 L255.2,286.0 L260.2,296.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M261.8,292.8 L266.8,282.8 L271.8,292.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M273.4,290.3 L278.4,280.3 L283.4,290.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M285.0,287.8 L290,277.8 L295.0,287.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M296.6,285.3 L301.6,275.3 L306.6,285.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M308.2,282.8 L313.2,272.8 L318.2,282.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M319.8,280.3 L324.8,270.3 L329.8,280.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M331.4,277.8 L336.4,267.8 L341.4,277.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M343.0,275.3 L348,265.3 L353.0,275.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M354.6,272.8 L359.6,262.8 L364.6,272.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M366.2,270.3 L371.2,260.3 L376.2,270.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M377.8,268.0 L382.8,258.0 L387.8,268.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M389.4,266.0 L394.4,256.0 L399.4,266.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M401.0,264.0 L406,254.0 L411.0,264.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M412.6,262.0 L417.6,252.0 L422.6,262.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M424.2,260.0 L429.2,250.0 L434.2,260.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M435.8,258.0 L440.8,248.0 L445.8,258.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M447.4,256.0 L452.4,246.0 L457.4,256.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M459.0,254.0 L464,244.0 L469.0,254.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M470.6,252.0 L475.6,242.0 L480.6,252.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M482.2,250.0 L487.2,240.0 L492.2,250.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M493.8,247.8 L498.8,237.8 L503.8,247.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M505.4,245.3 L510.4,235.3 L515.4,245.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M517.0,242.8 L522,232.8 L527.0,242.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M528.6,240.3 L533.6,230.3 L538.6,240.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M540.2,237.7 L545.2,227.7 L550.2,237.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M551.8,235.3 L556.8,225.3 L561.8,235.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M563.4,232.8 L568.4,222.8 L573.4,232.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M575.0,230.3 L580,220.3 L585.0,230.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M586.6,227.8 L591.6,217.8 L596.6,227.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M598.2,225.3 L603.2,215.3 L608.2,225.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M609.8,222.0 L614.8,212.0 L619.8,222.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M621.4,218.0 L626.4,208.0 L631.4,218.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M633.0,214.0 L638,204.0 L643.0,214.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M644.6,210.0 L649.6,200.0 L654.6,210.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M656.2,206.0 L661.2,196.0 L666.2,206.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M667.8,202.0 L672.8,192.0 L677.8,202.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M679.4,198.0 L684.4,188.0 L689.4,198.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M691.0,194.0 L696,184.0 L701.0,194.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M702.6,190.0 L707.6,180.0 L712.6,190.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M714.2,186.0 L719.2,176.0 L724.2,186.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M725.6,181.2 L730.6,171.2 L735.6,181.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M736.9,175.7 L741.9,165.7 L746.9,175.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M748.2,170.1 L753.2,160.1 L758.2,170.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M759.5,164.6 L764.5,154.6 L769.5,164.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M770.7,159.0 L775.7,149.0 L780.7,159.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M782.0,153.4 L787,143.4 L792.0,153.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M793.3,147.9 L798.3,137.9 L803.3,147.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M804.6,142.3 L809.6,132.3 L814.6,142.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M815.9,136.8 L820.9,126.8 L825.9,136.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+</g><g id="features">
+<text data-kind="region" x="536.5" y="560" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">SHOU LUNG</text>
+<text data-kind="region" x="623.5" y="920" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">T'U LUNG</text>
+<text data-kind="region" x="1015" y="370" text-anchor="middle" fill="#5a3d2b" font-size="14" letter-spacing="4" opacity="0.75">KORYO</text>
+<text data-kind="region" x="1355.8" y="110" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">KOZAKURA</text>
+<text data-kind="region" x="1189" y="810" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">WA</text>
+<text data-kind="mountains" x="449.5" y="860" text-anchor="middle" fill="#6b5a42" font-size="15" letter-spacing="2">TABOT</text>
+<text data-kind="region" x="188.5" y="620" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">RA-KHATI</text>
+<text data-kind="region" x="319" y="90" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">PLAIN OF HORSES</text>
+<text data-kind="sea" x="1044" y="530" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">CELESTIAL SEA</text>
+<text data-kind="desert" x="609" y="130" text-anchor="middle" fill="#9a6b2f" font-size="16" letter-spacing="6">QUOYA DESERT</text>
+<text data-kind="sea" x="710.5" y="495" text-anchor="middle" fill="#3d5c66" font-size="10" font-style="italic" letter-spacing="3">HUNGTSE</text>
+</g><g id="places">
+<circle cx="580" cy="420" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="587" y="424" font-size="13" fill="#2b2420">kt-kuo-te-lung</text>
+<circle cx="819.2" cy="445" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="826.2" y="449" font-size="13" fill="#2b2420">kt-karatin</text>
+<circle cx="754" cy="850" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="761" y="854" font-size="13" fill="#2b2420">kt-wai</text>
+<circle cx="1225.3" cy="665" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="1232.3" y="669" font-size="13" fill="#2b2420">kt-uwaji</text>
+<circle cx="1268.8" cy="300" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="1275.8" y="304" font-size="13" fill="#2b2420">kt-dojyu</text>
+<circle cx="435" cy="720" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="442" y="724" font-size="13" fill="#2b2420">kt-u-chan-gompa</text>
+<circle cx="246.5" cy="680" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="253.5" y="684" font-size="13" fill="#2b2420">kt-saikhoi</text>
+<circle cx="974.4" cy="300" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="981.4" y="304" font-size="13" fill="#2b2420">kt-xi-hulang</text>
+<circle cx="319" cy="150" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="326" y="154" font-size="13" fill="#2b2420">kt-plain-of-horses</text>
+<circle cx="493" cy="245" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="500" y="249" font-size="13" fill="#2b2420">kt-dragonwall</text>
+</g>
+<text x="12" y="988" font-size="12" fill="#5a3d2b">Realms Atlas schematic preview (kara-tur) — 10 places — our own stylization, not a WotC map</text>
+</svg>

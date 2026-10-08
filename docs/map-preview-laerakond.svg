@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 1000" width="1450" height="1000" font-family="Georgia, serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#7a6a50" stroke-width="1"/></pattern></defs>
+<rect width="1450" height="1000" fill="#b9c7c4"/>
+<polygon data-name="land" points="0,600 87,620 174,690 261,710 348,700 435,720 507.5,760 580,790 652.5,780 696,740 768.5,730 841,750 928,740 1015,730 1073,720 1131,690 1152.8,645 1189,610 1232.5,600 1268.8,620 1290.5,660 1334,675 1392,645 1450,620 1450,0 0,0" fill="#e9dcbc" stroke="none"/>
+<g id="coast">
+<polyline data-name="Dragon Sea coast of Laerakond" points="0,600 87,620 174,690 261,710 348,700 435,720 507.5,760 580,790 652.5,780 696,740 768.5,730 841,750 928,740 1015,730 1073,720 1131,690 1152.8,645 1189,610 1232.5,600 1268.8,620 1290.5,660 1334,675 1392,645 1450,620" fill="none" stroke="#3b2f24" stroke-width="2.5" stroke-linejoin="round"/>
+</g><g id="ranges">
+<polyline data-name="Howling Mountains" points="116,300 217.5,250 319,270 420.5,220 522,240 623.5,200" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M116.6,301.2 L121.6,291.2 L126.6,301.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M127.9,295.7 L132.9,285.7 L137.9,295.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M139.2,290.1 L144.2,280.1 L149.2,290.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M150.5,284.6 L155.5,274.6 L160.5,284.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M161.8,279.0 L166.8,269.0 L171.8,279.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M173.0,273.4 L178,263.4 L183.0,273.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M184.3,267.9 L189.3,257.9 L194.3,267.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M195.6,262.3 L200.6,252.3 L205.6,262.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M206.9,256.8 L211.9,246.8 L216.9,256.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M218.1,255.1 L223.1,245.1 L228.1,255.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M229.4,257.3 L234.4,247.3 L239.4,257.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M240.7,259.6 L245.7,249.6 L250.7,259.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M252.0,261.8 L257,251.8 L262.0,261.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M263.3,264.0 L268.3,254.0 L273.3,264.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M274.5,266.2 L279.5,256.2 L284.5,266.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M285.8,268.4 L290.8,258.4 L295.8,268.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M297.1,270.7 L302.1,260.7 L307.1,270.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M308.4,272.9 L313.4,262.9 L318.4,272.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M319.6,271.2 L324.6,261.2 L329.6,271.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M330.9,265.7 L335.9,255.7 L340.9,265.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M342.2,260.1 L347.2,250.1 L352.2,260.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M353.5,254.6 L358.5,244.6 L363.5,254.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M364.8,249.0 L369.8,239.0 L374.8,249.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M376.0,243.4 L381,233.4 L386.0,243.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M387.3,237.9 L392.3,227.9 L397.3,237.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M398.6,232.3 L403.6,222.3 L408.6,232.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M409.9,226.8 L414.9,216.8 L419.9,226.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M421.1,225.1 L426.1,215.1 L431.1,225.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M432.4,227.3 L437.4,217.3 L442.4,227.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M443.7,229.6 L448.7,219.6 L453.7,229.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M455.0,231.8 L460,221.8 L465.0,231.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M466.2,234.0 L471.2,224.0 L476.2,234.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M477.5,236.2 L482.5,226.2 L487.5,236.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M488.8,238.4 L493.8,228.4 L498.8,238.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M500.1,240.7 L505.1,230.7 L510.1,240.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M511.4,242.9 L516.4,232.9 L521.4,242.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M522.6,241.8 L527.6,231.8 L532.6,241.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M533.9,237.3 L538.9,227.3 L543.9,237.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M545.2,232.9 L550.2,222.9 L555.2,232.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M556.5,228.4 L561.5,218.4 L566.5,228.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M567.8,224.0 L572.8,214.0 L577.8,224.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M579.0,219.6 L584,209.6 L589.0,219.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M590.3,215.1 L595.3,205.1 L600.3,215.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M601.6,210.7 L606.6,200.7 L611.6,210.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M612.9,206.2 L617.9,196.2 L622.9,206.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+</g><g id="features">
+<text data-kind="sea" x="725" y="900" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">DRAGON SEA</text>
+<text data-kind="region" x="609" y="620" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">WINDRISE PORTS</text>
+<text data-kind="sea" x="1232.5" y="665" text-anchor="middle" fill="#3d5c66" font-size="10" font-style="italic" letter-spacing="3">BAY OF PEARLS</text>
+<text data-kind="region" x="667" y="460" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">LAERAKOND</text>
+<text data-kind="mountains" x="362.5" y="170" text-anchor="middle" fill="#6b5a42" font-size="15" letter-spacing="2">HOWLING MOUNTAINS</text>
+<text data-kind="forest" x="1015" y="270" text-anchor="middle" fill="#4d6b3c" font-size="16" font-style="italic">MELABRAUTH</text>
+</g><g id="places">
+<circle cx="217.5" cy="665" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="224.5" y="669" font-size="13" fill="#2b2420">la-harglast</text>
+<circle cx="464" cy="685" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="471" y="689" font-size="13" fill="#2b2420">la-imdolphyn</text>
+<circle cx="710.5" cy="700" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="717.5" y="704" font-size="13" fill="#2b2420">la-tarmalune</text>
+<circle cx="957" cy="700" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="964" y="704" font-size="13" fill="#2b2420">la-ramekho</text>
+<circle cx="1232.5" cy="565" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="1239.5" y="569" font-size="13" fill="#2b2420">la-sambral</text>
+<circle cx="1015" cy="330" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="1022" y="334" font-size="13" fill="#2b2420">la-melabrauth</text>
+<circle cx="377" cy="310" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="384" y="314" font-size="13" fill="#2b2420">la-fimbrul</text>
+</g>
+<text x="12" y="988" font-size="12" fill="#5a3d2b">Realms Atlas schematic preview (laerakond) — 7 places — our own stylization, not a WotC map</text>
+</svg>

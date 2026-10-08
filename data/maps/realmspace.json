@@ -1,0 +1,184 @@
+{
+ "version": 1,
+ "canvas": {
+  "aspect": 1.0
+ },
+ "places": {
+  "sj-the-sun": {
+   "x": 0.5,
+   "y": 0.5
+  },
+  "sj-anadia": {
+   "x": 0.448,
+   "y": 0.481
+  },
+  "sj-coliar": {
+   "x": 0.603,
+   "y": 0.538
+  },
+  "sj-toril": {
+   "x": 0.383,
+   "y": 0.617
+  },
+  "sj-karpri": {
+   "x": 0.61,
+   "y": 0.309
+  },
+  "sj-chandos": {
+   "x": 0.571,
+   "y": 0.766
+  },
+  "sj-glyth": {
+   "x": 0.335,
+   "y": 0.214
+  },
+  "sj-garden": {
+   "x": 0.872,
+   "y": 0.4
+  },
+  "sj-hcatha": {
+   "x": 0.101,
+   "y": 0.686
+  },
+  "sj-crystal-shell": {
+   "x": 0.74,
+   "y": 0.084
+  },
+  "sj-selune": {
+   "x": 0.348,
+   "y": 0.652
+  },
+  "sj-tears-of-selune": {
+   "x": 0.37,
+   "y": 0.569
+  },
+  "sj-rock-of-bral": {
+   "x": 0.431,
+   "y": 0.63
+  }
+ },
+ "coast": [],
+ "coastMeta": [],
+ "features": [
+  {
+   "label": "III · Toril",
+   "x": 0.466,
+   "y": 0.673,
+   "kind": "sea",
+   "size": 0.7
+  },
+  {
+   "label": "IV · Karpri",
+   "x": 0.454,
+   "y": 0.727,
+   "kind": "sea",
+   "size": 0.7
+  },
+  {
+   "label": "V · Chandos",
+   "x": 0.443,
+   "y": 0.781,
+   "kind": "sea",
+   "size": 0.7
+  },
+  {
+   "label": "VI · Glyth",
+   "x": 0.431,
+   "y": 0.835,
+   "kind": "sea",
+   "size": 0.7
+  },
+  {
+   "label": "VII · Garden",
+   "x": 0.42,
+   "y": 0.889,
+   "kind": "sea",
+   "size": 0.7
+  },
+  {
+   "label": "VIII · H'Catha",
+   "x": 0.409,
+   "y": 0.942,
+   "kind": "sea",
+   "size": 0.7
+  },
+  {
+   "label": "Wildspace",
+   "x": 0.5,
+   "y": 0.36,
+   "kind": "region"
+  },
+  {
+   "label": "The Crystal Shell",
+   "x": 0.16,
+   "y": 0.035,
+   "kind": "region"
+  }
+ ],
+ "ranges": [],
+ "guides": [
+  {
+   "kind": "circle",
+   "cx": 0.5,
+   "cy": 0.5,
+   "r": 0.055,
+   "name": "orbit of sj-anadia"
+  },
+  {
+   "kind": "circle",
+   "cx": 0.5,
+   "cy": 0.5,
+   "r": 0.11,
+   "name": "orbit of sj-coliar"
+  },
+  {
+   "kind": "circle",
+   "cx": 0.5,
+   "cy": 0.5,
+   "r": 0.165,
+   "name": "orbit of sj-toril"
+  },
+  {
+   "kind": "circle",
+   "cx": 0.5,
+   "cy": 0.5,
+   "r": 0.22,
+   "name": "orbit of sj-karpri"
+  },
+  {
+   "kind": "circle",
+   "cx": 0.5,
+   "cy": 0.5,
+   "r": 0.275,
+   "name": "orbit of sj-chandos"
+  },
+  {
+   "kind": "circle",
+   "cx": 0.5,
+   "cy": 0.5,
+   "r": 0.33,
+   "name": "orbit of sj-glyth"
+  },
+  {
+   "kind": "circle",
+   "cx": 0.5,
+   "cy": 0.5,
+   "r": 0.385,
+   "name": "orbit of sj-garden"
+  },
+  {
+   "kind": "circle",
+   "cx": 0.5,
+   "cy": 0.5,
+   "r": 0.44,
+   "name": "orbit of sj-hcatha"
+  },
+  {
+   "kind": "circle",
+   "cx": 0.5,
+   "cy": 0.5,
+   "r": 0.48,
+   "name": "crystal shell"
+  }
+ ]
+}

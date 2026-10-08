@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 1000" width="1450" height="1000" font-family="Georgia, serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#7a6a50" stroke-width="1"/></pattern></defs>
+<rect width="1450" height="1000" fill="#b9c7c4"/>
+<polygon data-name="land" points="899,0 870,80 899,160 942.5,240 971.5,310 1015,370 1102,400 1203.5,420 1290.5,470 1312.3,540 1261.5,600 1145.5,620 1029.5,610 942.5,640 870,700 812,760 768.5,830 725,900 710.5,960 696,1000 580,1000 565.5,940 522,880 435,830 348,780 261,720 188.5,640 130.5,560 72.5,480 29,420 0,400 0,0" fill="#e9dcbc" stroke="none"/>
+<g id="coast">
+<polyline data-name="Coast of Maztica (Payit, Far Payit and the western shore)" points="899,0 870,80 899,160 942.5,240 971.5,310 1015,370 1102,400 1203.5,420 1290.5,470 1312.3,540 1261.5,600 1145.5,620 1029.5,610 942.5,640 870,700 812,760 768.5,830 725,900 710.5,960 696,1000 580,1000 565.5,940 522,880 435,830 348,780 261,720 188.5,640 130.5,560 72.5,480 29,420 0,400" fill="none" stroke="#3b2f24" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon data-name="Lakes of Nexal" points="536.5,430 594.5,410 667,420 696,460 681.5,500 623.5,525 558.3,515 522,480 536.5,430" fill="#b9c7c4" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Isle of Nexal" points="587.3,455 616.3,445 645.3,460 638,480 601.8,485 587.3,455" fill="#e3d3ac" stroke="#3b2f24" stroke-width="2"/>
+</g><g id="ranges">
+<polyline data-name="Western sierra" points="188.5,280 261,370 319,470 362.5,570 406,650 449.5,710" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M187.1,288.5 L192.1,278.5 L197.1,288.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M194.4,297.5 L199.4,287.5 L204.4,297.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M201.6,306.5 L206.6,296.5 L211.6,306.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M208.9,315.5 L213.9,305.5 L218.9,315.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M216.1,324.5 L221.1,314.5 L226.1,324.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M223.4,333.5 L228.4,323.5 L233.4,333.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M230.6,342.5 L235.6,332.5 L240.6,342.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M237.9,351.5 L242.9,341.5 L247.9,351.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M245.1,360.5 L250.1,350.5 L255.1,360.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M252.4,369.5 L257.4,359.5 L262.4,369.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M258.9,379.0 L263.9,369.0 L268.9,379.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M264.7,389.0 L269.7,379.0 L274.7,389.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M270.5,399.0 L275.5,389.0 L280.5,399.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M276.3,409.0 L281.3,399.0 L286.3,409.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M282.1,419.0 L287.1,409.0 L292.1,419.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M287.9,429.0 L292.9,419.0 L297.9,429.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M293.7,439.0 L298.7,429.0 L303.7,439.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M299.5,449.0 L304.5,439.0 L309.5,449.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M305.3,459.0 L310.3,449.0 L315.3,459.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M311.1,469.0 L316.1,459.0 L321.1,469.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M316.4,479.6 L321.4,469.6 L326.4,479.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M321.3,490.7 L326.3,480.7 L331.3,490.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M326.1,501.8 L331.1,491.8 L336.1,501.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M330.9,512.9 L335.9,502.9 L340.9,512.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M335.8,524.0 L340.8,514.0 L345.8,524.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M340.6,535.1 L345.6,525.1 L350.6,535.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M345.4,546.2 L350.4,536.2 L355.4,546.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M350.3,557.3 L355.3,547.3 L360.3,557.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M355.1,568.4 L360.1,558.4 L365.1,568.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M360.2,579.0 L365.2,569.0 L370.2,579.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M365.7,589.0 L370.7,579.0 L375.7,589.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M371.1,599.0 L376.1,589.0 L381.1,599.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M376.5,609.0 L381.5,599.0 L386.5,609.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M382.0,619.0 L387,609.0 L392.0,619.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M387.4,629.0 L392.4,619.0 L397.4,629.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M392.8,639.0 L397.8,629.0 L402.8,639.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M398.3,649.0 L403.3,639.0 L408.3,649.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M404.6,659.0 L409.6,649.0 L414.6,659.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M411.9,669.0 L416.9,659.0 L421.9,669.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M419.1,679.0 L424.1,669.0 L429.1,679.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M426.4,689.0 L431.4,679.0 L436.4,689.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M433.6,699.0 L438.6,689.0 L443.6,699.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M440.9,709.0 L445.9,699.0 L450.9,709.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<polyline data-name="Eastern sierra" points="725,220 768.5,300 804.8,360" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M722.7,229.0 L727.7,219.0 L732.7,229.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M728.2,239.0 L733.2,229.0 L738.2,239.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M733.6,249.0 L738.6,239.0 L743.6,249.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M739.0,259.0 L744,249.0 L749.0,259.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M744.5,269.0 L749.5,259.0 L754.5,269.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M749.9,279.0 L754.9,269.0 L759.9,279.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M755.3,289.0 L760.3,279.0 L765.3,289.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M760.8,299.0 L765.8,289.0 L770.8,299.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M766.5,309.0 L771.5,299.0 L776.5,309.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M772.6,319.0 L777.6,309.0 L782.6,319.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M778.6,329.0 L783.6,319.0 L788.6,329.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M784.6,339.0 L789.6,329.0 L794.6,339.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M790.7,349.0 L795.7,339.0 L800.7,349.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M796.7,359.0 L801.7,349.0 L806.7,359.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+</g><g id="features">
+<text data-kind="sea" x="1247" y="120" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">TRACKLESS SEA</text>
+<text data-kind="sea" x="1131" y="320" text-anchor="middle" fill="#3d5c66" font-size="14" font-style="italic" letter-spacing="3">GULF OF CORDELL</text>
+<text data-kind="region" x="826.5" y="230" text-anchor="middle" fill="#5a3d2b" font-size="14" letter-spacing="4" opacity="0.75">PAYIT</text>
+<text data-kind="forest" x="1160" y="585" text-anchor="middle" fill="#4d6b3c" font-size="16" font-style="italic">FAR PAYIT</text>
+<text data-kind="desert" x="580" y="740" text-anchor="middle" fill="#9a6b2f" font-size="20" letter-spacing="6">HOUSE OF TEZCA</text>
+<text data-kind="region" x="478.5" y="200" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">THE TRUE WORLD</text>
+<text data-kind="region" x="275.5" y="580" text-anchor="middle" fill="#5a3d2b" font-size="12" letter-spacing="4" opacity="0.75">HUACLI</text>
+<text data-kind="mountains" x="609" y="565" text-anchor="middle" fill="#6b5a42" font-size="11" letter-spacing="2">VALLEY OF NEXAL</text>
+</g><g id="places">
+<circle cx="616.3" cy="465" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="623.3" y="469" font-size="13" fill="#2b2420">mz-nexal</text>
+<circle cx="891.8" cy="345" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="898.8" y="349" font-size="13" fill="#2b2420">mz-ulatos</text>
+<circle cx="935.3" cy="285" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="942.3" y="289" font-size="13" fill="#2b2420">mz-helmsport</text>
+<circle cx="406" cy="470" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="413" y="474" font-size="13" fill="#2b2420">mz-huacli</text>
+<circle cx="580" cy="330" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="587" y="334" font-size="13" fill="#2b2420">mz-kultaka</text>
+<circle cx="783" cy="450" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="790" y="454" font-size="13" fill="#2b2420">mz-pezelac</text>
+<circle cx="580" cy="660" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="587" y="664" font-size="13" fill="#2b2420">mz-house-of-tezca</text>
+<circle cx="1174.5" cy="520" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="1181.5" y="524" font-size="13" fill="#2b2420">mz-far-payit</text>
+</g>
+<text x="12" y="988" font-size="12" fill="#5a3d2b">Realms Atlas schematic preview (maztica) — 8 places — our own stylization, not a WotC map</text>
+</svg>

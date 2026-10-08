@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000" font-family="Georgia, serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#7a6a50" stroke-width="1"/></pattern></defs>
+<rect width="1000" height="1000" fill="#e9dcbc"/>
+<g id="guides">
+<circle data-name="Outlands (inner)" cx="500" cy="500" r="200.0" fill="none" stroke="#3b2f24" stroke-opacity="0.55" stroke-width="2"/>
+<circle data-name="Ring of the gate-towns" cx="500" cy="500" r="330.0" fill="none" stroke="#3b2f24" stroke-opacity="0.55" stroke-width="2"/>
+<circle data-name="Outer Planes" cx="500" cy="500" r="460.0" fill="none" stroke="#3b2f24" stroke-opacity="0.55" stroke-width="2"/>
+<line x1="511.7" y1="441.2" x2="595.6" y2="19.4" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="533.3" y1="450.1" x2="772.2" y2="92.6" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="549.9" y1="466.7" x2="907.4" y2="227.8" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="558.8" y1="488.3" x2="980.6" y2="404.4" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="558.8" y1="511.7" x2="980.6" y2="595.6" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="549.9" y1="533.3" x2="907.4" y2="772.2" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="533.3" y1="549.9" x2="772.2" y2="907.4" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="511.7" y1="558.8" x2="595.6" y2="980.6" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="488.3" y1="558.8" x2="404.4" y2="980.6" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="466.7" y1="549.9" x2="227.8" y2="907.4" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="450.1" y1="533.3" x2="92.6" y2="772.2" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="441.2" y1="511.7" x2="19.4" y2="595.6" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="441.2" y1="488.3" x2="19.4" y2="404.4" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="450.1" y1="466.7" x2="92.6" y2="227.8" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="466.7" y1="450.1" x2="227.8" y2="92.6" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+<line x1="488.3" y1="441.2" x2="404.4" y2="19.4" stroke="#3b2f24" stroke-opacity="0.3" stroke-dasharray="4 6"/>
+</g>
+<g id="coast">
+</g><g id="ranges">
+</g><g id="features">
+<text data-kind="region" x="666" y="611" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">THE OUTLANDS</text>
+<text data-kind="region" x="264" y="598" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">GATE-TOWNS</text>
+<text data-kind="region" x="130" y="35" text-anchor="middle" fill="#5a3d2b" font-size="14" letter-spacing="4" opacity="0.75">THE GREAT WHEEL</text>
+<text data-kind="region" x="500" y="465" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">SIGIL, THE CAGE</text>
+<text data-kind="desert" x="870" y="45" text-anchor="middle" fill="#9a6b2f" font-size="14" letter-spacing="6">ELEMENTAL FIRE</text>
+</g><g id="places">
+<circle cx="500" cy="170" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="507" y="174" font-size="13" fill="#2b2420">ps-excelsior</text>
+<circle cx="500" cy="40" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="507" y="44" font-size="13" fill="#2b2420">ps-mount-celestia</text>
+<circle cx="626" cy="195" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="633" y="199" font-size="13" fill="#2b2420">ps-tradegate</text>
+<circle cx="676" cy="75" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="683" y="79" font-size="13" fill="#2b2420">ps-bytopia</text>
+<circle cx="733" cy="267" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="740" y="271" font-size="13" fill="#2b2420">ps-ecstasy</text>
+<circle cx="825" cy="175" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="832" y="179" font-size="13" fill="#2b2420">ps-elysium</text>
+<circle cx="805" cy="374" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="812" y="378" font-size="13" fill="#2b2420">ps-faunel</text>
+<circle cx="925" cy="324" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="932" y="328" font-size="13" fill="#2b2420">ps-beastlands</text>
+<circle cx="830" cy="500" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="837" y="504" font-size="13" fill="#2b2420">ps-sylvania</text>
+<circle cx="960" cy="500" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="967" y="504" font-size="13" fill="#2b2420">ps-arborea</text>
+<circle cx="805" cy="626" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="812" y="630" font-size="13" fill="#2b2420">ps-glorium</text>
+<circle cx="925" cy="676" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="932" y="680" font-size="13" fill="#2b2420">ps-ysgard</text>
+<circle cx="733" cy="733" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="740" y="737" font-size="13" fill="#2b2420">ps-xaos</text>
+<circle cx="825" cy="825" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="832" y="829" font-size="13" fill="#2b2420">ps-limbo</text>
+<circle cx="626" cy="805" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="633" y="809" font-size="13" fill="#2b2420">ps-bedlam</text>
+<circle cx="676" cy="925" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="683" y="929" font-size="13" fill="#2b2420">ps-pandemonium</text>
+<circle cx="500" cy="830" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="507" y="834" font-size="13" fill="#2b2420">ps-plague-mort</text>
+<circle cx="500" cy="960" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="507" y="964" font-size="13" fill="#2b2420">ps-the-abyss</text>
+<circle cx="374" cy="805" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="381" y="809" font-size="13" fill="#2b2420">ps-curst</text>
+<circle cx="324" cy="925" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="331" y="929" font-size="13" fill="#2b2420">ps-carceri</text>
+<circle cx="267" cy="733" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="274" y="737" font-size="13" fill="#2b2420">ps-hopeless</text>
+<circle cx="175" cy="825" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="182" y="829" font-size="13" fill="#2b2420">ps-gray-waste</text>
+<circle cx="195" cy="626" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="202" y="630" font-size="13" fill="#2b2420">ps-torch</text>
+<circle cx="75" cy="676" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="82" y="680" font-size="13" fill="#2b2420">ps-gehenna</text>
+<circle cx="170" cy="500" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="177" y="504" font-size="13" fill="#2b2420">ps-ribcage</text>
+<circle cx="40" cy="500" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="47" y="504" font-size="13" fill="#2b2420">ps-baator</text>
+<circle cx="195" cy="374" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="202" y="378" font-size="13" fill="#2b2420">ps-rigus</text>
+<circle cx="75" cy="324" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="82" y="328" font-size="13" fill="#2b2420">ps-acheron</text>
+<circle cx="267" cy="267" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="274" y="271" font-size="13" fill="#2b2420">ps-automata</text>
+<circle cx="175" cy="175" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="182" y="179" font-size="13" fill="#2b2420">ps-mechanus</text>
+<circle cx="374" cy="195" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="381" y="199" font-size="13" fill="#2b2420">ps-fortitude</text>
+<circle cx="324" cy="75" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="331" y="79" font-size="13" fill="#2b2420">ps-arcadia</text>
+<circle cx="500" cy="500" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="507" y="504" font-size="13" fill="#2b2420">ps-sigil</text>
+<circle cx="500" cy="545" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="507" y="549" font-size="13" fill="#2b2420">ps-the-spire</text>
+<circle cx="900" cy="100" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="907" y="104" font-size="13" fill="#2b2420">ps-city-of-brass</text>
+</g>
+<text x="12" y="988" font-size="12" fill="#5a3d2b">Realms Atlas schematic preview (planes) — 35 places — our own stylization, not a WotC map</text>
+</svg>

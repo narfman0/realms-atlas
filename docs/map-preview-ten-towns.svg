@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 1000" width="1450" height="1000" font-family="Georgia, serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#7a6a50" stroke-width="1"/></pattern></defs>
+<rect width="1450" height="1000" fill="#b9c7c4"/>
+<polygon data-name="land" points="435,0 362.5,50 261,80 174,100 101.5,150 43.5,200 0,220 0,1000 1450,1000 1450,0" fill="#e9dcbc" stroke="none"/>
+<g id="coast">
+<polyline data-name="Shore of the Sea of Moving Ice" points="435,0 362.5,50 261,80 174,100 101.5,150 43.5,200 0,220" fill="none" stroke="#3b2f24" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon data-name="Maer Dualdon" points="290,140 406,130 522,150 594.5,200 609,280 594.5,360 565.5,430 493,470 391.5,480 304.5,440 246.5,370 232,280 246.5,200 290,140" fill="#b9c7c4" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Lac Dinneshere" points="1029.5,170 1116.5,150 1189,190 1225.3,270 1232.5,360 1203.5,450 1138.3,510 1058.5,500 1007.7,430 993.3,330 1000.5,240 1029.5,170" fill="#b9c7c4" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Redwaters" points="870,720 942.5,700 1000.5,730 1015,780 971.5,830 884.5,840 826.5,800 826.5,750 870,720" fill="#b9c7c4" stroke="#3b2f24" stroke-width="2"/>
+<polyline data-name="Edge of the Reghed Glacier" points="1428.3,0 1399.3,80 1384.8,170 1363,260 1355.8,360 1341.3,460 1319.5,550 1290.5,640 1247,730 1203.5,820 1160,910 1131,1000" fill="none" stroke="#5f7f8c" stroke-width="2.5" stroke-dasharray="10 5" stroke-linejoin="round"/>
+</g><g id="ranges">
+<polyline data-name="Kelvin's Cairn" points="732.3,310 768.5,240 819.2,190 870,210 906.3,280" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M729.8,309.0 L734.8,299.0 L739.8,309.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M735.0,299.0 L740,289.0 L745.0,299.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M740.2,289.0 L745.2,279.0 L750.2,289.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M745.4,279.0 L750.4,269.0 L755.4,279.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M750.6,269.0 L755.6,259.0 L760.6,269.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M755.7,259.0 L760.7,249.0 L765.7,259.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M760.9,249.0 L765.9,239.0 L770.9,249.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M767.7,239.8 L772.7,229.8 L777.7,239.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M776.2,231.5 L781.2,221.5 L786.2,231.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M784.6,223.2 L789.6,213.2 L794.6,223.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M793.1,214.8 L798.1,204.8 L803.1,214.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M801.6,206.5 L806.6,196.5 L811.6,206.5" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M810.0,198.2 L815,188.2 L820.0,198.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M819.3,196.0 L824.3,186.0 L829.3,196.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M829.5,200.0 L834.5,190.0 L839.5,200.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M839.6,204.0 L844.6,194.0 L849.6,204.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M849.8,208.0 L854.8,198.0 L859.8,208.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M859.9,212.0 L864.9,202.0 L869.9,212.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M867.6,219.0 L872.6,209.0 L877.6,219.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M872.8,229.0 L877.8,219.0 L882.8,229.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M877.9,239.0 L882.9,229.0 L887.9,239.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M883.1,249.0 L888.1,239.0 L893.1,249.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M888.3,259.0 L893.3,249.0 L898.3,259.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M893.5,269.0 L898.5,259.0 L903.5,269.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M898.7,279.0 L903.7,269.0 L908.7,279.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+</g><g id="features">
+<text data-kind="sea" x="420.5" y="310" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">MAER DUALDON</text>
+<text data-kind="sea" x="1116.5" y="340" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">LAC DINNESHERE</text>
+<text data-kind="sea" x="928" y="800" text-anchor="middle" fill="#3d5c66" font-size="14" font-style="italic" letter-spacing="3">REDWATERS</text>
+<text data-kind="mountains" x="819.2" y="155" text-anchor="middle" fill="#6b5a42" font-size="15" letter-spacing="2">KELVIN'S CAIRN</text>
+<text data-kind="region" x="1305" y="950" text-anchor="middle" fill="#5a3d2b" font-size="14" letter-spacing="4" opacity="0.75">REGHED GLACIER</text>
+<text data-kind="sea" x="188.5" y="35" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">SEA OF MOVING ICE</text>
+<text data-kind="region" x="391.5" y="700" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">ICEWIND DALE</text>
+<text data-kind="mountains" x="783" y="440" text-anchor="middle" fill="#6b5a42" font-size="15" letter-spacing="2">DWARVEN VALLEY</text>
+</g><g id="places">
+<circle cx="754" cy="580" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="761" y="584" font-size="13" fill="#2b2420">tt-bryn-shander</text>
+<circle cx="609" cy="475" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="616" y="479" font-size="13" fill="#2b2420">tt-targos</text>
+<circle cx="659.8" cy="270" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="666.8" y="274" font-size="13" fill="#2b2420">tt-termalaine</text>
+<circle cx="449.5" cy="90" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="456.5" y="94" font-size="13" fill="#2b2420">tt-lonelywood</text>
+<circle cx="166.8" cy="300" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="173.8" y="304" font-size="13" fill="#2b2420">tt-bremen</text>
+<circle cx="1087.5" cy="560" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="1094.5" y="564" font-size="13" fill="#2b2420">tt-easthaven</text>
+<circle cx="935.3" cy="300" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="942.3" y="304" font-size="13" fill="#2b2420">tt-caer-dineval</text>
+<circle cx="1145.5" cy="105" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="1152.5" y="109" font-size="13" fill="#2b2420">tt-caer-konig</text>
+<circle cx="833.7" cy="685" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="840.7" y="689" font-size="13" fill="#2b2420">tt-good-mead</text>
+<circle cx="761.3" cy="800" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="768.3" y="804" font-size="13" fill="#2b2420">tt-dougans-hole</text>
+<circle cx="819.2" cy="215" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="826.2" y="219" font-size="13" fill="#2b2420">tt-kelvins-cairn</text>
+<circle cx="1341.3" cy="720" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="1348.3" y="724" font-size="13" fill="#2b2420">tt-reghed-glacier</text>
+<circle cx="72.5" cy="60" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="79.5" y="64" font-size="13" fill="#2b2420">tt-sea-of-moving-ice</text>
+<circle cx="783" cy="380" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="790" y="384" font-size="13" fill="#2b2420">tt-dwarven-valley</text>
+</g>
+<text x="12" y="988" font-size="12" fill="#5a3d2b">Realms Atlas schematic preview (ten-towns) — 14 places — our own stylization, not a WotC map</text>
+</svg>

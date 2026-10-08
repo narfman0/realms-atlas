@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 1000" width="1450" height="1000" font-family="Georgia, serif">
+<defs><pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="6" stroke="#7a6a50" stroke-width="1"/></pattern></defs>
+<rect width="1450" height="1000" fill="#b9c7c4"/>
+<polygon data-name="land" points="261,1000 304.5,930 377,880 464,840 551,790 638,710 703.3,610 739.5,520 746.8,450 717.8,390 681.5,380 652.5,420 630.8,480 580,540 507.5,600 420.5,650 348,680 290,680 261,620 239.3,540 232,460 253.7,370 290,280 348,200 435,140 551,110 681.5,95 812,105 928,85 1044,110 1145.5,150 1232.5,220 1290.5,310 1305,410 1290.5,500 1261.5,600 1232.5,700 1210.8,800 1196.3,900 1189,1000" fill="#e9dcbc" stroke="none"/>
+<g id="coast">
+<polyline data-name="Coast of the Land of Fate (Great Sea, Crowded Sea, Golden Gulf)" points="261,1000 304.5,930 377,880 464,840 551,790 638,710 703.3,610 739.5,520 746.8,450 717.8,390 681.5,380 652.5,420 630.8,480 580,540 507.5,600 420.5,650 348,680 290,680 261,620 239.3,540 232,460 253.7,370 290,280 348,200 435,140 551,110 681.5,95 812,105 928,85 1044,110 1145.5,150 1232.5,220 1290.5,310 1305,410 1290.5,500 1261.5,600 1232.5,700 1210.8,800 1196.3,900 1189,1000" fill="none" stroke="#3b2f24" stroke-width="2.5" stroke-linejoin="round"/>
+<polygon data-name="Afyal" points="1341.3,600 1392,580 1428.3,630 1428.3,720 1392,790 1348.5,770 1326.8,680 1341.3,600" fill="#e3d3ac" stroke="#3b2f24" stroke-width="2"/>
+<polygon data-name="Genie's Turban (Corsair Domains)" points="87,740 137.8,725 166.8,760 145,800 94.3,800 72.5,770 87,740" fill="#e3d3ac" stroke="#3b2f24" stroke-width="2"/>
+</g><g id="ranges">
+<polyline data-name="World Pillar Mountains" points="841,200 942.5,220 1044,260 1131,320 1174.5,400" fill="none" stroke="#6b5a42" stroke-width="2"/>
+<path d="M841.6,205.1 L846.6,195.1 L851.6,205.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M852.9,207.3 L857.9,197.3 L862.9,207.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M864.2,209.6 L869.2,199.6 L874.2,209.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M875.5,211.8 L880.5,201.8 L885.5,211.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M886.8,214.0 L891.8,204.0 L896.8,214.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M898.0,216.2 L903,206.2 L908.0,216.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M909.3,218.4 L914.3,208.4 L919.3,218.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M920.6,220.7 L925.6,210.7 L930.6,220.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M931.9,222.9 L936.9,212.9 L941.9,222.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M943.1,226.2 L948.1,216.2 L953.1,226.2" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M954.4,230.7 L959.4,220.7 L964.4,230.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M965.7,235.1 L970.7,225.1 L975.7,235.1" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M977.0,239.6 L982,229.6 L987.0,239.6" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M988.3,244.0 L993.3,234.0 L998.3,244.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M999.5,248.4 L1004.5,238.4 L1009.5,248.4" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1010.8,252.9 L1015.8,242.9 L1020.8,252.9" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1022.1,257.3 L1027.1,247.3 L1032.1,257.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1033.4,261.8 L1038.4,251.8 L1043.4,261.8" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1043.8,267.3 L1048.8,257.3 L1053.8,267.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1053.5,274.0 L1058.5,264.0 L1063.5,274.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1063.2,280.7 L1068.2,270.7 L1073.2,280.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1072.8,287.3 L1077.8,277.3 L1082.8,287.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1082.5,294.0 L1087.5,284.0 L1092.5,294.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1092.2,300.7 L1097.2,290.7 L1102.2,300.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1101.8,307.3 L1106.8,297.3 L1111.8,307.3" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1111.5,314.0 L1116.5,304.0 L1121.5,314.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1121.2,320.7 L1126.2,310.7 L1131.2,320.7" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1128.7,329.0 L1133.7,319.0 L1138.7,329.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1134.2,339.0 L1139.2,329.0 L1144.2,339.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1139.6,349.0 L1144.6,339.0 L1149.6,349.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1145.0,359.0 L1150,349.0 L1155.0,359.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1150.5,369.0 L1155.5,359.0 L1160.5,369.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1155.9,379.0 L1160.9,369.0 L1165.9,379.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1161.3,389.0 L1166.3,379.0 L1171.3,389.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+<path d="M1166.8,399.0 L1171.8,389.0 L1176.8,399.0" fill="none" stroke="#6b5a42" stroke-width="1.2"/>
+</g><g id="features">
+<text data-kind="sea" x="899" y="35" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">GREAT SEA</text>
+<text data-kind="sea" x="130.5" y="300" text-anchor="middle" fill="#3d5c66" font-size="14" font-style="italic" letter-spacing="3">CROWDED SEA</text>
+<text data-kind="sea" x="478.5" y="765" text-anchor="middle" fill="#3d5c66" font-size="14" font-style="italic" letter-spacing="3">GOLDEN GULF</text>
+<text data-kind="sea" x="693.1" y="475" text-anchor="middle" fill="#3d5c66" font-size="9" font-style="italic" letter-spacing="3">SUQ BAY</text>
+<text data-kind="desert" x="971.5" y="470" text-anchor="middle" fill="#9a6b2f" font-size="16" letter-spacing="6">HAUNTED LANDS</text>
+<text data-kind="desert" x="435" y="380" text-anchor="middle" fill="#9a6b2f" font-size="16" letter-spacing="6">HIGH DESERT</text>
+<text data-kind="mountains" x="1015" y="190" text-anchor="middle" fill="#6b5a42" font-size="15" letter-spacing="2">WORLD PILLAR MOUNTAINS</text>
+<text data-kind="region" x="913.5" y="700" text-anchor="middle" fill="#5a3d2b" font-size="17" letter-spacing="4" opacity="0.75">LAND OF FATE</text>
+<text data-kind="region" x="1160" y="540" text-anchor="middle" fill="#5a3d2b" font-size="12" letter-spacing="4" opacity="0.75">PEARL CITIES</text>
+<text data-kind="sea" x="1348.5" y="920" text-anchor="middle" fill="#3d5c66" font-size="17" font-style="italic" letter-spacing="3">GREAT SEA</text>
+</g><g id="places">
+<circle cx="775.8" cy="480" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="782.8" y="484" font-size="13" fill="#2b2420">zk-huzuz</text>
+<circle cx="725" cy="135" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="732" y="139" font-size="13" fill="#2b2420">zk-qudra</text>
+<circle cx="601.8" cy="440" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="608.8" y="444" font-size="13" fill="#2b2420">zk-hiyal</text>
+<circle cx="1203.5" cy="620" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="1210.5" y="624" font-size="13" fill="#2b2420">zk-muluk</text>
+<circle cx="1384.8" cy="690" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="1391.8" y="694" font-size="13" fill="#2b2420">zk-afyal</text>
+<circle cx="398.8" cy="890" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="405.8" y="894" font-size="13" fill="#2b2420">zk-jumlat</text>
+<circle cx="123.3" cy="770" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="130.3" y="774" font-size="13" fill="#2b2420">zk-hawa</text>
+<circle cx="1239.8" cy="450" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="1246.8" y="454" font-size="13" fill="#2b2420">zk-umara</text>
+<circle cx="971.5" cy="400" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="978.5" y="404" font-size="13" fill="#2b2420">zk-haunted-lands</text>
+<circle cx="514.8" cy="710" r="5" fill="#8b1e1e" stroke="#2b2420"/><text x="521.8" y="714" font-size="13" fill="#2b2420">zk-golden-gulf</text>
+</g>
+<text x="12" y="988" font-size="12" fill="#5a3d2b">Realms Atlas schematic preview (zakhara) — 10 places — our own stylization, not a WotC map</text>
+</svg>
