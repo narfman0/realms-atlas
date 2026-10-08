@@ -1,0 +1,956 @@
+[
+  {
+    "id": "sj-the-sun",
+    "name": "The Sun",
+    "aliases": [
+      "Sol",
+      "Lizu Sapa",
+      "the Burning Face"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "landmark",
+    "archetype": "landmark-monolith",
+    "map": null,
+    "orbit": {
+      "index": 0,
+      "radius": 0.0
+    },
+    "founded": null,
+    "foundedNote": "Timeless; sages judge it among the oldest suns of the known spheres. Temple lore says Selûne lit it with elemental fire at Chauntea's plea.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1367,
+        "title": "Sun-Hatched Broods",
+        "summary": "c. Lizardfolk of Coliar run communal spelljammers sunward to warm their eggs, trusting the heat to breed stronger young.",
+        "importance": 1
+      },
+      {
+        "year": 1358,
+        "title": "Gods Walk the Realms",
+        "summary": "During the Time of Troubles the powers of Realmspace are cast down; for Faerûn-side events see the Faerûn atlas.",
+        "importance": 1
+      }
+    ],
+    "description": "A vast ball of molten earth and living flame at the heart of the sphere, ringed by flaring loops that lash out for millions of miles. Portals on its surface open onto the Elemental Plane of Fire, and helians, efreet and salamanders swarm any ship that strays too close. Farther out, twelve dead-magic sargassos circle it like beads on wheel spokes, the bane of every helmsman.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "realmspace",
+      "sun",
+      "fire",
+      "elemental-fire",
+      "sargasso"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e8b04a",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 5,
+      "motifs": [
+        "sphere",
+        "glow",
+        "lava"
+      ],
+      "terrain": "desert",
+      "notes": "A large glowing amber-orange orb on a short plinth, with a few curling flame arcs leaping from its surface; tiny dark motes (sargassos) on thin spokes around it."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/The_sun",
+      "https://forgottenrealms.fandom.com/wiki/Realmspace"
+    ]
+  },
+  {
+    "id": "sj-anadia",
+    "name": "Anadia",
+    "aliases": [
+      "Dawn Herald"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "island",
+    "archetype": "frontier-town",
+    "map": null,
+    "orbit": {
+      "index": 1,
+      "radius": 0.125
+    },
+    "founded": null,
+    "foundedNote": "Timeless world; halfling polar realms have no recorded founding.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1150,
+        "title": "The Southern Plague",
+        "summary": "c. A disease carried in by a visiting crew kills nearly a third of the south-polar halflings, souring several northern counties on all off-world ships.",
+        "importance": 2
+      },
+      {
+        "year": 1367,
+        "title": "Rule of Fjord Deepskull",
+        "summary": "Fjord Deepskull governs the Northern Polarate, the planet's only stable state, a constitutional league of thirteen counties.",
+        "importance": 1
+      }
+    ],
+    "description": "The innermost world, an amber ball scored by equatorial canyons so deep they would swallow Faerûn's Great Rift, where umber hulks abandoned by neogi ranchers scavenge. Only the green, rain-fed poles are livable: rolling halfling hill-country laced with canal-linked lakes, four of whose counties welcome spelljammers while nine shoot them on sight. The dark-skinned Anadian halflings are clever, insular, and quietly convinced of their own superiority.",
+    "population": null,
+    "ruler": "Northern Polarate (constitutional government); Fjord Deepskull by 1367 DR",
+    "tags": [
+      "realmspace",
+      "dawn-herald",
+      "halfling",
+      "umber-hulk",
+      "planet"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d6a85c",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 2,
+      "motifs": [
+        "sphere",
+        "farms",
+        "canal",
+        "lake",
+        "mountain"
+      ],
+      "terrain": "desert",
+      "notes": "A small amber sphere with deep canyon scars around its middle and green caps at both poles dotted with tiny halfling hill-houses and blue lakes."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Anadia",
+      "https://forgottenrealms.fandom.com/wiki/Realmspace"
+    ]
+  },
+  {
+    "id": "sj-coliar",
+    "name": "Coliar",
+    "aliases": [
+      "Dawn Herald"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "landmark",
+    "archetype": "floating-enclave",
+    "map": null,
+    "orbit": {
+      "index": 2,
+      "radius": 0.25
+    },
+    "founded": null,
+    "foundedNote": "Timeless world.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1050,
+        "title": "Elminster's Hideout",
+        "summary": "c. Elminster hides a small metal sphere-island deep in the planet, built to watch the red wyrm Firebrand Flametongue.",
+        "importance": 2
+      },
+      {
+        "year": 1367,
+        "title": "Three Peoples, Three Governments",
+        "summary": "Aarakocra clans elect leaders by horn-carried vote, lizardfolk hold all wealth and ships in common under Schlith Darkscale, and the dragons keep their own counsel.",
+        "importance": 1
+      }
+    ],
+    "description": "A gas giant whose hundred-mile cloud deck hides a hollow of clear air filled with countless drifting islands, each a little world of lakes, woods and caves orbiting the core at its own height. Tall timber beacon-towers poke through the clouds to guide ships down to ports such as Hisssta and Athanar. Aarakocra, lizardfolk and long-lived dragons share the sky, and an ancient red wyrm claims the great island at the centre.",
+    "population": null,
+    "ruler": "No single ruler: aarakocra clan democracies, a lizardfolk commune, and dragon families",
+    "tags": [
+      "realmspace",
+      "dawn-herald",
+      "gas-giant",
+      "aarakocra",
+      "lizardfolk",
+      "dragons",
+      "elminster"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cfd4d8",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 5,
+      "motifs": [
+        "gas-giant",
+        "floating",
+        "towers",
+        "trees"
+      ],
+      "terrain": "island",
+      "notes": "A big grey-white banded sphere, cut away on one side to show a swarm of small floating earthmotes with trees inside; a few thin wooden towers poke out of the cloud top."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Coliar",
+      "https://forgottenrealms.fandom.com/wiki/Elminster%27s_Hideout",
+      "https://forgottenrealms.fandom.com/wiki/Realmspace"
+    ]
+  },
+  {
+    "id": "sj-toril",
+    "name": "Toril",
+    "aliases": [
+      "Abeir-Toril"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "landmark",
+    "archetype": "landmark-sea",
+    "map": null,
+    "orbit": {
+      "index": 3,
+      "radius": 0.375
+    },
+    "drill": "toril",
+    "founded": null,
+    "foundedNote": "The world itself; its history is told in the Faerûn atlas.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1358,
+        "title": "Time of Troubles",
+        "summary": "The gods are cast down to walk the world; even the Wanderers' chant on the crystal shell falls silent. See the Faerûn atlas.",
+        "importance": 3
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague",
+        "summary": "Mystra's death sets the Weave aflame and twin-world Abeir bleeds back into Toril. See the Faerûn atlas.",
+        "importance": 3
+      },
+      {
+        "year": 1487,
+        "title": "Second Sundering",
+        "summary": "Ao rewrites the Tablets of Fate and Abeir and Toril part again. See the Faerûn atlas.",
+        "importance": 3
+      }
+    ],
+    "description": "The third world from the sun and by far the most crowded, a blue-green globe about the size of Earth, three-fifths ocean, home to Faerûn, Kara-Tur, Zakhara and lands still barely charted. From wildspace it looks calm, trailed by its pale moon and a glittering train of asteroids. Every road of the atlas begins here.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "realmspace",
+      "planet",
+      "faerun",
+      "home-world"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#7fa88a",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 4,
+      "motifs": [
+        "sphere",
+        "harbor",
+        "trees",
+        "snow"
+      ],
+      "terrain": "coast",
+      "notes": "A blue-green sphere with recognisable continent blotches and white polar caps, larger than its neighbours; a faint ring of light marks it as the drillable home world."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Toril",
+      "https://forgottenrealms.fandom.com/wiki/Realmspace"
+    ]
+  },
+  {
+    "id": "sj-selune",
+    "name": "Selûne",
+    "aliases": [
+      "Leira"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "landmark",
+    "archetype": "landmark-mountain",
+    "map": null,
+    "orbit": {
+      "index": 3,
+      "radius": 0.375
+    },
+    "satelliteOf": "sj-toril",
+    "founded": null,
+    "foundedNote": "Timeless moon.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -3500,
+        "title": "The Weapon That Missed",
+        "summary": "c. A draconic weapon meant for the King-Killer Star strikes the moon instead, scattering the Tears into its wake and raising great tides on Toril.",
+        "importance": 3
+      },
+      {
+        "year": 1357,
+        "title": "Moonbeam Rescues",
+        "summary": "Selûne's avatar Luna uses beams of moonlight to carry and aid mortals on Toril below.",
+        "importance": 1
+      },
+      {
+        "year": 1372,
+        "title": "The Calendar Moon",
+        "summary": "Selûne is full at midnight on Hammer 1, the anchor sages use to reckon its 30-day cycle.",
+        "importance": 1
+      }
+    ],
+    "description": "Toril's single moon shows the world below a dead, cratered face, but that face is an illusion hung over the surface, a gift of the goddess Leira to her worshippers. The hidden far side holds lakes, two seas, ornate roads, cities and twelve molten peaks that glow through the long lunar night. Its Leiran people are vain, aesthetic and deeply paranoid about Torilians, whom they keep penned at the Leira Trading Center's docks.",
+    "population": null,
+    "ruler": "High Magistrate and Queen Phlandra Alabaster (late 14th c. DR)",
+    "tags": [
+      "realmspace",
+      "moon",
+      "leira",
+      "illusion",
+      "trade"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9dbe0",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 2,
+      "motifs": [
+        "sphere",
+        "mountain",
+        "glow",
+        "docks",
+        "domes"
+      ],
+      "terrain": "plain",
+      "notes": "A small pale-silver cratered sphere; on the far side a cluster of tiny domes and docks peeks through, with a few glowing red peaks."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Sel%C3%BBne_(moon)",
+      "https://forgottenrealms.fandom.com/wiki/Realmspace"
+    ]
+  },
+  {
+    "id": "sj-tears-of-selune",
+    "name": "Tears of Selûne",
+    "aliases": [
+      "the Tears"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "landmark",
+    "archetype": "island-haven",
+    "map": null,
+    "orbit": {
+      "index": 3,
+      "radius": 0.375
+    },
+    "satelliteOf": "sj-toril",
+    "founded": null,
+    "foundedNote": "The cluster appeared c. -3500 DR; earlier it did not exist.",
+    "status": [
+      {
+        "from": -3500,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -3500,
+        "title": "The Tears Appear",
+        "summary": "c. A Shou astronomer watches new lights pop into being behind the moon as tidal waves batter Toril's coasts.",
+        "importance": 3
+      },
+      {
+        "year": 1369,
+        "title": "Twisted Rune Takes Stardock",
+        "summary": "The Twisted Rune seizes the illithid rock Stardock and plots a rift to Undermountain to snatch Halaster.",
+        "importance": 2
+      },
+      {
+        "year": 1469,
+        "title": "Githyanki on Stardock",
+        "summary": "c. A century on, Stardock is held by githyanki and their red dragon allies.",
+        "importance": 2
+      }
+    ],
+    "description": "Hundreds of asteroids trailing Selûne in its orbit, revolving around a nameless enchanted castle no explorer has returned from. A few dozen hold air: dwarven Citadel and Whitestone, the bustling market rock Dragon Rock, the beholder warren Eye of the Sky, the neogi slave-fort Journey's Legg, and the Rock of Bral. From Toril they look like nine faint stars that rise hours after the moon.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "realmspace",
+      "asteroids",
+      "neogi",
+      "beholder",
+      "dwarves",
+      "stardock"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#b9b3a6",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 2,
+      "motifs": [
+        "asteroid",
+        "floating",
+        "castle",
+        "spires",
+        "docks"
+      ],
+      "terrain": "island",
+      "notes": "A loose scatter of grey asteroid chunks of different sizes trailing in an arc, one bearing a tiny glowing-spired castle, others tiny docks."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Tears_of_Sel%C3%BBne",
+      "https://forgottenrealms.fandom.com/wiki/Realmspace"
+    ]
+  },
+  {
+    "id": "sj-rock-of-bral",
+    "name": "Rock of Bral",
+    "aliases": [
+      "The Rock",
+      "Bral"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": null,
+    "orbit": {
+      "index": 3,
+      "radius": 0.375
+    },
+    "satelliteOf": "sj-toril",
+    "founded": 1200,
+    "foundedNote": "c. 1200 DR: pirate Captain Bral settles the asteroid (wiki: 'near the start of the 13th century'); older ruins predate him",
+    "status": [
+      {
+        "from": 1200,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1200,
+        "title": "Captain Bral's Hideout",
+        "summary": "c. Space pirate Bral plants crops in the asteroid's caves and gathers the Black Brotherhood; after elves kill him the town takes his name.",
+        "importance": 3
+      },
+      {
+        "year": 1290,
+        "title": "Cozar Buys the Rock",
+        "summary": "c. Pirate Captain Cozar buys every plot on the asteroid within months, evicts those who will not lease, and becomes first prince.",
+        "importance": 3
+      },
+      {
+        "year": 1310,
+        "title": "Prince Frun's Reign",
+        "summary": "c. Cozar's son Frun builds the Citadel and the Donjon over a 35-year reign; a neogi fleet he insulted crashes a derelict dwarven citadel into the Middle City.",
+        "importance": 2
+      },
+      {
+        "year": 1345,
+        "title": "Six-Day Prince",
+        "summary": "c. Prince Calar is jettisoned into space six days after his crowning; his brother Andru takes the throne and rewrites the succession.",
+        "importance": 2
+      },
+      {
+        "year": 1360,
+        "title": "Second Unhuman War",
+        "summary": "c. The scro war reaches Realmspace; Andru plays the Rock as neutral ground and broker between the spacefaring powers.",
+        "importance": 2
+      },
+      {
+        "year": 1492,
+        "title": "Spelljammer: Adventures in Space",
+        "summary": "c. The Rock is a port of call in the Light of Xaryxis campaign, still ruled by Prince Andru.",
+        "importance": 2
+      }
+    ],
+    "description": "A mile-long stony egg in the Tears of Selûne whose gravity plane gives it two faces: the cosmopolitan free port of Bral crowds the top, while the prince's hangars, fields tended by convicts, and the Citadel fill the underside. Nine hexagonal ballista towers guard the city, dragon-wing vanes nudge the Rock along its orbit, and Lake Bral is refilled every few years by smashing lassoed ice asteroids. Beneath it all run unexplored tunnels left by illithids, beholders, vanished dwarves and elven sailors.",
+    "population": null,
+    "ruler": "Prince Andru Cozar",
+    "tags": [
+      "realmspace",
+      "free-port",
+      "pirates",
+      "spelljammer",
+      "house-of-cozar",
+      "tears-of-selune"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c4b59a",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 3,
+      "motifs": [
+        "station",
+        "asteroid",
+        "towers",
+        "walls",
+        "docks",
+        "lake",
+        "ships"
+      ],
+      "terrain": "island",
+      "notes": "An ovoid asteroid with a dense walled town on top ringed by squat hexagonal towers, a dark lake chasm, and docked ships plus a fortress hanging underneath."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Rock_of_Bral",
+      "https://forgottenrealms.fandom.com/wiki/Bral",
+      "https://forgottenrealms.fandom.com/wiki/Andru",
+      "https://forgottenrealms.fandom.com/wiki/Tears_of_Sel%C3%BBne"
+    ]
+  },
+  {
+    "id": "sj-karpri",
+    "name": "Karpri",
+    "aliases": [
+      "First Wanderer"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "landmark",
+    "archetype": "landmark-sea",
+    "map": null,
+    "orbit": {
+      "index": 4,
+      "radius": 0.5
+    },
+    "founded": null,
+    "foundedNote": "Timeless world.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1367,
+        "title": "Gnomes of the South Pole",
+        "summary": "Survivors of a crashed spelljammer, led by Lotus Redcap, tunnel slowly through the southern ice.",
+        "importance": 1
+      }
+    ],
+    "description": "A water world with no land at all, its clear temperate seas so lovely that painters come only to look. Ice caps hundreds of miles thick crown the poles and a vast, insect-ridden kelp sargasso girdles the equator. Aquatic elves moved here from the Trackless Sea ride with telepathic dolphins and attack whalers on sight, while eyes of the deep lurk far below and a haunted elven war-station of seven welded man-o-wars circles overhead.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "realmspace",
+      "five-wanderers",
+      "water-world",
+      "aquatic-elves",
+      "haunted"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#5b8fb9",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 3,
+      "motifs": [
+        "sphere",
+        "ice",
+        "ships"
+      ],
+      "terrain": "coast",
+      "notes": "A sapphire-blue sphere with thick white polar caps and a green-brown weed band at the equator; a small spiky wreck-station of joined ships orbits nearby."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Karpri",
+      "https://forgottenrealms.fandom.com/wiki/Realmspace"
+    ]
+  },
+  {
+    "id": "sj-chandos",
+    "name": "Chandos",
+    "aliases": [
+      "Second Wanderer"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "landmark",
+    "archetype": "landmark-sea",
+    "map": null,
+    "orbit": {
+      "index": 5,
+      "radius": 0.625
+    },
+    "founded": null,
+    "foundedNote": "Timeless world.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1367,
+        "title": "Feuding Castaways",
+        "summary": "Humans under Zachariah Silverblade and orcs under chieftain Og Moscog scratch a living among the shifting islands, descendants of a long-forgotten double shipwreck.",
+        "importance": 1
+      }
+    ],
+    "description": "An ocean world crowded with heaps of loose rock that pile up into unstable islands and collapse again with each turn of the planet. Descendants of crashed spelljammer crews, humans, dwarves and orcs, have forgotten their ships and their origins and kill each other on sight; only the orcs have learned to cooperate. Predatory plants rule the rain-lashed equator, and clever, vicious fish rule the seas.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "realmspace",
+      "five-wanderers",
+      "water-world",
+      "castaways"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#8a8f62",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 3,
+      "motifs": [
+        "sphere",
+        "rubble",
+        "snow"
+      ],
+      "terrain": "island",
+      "notes": "A murky green-brown sphere studded with jagged rock-pile islands, a few toppling; snowy islets at the poles."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Chandos",
+      "https://forgottenrealms.fandom.com/wiki/Realmspace"
+    ]
+  },
+  {
+    "id": "sj-glyth",
+    "name": "Glyth",
+    "aliases": [
+      "Third Wanderer"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "landmark",
+    "archetype": "underdark-city",
+    "map": null,
+    "orbit": {
+      "index": 6,
+      "radius": 0.75
+    },
+    "founded": null,
+    "foundedNote": "Timeless world; the present illithid colonies date from c. 1267 DR.",
+    "status": [
+      {
+        "from": -35000,
+        "to": 1267,
+        "state": "thriving"
+      },
+      {
+        "from": 1267,
+        "to": null,
+        "state": "troubled"
+      }
+    ],
+    "events": [
+      {
+        "year": -11000,
+        "title": "Flight to Oryndoll",
+        "summary": "c. Illithid refugees fly nautiloids from Glyth to Toril and found the city of Oryndoll.",
+        "importance": 2
+      },
+      {
+        "year": 1267,
+        "title": "The Flayers Return",
+        "summary": "c. A sage drilling the polar ice finds the current mind flayer cities are only a century old.",
+        "importance": 2
+      },
+      {
+        "year": 1361,
+        "title": "Scro Captives",
+        "summary": "c. Scro survivors of the Second Unhuman War are taken by Glyth's illithids and never seen again.",
+        "importance": 1
+      },
+      {
+        "year": 1492,
+        "title": "Scavenger's Captain",
+        "summary": "c. N'ghathrod, raised in a Glyth colony, turns pirate aboard the squid ship Scavenger (Spelljammer Academy era).",
+        "importance": 1
+      }
+    ],
+    "description": "A grey, smoke-choked ringed world where mind flayer cities sprawl underground and the surface forests are burned so their humanoid 'skull cattle' cannot hide. Acid rain falls from a ruined sky onto pools of strange edible jelly that never sours or freezes. Four braided rings of ice and rock circle the equator, and three moons attend it: the illithid meeting-rock Haven, the open port Mingabwe, and tiny Polluter.",
+    "population": null,
+    "ruler": "Rival illithid city-factions, meeting on Haven",
+    "tags": [
+      "realmspace",
+      "five-wanderers",
+      "illithid",
+      "rings",
+      "slavery"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#8e8b86",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 4,
+      "motifs": [
+        "sphere",
+        "rings",
+        "cavern",
+        "ice",
+        "ruins"
+      ],
+      "terrain": "cavern",
+      "notes": "A dull grey sphere wrapped in a wide flat ring, haze and smoke smudges on its surface, and a few small moons beside it; one cut-away showing tendril-like flayer spires underground."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Glyth",
+      "https://forgottenrealms.fandom.com/wiki/Realmspace"
+    ]
+  },
+  {
+    "id": "sj-garden",
+    "name": "Garden",
+    "aliases": [
+      "Fourth Wanderer"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "landmark",
+    "archetype": "landmark-forest",
+    "map": null,
+    "orbit": {
+      "index": 7,
+      "radius": 0.875
+    },
+    "founded": null,
+    "foundedNote": "Timeless world.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1367,
+        "title": "Clive the Fearsome",
+        "summary": "Orion of Calimshan, under the name Clive the Fearsome, leads a hundred pirates and twelve small ships from a cove on Garden.",
+        "importance": 1
+      }
+    ],
+    "description": "Not a planet but a cluster of earth-lumps held in the roots of Yggdrasil's Child, a plant so vast its woven trunk takes hours to walk around, sharing one atmosphere. Some rocks are big enough for towns and small rivers; ships thread carefully between them. Twelve odd moons circle it, from a crescent of grass tended by one druid to a blue fire-moon that lights its nights, and pirates and slavers hide in its tangles.",
+    "population": null,
+    "ruler": "Clive the Fearsome's pirates (1367 DR)",
+    "tags": [
+      "realmspace",
+      "five-wanderers",
+      "live-world",
+      "pirates",
+      "yggdrasil"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#7e9a5c",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 3,
+      "motifs": [
+        "asteroid",
+        "giant-trees",
+        "floating",
+        "trees"
+      ],
+      "terrain": "forest",
+      "notes": "A knot of small earthy asteroids suspended in a web of enormous twisted roots and a giant woven trunk, like a pulled-up potato plant floating in space."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Garden",
+      "https://forgottenrealms.fandom.com/wiki/Realmspace"
+    ]
+  },
+  {
+    "id": "sj-hcatha",
+    "name": "H'Catha",
+    "aliases": [
+      "Fifth Wanderer"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "landmark",
+    "archetype": "landmark-mountain",
+    "map": null,
+    "orbit": {
+      "index": 8,
+      "radius": 1.0
+    },
+    "founded": null,
+    "foundedNote": "Timeless world.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1361,
+        "title": "Scro Taken",
+        "summary": "c. Scro survivors of the Second Unhuman War are captured by the beholders; their fate is unknown.",
+        "importance": 1
+      },
+      {
+        "year": 1492,
+        "title": "Still the Beholders' World",
+        "summary": "c. Warring beholder factions still hold the planet; orogs from caverns beneath it crew the pirate squid ship Scavenger (Spelljammer Academy era).",
+        "importance": 2
+      }
+    ],
+    "description": "The outermost world is a flat disc of clear water three hundred miles deep, its rim pouring endlessly into fog, with the thousand-mile Spindle rising from the centre and always pointing at the sun. Rival beholder breeds fight endlessly for the mountain, wrecking the sea life around them, and each keeps a port at its foot open only to friendly beholders, the Arcane, and traders who leave quickly. Two moons attend it: explosive Turnbetl and the metal cylinder Lumbe.",
+    "population": null,
+    "ruler": "Warring beholder factions",
+    "tags": [
+      "realmspace",
+      "five-wanderers",
+      "beholder",
+      "disc-world",
+      "spindle"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#bfd6d8",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 4,
+      "motifs": [
+        "mountain",
+        "waterfall",
+        "docks",
+        "glow"
+      ],
+      "terrain": "mountain",
+      "notes": "A thin flat disc of pale water like a wagon wheel, misty edges spilling over, with a single tall needle mountain at the hub and tiny ports around its base."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/H%27Catha",
+      "https://forgottenrealms.fandom.com/wiki/Realmspace"
+    ]
+  },
+  {
+    "id": "sj-crystal-shell",
+    "name": "The Crystal Shell",
+    "aliases": [
+      "Realmspace sphere",
+      "Sea of Night"
+    ],
+    "world": "realmspace",
+    "region": "realmspace",
+    "type": "landmark",
+    "archetype": "landmark-monolith",
+    "map": null,
+    "orbit": {
+      "index": 9,
+      "radius": 1.0
+    },
+    "founded": null,
+    "foundedNote": "Timeless; the sphere's wall predates all records.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1358,
+        "title": "The Chant Falls Silent",
+        "summary": "During the Time of Troubles the Wanderers on the shell stop chanting and no portal through the sphere can be opened.",
+        "importance": 3
+      },
+      {
+        "year": 1396,
+        "title": "Stars That Are Not Stars",
+        "summary": "c. Before this year, Far Realm entities drawn in by the Abolethic Sovereignty settle among the stars, posing as Hadar, Caiphon and others.",
+        "importance": 2
+      }
+    ],
+    "description": "The unbreakable wall that seals Realmspace from the phlogiston, a sphere 3.2 billion miles in radius that looks flat from any point on it. Its inner face is carved with unreadable warding glyphs hundreds of miles high, and its dots and dashes open onto the Plane of Radiance, which Torilians see as stars. Mysterious Wanderers live on the inner surface and keep up an endless chant.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "realmspace",
+      "crystal-sphere",
+      "wanderers",
+      "stars",
+      "glyphs"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#2a3350",
+        "accent": "#4a6fa5",
+        "ink": "#1c1f2b"
+      },
+      "scale": 5,
+      "motifs": [
+        "glow",
+        "obelisk",
+        "standing-stone"
+      ],
+      "terrain": "plain",
+      "notes": "The board's rim: a curved dark crystal wall etched with huge glowing glyphs and pinprick star-holes; on a tile, a curved shard of that wall."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Realmspace",
+      "https://forgottenrealms.fandom.com/wiki/Crystal_sphere"
+    ]
+  }
+]
