@@ -1,6 +1,6 @@
 // Atlas: places grouped by region in columns (three tiles wide), in two bands: the west and north above,
 // the heartlands and the east below. Inside a column places read north → south by their map position.
-import { STEP, REGION_ORDER, regionName, boundsOf } from './common.js';
+import { STEP, ROW, TILE, REGION_ORDER, regionName, boundsOf } from './common.js';
 
 const BANDS = [
   ['sword-coast-north', 'silver-marches', 'underdark', 'western-heartlands'],
@@ -28,20 +28,20 @@ export function atlas(places) {
       idx.sort((a, b) => (a[0].map?.y ?? 0) - (b[0].map?.y ?? 0) || (a[0].map?.x ?? 0) - (b[0].map?.x ?? 0));
       idx.forEach(([, i], k) => {
         const c = k % COLS, row = Math.floor(k / COLS);
-        items[i] = { x: x + c * STEP, z: z + row * STEP, s: 1, ry: 0 };
+        items[i] = { x: x + c * STEP, z: z + row * ROW, s: 1, ry: 0 };
         order.push(i);
       });
       const rows = Math.ceil(idx.length / COLS);
       maxRows = Math.max(maxRows, rows);
-      labels.push({ text: regionName(r), sub: `${idx.length} places`, x: x + colW / 2, z: z - STEP * 0.98, kind: 'region' });
+      labels.push({ text: regionName(r), sub: `${idx.length} places`, x: x + colW / 2, z: z - STEP * 0.98 - TILE * 0.5, kind: 'region' });
       x += colW + STEP + colGap;
     }
-    z += maxRows * STEP + STEP * 1.05;
+    z += maxRows * ROW + STEP * 1.05 + TILE * 0.5;
   }
-  const oz = -(z - STEP * 1.05 - STEP) / 2;
+  const oz = -(z - STEP * 1.05 - TILE * 0.5 - ROW) / 2;
   for (const it of items) it.z += oz;
   for (const l of labels) l.z += oz;
   const b = boundsOf(items);
-  b.z0 -= STEP * 0.9; // room for the region captions
+  b.z0 -= STEP * 0.9 + TILE * 0.5; // room for the region captions
   return { name: 'atlas', items, labels, order, bounds: b };
 }

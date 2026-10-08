@@ -27,6 +27,7 @@ const SHOTS = [
   ['focus-waterdeep', '?layout=atlas#waterdeep'],
   ['solo-waterdeep', '?solo=waterdeep'],
   ['solo-menzoberranzan', '?solo=menzoberranzan'],
+  ['solo-thultanthar-1000', '?solo=thultanthar&year=1000'],
   ['solo-thultanthar-1400', '?solo=thultanthar&year=1400'],
   ['solo-thultanthar-1490', '?solo=thultanthar&year=1490'],
   ['solo-myth-drannor-1000', '?solo=myth-drannor&year=1000'],

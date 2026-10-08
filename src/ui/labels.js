@@ -37,7 +37,7 @@ export function createLabels(root, dioramas, { onClick, onHover }) {
   }
 
   /** per frame. camera, size {w,h}; visible(i) -> bool; prio(i) -> number; offsetY(i) world offset below tile */
-  function update(camera, W, H, { focus = -1, hideAll = false, scaleOf }) {
+  function update(camera, W, H, { focus = -1, hover = -1, hideAll = false, scaleOf, hideMinor = false, isMinor }) {
     // priority: focused first, then by distance to camera (nearer first)
     let n = 0;
     for (let k = 0; k < order.length; k++) {
@@ -46,7 +46,7 @@ export function createLabels(root, dioramas, { onClick, onHover }) {
       const lab = names[i];
       const s = scaleOf(i);
       v.set(d.root.position.x, d.root.position.y - 0.9 * s, d.root.position.z + 4.9 * s).project(camera);
-      const on = !hideAll && v.z < 1 && v.x > -1.1 && v.x < 1.1 && v.y > -1.1 && v.y < 1.1;
+      const on = !hideAll && v.z < 1 && v.x > -1.1 && v.x < 1.1 && v.y > -1.1 && v.y < 1.1 && (!hideMinor || i === focus || i === hover || !isMinor(i));
       lab.x = (v.x * 0.5 + 0.5) * W;
       lab.y = (-v.y * 0.5 + 0.5) * H;
       lab.vis = on;

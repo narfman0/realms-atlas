@@ -258,13 +258,13 @@ export function drawParchment(map, places, { width = 3000 } = {}) {
   }
   compass(g, W - 230, 230, 130, INK);
   g.save();
-  g.translate(220, H - 170);
-  g.textAlign = 'left';
+  g.translate(W - 110, H * 0.79);
+  g.textAlign = 'right';
   g.fillStyle = INK;
   g.font = '600 92px "Cormorant Garamond", Georgia, serif';
   g.fillText(spaced('FAERÛN'), 0, 0);
   g.font = 'italic 500 40px "Cormorant Garamond", Georgia, serif';
-  g.fillText('a schematic chart, not to scale', 6, 54);
+  g.fillText('a schematic chart, not to scale', -6, 54);
   g.restore();
 
   const tex = new THREE.CanvasTexture(cv);

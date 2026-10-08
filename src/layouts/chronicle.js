@@ -1,5 +1,5 @@
 // Chronicle: places sorted by when they first appear, left → right, one row (or more, wrapped) per era.
-import { STEP, boundsOf } from './common.js';
+import { STEP, ROW, boundsOf } from './common.js';
 import { ERAS, appearYear, fmtYearShort } from '../time.js';
 
 export function chronicle(places) {
@@ -22,12 +22,13 @@ export function chronicle(places) {
     row.list.forEach(([, i], c) => { items[i] = { x: startX + c * STEP, z, s: 1, ry: 0 }; order.push(i); });
     if (row.first) labels.push({ text: row.era.short || row.era.name, sub: `${fmtYearShort(row.era.from)} – ${fmtYearShort(row.era.to)} DR`, x: startX - STEP * 0.95, z, kind: 'era' });
     row.z = z;
-    z += STEP;
+    z += ROW;
   }
-  const oz = -(z - STEP) / 2;
+  const oz = -(z - ROW) / 2;
   for (const it of items) it.z += oz;
   for (const l of labels) l.z += oz;
   const b = boundsOf(items);
   b.x0 -= STEP * 1.6; // room for the era captions on the left
+  b.z0 -= STEP * 0.5; // and headroom for the tallest models in the first row
   return { name: 'chronicle', items, labels, order, bounds: b };
 }

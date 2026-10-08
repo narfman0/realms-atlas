@@ -62,13 +62,13 @@ varying float vRipple;`)
 ${STATUS_FRAG}`);
 }
 function glowCompile(shader) {
-  Object.assign(shader.uniforms, this.userData.u);
+  Object.assign(shader.uniforms, this.userData.u, { uNight: shared.night });
   shader.fragmentShader = shader.fragmentShader
     .replace('#include <common>', `#include <common>
-uniform float uGlow, uDesat;`)
+uniform float uGlow, uDesat, uNight;`)
     .replace('#include <color_fragment>', `#include <color_fragment>
   float raL = dot(diffuseColor.rgb, vec3(0.299, 0.587, 0.114));
-  diffuseColor.rgb = mix(diffuseColor.rgb, vec3(raL), uDesat) * uGlow;`);
+  diffuseColor.rgb = mix(diffuseColor.rgb, vec3(raL), uDesat) * uGlow * (1.0 + 1.8 * uNight);`);
 }
 
 const key = (k) => () => k;
@@ -114,8 +114,11 @@ export function setGhost(set, k) {
   for (const m of set.all) {
     const base = set.baseOpacity.get(m);
     if (m === set.solid) {
-      if (m.transparent !== want) { m.transparent = want; m.depthWrite = !want || k < 0.5; m.needsUpdate = true; }
-      m.opacity = 1 - 0.72 * k;
-    } else m.opacity = base * (1 - 0.65 * k);
+      // sketch look: translucent fill that still writes depth; a depth pre-pass (see Diorama) makes only the
+      // nearest faces draw, so there is no x-ray of interior faces
+      if (m.transparent !== want) { m.transparent = want; m.depthWrite = true; m.needsUpdate = true; }
+      m.opacity = 1 - 0.65 * k;
+    } else if (m === set.ink) m.opacity = base + 0.35 * k;
+    else m.opacity = base * (1 - 0.65 * k);
   }
 }

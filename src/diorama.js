@@ -17,10 +17,36 @@ export const LOOK = {
   ruined: { tall: 0.22, low: 0.62, ruin: 1, desat: 0.55, scorch: 0.12, glow: 0.18, float: 0 },
   destroyed: { tall: 0.04, low: 0.22, ruin: 1, desat: 0.35, scorch: 0.6, glow: 0, float: 0 },
   abandoned: { desat: 0.65, fade: 0.38, glow: 0, tall: 0.9 },
-  hidden: { ghost: 1, desat: 0.25, fade: 0.15, glow: 0.7 },
-  relocated: { ghost: 0.7, lift: 1, glow: 0.5 },
+  hidden: { ghost: 1, desat: 0.5, fade: 0.55, glow: 0.5 },
+  relocated: { lift: 1, glow: 0.8, scorch: 0.12 },
 };
 const DUR = 0.6;
+const LIFT = 4.6; // how high a relocated place rises off the board
+
+const depthMat = new THREE.MeshBasicMaterial({ colorWrite: false });
+// what a relocated place leaves behind: a scorched pit with a faint red glow from below (Avernus)
+const pitGeo = {
+  slab: new THREE.BoxGeometry(HALF * 2, 0.9, HALF * 2).translate(0, -0.45, 0),
+  ring: new THREE.TorusGeometry(2.6, 0.35, 5, 20).rotateX(Math.PI / 2),
+  hole: new THREE.CircleGeometry(2.5, 24).rotateX(-Math.PI / 2),
+  glow: new THREE.CircleGeometry(4.2, 28).rotateX(-Math.PI / 2),
+};
+const pitMats = {
+  slab: new THREE.MeshStandardMaterial({ color: '#4a3a2e', roughness: 1, flatShading: true }),
+  ring: new THREE.MeshStandardMaterial({ color: '#1e1512', roughness: 1, flatShading: true }),
+  hole: new THREE.MeshBasicMaterial({ color: new THREE.Color('#ff3a12').multiplyScalar(1.6), toneMapped: false }),
+  glow: new THREE.MeshBasicMaterial({ color: '#ff4a1a', transparent: true, opacity: 0.35, depthWrite: false, blending: THREE.AdditiveBlending, toneMapped: false }),
+};
+function makePit() {
+  const g = new THREE.Group();
+  const slab = new THREE.Mesh(pitGeo.slab, pitMats.slab); slab.receiveShadow = true;
+  const ring = new THREE.Mesh(pitGeo.ring, pitMats.ring); ring.position.y = 0.02;
+  const hole = new THREE.Mesh(pitGeo.hole, pitMats.hole); hole.position.y = 0.03;
+  const glow = new THREE.Mesh(pitGeo.glow, pitMats.glow); glow.position.y = 0.6;
+  g.add(slab, ring, hole, glow);
+  g.visible = false;
+  return g;
+}
 const ease = (t) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 
 // shared geometry for the empty-site marker (dashed ink outline of a tile)
@@ -57,6 +83,10 @@ export class Diorama {
     this.animators = ctx.animators;
     this.floatGroup = ctx.floatGroup;
     this.underground = /underdark|drow/.test(place.archetype) || place.region === 'underdark' || place.visual?.terrain === 'cavern';
+    this.pit = makePit();
+    this.root.add(this.pit);
+    if (place.visual?.motifs?.includes('floating')) this.u.uFadeColor.value.set('#3a3448');
+    this.depthMeshes = null;
     this.marker = new THREE.LineSegments(siteGeo, siteMat);
     this.marker.position.y = BOTTOM_Y + 0.02;
     this.marker.visible = false;
@@ -109,8 +139,10 @@ export class Diorama {
     this.pivot.visible = rise > 0.01;
     this.marker.visible = rise < 0.99;
     this.pivot.scale.set(1, Math.max(0.01, rise), 1);
-    this.pivot.position.y = -(1 - rise) * 1.0 + c.lift * 3.2 - c.sink * 0.35;
-    this.pivot.rotation.z = c.lift * 0.08;
+    this.pivot.position.y = -(1 - rise) * 1.0 + c.lift * LIFT - c.sink * 0.35;
+    this.pivot.rotation.z = c.lift * 0.05;
+    this.pit.visible = c.lift > 0.02;
+    if (this.pit.visible) this.pit.scale.set(1, Math.max(0.01, c.lift), 1);
     if (L.tall) for (const g of L.tall) g.scale.y = Math.max(0.001, c.tall);
     if (L.low) for (const g of L.low) g.scale.y = Math.max(0.001, c.low);
     if (L.ruin) for (const g of L.ruin) { g.visible = c.ruin > 0.02; g.scale.y = Math.max(0.001, c.ruin); }
@@ -121,6 +153,7 @@ export class Diorama {
     this.u.uFade.value = c.fade;
     this.u.uGlow.value = c.glow;
     setGhost(this.mats, c.ghost);
+    this.setDepthPass(c.ghost > 0.001);
     const casts = c.ghost < 0.5;
     if (casts !== this.casts) { this.casts = casts; this.content.traverse((o) => { if (o.isMesh && o.userData.cast === undefined) o.userData.cast = o.castShadow; if (o.isMesh) o.castShadow = casts && o.userData.cast; }); }
     if (this.floatGroup) {
@@ -128,16 +161,48 @@ export class Diorama {
       const fg = this.floatGroup;
       fg.userData.lift = c.float;
       fg.userData.grounded = c.float < 0.02;
-      if (fg.userData.grounded) { fg.position.y = 0.3; fg.rotation.set(0.12, 0.4, -0.08); }
-      else fg.rotation.x = fg.rotation.z = (1 - c.float) * 0.1;
+      if (fg.userData.grounded) {
+        // crashed: lying askew on the tile, one rim dug into the sand, needles snapped off
+        fg.position.set(0.3, 1.2, 0.2); fg.rotation.set(-0.42, 0.6, 0.22);
+        for (const ch of fg.children) if (ch.name === 'tall') ch.scale.y = 0.3;
+      }
+      else { fg.position.x = fg.position.z = 0; fg.rotation.x = fg.rotation.z = (1 - c.float) * 0.3; }
+      const blob = fg.userData.blob;
+      if (blob) { blob.visible = c.float > 0.02; blob.material.opacity = 0.28 * c.float * (1 - 0.8 * c.ghost); blob.scale.setScalar(0.7 + 0.3 * c.float); }
     }
   }
 
-  /** per-frame: tween, flicker, pulse, animators. t = seconds */
-  setDetail(on) {
-    if (on === this.detail) return;
+  /** depth-only copies of the solid meshes, drawn in the opaque pass, so the translucent "sketch" look of
+   *  hidden places shows only the nearest surfaces */
+  setDepthPass(on) {
+    if (on && !this.depthMeshes) {
+      this.depthMeshes = [];
+      const solids = [];
+      this.content.traverse((o) => { if ((o.isMesh || o.isInstancedMesh) && o.material === this.mats.solid) solids.push(o); });
+      for (const o of solids) {
+        let d;
+        if (o.isInstancedMesh) { d = new THREE.InstancedMesh(o.geometry, depthMat, o.count); d.instanceMatrix = o.instanceMatrix; d.boundingSphere = o.boundingSphere; }
+        else d = new THREE.Mesh(o.geometry, depthMat);
+        d.matrixAutoUpdate = false;
+        d.matrix.copy(o.matrix);
+        d.raycast = () => {};
+        o.parent.add(d);
+        this.depthMeshes.push(d);
+      }
+    }
+    if (this.depthMeshes && this.depthOn !== on) {
+      this.depthOn = on;
+      for (const d of this.depthMeshes) d.visible = on;
+      this.setDetail(this.detail, true);
+    }
+  }
+
+  /** level of detail: ink outlines etc. only near the camera (always for the sketch look of hidden places) */
+  setDetail(on, force = false) {
+    if (on === this.detail && !force) return;
     this.detail = on;
-    for (let i = 0; i < this.lod.length; i++) this.lod[i].visible = on;
+    const v = on || this.cur.ghost > 0.3;
+    for (let i = 0; i < this.lod.length; i++) this.lod[i].visible = v;
   }
 
   update(t, dt, animateDetails) {

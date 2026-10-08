@@ -59,9 +59,13 @@ sun.shadow.bias = -0.0004;
 sun.shadow.normalBias = 0.03;
 sun.shadow.radius = 3;
 scene.add(hemi, sun, sun.target);
+// night: a warm lantern pool over whatever the camera looks at (a soft vignette on the board and parchment)
+const lantern = new THREE.SpotLight('#ffb766', 0, 0, 0.5, 0.95, 0);
+lantern.castShadow = false;
+scene.add(lantern, lantern.target);
 const MOODS = {
   day: { bg: '#d9ccae', fog: '#d9ccae', hemiSky: '#fff4dc', hemiGround: '#7a6440', hemiI: 1.15, sun: '#ffe8c4', sunI: 2.5, floor: '#d6c8a8', exposure: 1.05, sunDir: [-0.55, 1, 0.42] },
-  night: { bg: '#0d1626', fog: '#0d1626', hemiSky: '#8aa2dc', hemiGround: '#2a2a3a', hemiI: 0.95, sun: '#b4c6ff', sunI: 1.25, floor: '#1a2538', exposure: 1.0, sunDir: [0.6, 0.85, -0.25] },
+  night: { bg: '#0d1626', fog: '#0d1626', hemiSky: '#8aa2dc', hemiGround: '#2a2a3a', hemiI: 0.7, sun: '#b4c6ff', sunI: 0.9, floor: '#1a2538', exposure: 1.0, sunDir: [0.6, 0.85, -0.25] },
 };
 const floor = makeFloor();
 scene.add(floor);
@@ -84,6 +88,8 @@ function applyMood(k) {
   renderer.toneMappingExposure = A.exposure + (B.exposure - A.exposure) * k;
   sunDir.set(...A.sunDir).lerp(_v1.set(...B.sunDir), k).normalize();
   shared.night.value = k;
+  lantern.intensity = 2.6 * k;
+  lantern.visible = k > 0.01;
   shadowDirty = true;
 }
 
@@ -186,6 +192,9 @@ function stepLayout(t) {
   return true;
 }
 const scaleOf = (i) => dioramas[i].root.scale.x;
+const MINOR = new Set(['town', 'fortress', 'landmark']);
+const isMinor = (i) => MINOR.has(PLACES[i].type);
+let mapLabelDist = 200; // in the Map layout, minor labels hide beyond this camera distance
 
 /* =============================================================== CAMERA ==== */
 const flight = { active: false, t0: 0, dur: 1, p0: new THREE.Vector3(), p1: new THREE.Vector3(), q0: new THREE.Vector3(), q1: new THREE.Vector3() };
@@ -252,6 +261,7 @@ function overview({ dur = 2.0 } = {}) {
   if (!L) return;
   const polar = state.layout === 'map' ? 0.62 : state.layout === 'chronicle' ? 0.82 : 0.86;
   const { pos, target } = overviewPose(L.bounds, polar);
+  if (state.layout === 'map') mapLabelDist = pos.distanceTo(target) * 0.62;
   flyTo(pos, target, dur);
 }
 function focusPose(i) {
@@ -568,6 +578,7 @@ function updateSun() {
     shadowDirty = true;
   }
   sun.target.position.copy(controls.target);
+  if (lantern.visible) { lantern.target.position.copy(controls.target); lantern.position.copy(controls.target); lantern.position.y += dist * 0.9; }
   sun.position.copy(controls.target).addScaledVector(sunDir, half * 1.8 + 30);
   const near = Math.min(4, Math.max(0.3, dist * 0.012));
   if (Math.abs(camera.near - near) > near * 0.2) { camera.near = near; camera.updateProjectionMatrix(); }
@@ -621,7 +632,7 @@ function frame_() {
     const i = pick(pointer.x, pointer.y);
     setHover(i, pointer.x, pointer.y);
   }
-  labels.update(camera, innerWidth, innerHeight, { focus: state.focus, hideAll: state.hideUI || SOLO, scaleOf });
+  labels.update(camera, innerWidth, innerHeight, { focus: state.focus, hover: state.hover, hideAll: state.hideUI || SOLO, scaleOf, isMinor, hideMinor: state.layout === 'map' && camDist > mapLabelDist });
 
   // shadows: only when something moved, plus a slow refresh for the small animations
   if (shadowDirty || frameN % 8 === 0) { renderer.shadowMap.needsUpdate = true; shadowDirty = false; }
@@ -686,8 +697,8 @@ async function boot() {
     const az = view === 'side' ? 0.9 : 0.42;
     d.root.updateMatrixWorld(true);
     const box = new THREE.Box3().setFromObject(d.pivot);
-    const cy = Math.max(0.6, (box.min.y + box.max.y) / 2 * 0.8);
-    const dist = Math.max(21, (box.max.y - box.min.y) * 3.2);
+    const cy = Math.max(0.6, (box.min.y + box.max.y) / 2);
+    const dist = Math.max(21, (box.max.y - box.min.y) * 3.4);
     controls.target.set(0, cy, 0);
     camera.position.set(Math.sin(az) * Math.sin(polar) * dist, cy + Math.cos(polar) * dist, Math.cos(az) * Math.sin(polar) * dist);
     controls.update();
@@ -705,6 +716,7 @@ async function boot() {
   ld.classList.add('done');
   setTimeout(() => ld.remove(), 900);
   // let screenshots know when the board has settled
+  window.__atlas = { dioramas, state };
   setTimeout(() => { window.__atlasReady = true; }, SHOT ? 600 : 2600);
 }
 boot();

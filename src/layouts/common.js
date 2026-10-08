@@ -2,6 +2,8 @@
 export const TILE = 9.2;
 export const GAP = 3.0;
 export const STEP = TILE + GAP;
+/** row pitch: a little more than STEP so each row's name labels clear the next row's models */
+export const ROW = STEP + TILE * 0.35;
 
 export const REGION_NAMES = {
   'sword-coast-north': 'Sword Coast North',
