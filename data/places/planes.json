@@ -1,0 +1,2132 @@
+[
+  {
+    "id": "ps-sigil",
+    "name": "Sigil",
+    "aliases": [
+      "The Cage",
+      "City of Doors",
+      "City of Secrets"
+    ],
+    "world": "planes",
+    "region": "sigil",
+    "type": "metropolis",
+    "archetype": "walled-city",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Origins unknown; the dabus are said to have always been there. Timeless.",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1372,
+        "title": "The Faction War",
+        "summary": "c. 1372 DR (no canon DR date; Planescape's 1998 adventure aligned with the Realms of the early 1370s). The fifteen factions' long cold struggle turns into street battles; the Lady of Pain ends it by expelling every faction from the city.",
+        "importance": 3
+      },
+      {
+        "year": 1385,
+        "title": "Adrift as a demiplane",
+        "summary": "As the Spellplague recasts the cosmos into the World Axis, sages reckon Sigil a demiplane of its own rather than the hub of the Outlands; its doors keep working regardless.",
+        "importance": 1
+      }
+    ],
+    "description": "A city curled around the inner face of a ring that floats above the Spire, so every street rises gently into a haze-veiled far side that hangs overhead in place of a sky. Any bounded opening, from an archway to a barrel hoop, may be a portal to another plane, and only the bladed, silent Lady of Pain decides who passes; gods are barred, and those who defy her are flayed by her gaze or lost in her Mazes while the mute dabus rebuild the streets around them. Six wards run around the ring: the rich and pious Lady's Ward, the bustling Market Ward with its Great Bazaar, the craftsmen's Guildhall Ward, the bureaucrats' Clerk's Ward, the slum warrens of the Hive, and the smoke-choked foundries of the Lower Ward. After the Faction War the factions are gone, and an Advisory Council, the Sons of Mercy and a merchants' association keep a wary peace.",
+    "population": 50000,
+    "ruler": "The Lady of Pain (Advisory Council under Rhys handles day-to-day affairs after the Faction War)",
+    "tags": [
+      "planescape",
+      "lady-of-pain",
+      "portals",
+      "factions",
+      "dabus",
+      "neutral-ground"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#cdbfa6",
+        "accent": "#7a3f2a",
+        "ink": "#1c1716"
+      },
+      "scale": 5,
+      "motifs": [
+        "ring-city",
+        "spires",
+        "gate",
+        "towers",
+        "walls",
+        "glow"
+      ],
+      "terrain": "plain",
+      "notes": "A torus seen edge-on: a ring of crowded rooftops, iron spikes and spires curving up and over on itself, hovering above the needle of the Spire; dozens of tiny glowing doorways dotted along the ring."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Sigil",
+      "https://forgottenrealms.fandom.com/wiki/Lady_of_Pain",
+      "https://forgottenrealms.fandom.com/wiki/Faction_War"
+    ],
+    "ring": null
+  },
+  {
+    "id": "ps-the-spire",
+    "name": "The Spire",
+    "aliases": [
+      "Spire of the Outlands"
+    ],
+    "world": "planes",
+    "region": "outlands",
+    "type": "landmark",
+    "archetype": "landmark-monolith",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Spellplague reshapes the cosmos",
+        "summary": "In the World Axis model the Outlands as a plane no longer appears; sages say its traits live on in Cynosure and the Fugue Plane, which drift intact in the Astral Sea.",
+        "importance": 1
+      }
+    ],
+    "description": "An impossibly tall, thin peak at the hub of the Outlands whose summit fades into nothing, with Sigil's ring hovering above it. The closer a traveller walks to its base, the weaker magic grows, until within about two hundred miles not even the simplest spell or divine power works. The rest of the plane spreads outward from it in every direction, with its divine realms and the ring of sixteen gate-towns some thousand miles away.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outlands",
+      "dead-magic",
+      "axis"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba4",
+        "accent": "#a0662a",
+        "ink": "#231d1a"
+      },
+      "scale": 5,
+      "motifs": [
+        "mountain",
+        "obelisk",
+        "glow"
+      ],
+      "terrain": "mountain",
+      "notes": "A single needle-thin spire, far taller than anything else on the board, rising from a wide plain of concentric ink rings; its tip dissolves into a faint glow where Sigil's ring floats."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Outlands",
+      "https://forgottenrealms.fandom.com/wiki/Sigil",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town"
+    ],
+    "ring": null
+  },
+  {
+    "id": "ps-excelsior",
+    "name": "Excelsior",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "city",
+    "archetype": "wizard-city",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A wall-less city of yellow brick, flecked with enchanted silver and steel so that its roads and houses glow and give off a gentle warmth. A dozen or so floating picket keeps, each held by a paladin lord, circle it instead of walls. The gate to Mount Celestia sits at the top of its tallest tower, reached by a single right staircase among many false ones. The paladins who live here are courteous to everyone but only really trust the good.",
+    "population": 25000,
+    "ruler": "High Chancellor Miguala abd-al Ragarin (paladin lord, from Zakhara)",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "lawful-good",
+      "paladins",
+      "mount-celestia"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e8dcb4",
+        "accent": "#d0a52c",
+        "ink": "#2a2620"
+      },
+      "scale": 4,
+      "motifs": [
+        "towers",
+        "spires",
+        "glow",
+        "floating",
+        "castle"
+      ],
+      "terrain": "plain",
+      "notes": "Golden glowing city with one very tall central tower and no wall; three or four small fortresses floating in a ring around it."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Excelsior",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 0,
+      "plane": "ps-mount-celestia"
+    }
+  },
+  {
+    "id": "ps-tradegate",
+    "name": "Tradegate",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "city",
+    "archetype": "market-town",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1372,
+        "title": "Ravens Bluff eyes the Tradegate trade",
+        "summary": "A planewalking caravan from Ravens Bluff, backed by the noble Lauren DeVillars, plans trade missions to Tradegate after its dealings in Glorium.",
+        "importance": 1
+      }
+    ],
+    "description": "A walled city built in the shape of a star, where buildings are torn down and replaced so often that its streets never look the same twice. At its heart is a five-sided bazaar tiled in gold and purple checkerboard, ringed by the Parliament, the mint, the armoury and a library. Its gate to Bytopia is not a door but the Master Trader, a bariaur who only opens the way once you have finished a long and tangled bargain with him. Gnome and human merchants mint a star coin stamped with Ilmater and put vagrants to work.",
+    "population": 20000,
+    "ruler": "The Parliament (council of wealthy non-evil merchants)",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "trade",
+      "bytopia",
+      "bariaur"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba4",
+        "accent": "#a0662a",
+        "ink": "#231d1a"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "towers",
+        "library",
+        "tents",
+        "gate"
+      ],
+      "terrain": "plain",
+      "notes": "Five-pointed star-shaped grey wall around a dense town; a checkerboard pentagonal plaza at the centre crowded with stall awnings."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Tradegate",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 1,
+      "plane": "ps-bytopia"
+    }
+  },
+  {
+    "id": "ps-ecstasy",
+    "name": "Ecstasy",
+    "aliases": [
+      "City of Plinths"
+    ],
+    "world": "planes",
+    "region": "outlands",
+    "type": "town",
+    "archetype": "market-town",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A rural town scattered with hundreds of pedestals, some plain like standing stones and others richly carved, where thinkers sit for days at a time. In the centre stands the ivory Bone Plinth, topped by a pool of quicksilver that leads to Elysium, and the air around it feels unusually bright and calm. Gardens, orchards and parks surround a handful of manors at the crossroads. A Sun Master rules by day and a Dark Hunter by night.",
+    "population": 2500,
+    "ruler": "Sun Master Regialia Tonn (by day) and a Dark Hunter (by night)",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "neutral-good",
+      "elysium",
+      "contemplation"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba4",
+        "accent": "#a0662a",
+        "ink": "#231d1a"
+      },
+      "scale": 2,
+      "motifs": [
+        "standing-stone",
+        "obelisk",
+        "farms",
+        "trees",
+        "glow"
+      ],
+      "terrain": "plain",
+      "notes": "A soft green field forest of many standing pillars of different heights; one tall pale-ivory column at the centre with a glinting silver disc on top."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Ecstasy",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 2,
+      "plane": "ps-elysium"
+    }
+  },
+  {
+    "id": "ps-faunel",
+    "name": "Faunel",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "town",
+    "archetype": "ruin",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A ruined town that the wild has taken back, with toppled walls and empty halls overgrown with green and crowded with animals of every kind. Because a gate-town takes on the character of the plane it touches, Faunel is more a lair than a settlement, and its few residents are on equal terms with the talking beasts that come through from the Beastlands. Its exact gate and layout are rarely recorded.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "gate-town",
+      "beastlands",
+      "wilderness"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba4",
+        "accent": "#a0662a",
+        "ink": "#231d1a"
+      },
+      "scale": 2,
+      "motifs": [
+        "ruins",
+        "giant-trees",
+        "trees",
+        "rubble"
+      ],
+      "terrain": "forest",
+      "notes": "Broken stone walls and roofless buildings drowned in oversized trees and vines; no smoke, no roads, just green."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands",
+      "https://forgottenrealms.fandom.com/wiki/Beastlands_(plane)"
+    ],
+    "ring": {
+      "order": 3,
+      "plane": "ps-beastlands"
+    }
+  },
+  {
+    "id": "ps-sylvania",
+    "name": "Sylvania",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "town",
+    "archetype": "elven-city",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A town hidden in a forest of huge plants, where music and revelry carry on day and night. Its gate to Arborea is invisible and drifts around in the undergrowth, so lost travellers often stumble into the Olympian Glades without meaning to. Seven spirits who borrow mortal bodies for years at a time, the Seven Spiritors, govern it. Landmarks include a pyramid of petrified wood, an Olympian acropolis, an elven temple carved into a living banyan, and an inn shaped like a dragon that dips its head to drink.",
+    "population": 1000,
+    "ruler": "The Seven Spiritors",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "chaotic-good",
+      "arborea",
+      "revelry"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba4",
+        "accent": "#a0662a",
+        "ink": "#231d1a"
+      },
+      "scale": 2,
+      "motifs": [
+        "giant-trees",
+        "temple",
+        "pyramid",
+        "trees"
+      ],
+      "terrain": "forest",
+      "notes": "A clearing in an outsized forest, with a small pale columned temple, a wooden pyramid and buildings grown into one enormous banyan tree."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Sylvania",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 4,
+      "plane": "ps-arborea"
+    }
+  },
+  {
+    "id": "ps-glorium",
+    "name": "Glorium",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "town",
+    "archetype": "harbor-metropolis",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1372,
+        "title": "Ravens Bluff caravan arrives",
+        "summary": "A caravan from Ravens Bluff, sponsored by Lauren DeVillars, reaches Glorium through a color pool; adventurers with it seek the Well of Mimir and are courted by a githyanki, a planetar and a disguised arcanaloth.",
+        "importance": 1
+      }
+    ],
+    "description": "A Norse-flavoured village of longhouses, many built from upturned ship hulls, set on a fjord between snowy mountains. It has no walls, only a wooden watchtower. A steep stair and a cargo winch lead down to a harbour full of longships, and a mile offshore a maelstrom big enough to sail through opens into Ysgard and reverses its pull twice a day. A second way in lies at the end of the only road, in a cave where a root of Yggdrasil breaks through.",
+    "population": 300,
+    "ruler": "Chieftain Tyrza Bonebreaker",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "ysgard",
+      "norse",
+      "fjord"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba4",
+        "accent": "#a0662a",
+        "ink": "#231d1a"
+      },
+      "scale": 2,
+      "motifs": [
+        "harbor",
+        "ships",
+        "docks",
+        "mountain",
+        "snow",
+        "lighthouse"
+      ],
+      "terrain": "coast",
+      "notes": "A cluster of boat-shaped longhouses on a fjord shore below white peaks; longships at a pier and a spiralling whirlpool out in the water."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Glorium",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 5,
+      "plane": "ps-ysgard"
+    }
+  },
+  {
+    "id": "ps-xaos",
+    "name": "Xaos",
+    "aliases": [
+      "aXos",
+      "sXoa",
+      "oasX"
+    ],
+    "world": "planes",
+    "region": "outlands",
+    "type": "town",
+    "archetype": "ruin",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A city that will not stay put, shuffled by its own residents so constantly that even its name gets rearranged. Streets, buildings and the tangled bush around it shift at random, reflecting Limbo beyond its gate. Visitors find it different on every trip, and cartographers have given up on it.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "gate-town",
+      "limbo",
+      "chaos",
+      "xaositects"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba4",
+        "accent": "#a0662a",
+        "ink": "#231d1a"
+      },
+      "scale": 3,
+      "motifs": [
+        "rubble",
+        "towers",
+        "spires",
+        "ruins"
+      ],
+      "terrain": "plain",
+      "notes": "Scrambled silhouette: buildings and towers tilted at random angles, some upside down, jumbled together like a dropped box of blocks."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands",
+      "https://forgottenrealms.fandom.com/wiki/Limbo"
+    ],
+    "ring": {
+      "order": 6,
+      "plane": "ps-limbo"
+    }
+  },
+  {
+    "id": "ps-bedlam",
+    "name": "Bedlam",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A fan-shaped town climbing the slopes of Maurash, a hill of volcanic rock. At the bottom, Gatemouth's curved, warped streets seem to bend reality; Midtown holds the inns; and the orderly Citadel district at the top houses the rich. Over Gatemouth looms an obsidian tower capped with a giant hand reaching upward, which holds the gate to Pandemonium, and six blastgates at its base pour a foul, ceaseless wind through the streets. Anyone who stays long starts arguing with voices only they can hear.",
+    "population": 50000,
+    "ruler": "The Keeper",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "pandemonium",
+      "madness",
+      "wind"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba4",
+        "accent": "#a0662a",
+        "ink": "#231d1a"
+      },
+      "scale": 4,
+      "motifs": [
+        "towers",
+        "statue",
+        "mountain",
+        "walls"
+      ],
+      "terrain": "mountain",
+      "notes": "Hillside town fanning out downhill; a huge black tower at the bottom crowned with an open hand reaching skyward; streaks of wind lines."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Bedlam",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 7,
+      "plane": "ps-pandemonium"
+    }
+  },
+  {
+    "id": "ps-plague-mort",
+    "name": "Plague-Mort",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "town",
+    "archetype": "ruin",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A sick, crumbling town on the edge of the Abyss, rotting from the inside because of the plane it borders. Its rickety buildings decay faster than anyone can patch them, and everyone in it lives with the fear that the whole place will one day slide into the Abyss. Fiends and desperate mortals mix in its streets.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "gate-town",
+      "abyss",
+      "demons",
+      "decay"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#bdb79a",
+        "accent": "#6d6b2a",
+        "ink": "#1f1b14"
+      },
+      "scale": 3,
+      "motifs": [
+        "ruins",
+        "rubble",
+        "walls",
+        "graveyard"
+      ],
+      "terrain": "swamp",
+      "notes": "A sagging, half-collapsed town with leaning walls and a dark crack opening in the ground at its centre; sickly green-brown tint."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands",
+      "https://forgottenrealms.fandom.com/wiki/Abyss"
+    ],
+    "ring": {
+      "order": 8,
+      "plane": "ps-the-abyss"
+    }
+  },
+  {
+    "id": "ps-curst",
+    "name": "Curst",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A round, dusty walled city laid out in five ring roads around a black razorvine arch, the gate to Carceri. Officials and the jail sit at Gate Square in the middle; next come the homes of the powerful, then merchants, craftsmen, and an outer ring of inns and stables, with razorvine lining the inside of the wall. Most of its people are exiles nursing grudges and planning revenge, and the Wall Watch's job is to keep them in.",
+    "population": 15000,
+    "ruler": "A burgher",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "carceri",
+      "exiles",
+      "prison"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba4",
+        "accent": "#a0662a",
+        "ink": "#231d1a"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "gate",
+        "towers"
+      ],
+      "terrain": "desert",
+      "notes": "A perfect circle of wall with concentric ring roads and four straight streets crossing to a dark thorny arch at the centre."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Curst_(gate-town)",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 9,
+      "plane": "ps-carceri"
+    }
+  },
+  {
+    "id": "ps-hopeless",
+    "name": "Hopeless",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A drab city sunk into a great pit, entered through one gate carved as a screaming red-stone face. A single road spirals down past grey stone and wood houses to a courtyard at the bottom, where a well of black ooze serves as the gate to the Gray Waste. Everyone who stays slowly fades to grey, flinches from bright light and loses heart, and a local law bans vivid colours.",
+    "population": 20000,
+    "ruler": "The High Cardinal",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "hades",
+      "despair",
+      "grey"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c4c1b8",
+        "accent": "#6f6c66",
+        "ink": "#1c1c1c"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "gate",
+        "cavern"
+      ],
+      "terrain": "plain",
+      "notes": "A circular wall around a deep funnel-pit; a single road winding down in a spiral to a black pool at the bottom; colourless grey."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Hopeless",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 10,
+      "plane": "ps-gray-waste"
+    }
+  },
+  {
+    "id": "ps-torch",
+    "name": "Torch",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "city",
+    "archetype": "fortress",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1372,
+        "title": "Ravens Bluff eyes the Torch trade",
+        "summary": "The Ravens Bluff planar caravan sponsored by Lauren DeVillars names Torch, with Tradegate, as its next trade target.",
+        "importance": 1
+      }
+    ],
+    "description": "A town built on the slopes of cooled-lava spires, some still active, surrounded by a marsh of blood-red water. The poor live in the flood-prone lower town among disease, killer frogs and leeches, while the wealthy live in three walled upper sections joined by tall bridges and watch the misery below for sport. The gate to Gehenna is a dark red gem hanging a hundred feet in the air. The Council of All meets in a ruined arena and usually ends in a brawl.",
+    "population": 17000,
+    "ruler": "The Council of All (in practice, its richest bullies)",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "gehenna",
+      "yugoloths",
+      "volcano"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9b7a4",
+        "accent": "#8e2a22",
+        "ink": "#1f1715"
+      },
+      "scale": 3,
+      "motifs": [
+        "lava",
+        "towers",
+        "bridge",
+        "spires",
+        "glow"
+      ],
+      "terrain": "swamp",
+      "notes": "Three or four jagged black volcanic spires glowing with lava seams, linked by high bridges; a red gem floating above them; red marsh at the base."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Torch_(gate-town)",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 11,
+      "plane": "ps-gehenna"
+    }
+  },
+  {
+    "id": "ps-ribcage",
+    "name": "Ribcage",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "city",
+    "archetype": "fortress",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A city filling a narrow, barren valley in the Vale of the Spine, between two ridges that curve inward like a giant's ribs. Iron gates at either end are the only way in. The Citadel, seat of Lord Quentill Paracs and his council of five, holds the portal to Baator, and the council keeps actual devils few even as the majority of the people are tieflings. Steam baths over volcanic springs and a devil-run pleasure house offer comfort in an otherwise oppressive place.",
+    "population": 35000,
+    "ruler": "Lord Quentill Paracs and a council of five senators",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "baator",
+      "tieflings",
+      "devils"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9b7a4",
+        "accent": "#8e2a22",
+        "ink": "#1f1715"
+      },
+      "scale": 3,
+      "motifs": [
+        "mountain",
+        "castle",
+        "gate",
+        "walls"
+      ],
+      "terrain": "mountain",
+      "notes": "A long valley town between two rows of curved rock ridges arching inward like ribs; a castle at the centre; iron gates at both ends."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Ribcage",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 12,
+      "plane": "ps-baator"
+    }
+  },
+  {
+    "id": "ps-rigus",
+    "name": "Rigus",
+    "aliases": [
+      "Lion's Gate"
+    ],
+    "world": "planes",
+    "region": "outlands",
+    "type": "city",
+    "archetype": "fortress",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "Less a town than a fortress: a huge hill wrapped in seven rings of octagonal iron walls rising to a summit called the Crown. Every resident holds a military rank and about a hundred military orders run things, but their generals take orders from the half-living spirits of past generals in the Crown. Far beneath it, at the bottom of a long stair, the green-yellow cat's-eye Lion's Gate inside a bariaur-bone arch leads to Acheron.",
+    "population": 20000,
+    "ruler": "The Great Generals (spirits in the Crown)",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "acheron",
+      "military",
+      "iron"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c3bdb2",
+        "accent": "#5a5f66",
+        "ink": "#1b1c20"
+      },
+      "scale": 4,
+      "motifs": [
+        "walls",
+        "keep",
+        "castle",
+        "towers"
+      ],
+      "terrain": "mountain",
+      "notes": "A stepped fortress-hill of seven concentric octagonal iron walls narrowing to a small crown at the top; cold iron grey."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Rigus",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 13,
+      "plane": "ps-acheron"
+    }
+  },
+  {
+    "id": "ps-automata",
+    "name": "Automata",
+    "aliases": [],
+    "world": "planes",
+    "region": "outlands",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A perfectly ordered town of rectangular walls, square blocks and identical houses of shining grey-red stone, where every storey is twelve feet tall and each block holds only one kind of building. It is famously dull, but almost any service can be found and the inns are spotless. Its gate to Mechanus fills a whole central block: a giant cog lying flat and slowly turning, which sends anyone who steps on it to the gears beyond.",
+    "population": 10000,
+    "ruler": "The Council of Order",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "mechanus",
+      "modrons",
+      "order"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d3cdc0",
+        "accent": "#4b6a86",
+        "ink": "#1e2228"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "gears",
+        "towers"
+      ],
+      "terrain": "plain",
+      "notes": "A rigid grid city in a rectangular wall, rows of identical block buildings; one huge flat cog slowly turning at the centre."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Automata",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 14,
+      "plane": "ps-mechanus"
+    }
+  },
+  {
+    "id": "ps-fortitude",
+    "name": "Fortitude",
+    "aliases": [
+      "The Egg"
+    ],
+    "world": "planes",
+    "region": "outlands",
+    "type": "city",
+    "archetype": "walled-city",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A neat city inside a perfectly oval wall, nicknamed the Egg, with half of its area given over to parks, groves, orchards and fountains. At one end a green flame atop a seven-tier round pyramid is the gate to Arcadia; at the other end is the Confessional, an arena where people confess their wrongs and the crowd picks the punishment. A Secret Conclave of seven rules, its members re-elected in secret whenever the Great Modron March passes through.",
+    "population": 5000,
+    "ruler": "The Secret Conclave",
+    "tags": [
+      "planescape",
+      "gate-town",
+      "arcadia",
+      "law",
+      "confession"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d9cba4",
+        "accent": "#a0662a",
+        "ink": "#231d1a"
+      },
+      "scale": 3,
+      "motifs": [
+        "walls",
+        "pyramid",
+        "arena",
+        "trees",
+        "glow"
+      ],
+      "terrain": "plain",
+      "notes": "An oval wall around neat streets and orchards; a stepped round pyramid with a green flame at one end and a sunken arena at the other."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Fortitude",
+      "https://forgottenrealms.fandom.com/wiki/Gate-town",
+      "https://forgottenrealms.fandom.com/wiki/Outlands"
+    ],
+    "ring": {
+      "order": 15,
+      "plane": "ps-arcadia"
+    }
+  },
+  {
+    "id": "ps-mount-celestia",
+    "name": "Mount Celestia",
+    "aliases": [
+      "Seven Heavens",
+      "Seven Mounting Heavens of Celestia",
+      "Celestia"
+    ],
+    "world": "planes",
+    "region": "upper-planes",
+    "type": "landmark",
+    "archetype": "landmark-mountain",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Spellplague reshapes the cosmos",
+        "summary": "In the World Axis view Celestia is reckoned an astral dominion under Torm, drifting in the Astral Sea.",
+        "importance": 2
+      }
+    ],
+    "description": "A single colossal mountain climbing out of a sea of holy water through seven layered heavens, each reached by scaling to the peak of the one below. Visitors first arrive in the starlit surf of Lunia, the Silver Heaven, at its foot. Archons guard the slopes, and Ilmater, Torm and Tyr hold their realms on three lesser peaks ringing the great one. It is the afterlife of the lawful good, as beautiful as it is orderly.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "lawful-good",
+      "archons",
+      "torm",
+      "tyr",
+      "ilmater"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e6dcc0",
+        "accent": "#c79a2e",
+        "ink": "#2a2620"
+      },
+      "scale": 4,
+      "motifs": [
+        "mountain",
+        "glow",
+        "lake",
+        "temple",
+        "spires"
+      ],
+      "terrain": "mountain",
+      "notes": "A tall terraced mountain in seven bands rising from a silvery sea, its summit lost in a radiant golden glow; three smaller peaks around it."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Mount_Celestia"
+    ],
+    "ring": {
+      "order": 0
+    }
+  },
+  {
+    "id": "ps-bytopia",
+    "name": "Bytopia",
+    "aliases": [
+      "Twin Paradises of Bytopia"
+    ],
+    "world": "planes",
+    "region": "upper-planes",
+    "type": "landmark",
+    "archetype": "landmark-forest",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Spellplague reshapes the cosmos",
+        "summary": "The Golden Hills, as World Tree sages called much of Bytopia, are folded into Arvandor in the new World Axis order.",
+        "importance": 1
+      }
+    ],
+    "description": "Twin paradises facing each other: two layers joined at a shared sky some ten miles up, each hanging upside down over the other. Gentle Dothion has old forests and meadows; Shurrock opposite is harsher and wilder. Mountains from each side almost touch in the middle, so bold climbers or flyers can cross, and gnome gods keep realms here.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "lawful-good",
+      "neutral-good",
+      "gnomes"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e6dcc0",
+        "accent": "#c79a2e",
+        "ink": "#2a2620"
+      },
+      "scale": 4,
+      "motifs": [
+        "mountain",
+        "farms",
+        "trees",
+        "glow"
+      ],
+      "terrain": "forest",
+      "notes": "Two mirror-image landscapes, one upright and one inverted above it, with mountain peaks reaching toward each other; soft golden light."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Bytopia"
+    ],
+    "ring": {
+      "order": 1
+    }
+  },
+  {
+    "id": "ps-elysium",
+    "name": "Elysium",
+    "aliases": [
+      "Blessed Fields of Elysium"
+    ],
+    "world": "planes",
+    "region": "upper-planes",
+    "type": "landmark",
+    "archetype": "landmark-forest",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Spellplague reshapes the cosmos",
+        "summary": "Mystra's death destroys Dweomerheart, which stood on an Elysian plateau, and the sun-realm of Heliopolis is all but wiped out.",
+        "importance": 2
+      }
+    ],
+    "description": "The plane of pure goodness, where most of the beauty is found along the clear river Oceanus winding through four layers. The riverbanks are lined with fragrant pines and blossoming trees that thin into grassland, veldt and finally desert. No sun hangs in the sky except whatever powers carry across it. Branches of Yggdrasil reach most layers, and its pears are prized as far away as Sigil.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "neutral-good",
+      "guardinals",
+      "oceanus"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e6dcc0",
+        "accent": "#c79a2e",
+        "ink": "#2a2620"
+      },
+      "scale": 4,
+      "motifs": [
+        "river",
+        "trees",
+        "farms",
+        "glow"
+      ],
+      "terrain": "river",
+      "notes": "A broad shining river curling across the tile through blossoming trees and meadows; calm, open, luminous."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Elysium"
+    ],
+    "ring": {
+      "order": 2
+    }
+  },
+  {
+    "id": "ps-beastlands",
+    "name": "The Beastlands",
+    "aliases": [
+      "Wilderness of the Beastlands",
+      "Happy Hunting Grounds",
+      "Krigala"
+    ],
+    "world": "planes",
+    "region": "upper-planes",
+    "type": "landmark",
+    "archetype": "landmark-forest",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1369,
+        "title": "Mielikki's Grove of the Unicorns",
+        "summary": "c. 1369 DR: Mielikki, Lady of the Forest, establishes her realm on Krigala, the first layer.",
+        "importance": 1
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague reshapes the cosmos",
+        "summary": "Arvandor survives into the World Axis while the House of Nature splits apart, part of it becoming the Deep Wilds.",
+        "importance": 1
+      }
+    ],
+    "description": "An endless wilderness of normal and giant trees, moss and fungus across three layers, each frozen at its own time of day. Its animal natives can talk and think like people, which makes its old nickname, the Happy Hunting Grounds, a dangerous mistake for hunters. Weather stays local, so desert and snowfield can lie side by side.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "neutral-good",
+      "chaotic-good",
+      "animals",
+      "mielikki"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e6dcc0",
+        "accent": "#c79a2e",
+        "ink": "#2a2620"
+      },
+      "scale": 4,
+      "motifs": [
+        "giant-trees",
+        "trees",
+        "river",
+        "mountain"
+      ],
+      "terrain": "forest",
+      "notes": "A dense forest of oversized trees, with animal silhouettes among the trunks; one patch of snow beside a patch of sand to show local weather."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Beastlands_(plane)",
+      "https://forgottenrealms.fandom.com/wiki/Krigala"
+    ],
+    "ring": {
+      "order": 3
+    }
+  },
+  {
+    "id": "ps-arborea",
+    "name": "Arborea",
+    "aliases": [
+      "Olympian Glades of Arborea",
+      "Olympus",
+      "Arvandor"
+    ],
+    "world": "planes",
+    "region": "upper-planes",
+    "type": "landmark",
+    "archetype": "elven-city",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Spellplague reshapes the cosmos",
+        "summary": "Arvandor endures as its own realm and joins the World Axis cosmology.",
+        "importance": 1
+      }
+    ],
+    "description": "A plane of overwhelming beauty and overwhelming emotion, where love and rage both run high and the air itself feels charged. Faerûnians know it by its elven name, Arvandor, home to the Seldarine. Olympus and Arvandor are just two of its many realms across glades, seas and mountains.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "chaotic-good",
+      "seldarine",
+      "eladrin",
+      "olympus"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e6dcc0",
+        "accent": "#c79a2e",
+        "ink": "#2a2620"
+      },
+      "scale": 4,
+      "motifs": [
+        "giant-trees",
+        "temple",
+        "spires",
+        "river",
+        "mountain"
+      ],
+      "terrain": "forest",
+      "notes": "Lush glade of huge trees with elven spires woven into them; a white columned temple on a hill (Olympus) to one side."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Arborea"
+    ],
+    "ring": {
+      "order": 4
+    }
+  },
+  {
+    "id": "ps-ysgard",
+    "name": "Ysgard",
+    "aliases": [
+      "Heroic Domains of Ysgard",
+      "Gladsheim"
+    ],
+    "world": "planes",
+    "region": "upper-planes",
+    "type": "landmark",
+    "archetype": "landmark-mountain",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1357,
+        "title": "Abon Duum in Tyr's realm",
+        "summary": "Pasha Abon Duum uses the Catlord's power to reach Tyr's realm in Gladsheim with the Claw of Malar, but is unmasked and left to face Tyr's justice.",
+        "importance": 1
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague reshapes the cosmos",
+        "summary": "Jotunheim is cast into the Elemental Chaos, Brightwater merges with the Gates of the Moon, and Arvandor survives.",
+        "importance": 2
+      }
+    ],
+    "description": "Vast rivers of earth and stone arching through a void, made up of chunks the size of lands that slowly grind together, lifting mountains and opening chasms. The undersides of these rivers burn and light the ones below. Norse powers dominate it, with Tyr's realm the one Faerûnians know best, and fallen heroes fight and feast here forever.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "chaotic-good",
+      "chaotic-neutral",
+      "norse",
+      "heroes"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e6dcc0",
+        "accent": "#c79a2e",
+        "ink": "#2a2620"
+      },
+      "scale": 4,
+      "motifs": [
+        "mountain",
+        "floating",
+        "snow",
+        "keep",
+        "glow"
+      ],
+      "terrain": "mountain",
+      "notes": "A floating arc of rocky earth-chunks with a snowy mountain and a longhall on top; the underside glowing ember-red."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Ysgard"
+    ],
+    "ring": {
+      "order": 5
+    }
+  },
+  {
+    "id": "ps-limbo",
+    "name": "Limbo",
+    "aliases": [
+      "Ever-Changing Chaos of Limbo"
+    ],
+    "world": "planes",
+    "region": "neutral-planes",
+    "type": "landmark",
+    "archetype": "floating-enclave",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": -31500,
+        "title": "The batrachi retreat to Limbo",
+        "summary": "Per an illithid-held captive's account, the batrachi withdraw to Limbo and found the Supreme Throne.",
+        "importance": 1
+      },
+      {
+        "year": -339,
+        "title": "Death of Mystryl",
+        "summary": "Mystryl, Mother of All Magic, dies in Karsus's Folly, ending her domain of Dweomertor in Limbo.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague reshapes the cosmos",
+        "summary": "Limbo is lost, perhaps swallowed by the Elemental Chaos, until the Great Wheel model returns.",
+        "importance": 2
+      }
+    ],
+    "description": "A churning soup of raw chaos where rocks, trees, water, fire and whole landscapes tumble through the void and change into one another. Only a focused mind can calm a patch of it enough to live on, which the githzerai do with their monasteries and fortress-cities. The slaadi are its natives. Gravity only works between things in contact, so objects drift until they hit something.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "chaotic-neutral",
+      "githzerai",
+      "slaadi",
+      "chaos"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d3cdc0",
+        "accent": "#4b6a86",
+        "ink": "#1e2228"
+      },
+      "scale": 4,
+      "motifs": [
+        "floating",
+        "rubble",
+        "glow",
+        "keep"
+      ],
+      "terrain": "island",
+      "notes": "Jumbled fragments floating at random angles: a chunk of rock, a tree, a blob of water, a small githzerai fortress on one stable islet."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Limbo"
+    ],
+    "ring": {
+      "order": 6
+    }
+  },
+  {
+    "id": "ps-pandemonium",
+    "name": "Pandemonium",
+    "aliases": [
+      "Windswept Depths of Pandemonium"
+    ],
+    "world": "planes",
+    "region": "lower-planes",
+    "type": "landmark",
+    "archetype": "underdark-city",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "Solid rock riddled with endless tunnels and caverns, filled with howling winds that carry every scream and drive people deaf and then mad. Gravity pulls outward from the centre of each tunnel, so you can walk on any surface, and streams sometimes run straight through the air. There is no natural light, and ordinary fire goes out.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "chaotic-neutral",
+      "chaotic-evil",
+      "wind",
+      "madness"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9b7a4",
+        "accent": "#8e2a22",
+        "ink": "#1f1715"
+      },
+      "scale": 4,
+      "motifs": [
+        "cavern",
+        "stalactites",
+        "river"
+      ],
+      "terrain": "cavern",
+      "notes": "A cutaway of twisting cave tunnels in dark rock, with streaks of wind lines blowing through them; no light but a faint glow."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Pandemonium"
+    ],
+    "ring": {
+      "order": 7
+    }
+  },
+  {
+    "id": "ps-the-abyss",
+    "name": "The Abyss",
+    "aliases": [
+      "Infinite Layers of the Abyss"
+    ],
+    "world": "planes",
+    "region": "lower-planes",
+    "type": "landmark",
+    "archetype": "landmark-desert",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Spellplague reshapes the cosmos",
+        "summary": "Asmodeus, swollen with Azuth's stolen power, hurls the Abyss into the depths of the Elemental Chaos, stalling the Blood War.",
+        "importance": 3
+      },
+      {
+        "year": 1486,
+        "title": "The demons muster again",
+        "summary": "By 1486 DR the demon hosts have rebuilt their strength, and devils fear the Blood War is about to resume.",
+        "importance": 2
+      },
+      {
+        "year": 1492,
+        "title": "Hordes against Avernus",
+        "summary": "The Blood War rages again at full strength, with demon armies sailing the Styx into Avernus.",
+        "importance": 2
+      }
+    ],
+    "description": "The birthplace of demons, with hundreds of layers, possibly infinite, each worse than the last. The top layer, Pazunia, is a dusty plain under a red sun, broken by iron fortresses and gaping pits that drop to the layers below, with the Styx spilling into some of them. There, the strong prey on the weak and alliances only last until it's convenient to break them.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "chaotic-evil",
+      "demons",
+      "blood-war"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9b7a4",
+        "accent": "#8e2a22",
+        "ink": "#1f1715"
+      },
+      "scale": 4,
+      "motifs": [
+        "chasm",
+        "rubble",
+        "ruins",
+        "keep",
+        "river"
+      ],
+      "terrain": "desert",
+      "notes": "A cracked red plain split by a deep jagged chasm, with a river falling into it; a squat iron fortress on its lip."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Abyss",
+      "https://forgottenrealms.fandom.com/wiki/Blood_War"
+    ],
+    "ring": {
+      "order": 8
+    }
+  },
+  {
+    "id": "ps-carceri",
+    "name": "Carceri",
+    "aliases": [
+      "Tarterian Depths of Carceri",
+      "Tarterus"
+    ],
+    "world": "planes",
+    "region": "lower-planes",
+    "type": "landmark",
+    "archetype": "landmark-sea",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "A prison plane made of strings of orbs hanging in the void, with each layer's orbs smaller and further apart than the last. They do not turn, and only their warm red soil lights them, while plants sprout after rain and die within hours. Demodands rule it, fiends of both sides stay out of their way, and getting out is famously hard.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "chaotic-evil",
+      "neutral-evil",
+      "prison",
+      "demodands"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9b7a4",
+        "accent": "#8e2a22",
+        "ink": "#1f1715"
+      },
+      "scale": 4,
+      "motifs": [
+        "floating",
+        "glow",
+        "rubble"
+      ],
+      "terrain": "island",
+      "notes": "A diagonal chain of dull red spheres hanging in a dark void, shrinking in size along the string."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Carceri"
+    ],
+    "ring": {
+      "order": 9
+    }
+  },
+  {
+    "id": "ps-gray-waste",
+    "name": "The Gray Waste",
+    "aliases": [
+      "Gray Waste of Hades",
+      "Hades"
+    ],
+    "world": "planes",
+    "region": "lower-planes",
+    "type": "landmark",
+    "archetype": "landmark-desert",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "Three grey 'glooms' of colourless land and sky with no sun or seasons, which slowly drain colour, feeling and finally identity from everything in them until visitors fade into larvae. The yugoloths' Oinodaemon claims the first layer. The roots of Yggdrasil and the base of Mount Olympus also anchor here, offering odd back doors to the upper planes.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "neutral-evil",
+      "yugoloths",
+      "despair"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c2bfb8",
+        "accent": "#6c6a66",
+        "ink": "#1c1c1c"
+      },
+      "scale": 4,
+      "motifs": [
+        "rubble",
+        "ruins",
+        "obelisk"
+      ],
+      "terrain": "plain",
+      "notes": "A completely grey, flat, featureless plain with a few dead stunted trees and a lone tower; the only colour on the board is drained away."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Hades"
+    ],
+    "ring": {
+      "order": 10
+    }
+  },
+  {
+    "id": "ps-gehenna",
+    "name": "Gehenna",
+    "aliases": [
+      "Bleak Eternity of Gehenna"
+    ],
+    "world": "planes",
+    "region": "lower-planes",
+    "type": "landmark",
+    "archetype": "landmark-mountain",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "Four infinite volcanic layers where the ground is always a forty-five degree slope, so one misstep can send a traveller sliding for miles. Every building clings to or is cut into the slope, and heat and red light come from lava flows, vents and mud pots. The Styx pours down the slopes of the top layer, Khalas, in huge steaming falls.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "neutral-evil",
+      "lawful-evil",
+      "yugoloths",
+      "volcano"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9b7a4",
+        "accent": "#8e2a22",
+        "ink": "#1f1715"
+      },
+      "scale": 4,
+      "motifs": [
+        "mountain",
+        "lava",
+        "waterfall",
+        "glow"
+      ],
+      "terrain": "mountain",
+      "notes": "The whole tile tilted to a steep slope, with lava channels running down it, a big waterfall and a few buildings dug into the incline."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Gehenna"
+    ],
+    "ring": {
+      "order": 11
+    }
+  },
+  {
+    "id": "ps-baator",
+    "name": "Baator",
+    "aliases": [
+      "Nine Hells",
+      "Avernus"
+    ],
+    "world": "planes",
+    "region": "lower-planes",
+    "type": "landmark",
+    "archetype": "landmark-desert",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1492,
+        "title": "Elturel dragged into Avernus",
+        "summary": "The Companion turns black and pulls all of Elturel into Avernus as payment on Thavius Kreeg's pact with Zariel. Heroes follow it and later bring it back to Toril.",
+        "importance": 3
+      },
+      {
+        "year": 1354,
+        "title": "Zariel's Ride",
+        "summary": "Zariel leads Elturel's cavalry through a gate into Avernus. Only a handful return, as the first Hellriders.",
+        "importance": 2
+      },
+      {
+        "year": 1385,
+        "title": "Spellplague reshapes the cosmos",
+        "summary": "Asmodeus takes Azuth's divinity, ends the Blood War by casting the Abyss into the Elemental Chaos, and the Hells become a compact astral dominion.",
+        "importance": 3
+      },
+      {
+        "year": 1486,
+        "title": "The Blood War stirs again",
+        "summary": "By 1486 the demons have regrouped and the devils dread a renewed war; by 1492 it rages across Avernus.",
+        "importance": 2
+      }
+    ],
+    "description": "The Nine Hells of the devils. Its top layer, Avernus, is the main front of the Blood War: an ashen hellscape of lava rivers, crystal-studded hills and tar pits under a blood-red, starless sky streaked with falling fireballs. Zariel, the fallen angel, rules it again from her basalt citadel, with Bel, the pit fiend who once replaced her, now serving as her bitter advisor. Below it, Dis and the other eight layers run on contracts and hierarchy under Asmodeus.",
+    "population": null,
+    "ruler": "Asmodeus; Avernus held by Zariel",
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "lawful-evil",
+      "devils",
+      "blood-war",
+      "asmodeus",
+      "zariel",
+      "descent-into-avernus"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c9b7a4",
+        "accent": "#8e2a22",
+        "ink": "#1f1715"
+      },
+      "scale": 4,
+      "motifs": [
+        "lava",
+        "castle",
+        "walls",
+        "glow",
+        "rubble"
+      ],
+      "terrain": "desert",
+      "notes": "A black-and-red plain crossed by glowing lava rivers, a sharp basalt citadel, and the tiny dome of a captured city on a chain."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Nine_Hells",
+      "https://forgottenrealms.fandom.com/wiki/Avernus",
+      "https://forgottenrealms.fandom.com/wiki/Blood_War",
+      "https://forgottenrealms.fandom.com/wiki/Elturel"
+    ],
+    "ring": {
+      "order": 12
+    }
+  },
+  {
+    "id": "ps-acheron",
+    "name": "Acheron",
+    "aliases": [
+      "Infinite Battlefield of Acheron"
+    ],
+    "world": "planes",
+    "region": "lower-planes",
+    "type": "landmark",
+    "archetype": "landmark-monolith",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1383,
+        "title": "Hammergrim cast out",
+        "summary": "Laduguer's duergar realm of Hammergrim is cut loose from Thuldanin and thrown into the Astral Plane.",
+        "importance": 1
+      }
+    ],
+    "description": "Giant iron cubes, from a few hundred feet to city-sized, drift through a dim grey void across four layers. Some slowly collide, crushing anything caught between them. Their scarred faces show endless wars, as orc and goblin armies fight on and on, and rust and cracks only appear in straight lines and right angles.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "lawful-evil",
+      "lawful-neutral",
+      "war",
+      "orcs",
+      "goblinoids"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#c3bdb2",
+        "accent": "#5a5f66",
+        "ink": "#1b1c20"
+      },
+      "scale": 4,
+      "motifs": [
+        "floating",
+        "walls",
+        "keep"
+      ],
+      "terrain": "island",
+      "notes": "Several big iron cubes floating at different heights, battle-scarred, with tiny banners and a fortress on top of one."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Acheron"
+    ],
+    "ring": {
+      "order": 13
+    }
+  },
+  {
+    "id": "ps-mechanus",
+    "name": "Mechanus",
+    "aliases": [
+      "Clockwork Nirvana of Mechanus",
+      "Nirvana"
+    ],
+    "world": "planes",
+    "region": "neutral-planes",
+    "type": "landmark",
+    "archetype": "landmark-monolith",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [],
+    "description": "An infinite clockwork of interlocking gears, each a thousand miles or more across, slowly turning together through an airy void. The modrons, ruled by Primus from the tower at the hub of a great wheel, work in a rigid caste system and keep everything in balance. Every so often they march out across the planes in the Great Modron March.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "lawful-neutral",
+      "modrons",
+      "primus",
+      "order"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#d3cdc0",
+        "accent": "#4b6a86",
+        "ink": "#1e2228"
+      },
+      "scale": 4,
+      "motifs": [
+        "gears",
+        "towers",
+        "floating"
+      ],
+      "terrain": "plain",
+      "notes": "Several huge flat interlocking cogwheels at different tilts, teeth meshed; one tall tower on the hub of the biggest."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Mechanus"
+    ],
+    "ring": {
+      "order": 14
+    }
+  },
+  {
+    "id": "ps-arcadia",
+    "name": "Arcadia",
+    "aliases": [
+      "Peaceable Kingdoms of Arcadia"
+    ],
+    "world": "planes",
+    "region": "upper-planes",
+    "type": "landmark",
+    "archetype": "landmark-forest",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1385,
+        "title": "Spellplague reshapes the cosmos",
+        "summary": "Dweomerheart, linked by sages to Arcadia, is destroyed with Mystra; Dwarfhome endures into the World Axis.",
+        "importance": 2
+      }
+    ],
+    "description": "Orderly plains and orchards, with a few mountains, where trees grow in rows and nothing is left to chance. Its gates to Celestia, Mechanus and the Outlands look like flower trellises of white ivory or black steel. The Orb of Day and Night, half bright and half dark, regulates its day. Azuth, Clangeddin and several of the Mulhorandi powers have kept realms here.",
+    "population": null,
+    "ruler": null,
+    "tags": [
+      "planescape",
+      "outer-plane",
+      "lawful-good",
+      "lawful-neutral",
+      "order",
+      "harmony"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e6dcc0",
+        "accent": "#c79a2e",
+        "ink": "#2a2620"
+      },
+      "scale": 4,
+      "motifs": [
+        "farms",
+        "trees",
+        "mountain",
+        "glow"
+      ],
+      "terrain": "plain",
+      "notes": "A neat grid of orchards and fields with straight hedges, a single half-light, half-dark orb hanging above."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/Arcadia"
+    ],
+    "ring": {
+      "order": 15
+    }
+  },
+  {
+    "id": "ps-city-of-brass",
+    "name": "City of Brass",
+    "aliases": [],
+    "world": "planes",
+    "region": "inner-planes",
+    "type": "metropolis",
+    "archetype": "floating-enclave",
+    "map": null,
+    "founded": null,
+    "foundedNote": "Timeless planar locale; no founding date in DR",
+    "status": [
+      {
+        "from": -35000,
+        "to": null,
+        "state": "thriving"
+      }
+    ],
+    "events": [
+      {
+        "year": 1367,
+        "title": "Reign of Marrake",
+        "summary": "c. 1367 DR: the efreet's Grand Sultan is Marrake al-Sidan al-Hariq ben Lazan, who leaves daily matters to his vizier.",
+        "importance": 1
+      }
+    ],
+    "description": "The efreeti capital, a city enclosed in a huge brass half-dome about forty miles across that drifts slowly over the hottest regions of the Elemental Plane of Fire. Inside, the Grand Sultan holds back the flames so traders can come to the souks, slave markets, smoke-sellers and azer forges. Outside, slaves farm the Obsidian Fields and dig for gems. It only touches down when the Sultan decides to take on goods and captives.",
+    "population": 4000000,
+    "ruler": "The Grand Sultan of the Efreet (Marrake al-Sidan al-Hariq ben Lazan, c. 1367)",
+    "tags": [
+      "planescape",
+      "inner-planes",
+      "fire",
+      "efreet",
+      "trade"
+    ],
+    "visual": {
+      "palette": {
+        "base": "#e1c58f",
+        "accent": "#c4571d",
+        "ink": "#2a160c"
+      },
+      "scale": 5,
+      "motifs": [
+        "domes",
+        "minarets",
+        "floating",
+        "lava",
+        "walls",
+        "glow"
+      ],
+      "terrain": "desert",
+      "notes": "A gleaming brass dome with minarets poking out of it, floating above a sea of flame; a ring of brass wall around its rim."
+    },
+    "sources": [
+      "https://forgottenrealms.fandom.com/wiki/City_of_Brass"
+    ]
+  }
+]
